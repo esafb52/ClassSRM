@@ -34,7 +34,9 @@ namespace ClassSRM
                 BonusSkins.Register();
                 SkinManager.EnableFormSkins();
                 UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-
+                var fontFamily = Config.ReadSetting("FontFamily");
+                int fontSize =Convert.ToInt32(Config.ReadSetting("FontSize"));
+                WindowsFormsSettings.DefaultFont = new System.Drawing.Font(fontFamily, fontSize);
                 //Set Login
                 Application.Run(new Form1());
                 Application.DoEvents();

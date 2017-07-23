@@ -70,6 +70,9 @@ namespace ClassSRM.Forms
             var login = Config.ReadSetting("Login");
             var startup = Config.ReadSetting("Auto Start");
             var tosifi = Config.ReadSetting("Tosifi System");
+            var font = Config.ReadSetting("Font");
+            var fontFamily = Config.ReadSetting("FontFamily");
+            var fontSize = Config.ReadSetting("FontSize");
 
             if (login == "true")
                 chkLogin.Checked = true;
@@ -79,11 +82,48 @@ namespace ClassSRM.Forms
                 rdCore.SelectedIndex = 0;
             else
                 rdCore.SelectedIndex = 1;
+            if (font == "Custome")
+                chkFont.Checked = true;
+
+            fontEdit1.Text = fontFamily;
+            fSize.Value = Convert.ToInt32(fontSize);
         }
 
         private void Settings_Load(object sender, EventArgs e)
         {
             CheckConfig();
+        }
+
+        private void chkFont_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkFont.Checked)
+            {
+                fontEdit1.Enabled = true;
+                Config.AddUpdateAppSettings("Font", "Custome");
+                DevExpress.XtraEditors.WindowsFormsSettings.DefaultFont = new Font(fontEdit1.Text, fSize.Value);
+            }
+            else
+            {
+                fontEdit1.Enabled = false;
+                Config.AddUpdateAppSettings("Font", "Default");
+                Config.AddUpdateAppSettings("FontFamily", "Tahoma");
+                Config.AddUpdateAppSettings("FontSize", "8");
+                DevExpress.XtraEditors.WindowsFormsSettings.DefaultFont = new Font("Tahoma", 8);
+            }
+        }
+
+        private void fontEdit1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.WindowsFormsSettings.DefaultFont = new Font(fontEdit1.Text, fSize.Value);
+            Config.AddUpdateAppSettings("FontFamily", fontEdit1.Text);
+            Config.AddUpdateAppSettings("FontSize", fSize.Value.ToString());
+        }
+
+        private void fSize_EditValueChanged(object sender, EventArgs e)
+        {
+            DevExpress.XtraEditors.WindowsFormsSettings.DefaultFont = new Font(fontEdit1.Text, fSize.Value);
+            Config.AddUpdateAppSettings("FontFamily", fontEdit1.Text);
+            Config.AddUpdateAppSettings("FontSize", fSize.Value.ToString());
         }
     }
 }
