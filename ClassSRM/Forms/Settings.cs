@@ -20,7 +20,7 @@ namespace ClassSRM.Forms
 
         private void rdCore_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (rdCore.SelectedIndex==0)
+            if (rdCore.SelectedIndex==1)
             {
                 Config.AddUpdateAppSettings("Tosifi System", "true");
             }
@@ -42,14 +42,6 @@ namespace ClassSRM.Forms
                 Config.AddUpdateAppSettings("Auto Start", "false");
                 Config.RegisterInStartup(false);
             }
-        }
-
-        private void chkTopM_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkTopM.Checked)
-                this.TopMost = true;
-            else
-                this.TopMost = false;
         }
 
         private void chkLogin_CheckedChanged(object sender, EventArgs e)
@@ -79,9 +71,9 @@ namespace ClassSRM.Forms
             if (startup == "true")
                 chkAutoRun.Checked = true;
             if (tosifi == "true")
-                rdCore.SelectedIndex = 0;
-            else
                 rdCore.SelectedIndex = 1;
+            else
+                rdCore.SelectedIndex = 0;
             if (font == "Custome")
                 chkFont.Checked = true;
 

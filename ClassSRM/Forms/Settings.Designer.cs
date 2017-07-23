@@ -46,15 +46,16 @@
             this.chkFont = new DevExpress.XtraEditors.CheckEdit();
             this.chkAutoRun = new DevExpress.XtraEditors.CheckEdit();
             this.chkLogin = new DevExpress.XtraEditors.CheckEdit();
-            this.chkTopM = new DevExpress.XtraEditors.CheckEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
@@ -74,15 +75,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkFont.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAutoRun.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkLogin.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkTopM.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPane1
@@ -139,6 +141,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rdCore.Location = new System.Drawing.Point(12, 12);
             this.rdCore.Name = "rdCore";
+            this.rdCore.Properties.AllowFocused = false;
             this.rdCore.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.rdCore.Properties.Appearance.Options.UseBackColor = true;
             this.rdCore.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
@@ -157,8 +160,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(327, 77);
             this.label1.TabIndex = 0;
-            this.label1.Text = "لطفا سیستم ارزشیابی نرم افزار را از بین توصیفی یا عددی انتخاب کنید\r\n(بصورت پیشفرض" +
-    " توصیفی فعال می باشد)";
+            this.label1.Text = "سیستم ارزشیابی نرم افزار را از بین توصیفی یا عددی انتخاب کنید\r\n(بصورت پیشفرض توصی" +
+    "فی فعال می باشد)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // layoutControlGroup2
@@ -216,10 +219,10 @@
             this.layoutControl1.Controls.Add(this.chkFont);
             this.layoutControl1.Controls.Add(this.chkAutoRun);
             this.layoutControl1.Controls.Add(this.chkLogin);
-            this.layoutControl1.Controls.Add(this.chkTopM);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(574, 174, 450, 400);
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.layoutControlGroup1;
             this.layoutControl1.Size = new System.Drawing.Size(351, 229);
@@ -229,11 +232,11 @@
             // fSize
             // 
             this.fSize.EditValue = 8;
-            this.fSize.Location = new System.Drawing.Point(12, 128);
+            this.fSize.Location = new System.Drawing.Point(12, 130);
             this.fSize.Name = "fSize";
             this.fSize.Properties.AllowFocused = false;
-            this.fSize.Properties.Maximum = 50;
-            this.fSize.Properties.Minimum = 7;
+            this.fSize.Properties.Maximum = 15;
+            this.fSize.Properties.Minimum = 6;
             this.fSize.Properties.ShowValueToolTip = true;
             this.fSize.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.fSize.Size = new System.Drawing.Size(269, 23);
@@ -244,9 +247,9 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(12, 150);
+            this.label3.Location = new System.Drawing.Point(12, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(327, 67);
+            this.label3.Size = new System.Drawing.Size(327, 51);
             this.label3.TabIndex = 1;
             this.label3.Text = "تنظیمات بصورت خودکار ذخیره می شود";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -256,7 +259,7 @@
             this.fontEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fontEdit1.EditValue = "Tahoma";
             this.fontEdit1.Enabled = false;
-            this.fontEdit1.Location = new System.Drawing.Point(12, 104);
+            this.fontEdit1.Location = new System.Drawing.Point(12, 93);
             this.fontEdit1.Name = "fontEdit1";
             this.fontEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -268,7 +271,7 @@
             // chkFont
             // 
             this.chkFont.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkFont.Location = new System.Drawing.Point(12, 81);
+            this.chkFont.Location = new System.Drawing.Point(12, 70);
             this.chkFont.Name = "chkFont";
             this.chkFont.Properties.AllowFocused = false;
             this.chkFont.Properties.Caption = "استفاده از فونت دلخواه";
@@ -292,7 +295,7 @@
             // chkLogin
             // 
             this.chkLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkLogin.Location = new System.Drawing.Point(12, 58);
+            this.chkLogin.Location = new System.Drawing.Point(12, 35);
             this.chkLogin.Name = "chkLogin";
             this.chkLogin.Properties.AllowFocused = false;
             this.chkLogin.Properties.Caption = "ورود به نرم افزار با استفاده از رمز عبور";
@@ -301,32 +304,22 @@
             this.chkLogin.TabIndex = 0;
             this.chkLogin.CheckedChanged += new System.EventHandler(this.chkLogin_CheckedChanged);
             // 
-            // chkTopM
-            // 
-            this.chkTopM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkTopM.Location = new System.Drawing.Point(12, 35);
-            this.chkTopM.Name = "chkTopM";
-            this.chkTopM.Properties.AllowFocused = false;
-            this.chkTopM.Properties.Caption = "بالا بودن پنجره اصلی روی پنجره های دیگر";
-            this.chkTopM.Size = new System.Drawing.Size(327, 19);
-            this.chkTopM.StyleController = this.layoutControl1;
-            this.chkTopM.TabIndex = 0;
-            this.chkTopM.CheckedChanged += new System.EventHandler(this.chkTopM_CheckedChanged);
-            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1,
-            this.layoutControlItem2,
             this.layoutControlItem3,
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem6,
-            this.layoutControlItem7});
+            this.layoutControlItem7,
+            this.emptySpaceItem1,
+            this.emptySpaceItem2,
+            this.emptySpaceItem3});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
+            this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(351, 229);
             this.layoutControlGroup1.TextVisible = false;
             // 
@@ -339,19 +332,10 @@
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.chkTopM;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 23);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(331, 23);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.chkLogin;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 46);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 23);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(331, 23);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -360,7 +344,7 @@
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.chkFont;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 69);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 58);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(331, 23);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
@@ -369,7 +353,7 @@
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.fontEdit1;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 92);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 81);
             this.layoutControlItem5.Name = "layoutControlItem5";
             this.layoutControlItem5.Size = new System.Drawing.Size(331, 24);
             this.layoutControlItem5.Text = "انتخاب فونت";
@@ -378,20 +362,44 @@
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.label3;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 138);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 154);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(331, 71);
+            this.layoutControlItem6.Size = new System.Drawing.Size(331, 55);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.fSize;
-            this.layoutControlItem7.Location = new System.Drawing.Point(0, 116);
+            this.layoutControlItem7.Location = new System.Drawing.Point(0, 118);
             this.layoutControlItem7.Name = "layoutControlItem7";
             this.layoutControlItem7.Size = new System.Drawing.Size(331, 22);
             this.layoutControlItem7.Text = "اندازه فونت";
             this.layoutControlItem7.TextSize = new System.Drawing.Size(55, 13);
+            // 
+            // emptySpaceItem1
+            // 
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 46);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(331, 12);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem2
+            // 
+            this.emptySpaceItem2.AllowHotTrack = false;
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 105);
+            this.emptySpaceItem2.Name = "emptySpaceItem2";
+            this.emptySpaceItem2.Size = new System.Drawing.Size(331, 13);
+            this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
+            // 
+            // emptySpaceItem3
+            // 
+            this.emptySpaceItem3.AllowHotTrack = false;
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 140);
+            this.emptySpaceItem3.Name = "emptySpaceItem3";
+            this.emptySpaceItem3.Size = new System.Drawing.Size(331, 14);
+            this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // Settings
             // 
@@ -430,15 +438,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.chkFont.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkAutoRun.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkLogin.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkTopM.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -451,7 +460,6 @@
         private System.Windows.Forms.Label label1;
         private DevExpress.XtraEditors.RadioGroup rdCore;
         private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.CheckEdit chkTopM;
         private DevExpress.XtraEditors.CheckEdit chkAutoRun;
         private DevExpress.XtraEditors.CheckEdit chkLogin;
         private System.Windows.Forms.Label label3;
@@ -460,7 +468,6 @@
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
@@ -472,5 +479,8 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
     }
 }

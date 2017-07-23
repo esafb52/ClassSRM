@@ -321,6 +321,7 @@
             // 
             this.pdfFilePrintBarItem1.Caption = "پرینت";
             this.pdfFilePrintBarItem1.Id = 3;
+            this.pdfFilePrintBarItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("pdfFilePrintBarItem1.ImageOptions.SvgImage")));
             this.pdfFilePrintBarItem1.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P));
             this.pdfFilePrintBarItem1.Name = "pdfFilePrintBarItem1";
             // 
@@ -328,12 +329,14 @@
             // 
             this.pdfPreviousPageBarItem1.Caption = "قبلی";
             this.pdfPreviousPageBarItem1.Id = 5;
+            this.pdfPreviousPageBarItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("pdfPreviousPageBarItem1.ImageOptions.SvgImage")));
             this.pdfPreviousPageBarItem1.Name = "pdfPreviousPageBarItem1";
             // 
             // pdfNextPageBarItem1
             // 
             this.pdfNextPageBarItem1.Caption = "بعدی";
             this.pdfNextPageBarItem1.Id = 6;
+            this.pdfNextPageBarItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("pdfNextPageBarItem1.ImageOptions.SvgImage")));
             this.pdfNextPageBarItem1.Name = "pdfNextPageBarItem1";
             // 
             // pdfSetPageNumberBarItem1
@@ -354,18 +357,21 @@
             // 
             this.pdfZoomOutBarItem1.Caption = "کوچکنمایی";
             this.pdfZoomOutBarItem1.Id = 8;
+            this.pdfZoomOutBarItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("pdfZoomOutBarItem1.ImageOptions.SvgImage")));
             this.pdfZoomOutBarItem1.Name = "pdfZoomOutBarItem1";
             // 
             // pdfZoomInBarItem1
             // 
             this.pdfZoomInBarItem1.Caption = "بزرگنمایی";
             this.pdfZoomInBarItem1.Id = 9;
+            this.pdfZoomInBarItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("pdfZoomInBarItem1.ImageOptions.SvgImage")));
             this.pdfZoomInBarItem1.Name = "pdfZoomInBarItem1";
             // 
             // pdfExactZoomListBarSubItem1
             // 
             this.pdfExactZoomListBarSubItem1.Caption = "زوم";
             this.pdfExactZoomListBarSubItem1.Id = 10;
+            this.pdfExactZoomListBarSubItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("pdfExactZoomListBarSubItem1.ImageOptions.SvgImage")));
             this.pdfExactZoomListBarSubItem1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom10CheckItem1, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.pdfZoom25CheckItem1),

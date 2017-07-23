@@ -125,6 +125,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddSchool.Designer.cs">
+      <DependentUpon>AddSchool.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddTask.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +187,9 @@
     <Compile Include="WaitForm1.Designer.cs">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AddSchool.resx">
+      <DependentUpon>AddSchool.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddTask.resx">
       <DependentUpon>AddTask.cs</DependentUpon>
     </EmbeddedResource>

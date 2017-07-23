@@ -203,6 +203,13 @@ namespace ClassSRM
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.InsertSchool")]
+		public int InsertSchool([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Name", DbType="NVarChar(100)")] string name, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Admin", DbType="NVarChar(100)")] string admin, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Class", DbType="NVarChar(100)")] string @class, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date", DbType="NVarChar(10)")] string date)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), name, admin, @class, date);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_User")]

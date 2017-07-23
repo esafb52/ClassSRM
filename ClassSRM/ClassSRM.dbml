@@ -134,4 +134,11 @@
     <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.InsertSchool" Method="InsertSchool">
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Admin" Parameter="admin" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Class" Parameter="class" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(10)" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>
