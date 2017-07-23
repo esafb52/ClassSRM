@@ -44,12 +44,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v17.1" />
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v17.1" />
     <Reference Include="DevExpress.Utils.v17.1" />
     <Reference Include="DevExpress.Sparkline.v17.1.Core" />
     <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v17.1" />
     <Reference Include="DevExpress.Printing.v17.1.Core" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Win, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FarsiLibrary.Win.DevExpress.17.1">
+      <HintPath>D:\Barnamenevisi\Sorce cod\C#\FarsiLibrary\binaries\FarsiLibrary.Win.DevExpress.17.1.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -90,6 +102,15 @@
     <Compile Include="Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
     <None Include="ClassSRM.dbml.layout">
       <DependentUpon>ClassSRM.dbml</DependentUpon>
@@ -119,6 +140,9 @@
       <LastGenOutput>ClassSRM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\DataSources\SumEva.datasource" />
+    <None Include="Properties\DataSources\tbl_School.datasource" />
+    <None Include="Properties\DataSources\tbl_Student.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,6 +152,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\History.md" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

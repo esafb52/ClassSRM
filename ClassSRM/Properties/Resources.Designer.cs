@@ -59,5 +59,15 @@ namespace ClassSRM.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] History {
+            get {
+                object obj = ResourceManager.GetObject("History", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

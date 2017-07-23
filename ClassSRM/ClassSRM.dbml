@@ -1,1 +1,103 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ClassSRM" Class="ClassSRMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ClassSRM;Integrated Security=True" SettingsObjectName="ClassSRM.Properties.Settings" SettingsPropertyName="ClassSRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_User" Member="tbl_Users">
+    <Type Name="tbl_User">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Pass" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_ActPoint" Member="tbl_ActPoints">
+    <Type Name="tbl_ActPoint" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Check" Member="tbl_Checks">
+    <Type Name="tbl_Check" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Exist" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_EvaPoint" Member="tbl_EvaPoints">
+    <Type Name="tbl_EvaPoint" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Score" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Book" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SumEva" Member="SumEvas">
+    <Type Name="SumEva" Modifier="Sealed">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HighScoreUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Book" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Student" Member="tbl_Students">
+    <Type Name="tbl_Student" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StuClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuGender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StuImage" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CheckV" Member="CheckVs">
+    <Type Name="CheckV" Id="ID1" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuImage" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Exist" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_School" Member="tbl_Schools">
+    <Type Name="tbl_School" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SchName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SchAdmin" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SchClass" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SchDate" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SelectSumEvaDate" Method="SelectSumEvaDate">
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="Date2" Parameter="date2" Type="System.String" DbType="NVarChar(12)" />
+    <ElementType Name="SelectSumEvaDateResult">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HighScoreUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Book" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectSchool" Method="SelectSchool">
+    <ElementType Name="SelectSchoolResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SchName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SchAdmin" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SchClass" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SchDate" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Select2Dates" Method="Select2Dates">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="Date2" Parameter="date2" Type="System.String" DbType="NVarChar(12)" />
+    <ElementType IdRef="ID1" />
+  </Function>
+</Database>
