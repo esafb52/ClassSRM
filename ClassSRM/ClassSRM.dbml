@@ -74,6 +74,15 @@
       <Column Name="SchDate" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.tbl_Tasks" Member="tbl_Tasks">
+    <Type Name="tbl_Task" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Caption" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Label" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
   <Function Name="dbo.SelectSumEvaDate" Method="SelectSumEvaDate">
     <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
     <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
@@ -99,5 +108,30 @@
     <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
     <Parameter Name="Date2" Parameter="date2" Type="System.String" DbType="NVarChar(12)" />
     <ElementType IdRef="ID1" />
+  </Function>
+  <Function Name="dbo.UpdateTaskLabel" Method="UpdateTaskLabel">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Label" Parameter="label" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.InsertTask" Method="InsertTask">
+    <Parameter Name="Caption" Parameter="caption" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Description" Parameter="description" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Label" Parameter="label" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UpdateTask" Method="UpdateTask">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Caption" Parameter="caption" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Desc" Parameter="desc" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Label" Parameter="label" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteTask" Method="DeleteTask">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

@@ -1,4 +1,5 @@
-﻿using ClassSRM.Forms;
+﻿using ArazUpdater;
+using ClassSRM.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using System;
@@ -10,6 +11,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ClassSRM
@@ -332,6 +334,38 @@ namespace ClassSRM
         {
             XtraMessageBox.Show("در گیت هاب میتوانید پروژه های رایگان و متن باز دیگر ما را مشاهده کنید و در صورت داشتن توانایی، در توسعه بیشتر نرم افزار ها به ما کمک کنید.", "پروژه های توسعه دهنده", MessageBoxButtons.OK, MessageBoxIcon.Information);
             System.Diagnostics.Process.Start("https://github.com/ghost1372");
+        }
+
+        private void btnTaskListKanban_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Task.Run(() => { new KanBanTask().ShowDialog(); });
+        }
+
+        private void btnLetterSingle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new Letter().ShowDialog();
+        }
+
+        private void btnUpdate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraMessageBox.Show("قبل از بروزرسانی نرم افزار لازم است تا از اطلاعات\nنرم افزار فایل پشتیبان تهیه کنید.بعد از تایید\nپنجره پشتیبان گیری باز شده و اقدام به پشتیبان گیری کنید.", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Backup.isForce = true;
+            new Backup().ShowDialog();
+            Update up = new Update();
+            String txt = "http://ipfile.ir/ClassSRMServer/ClassSRM.txt";
+            String ver = Application.ProductVersion;
+            if (up.UpdateFromServer(txt, ver, Application.ExecutablePath) == true)
+                Application.Exit();
+        }
+
+        private void btnOfflineUpdate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraMessageBox.Show("قبل از بروزرسانی نرم افزار لازم است تا از اطلاعات\nنرم افزار فایل پشتیبان تهیه کنید.بعد از تایید\nپنجره پشتیبان گیری باز شده و اقدام به پشتیبان گیری کنید.", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            Backup.isForce = true;
+            new Backup().ShowDialog();
+            Update up = new Update();
+            if (up.UpdateFromDisk(Application.ExecutablePath) == true)
+                Application.Exit();
         }
 
         //Draw Persian Holiday to Calendar

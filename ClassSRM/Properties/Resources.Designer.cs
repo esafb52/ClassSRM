@@ -61,12 +61,33 @@ namespace ClassSRM.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized string similar to ● بهبود پشتیبان گیری	(2017/07/20)
+        ///• نسخه بتا 6	0.7.1001.17201
+        ///
+        ///● افزودن تقویم شمسی	(2017/07/19)
+        ///• افزوده شدن تعطیلات رسمی به تقویم
+        ///
+        ///● حل مشکل فریز شدن ریستور بکاپ	(2017/07/18)
+        ///• بهبود کدها
+        ///• حل برخی مشکلات
+        ///
+        ///● افزودن بخش نامه	(2017/07/15)
+        ///• بهبود کدها
+        ///• حل برخی مشکلات
+        ///
+        ///● بهبود بازیابی اطلاعات	(2017/07/15)
+        ///• بهبود سیستم بروزرسانی
+        ///
+        ///● اجبار به پشتیبان گیری هنگام بروزرسانی	(2017/07/14)
+        ///• بهبود سیستم بکاپ گیری
+        ///• حل برخی مشکلات
+        ///• نسخه بتا 5	0.7.829.17195
+        ///
+        ///● تغییر دیتابیس از لوکال به اکسپرس	(2 [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static byte[] History {
+        internal static string History {
             get {
-                object obj = ResourceManager.GetObject("History", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("History", resourceCulture);
             }
         }
     }

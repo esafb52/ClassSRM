@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Backup));
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.txtPath = new DevExpress.XtraEditors.TextEdit();
-            this.btnBackup = new DevExpress.XtraEditors.SimpleButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnRestore = new DevExpress.XtraEditors.SimpleButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnBackup = new DevExpress.XtraEditors.SimpleButton();
+            this.txtPath = new DevExpress.XtraEditors.TextEdit();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClassSRM.WaitForm1), true, true);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -71,32 +71,16 @@
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.Size = new System.Drawing.Size(447, 121);
             // 
-            // tabNavigationPage2
+            // btnRestore
             // 
-            this.tabNavigationPage2.Caption = "پشتیبان گیری";
-            this.tabNavigationPage2.Controls.Add(this.label2);
-            this.tabNavigationPage2.Controls.Add(this.btnBackup);
-            this.tabNavigationPage2.Controls.Add(this.txtPath);
-            this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(447, 121);
-            // 
-            // txtPath
-            // 
-            this.txtPath.Location = new System.Drawing.Point(19, 83);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPath.Size = new System.Drawing.Size(305, 20);
-            this.txtPath.TabIndex = 0;
-            // 
-            // btnBackup
-            // 
-            this.btnBackup.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.btnBackup.Location = new System.Drawing.Point(375, 74);
-            this.btnBackup.Name = "btnBackup";
-            this.btnBackup.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnBackup.Size = new System.Drawing.Size(42, 38);
-            this.btnBackup.TabIndex = 1;
-            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            this.btnRestore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestore.Location = new System.Drawing.Point(108, 74);
+            this.btnRestore.Name = "btnRestore";
+            this.btnRestore.Size = new System.Drawing.Size(245, 23);
+            this.btnRestore.TabIndex = 1;
+            this.btnRestore.Text = "بازیابی اطلاعات";
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
             // 
             // label1
             // 
@@ -110,14 +94,14 @@
     "ل پشتیبان خود را انتخاب کنید";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnRestore
+            // tabNavigationPage2
             // 
-            this.btnRestore.Location = new System.Drawing.Point(108, 74);
-            this.btnRestore.Name = "btnRestore";
-            this.btnRestore.Size = new System.Drawing.Size(245, 23);
-            this.btnRestore.TabIndex = 1;
-            this.btnRestore.Text = "بازیابی اطلاعات";
-            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
+            this.tabNavigationPage2.Caption = "پشتیبان گیری";
+            this.tabNavigationPage2.Controls.Add(this.label2);
+            this.tabNavigationPage2.Controls.Add(this.btnBackup);
+            this.tabNavigationPage2.Controls.Add(this.txtPath);
+            this.tabNavigationPage2.Name = "tabNavigationPage2";
+            this.tabNavigationPage2.Size = new System.Drawing.Size(447, 121);
             // 
             // label2
             // 
@@ -130,6 +114,26 @@
             this.label2.Text = "برای پشتیبان گیری از اطلاعات روی آیکون پوشه کلیک کنید\r\nو مسیر ذخیره فایل را بجز د" +
     "رایو C انتخاب کنید عملیات بصورت خودکار انجام می شود";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // btnBackup
+            // 
+            this.btnBackup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBackup.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBackup.ImageOptions.SvgImage")));
+            this.btnBackup.Location = new System.Drawing.Point(375, 74);
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnBackup.Size = new System.Drawing.Size(42, 38);
+            this.btnBackup.TabIndex = 1;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            // 
+            // txtPath
+            // 
+            this.txtPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtPath.Location = new System.Drawing.Point(19, 83);
+            this.txtPath.Name = "txtPath";
+            this.txtPath.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPath.Size = new System.Drawing.Size(305, 20);
+            this.txtPath.TabIndex = 0;
             // 
             // splashScreenManager1
             // 
