@@ -36,20 +36,28 @@
             // 
             this.txtHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtHistory.Location = new System.Drawing.Point(0, 0);
+            this.txtHistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHistory.Name = "txtHistory";
-            this.txtHistory.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.txtHistory.Properties.AllowFocused = false;
+            this.txtHistory.Properties.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.txtHistory.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHistory.Properties.Appearance.Options.UseBackColor = true;
-            this.txtHistory.Size = new System.Drawing.Size(842, 522);
+            this.txtHistory.Properties.Appearance.Options.UseFont = true;
+            this.txtHistory.Properties.ReadOnly = true;
+            this.txtHistory.Size = new System.Drawing.Size(713, 417);
             this.txtHistory.TabIndex = 0;
             // 
             // History
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Appearance.Options.UseFont = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 522);
+            this.ClientSize = new System.Drawing.Size(713, 417);
             this.Controls.Add(this.txtHistory);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "History";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

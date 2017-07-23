@@ -368,6 +368,11 @@ namespace ClassSRM
                 Application.Exit();
         }
 
+        private void btnHistory_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new History().ShowDialog();
+        }
+
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
         {
