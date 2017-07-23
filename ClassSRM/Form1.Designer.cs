@@ -31,11 +31,13 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager splash = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClassSRM.Splash), true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView3 = new DevExpress.XtraCharts.LineSeriesView();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.LineSeriesView lineSeriesView4 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series9 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView9 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraCharts.Series series10 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.LineSeriesView lineSeriesView10 = new DevExpress.XtraCharts.LineSeriesView();
+            this.sumEvaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sumEvaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -98,6 +100,7 @@
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
+            this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.imgStudent = new DevExpress.XtraEditors.PictureEdit();
             this.gaugeControl5 = new DevExpress.XtraGauges.Win.GaugeControl();
@@ -195,9 +198,8 @@
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.pCalendar = new FarsiLibrary.Win.DevExpress.XtraFACalendarControl();
-            this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sumEvaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sumEvaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             this.dockPanel1.SuspendLayout();
@@ -208,6 +210,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgStudent.Properties)).BeginInit();
@@ -293,20 +296,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
             this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // splash
             // 
             splash.ClosingDelay = 300;
+            // 
+            // sumEvaBindingSource
+            // 
+            this.sumEvaBindingSource.DataSource = typeof(ClassSRM.SumEva);
+            // 
+            // sumEvaBindingSource1
+            // 
+            this.sumEvaBindingSource1.DataSource = typeof(ClassSRM.SumEva);
             // 
             // ribbonControl1
             // 
@@ -577,6 +585,7 @@
             this.btnSettings.Id = 20;
             this.btnSettings.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSettings.ImageOptions.SvgImage")));
             this.btnSettings.Name = "btnSettings";
+            this.btnSettings.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSettings_ItemClick);
             // 
             // ribbonPageGroup9
             // 
@@ -589,8 +598,8 @@
             this.btnBackup.Caption = "پشتیبان گیری";
             this.btnBackup.Id = 23;
             this.btnBackup.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBackup.ImageOptions.SvgImage")));
-            this.btnBackup.LargeWidth = 150;
             this.btnBackup.Name = "btnBackup";
+            this.btnBackup.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBackup_ItemClick);
             // 
             // ribbonPageGroup10
             // 
@@ -627,6 +636,7 @@
             this.btnDeveloper.Id = 28;
             this.btnDeveloper.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDeveloper.ImageOptions.SvgImage")));
             this.btnDeveloper.Name = "btnDeveloper";
+            this.btnDeveloper.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDeveloper_ItemClick);
             // 
             // btnHistory
             // 
@@ -641,6 +651,7 @@
             this.btnLic.Id = 30;
             this.btnLic.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLic.ImageOptions.SvgImage")));
             this.btnLic.Name = "btnLic";
+            this.btnLic.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLic_ItemClick);
             // 
             // btnGit
             // 
@@ -648,6 +659,7 @@
             this.btnGit.Id = 31;
             this.btnGit.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGit.ImageOptions.SvgImage")));
             this.btnGit.Name = "btnGit";
+            this.btnGit.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGit_ItemClick);
             // 
             // ribbonPageGroup12
             // 
@@ -812,6 +824,10 @@
             this.cmbClass.Size = new System.Drawing.Size(268, 20);
             this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
+            // 
+            // tblSchoolBindingSource
+            // 
+            this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
             // 
             // panelControl1
             // 
@@ -1986,28 +2002,28 @@
             this.chartControl1.BackColor = System.Drawing.Color.Transparent;
             this.chartControl1.DataBindings = null;
             this.chartControl1.DataSource = this.sumEvaBindingSource;
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram2;
+            xyDiagram5.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram5.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram5;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(2, 2);
             this.chartControl1.Name = "chartControl1";
-            series3.ArgumentDataMember = "Book";
-            series3.DataSource = this.sumEvaBindingSource;
-            series3.LegendText = "ماه جاری";
-            series3.Name = "Series 1";
-            series3.ValueDataMembersSerializable = "HighScoreUser";
-            series3.View = lineSeriesView3;
-            series4.ArgumentDataMember = "Book";
-            series4.DataSource = this.sumEvaBindingSource1;
-            series4.LegendText = "ماه قبل";
-            series4.Name = "Series 2";
-            series4.ValueDataMembersSerializable = "HighScoreUser";
-            series4.View = lineSeriesView4;
+            series9.ArgumentDataMember = "Book";
+            series9.DataSource = this.sumEvaBindingSource;
+            series9.LegendText = "ماه جاری";
+            series9.Name = "Series 1";
+            series9.ValueDataMembersSerializable = "HighScoreUser";
+            series9.View = lineSeriesView9;
+            series10.ArgumentDataMember = "Book";
+            series10.DataSource = this.sumEvaBindingSource1;
+            series10.LegendText = "ماه قبل";
+            series10.Name = "Series 2";
+            series10.ValueDataMembersSerializable = "HighScoreUser";
+            series10.View = lineSeriesView10;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3,
-        series4};
+        series9,
+        series10};
             this.chartControl1.Size = new System.Drawing.Size(1008, 156);
             this.chartControl1.TabIndex = 0;
             // 
@@ -2021,18 +2037,6 @@
             this.pCalendar.Size = new System.Drawing.Size(232, 156);
             this.pCalendar.TabIndex = 1;
             this.pCalendar.CustomDrawDayNumberCell += new DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventHandler(this.pCalendar_CustomDrawDayNumberCell);
-            // 
-            // tblSchoolBindingSource
-            // 
-            this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
-            // 
-            // sumEvaBindingSource
-            // 
-            this.sumEvaBindingSource.DataSource = typeof(ClassSRM.SumEva);
-            // 
-            // sumEvaBindingSource1
-            // 
-            this.sumEvaBindingSource1.DataSource = typeof(ClassSRM.SumEva);
             // 
             // Form1
             // 
@@ -2051,6 +2055,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dockPanel1.ResumeLayout(false);
@@ -2062,6 +2068,7 @@
             this.panelControl5.ResumeLayout(false);
             this.panelControl5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgStudent.Properties)).EndInit();
@@ -2162,16 +2169,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
             this.panelControl4.ResumeLayout(false);
             this.panelControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(lineSeriesView10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

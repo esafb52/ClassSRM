@@ -1,4 +1,6 @@
-﻿using DevExpress.XtraSplashScreen;
+﻿using ClassSRM.Forms;
+using DevExpress.XtraEditors;
+using DevExpress.XtraSplashScreen;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -275,21 +277,7 @@ namespace ClassSRM
             prgLife.EnableAnimation = true;
         }
 
-        //Check Config file
-        //Todo: Move to Setting
-        //private void CheckConfig()
-        //{
-        //    var login = Config.ReadSetting("Login");
-        //    var startup = Config.ReadSetting("Auto Start");
-        //    var tosifi = Config.ReadSetting("Tosifi System");
-
-        //    if (login == "true")
-        //        btnchkLogin.Checked = true;
-        //    if (startup == "true")
-        //        chkAutoStart.Checked = true;
-        //    if (tosifi == "true")
-        //        chkTisifiSystem.Checked = true;
-        //}
+      
 
         //Load Student
         private void LoadStudent()
@@ -302,8 +290,6 @@ namespace ClassSRM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Todo: Move Config
-            //CheckConfig();
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = Convert.ToInt32(Config.ReadSetting("Default School"));
             LoadStudent();
@@ -313,6 +299,39 @@ namespace ClassSRM
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnSettings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new Settings().ShowDialog();
+        }
+
+        private void btnBackup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new Backup().ShowDialog();
+        }
+
+        private void btnDeveloper_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Splash.isAbout = true;
+            try
+            {
+                SplashScreenManager.CloseForm();
+            }
+            catch { }
+            SplashScreenManager.ShowForm(typeof(Splash));
+        }
+
+        private void btnLic_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraMessageBox.Show("کاربر عزیز،شما می توانید جهت حمایت از برنامه نویس این نرم افزار و پیشرفت بیشتر این برنامه\n با پرداخت مبالغ دلخواه از این برنامه حمایت کنید.با حمایت های شما تیم توسعه دلگرم شده و\n ویژگی های بیشتر و بهتری را به ارمغان خواهد آورد.", "حمایت مالی", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            System.Diagnostics.Process.Start("http://ipfile.ir/donation");
+        }
+
+        private void btnGit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            XtraMessageBox.Show("در گیت هاب میتوانید پروژه های رایگان و متن باز دیگر ما را مشاهده کنید و در صورت داشتن توانایی، در توسعه بیشتر نرم افزار ها به ما کمک کنید.", "پروژه های توسعه دهنده", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            System.Diagnostics.Process.Start("https://github.com/ghost1372");
         }
 
         //Draw Persian Holiday to Calendar
@@ -337,7 +356,6 @@ namespace ClassSRM
 
             DateTime dt = e.Date;
             var day = Config.PersianDate(dt).Substring(8, 2);
-
             e.Graphics.DrawString(day, e.Style.Font, brush, e.Bounds, strFormat);
             e.Handled = true;
         }
