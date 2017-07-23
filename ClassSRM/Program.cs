@@ -33,7 +33,7 @@ namespace ClassSRM
 
                 BonusSkins.Register();
                 SkinManager.EnableFormSkins();
-                UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
+                UserLookAndFeel.Default.SetSkinStyle(Config.ReadSetting("Skin"));
                 var fontFamily = Config.ReadSetting("FontFamily");
                 int fontSize =Convert.ToInt32(Config.ReadSetting("FontSize"));
                 try
