@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using System.Xml.Linq;
 
 namespace ClassSRM.Forms
 {
@@ -22,6 +23,7 @@ namespace ClassSRM.Forms
 
         private void PointActivity_Load(object sender, EventArgs e)
         {
+            getAllItemsName();
             if (Config.ReadSetting("ActivityPoint").Equals("Free"))
                 rd.SelectedIndex = 0;
             else
@@ -69,25 +71,7 @@ namespace ClassSRM.Forms
                 }
                 else
                 {
-                    var val = 0;
-                    switch (cmbScore.SelectedIndex)
-                     {
-                            case 0:
-                                val = 1;
-                                break;
-
-                            case 1:
-                                val = 1;
-                                break;
-
-                            case 2:
-                                val = 2;
-                                break;
-
-                            case 3:
-                                val = 1;
-                                break;
-                    }
+                    int val = getValeofItem(cmbScore.Text);
                      dc.InsertActPoint((int)cmbStudent.EditValue, val, txtDate.Text, txtDesc.Text);
                     XtraMessageBox.Show("امتیاز موردنظر با موفقیت ثبت شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -171,6 +155,31 @@ namespace ClassSRM.Forms
         private void cmbScore_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtDesc.Text = cmbScore.Text;
+        }
+
+        private void getAllItemsName()
+        {
+            XDocument doc = XDocument.Load("Activity.xml");
+            var items = doc
+                .Element(XName.Get("Activity"))
+                .Elements(XName.Get("ActivityPoint"));
+            var itemName = items.Select(ele => ele.Element(XName.Get("Name")).Value);
+            foreach (string name in itemName)
+            {
+                cmbScore.Properties.Items.Add(name);
+            }
+            cmbScore.SelectedIndex = 0;
+        }
+        private int getValeofItem(string itemName)
+        {
+            XDocument doc = XDocument.Load("Activity.xml");
+            var values = doc.Descendants("ActivityPoint")
+                .Where(i => i.Element("Name").Value == itemName)
+                .Select(i => i.Element("Value").Value).FirstOrDefault();
+            if (values != null)
+                return Convert.ToInt32(values);
+            else
+                return 0;
         }
     }
 }

@@ -31,64 +31,64 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PointActivity));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.cmbStudent = new DevExpress.XtraEditors.LookUpEdit();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtScore = new DevExpress.XtraEditors.SpinEdit();
-            this.lyScore = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtDate = new FarsiLibrary.Win.DevExpress.XtraFADateEdit();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtDesc = new DevExpress.XtraEditors.MemoEdit();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cmbScore = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.rd = new DevExpress.XtraEditors.RadioGroup();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtDesc = new DevExpress.XtraEditors.MemoEdit();
+            this.txtDate = new FarsiLibrary.Win.DevExpress.XtraFADateEdit();
+            this.txtScore = new DevExpress.XtraEditors.SpinEdit();
+            this.cmbStudent = new DevExpress.XtraEditors.LookUpEdit();
             this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
+            this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lyScore = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem5 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem7 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.rd = new DevExpress.XtraEditors.RadioGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.cmbScore = new DevExpress.XtraEditors.ComboBoxEdit();
             this.lyScore2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.lblCurScore = new DevExpress.XtraLayout.SimpleLabelItem();
             this.simpleLabelItem2 = new DevExpress.XtraLayout.SimpleLabelItem();
+            this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbStudent.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtScore.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lyScore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbScore.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDesc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtScore.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbStudent.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lyScore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDesc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbScore.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lyScore2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCurScore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
             this.SuspendLayout();
@@ -112,6 +112,134 @@
             this.layoutControl1.Size = new System.Drawing.Size(339, 401);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // cmbScore
+            // 
+            this.cmbScore.EditValue = "انجام تکالیف (1 امتیاز)";
+            this.cmbScore.Location = new System.Drawing.Point(12, 164);
+            this.cmbScore.Name = "cmbScore";
+            this.cmbScore.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbScore.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbScore.Size = new System.Drawing.Size(249, 20);
+            this.cmbScore.StyleController = this.layoutControl1;
+            this.cmbScore.TabIndex = 12;
+            this.cmbScore.SelectedIndexChanged += new System.EventHandler(this.cmbScore_SelectedIndexChanged);
+            // 
+            // rd
+            // 
+            this.rd.Location = new System.Drawing.Point(12, 111);
+            this.rd.Name = "rd";
+            this.rd.Properties.AllowFocused = false;
+            this.rd.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.rd.Properties.Appearance.Options.UseBackColor = true;
+            this.rd.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "امتیاز آزاد"),
+            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "امتیاز پیشفرض")});
+            this.rd.Size = new System.Drawing.Size(315, 25);
+            this.rd.StyleController = this.layoutControl1;
+            this.rd.TabIndex = 11;
+            this.rd.SelectedIndexChanged += new System.EventHandler(this.rd_SelectedIndexChanged);
+            // 
+            // btnSave
+            // 
+            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSave.ImageOptions.SvgImage")));
+            this.btnSave.Location = new System.Drawing.Point(12, 351);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(315, 38);
+            this.btnSave.StyleController = this.layoutControl1;
+            this.btnSave.TabIndex = 10;
+            this.btnSave.Text = "ثبت و ذخیره";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Location = new System.Drawing.Point(12, 232);
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(249, 105);
+            this.txtDesc.StyleController = this.layoutControl1;
+            this.txtDesc.TabIndex = 9;
+            // 
+            // txtDate
+            // 
+            this.txtDate.EditValue = new System.DateTime(2017, 7, 24, 13, 34, 13, 0);
+            this.txtDate.Location = new System.Drawing.Point(12, 198);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
+            this.txtDate.Size = new System.Drawing.Size(249, 20);
+            this.txtDate.StyleController = this.layoutControl1;
+            this.txtDate.TabIndex = 8;
+            this.txtDate.UpdateSelectionWhenNavigating = true;
+            // 
+            // txtScore
+            // 
+            this.txtScore.EditValue = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.txtScore.Location = new System.Drawing.Point(12, 140);
+            this.txtScore.Name = "txtScore";
+            this.txtScore.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtScore.Properties.Mask.EditMask = "n0";
+            this.txtScore.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtScore.Size = new System.Drawing.Size(249, 20);
+            this.txtScore.StyleController = this.layoutControl1;
+            this.txtScore.TabIndex = 7;
+            // 
+            // cmbStudent
+            // 
+            this.cmbStudent.Location = new System.Drawing.Point(12, 46);
+            this.cmbStudent.Name = "cmbStudent";
+            this.cmbStudent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbStudent.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 33, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuClassId", "Stu Class Id", 67, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuName", "نام", 56, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuLName", "نام خانوادگی", 61, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuFName", "نام پدر", 62, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            this.cmbStudent.Properties.DataSource = this.tblStudentBindingSource;
+            this.cmbStudent.Properties.DisplayMember = "StuName";
+            this.cmbStudent.Properties.NullText = "دانش آموز را انتخاب کنید";
+            this.cmbStudent.Properties.ValueMember = "Id";
+            this.cmbStudent.Size = new System.Drawing.Size(249, 20);
+            this.cmbStudent.StyleController = this.layoutControl1;
+            this.cmbStudent.TabIndex = 5;
+            this.cmbStudent.EditValueChanged += new System.EventHandler(this.cmbStudent_EditValueChanged);
+            // 
+            // tblStudentBindingSource
+            // 
+            this.tblStudentBindingSource.DataSource = typeof(ClassSRM.tbl_Student);
+            // 
+            // cmbClass
+            // 
+            this.cmbClass.Location = new System.Drawing.Point(12, 12);
+            this.cmbClass.Name = "cmbClass";
+            this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbClass.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 33, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchName", "مدرسه", 57, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchClass", "کلاس/پایه", 55, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchDate", "سال تحصیلی", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            this.cmbClass.Properties.DataSource = this.tblSchoolBindingSource;
+            this.cmbClass.Properties.DisplayMember = "SchClass";
+            this.cmbClass.Properties.NullText = "مدرسه را انتخاب کنید";
+            this.cmbClass.Properties.ValueMember = "Id";
+            this.cmbClass.Size = new System.Drawing.Size(249, 20);
+            this.cmbClass.StyleController = this.layoutControl1;
+            this.cmbClass.TabIndex = 4;
+            this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
+            // 
+            // tblSchoolBindingSource
+            // 
+            this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
             // 
             // layoutControlGroup1
             // 
@@ -141,26 +269,6 @@
             this.layoutControlGroup1.Size = new System.Drawing.Size(339, 401);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // cmbClass
-            // 
-            this.cmbClass.Location = new System.Drawing.Point(12, 12);
-            this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbClass.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 33, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchName", "مدرسه", 57, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchClass", "کلاس/پایه", 55, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchDate", "سال تحصیلی", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
-            this.cmbClass.Properties.DataSource = this.tblSchoolBindingSource;
-            this.cmbClass.Properties.DisplayMember = "SchClass";
-            this.cmbClass.Properties.NullText = "مدرسه را انتخاب کنید";
-            this.cmbClass.Properties.ValueMember = "Id";
-            this.cmbClass.Size = new System.Drawing.Size(249, 20);
-            this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 4;
-            this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.cmbClass;
@@ -169,27 +277,6 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(319, 24);
             this.layoutControlItem1.Text = "مدرسه/کلاس";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
-            // 
-            // cmbStudent
-            // 
-            this.cmbStudent.Location = new System.Drawing.Point(12, 46);
-            this.cmbStudent.Name = "cmbStudent";
-            this.cmbStudent.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbStudent.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 33, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuClassId", "Stu Class Id", 67, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuName", "نام", 56, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuLName", "نام خانوادگی", 61, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("StuFName", "نام پدر", 62, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
-            this.cmbStudent.Properties.DataSource = this.tblStudentBindingSource;
-            this.cmbStudent.Properties.DisplayMember = "StuName";
-            this.cmbStudent.Properties.NullText = "دانش آموز را انتخاب کنید";
-            this.cmbStudent.Properties.ValueMember = "Id";
-            this.cmbStudent.Size = new System.Drawing.Size(249, 20);
-            this.cmbStudent.StyleController = this.layoutControl1;
-            this.cmbStudent.TabIndex = 5;
-            this.cmbStudent.EditValueChanged += new System.EventHandler(this.cmbStudent_EditValueChanged);
             // 
             // layoutControlItem2
             // 
@@ -200,23 +287,6 @@
             this.layoutControlItem2.Text = "دانش آموز";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 13);
             // 
-            // txtScore
-            // 
-            this.txtScore.EditValue = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.txtScore.Location = new System.Drawing.Point(12, 140);
-            this.txtScore.Name = "txtScore";
-            this.txtScore.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtScore.Properties.Mask.EditMask = "n0";
-            this.txtScore.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtScore.Size = new System.Drawing.Size(249, 20);
-            this.txtScore.StyleController = this.layoutControl1;
-            this.txtScore.TabIndex = 7;
-            // 
             // lyScore
             // 
             this.lyScore.Control = this.txtScore;
@@ -225,21 +295,6 @@
             this.lyScore.Size = new System.Drawing.Size(319, 24);
             this.lyScore.Text = "امتیاز";
             this.lyScore.TextSize = new System.Drawing.Size(63, 13);
-            // 
-            // txtDate
-            // 
-            this.txtDate.EditValue = new System.DateTime(2017, 7, 24, 13, 34, 13, 0);
-            this.txtDate.Location = new System.Drawing.Point(12, 198);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
-            this.txtDate.Size = new System.Drawing.Size(249, 20);
-            this.txtDate.StyleController = this.layoutControl1;
-            this.txtDate.TabIndex = 8;
-            this.txtDate.UpdateSelectionWhenNavigating = true;
             // 
             // layoutControlItem5
             // 
@@ -250,14 +305,6 @@
             this.layoutControlItem5.Text = "تاریخ";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(63, 13);
             // 
-            // txtDesc
-            // 
-            this.txtDesc.Location = new System.Drawing.Point(12, 232);
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.Size = new System.Drawing.Size(249, 105);
-            this.txtDesc.StyleController = this.layoutControl1;
-            this.txtDesc.TabIndex = 9;
-            // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.txtDesc;
@@ -267,17 +314,6 @@
             this.layoutControlItem6.Text = "توضیحات";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(63, 13);
             // 
-            // btnSave
-            // 
-            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSave.ImageOptions.SvgImage")));
-            this.btnSave.Location = new System.Drawing.Point(12, 351);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(315, 38);
-            this.btnSave.StyleController = this.layoutControl1;
-            this.btnSave.TabIndex = 10;
-            this.btnSave.Text = "ثبت و ذخیره";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.btnSave;
@@ -286,14 +322,6 @@
             this.layoutControlItem7.Size = new System.Drawing.Size(319, 42);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
-            // 
-            // tblSchoolBindingSource
-            // 
-            this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
-            // 
-            // tblStudentBindingSource
-            // 
-            this.tblStudentBindingSource.DataSource = typeof(ClassSRM.tbl_Student);
             // 
             // emptySpaceItem2
             // 
@@ -310,14 +338,6 @@
             this.emptySpaceItem3.Name = "emptySpaceItem3";
             this.emptySpaceItem3.Size = new System.Drawing.Size(319, 10);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // emptySpaceItem4
-            // 
-            this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(198, 68);
-            this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(10, 21);
-            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem5
             // 
@@ -343,21 +363,6 @@
             this.emptySpaceItem7.Size = new System.Drawing.Size(319, 10);
             this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // rd
-            // 
-            this.rd.Location = new System.Drawing.Point(12, 111);
-            this.rd.Name = "rd";
-            this.rd.Properties.AllowFocused = false;
-            this.rd.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.rd.Properties.Appearance.Options.UseBackColor = true;
-            this.rd.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "امتیاز آزاد"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "امتیاز پیشفرض")});
-            this.rd.Size = new System.Drawing.Size(315, 25);
-            this.rd.StyleController = this.layoutControl1;
-            this.rd.TabIndex = 11;
-            this.rd.SelectedIndexChanged += new System.EventHandler(this.rd_SelectedIndexChanged);
-            // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.rd;
@@ -366,24 +371,6 @@
             this.layoutControlItem8.Size = new System.Drawing.Size(319, 29);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
-            // 
-            // cmbScore
-            // 
-            this.cmbScore.EditValue = "انجام تکالیف (1 امتیاز)";
-            this.cmbScore.Location = new System.Drawing.Point(12, 164);
-            this.cmbScore.Name = "cmbScore";
-            this.cmbScore.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbScore.Properties.Items.AddRange(new object[] {
-            "انجام تکالیف (1 امتیاز)",
-            "نظم کلاسی (1 امتیاز)",
-            "مشارکت در کلاس (2 امتیاز)",
-            "همکاری با دوستان (1 امتیاز)"});
-            this.cmbScore.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbScore.Size = new System.Drawing.Size(249, 20);
-            this.cmbScore.StyleController = this.layoutControl1;
-            this.cmbScore.TabIndex = 12;
-            this.cmbScore.SelectedIndexChanged += new System.EventHandler(this.cmbScore_SelectedIndexChanged);
             // 
             // lyScore2
             // 
@@ -415,6 +402,14 @@
             this.simpleLabelItem2.Size = new System.Drawing.Size(111, 21);
             this.simpleLabelItem2.Text = "امتیاز فعلی";
             this.simpleLabelItem2.TextSize = new System.Drawing.Size(63, 13);
+            // 
+            // emptySpaceItem4
+            // 
+            this.emptySpaceItem4.AllowHotTrack = false;
+            this.emptySpaceItem4.Location = new System.Drawing.Point(198, 68);
+            this.emptySpaceItem4.Name = "emptySpaceItem4";
+            this.emptySpaceItem4.Size = new System.Drawing.Size(10, 21);
+            this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem1
             // 
@@ -451,33 +446,33 @@
             this.Load += new System.EventHandler(this.PointActivity_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbStudent.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtScore.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lyScore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbScore.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDesc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtScore.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbStudent.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lyScore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDesc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbScore.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lyScore2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblCurScore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
             this.ResumeLayout(false);
