@@ -173,6 +173,12 @@
     <Compile Include="Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PointBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PointBook.Designer.cs">
+      <DependentUpon>PointBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\KanbanTask.resx">
       <DependentUpon>KanbanTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PointBook.resx">
+      <DependentUpon>PointBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>

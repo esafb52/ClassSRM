@@ -1090,6 +1090,7 @@
             this.btnBookEva.Id = 4;
             this.btnBookEva.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBookEva.ImageOptions.SvgImage")));
             this.btnBookEva.Name = "btnBookEva";
+            this.btnBookEva.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBookEva_ItemClick);
             // 
             // btnActPoint
             // 

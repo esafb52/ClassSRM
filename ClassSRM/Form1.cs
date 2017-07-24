@@ -393,6 +393,11 @@ namespace ClassSRM
             new DailyCheck().ShowDialog();
         }
 
+        private void btnBookEva_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new PointBook().ShowDialog();
+        }
+
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
         {

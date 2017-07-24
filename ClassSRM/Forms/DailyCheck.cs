@@ -78,7 +78,6 @@ namespace ClassSRM.Forms
 
         private void btnActive_Click(object sender, EventArgs e)
         {
-            var dc = new ClassSRMDataContext();
             dc.InsertCheck((int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id"), true, strDate);
             gridView1.DeleteSelectedRows();
             gridView1.SelectRow(0);
