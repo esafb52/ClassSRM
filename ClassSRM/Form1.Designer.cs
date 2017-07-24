@@ -1098,6 +1098,7 @@
             this.btnActPoint.Id = 5;
             this.btnActPoint.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnActPoint.ImageOptions.SvgImage")));
             this.btnActPoint.Name = "btnActPoint";
+            this.btnActPoint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnActPoint_ItemClick);
             // 
             // btnQuastion
             // 
@@ -1286,13 +1287,14 @@
             // 
             // ribbonPageGroup9
             // 
+            this.ribbonPageGroup9.AllowTextClipping = false;
             this.ribbonPageGroup9.ItemLinks.Add(this.btnBackup);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "پشتیبان گیری از اطلاعات";
             // 
             // btnBackup
             // 
-            this.btnBackup.Caption = "پشتیبان گیری";
+            this.btnBackup.Caption = "پشتیبان گیری        ";
             this.btnBackup.Id = 23;
             this.btnBackup.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBackup.ImageOptions.SvgImage")));
             this.btnBackup.Name = "btnBackup";
@@ -1300,6 +1302,7 @@
             // 
             // ribbonPageGroup10
             // 
+            this.ribbonPageGroup10.AllowTextClipping = false;
             this.ribbonPageGroup10.ItemLinks.Add(this.sRGB);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "پوسته برنامه";
@@ -2724,10 +2727,12 @@
             this.pCalendar.DateTime = new System.DateTime(2017, 7, 23, 0, 0, 0, 0);
             this.pCalendar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pCalendar.EditValue = new System.DateTime(2017, 7, 23, 0, 0, 0, 0);
+            this.pCalendar.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
             this.pCalendar.Location = new System.Drawing.Point(1026, 2);
             this.pCalendar.Name = "pCalendar";
             this.pCalendar.Size = new System.Drawing.Size(232, 156);
             this.pCalendar.TabIndex = 1;
+            this.pCalendar.UpdateSelectionWhenNavigating = true;
             this.pCalendar.CustomDrawDayNumberCell += new DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventHandler(this.pCalendar_CustomDrawDayNumberCell);
             // 
             // chartBarController1
