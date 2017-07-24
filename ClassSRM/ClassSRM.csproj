@@ -131,6 +131,12 @@
     <Compile Include="Forms\AddSchool.Designer.cs">
       <DependentUpon>AddSchool.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddTask.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,12 @@
     </Compile>
     <Compile Include="Forms\Backup.Designer.cs">
       <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DailyCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DailyCheck.Designer.cs">
+      <DependentUpon>DailyCheck.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Letter.cs">
       <SubType>Form</SubType>
@@ -167,6 +179,12 @@
     <Compile Include="Forms\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserAcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserAcount.Designer.cs">
+      <DependentUpon>UserAcount.cs</DependentUpon>
+    </Compile>
     <Compile Include="History.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,11 +208,17 @@
     <EmbeddedResource Include="Forms\AddSchool.resx">
       <DependentUpon>AddSchool.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddTask.resx">
       <DependentUpon>AddTask.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyCheck.resx">
+      <DependentUpon>DailyCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Letter.resx">
       <DependentUpon>Letter.cs</DependentUpon>
@@ -204,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserAcount.resx">
+      <DependentUpon>UserAcount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="History.resx">
       <DependentUpon>History.cs</DependentUpon>

@@ -249,6 +249,7 @@
             this.colStuName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStuLName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStuImage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
@@ -373,6 +374,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
@@ -1047,6 +1049,7 @@
             this.btnAddUser.Id = 21;
             this.btnAddUser.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddUser.ImageOptions.SvgImage")));
             this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddUser_ItemClick);
             // 
             // btnAddSchool
             // 
@@ -1062,6 +1065,7 @@
             this.btnAddStudent.Id = 2;
             this.btnAddStudent.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAddStudent.ImageOptions.SvgImage")));
             this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddStudent_ItemClick);
             // 
             // ribbonPageGroup2
             // 
@@ -1078,6 +1082,7 @@
             this.btnDailyCheck.Id = 3;
             this.btnDailyCheck.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDailyCheck.ImageOptions.SvgImage")));
             this.btnDailyCheck.Name = "btnDailyCheck";
+            this.btnDailyCheck.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDailyCheck_ItemClick);
             // 
             // btnBookEva
             // 
@@ -1420,7 +1425,7 @@
             // 
             this.dockPanel1_Container.Controls.Add(this.gridControl1);
             this.dockPanel1_Container.Controls.Add(this.panelControl5);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 23);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(5, 23);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
             this.dockPanel1_Container.Size = new System.Drawing.Size(408, 700);
             this.dockPanel1_Container.TabIndex = 0;
@@ -1433,6 +1438,8 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.MenuManager = this.ribbonControl1;
             this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemPictureEdit1});
             this.gridControl1.Size = new System.Drawing.Size(408, 660);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -1454,9 +1461,10 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsImageLoad.DesiredThumbnailSize = new System.Drawing.Size(150, 150);
+            this.gridView1.OptionsImageLoad.DesiredThumbnailSize = new System.Drawing.Size(60, 60);
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.RowHeight = 60;
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // colId
@@ -1488,10 +1496,17 @@
             // colStuImage
             // 
             this.colStuImage.Caption = "عکس";
+            this.colStuImage.ColumnEdit = this.repositoryItemPictureEdit1;
             this.colStuImage.FieldName = "StuImage";
             this.colStuImage.Name = "colStuImage";
             this.colStuImage.Visible = true;
             this.colStuImage.VisibleIndex = 2;
+            // 
+            // repositoryItemPictureEdit1
+            // 
+            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
+            this.repositoryItemPictureEdit1.OptionsMask.MaskType = DevExpress.XtraEditors.Controls.PictureEditMaskType.Circle;
+            this.repositoryItemPictureEdit1.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             // 
             // panelControl5
             // 
@@ -1566,9 +1581,8 @@
             this.imgStudent.Properties.NullText = "بدون عکس";
             this.imgStudent.Properties.OptionsMask.MaskType = DevExpress.XtraEditors.Controls.PictureEditMaskType.Circle;
             this.imgStudent.Properties.ReadOnly = true;
-            this.imgStudent.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.imgStudent.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.imgStudent.Size = new System.Drawing.Size(226, 201);
+            this.imgStudent.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.imgStudent.Size = new System.Drawing.Size(208, 201);
             this.imgStudent.TabIndex = 5;
             // 
             // gaugeControl5
@@ -2785,6 +2799,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
             this.panelControl5.PerformLayout();
@@ -3104,6 +3119,7 @@
         private DevExpress.XtraCharts.UI.ChartPrintExportRibbonPageGroup chartPrintExportRibbonPageGroup1;
         private DevExpress.XtraCharts.UI.ChartBarController chartBarController1;
         private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerRight;
+        private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
     }
 }
 
