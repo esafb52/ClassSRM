@@ -177,6 +177,12 @@
     <Compile Include="Forms\DailyCheck.Designer.cs">
       <DependentUpon>DailyCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\EditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditAccount.Designer.cs">
+      <DependentUpon>EditAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Gifts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +224,12 @@
     </Compile>
     <Compile Include="Forms\Process.Designer.cs">
       <DependentUpon>Process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Schoollist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Schoollist.Designer.cs">
+      <DependentUpon>Schoollist.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Settings.cs">
       <SubType>Form</SubType>
@@ -281,6 +293,9 @@
     <EmbeddedResource Include="Forms\DailyCheck.resx">
       <DependentUpon>DailyCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditAccount.resx">
+      <DependentUpon>EditAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Gifts.resx">
       <DependentUpon>Gifts.cs</DependentUpon>
     </EmbeddedResource>
@@ -298,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Process.resx">
       <DependentUpon>Process.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Schoollist.resx">
+      <DependentUpon>Schoollist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
@@ -348,6 +366,7 @@
     <None Include="Properties\DataSources\tbl_EvaPoint.datasource" />
     <None Include="Properties\DataSources\tbl_School.datasource" />
     <None Include="Properties\DataSources\tbl_Student.datasource" />
+    <None Include="Properties\DataSources\tbl_User.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

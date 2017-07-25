@@ -1217,6 +1217,7 @@
             this.btnEditUser.Id = 22;
             this.btnEditUser.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnEditUser.ImageOptions.SvgImage")));
             this.btnEditUser.Name = "btnEditUser";
+            this.btnEditUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEditUser_ItemClick);
             // 
             // btnSchoolList
             // 
@@ -1224,6 +1225,7 @@
             this.btnSchoolList.Id = 14;
             this.btnSchoolList.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSchoolList.ImageOptions.SvgImage")));
             this.btnSchoolList.Name = "btnSchoolList";
+            this.btnSchoolList.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSchoolList_ItemClick);
             // 
             // btnStudentList
             // 
