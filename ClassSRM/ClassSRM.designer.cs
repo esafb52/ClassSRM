@@ -166,6 +166,14 @@ namespace ClassSRM
 			}
 		}
 		
+		public System.Data.Linq.Table<SumAE> SumAEs
+		{
+			get
+			{
+				return this.GetTable<SumAE>();
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectSumEvaDate")]
 		public ISingleResult<SelectSumEvaDateResult> SelectSumEvaDate([global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date1", DbType="NVarChar(12)")] string date1, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date2", DbType="NVarChar(12)")] string date2)
 		{
@@ -1763,6 +1771,87 @@ namespace ClassSRM
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.SumAE")]
+	public sealed partial class SumAE
+	{
+		
+		private System.Nullable<int> _StudentId;
+		
+		private System.Nullable<int> _StuClassId;
+		
+		private int _HighScoreUser;
+		
+		private string _StudentName;
+		
+		public SumAE()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
+		public System.Nullable<int> StudentId
+		{
+			get
+			{
+				return this._StudentId;
+			}
+			set
+			{
+				if ((this._StudentId != value))
+				{
+					this._StudentId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuClassId", DbType="Int")]
+		public System.Nullable<int> StuClassId
+		{
+			get
+			{
+				return this._StuClassId;
+			}
+			set
+			{
+				if ((this._StuClassId != value))
+				{
+					this._StuClassId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HighScoreUser", DbType="Int NOT NULL")]
+		public int HighScoreUser
+		{
+			get
+			{
+				return this._HighScoreUser;
+			}
+			set
+			{
+				if ((this._HighScoreUser != value))
+				{
+					this._HighScoreUser = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentName", DbType="NVarChar(304) NOT NULL", CanBeNull=false)]
+		public string StudentName
+		{
+			get
+			{
+				return this._StudentName;
+			}
+			set
+			{
+				if ((this._StudentName != value))
+				{
+					this._StudentName = value;
+				}
 			}
 		}
 	}

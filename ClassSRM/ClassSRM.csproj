@@ -159,6 +159,18 @@
     <Compile Include="Forms\Backup.Designer.cs">
       <DependentUpon>Backup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Compare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Compare.Designer.cs">
+      <DependentUpon>Compare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompareBarChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompareBarChart.Designer.cs">
+      <DependentUpon>CompareBarChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DailyCheck.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,6 +272,12 @@
     <EmbeddedResource Include="Forms\Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Compare.resx">
+      <DependentUpon>Compare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompareBarChart.resx">
+      <DependentUpon>CompareBarChart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DailyCheck.resx">
       <DependentUpon>DailyCheck.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +343,7 @@
       <LastGenOutput>ClassSRM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\DataSources\SumAE.datasource" />
     <None Include="Properties\DataSources\SumEva.datasource" />
     <None Include="Properties\DataSources\tbl_EvaPoint.datasource" />
     <None Include="Properties\DataSources\tbl_School.datasource" />

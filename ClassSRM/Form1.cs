@@ -423,6 +423,16 @@ namespace ClassSRM
             new Process().ShowDialog();
         }
 
+        private void btnCompare_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new Compare().ShowDialog();
+        }
+
+        private void btnStuChart_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new CompareBarChart().ShowDialog();
+        }
+
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
         {

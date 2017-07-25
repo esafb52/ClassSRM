@@ -1184,6 +1184,7 @@
             this.btnCompare.Id = 12;
             this.btnCompare.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCompare.ImageOptions.SvgImage")));
             this.btnCompare.Name = "btnCompare";
+            this.btnCompare.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCompare_ItemClick);
             // 
             // btnStuChart
             // 
@@ -1191,6 +1192,7 @@
             this.btnStuChart.Id = 13;
             this.btnStuChart.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnStuChart.ImageOptions.SvgImage")));
             this.btnStuChart.Name = "btnStuChart";
+            this.btnStuChart.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnStuChart_ItemClick);
             // 
             // ribbonPage3
             // 

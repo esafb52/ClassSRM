@@ -91,6 +91,14 @@
       <Column Name="Book" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.SumAE" Member="SumAEs">
+    <Type Name="SumAE" Modifier="Sealed">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StuClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HighScoreUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StudentName" Type="System.String" DbType="NVarChar(304) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
   <Function Name="dbo.SelectSumEvaDate" Method="SelectSumEvaDate">
     <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
     <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
