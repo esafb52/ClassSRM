@@ -216,4 +216,19 @@
       <Column Name="HighScoreUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.SelectGifts" Method="SelectGifts">
+    <Parameter Name="SchoolId" Parameter="schoolId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DateMinCur" Parameter="dateMinCur" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="DateMaxCur" Parameter="dateMaxCur" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="DateMinPrev" Parameter="dateMinPrev" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="DateMaxPrev" Parameter="dateMaxPrev" Type="System.String" DbType="NVarChar(12)" />
+    <ElementType Name="SelectGiftsResult">
+      <Column Name="HaveGift" Type="System.String" DbType="NVarChar(22) NOT NULL" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuImage" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

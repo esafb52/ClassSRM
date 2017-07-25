@@ -408,6 +408,21 @@ namespace ClassSRM
             new Ask().ShowDialog();
         }
 
+        private void btnTop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new TopStudent().ShowDialog();
+        }
+
+        private void btnGifts_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new Gifts().ShowDialog();
+        }
+
+        private void btnProccess_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new Process().ShowDialog();
+        }
+
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
         {

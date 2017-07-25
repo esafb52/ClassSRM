@@ -70,7 +70,49 @@ namespace ClassSRM
             }
         }
 
-#region "Sql Script Execute"
+        public static void ExportPdf(DevExpress.XtraGrid.GridControl grid,string date)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.DefaultExt = "PDF";
+            saveFileDialog1.FileName = "Exported Data" + date.Replace("/", "_");
+            saveFileDialog1.Filter = @"PDF (*.pdf) |*.PDF|All files(*.*) |*.*";
+            saveFileDialog1.FilterIndex = 1;
+            saveFileDialog1.OverwritePrompt = true;
+            saveFileDialog1.Title = "PDF File";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                DevExpress.XtraGrid.Views.Grid.GridView View = grid.MainView
+                as DevExpress.XtraGrid.Views.Grid.GridView;
+                if (View != null)
+                {
+                    View.OptionsPrint.ExpandAllDetails = true;
+                    View.ExportToPdf(saveFileDialog1.FileName);
+                }
+            }
+
+        }
+        public static void ExportPdf(DevExpress.XtraGrid.GridControl grid)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.DefaultExt = "PDF";
+            saveFileDialog1.FileName = "Exported Data";
+            saveFileDialog1.Filter = @"PDF (*.pdf) |*.PDF|All files(*.*) |*.*";
+            saveFileDialog1.FilterIndex = 1;
+            saveFileDialog1.OverwritePrompt = true;
+            saveFileDialog1.Title = "PDF File";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                DevExpress.XtraGrid.Views.Grid.GridView View = grid.MainView
+                as DevExpress.XtraGrid.Views.Grid.GridView;
+                if (View != null)
+                {
+                    View.OptionsPrint.ExpandAllDetails = true;
+                    View.ExportToPdf(saveFileDialog1.FileName);
+                }
+            }
+
+        }
+        #region "Sql Script Execute"
 
         //Script Path
         public static string path = AppDomain.CurrentDomain.BaseDirectory +

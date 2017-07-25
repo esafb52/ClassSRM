@@ -1152,6 +1152,7 @@
             this.btnTop.Id = 9;
             this.btnTop.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTop.ImageOptions.SvgImage")));
             this.btnTop.Name = "btnTop";
+            this.btnTop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTop_ItemClick);
             // 
             // btnGifts
             // 
@@ -1159,6 +1160,7 @@
             this.btnGifts.Id = 10;
             this.btnGifts.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGifts.ImageOptions.SvgImage")));
             this.btnGifts.Name = "btnGifts";
+            this.btnGifts.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGifts_ItemClick);
             // 
             // ribbonPageGroup5
             // 
@@ -1174,6 +1176,7 @@
             this.btnProccess.Id = 11;
             this.btnProccess.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnProccess.ImageOptions.SvgImage")));
             this.btnProccess.Name = "btnProccess";
+            this.btnProccess.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProccess_ItemClick);
             // 
             // btnCompare
             // 

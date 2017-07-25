@@ -48,7 +48,7 @@ namespace ClassSRM.Forms
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-            ExportPdf(gridControl1);
+            Config.ExportPdf(gridControl1,txtDate.Text);
         }
 
         private void cmbClass2_EditValueChanged(object sender, EventArgs e)
@@ -58,27 +58,8 @@ namespace ClassSRM.Forms
 
         private void btnExport2_Click(object sender, EventArgs e)
         {
-            ExportPdf(gridControl2);
+            Config.ExportPdf(gridControl2,txtDate.Text);
         }
-        void ExportPdf(DevExpress.XtraGrid.GridControl grid)
-        {
-            saveFileDialog1.DefaultExt = "PDF";
-            saveFileDialog1.FileName = "Exported Data" + txtDate.Text.Replace("/", "_");
-            saveFileDialog1.Filter = @"PDF (*.pdf) |*.PDF|All files(*.*) |*.*";
-            saveFileDialog1.FilterIndex = 1;
-            saveFileDialog1.OverwritePrompt = true;
-            saveFileDialog1.Title = "PDF File";
-            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                DevExpress.XtraGrid.Views.Grid.GridView View = grid.MainView
-                as DevExpress.XtraGrid.Views.Grid.GridView;
-                if (View != null)
-                {
-                    View.OptionsPrint.ExpandAllDetails = true;
-                    View.ExportToPdf(saveFileDialog1.FileName);
-                }
-            }
-            
-        }
+       
     }
 }

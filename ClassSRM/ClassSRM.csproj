@@ -20,6 +20,7 @@
     <AssemblyFileVersionSettings>None.MonthStamp.Increment.None</AssemblyFileVersionSettings>
     <AssemblyInfoVersionSettings>None.MonthStamp.Increment.None</AssemblyInfoVersionSettings>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -32,7 +33,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -66,6 +66,7 @@
     <OutputPath>bin\x86\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="BehComponents">
       <HintPath>D:\Barnamenevisi\My Projects\Accountancy 2016\Dll\BehComponents.dll</HintPath>
     </Reference>
@@ -97,9 +98,12 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -161,6 +165,12 @@
     <Compile Include="Forms\DailyCheck.Designer.cs">
       <DependentUpon>DailyCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Gifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Gifts.Designer.cs">
+      <DependentUpon>Gifts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Letter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +200,12 @@
     </Compile>
     <Compile Include="Forms\PointBook.Designer.cs">
       <DependentUpon>PointBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Process.Designer.cs">
+      <DependentUpon>Process.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Settings.cs">
       <SubType>Form</SubType>
@@ -247,6 +263,9 @@
     <EmbeddedResource Include="Forms\DailyCheck.resx">
       <DependentUpon>DailyCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Gifts.resx">
+      <DependentUpon>Gifts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Letter.resx">
       <DependentUpon>Letter.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PointBook.resx">
       <DependentUpon>PointBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Process.resx">
+      <DependentUpon>Process.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
@@ -304,6 +326,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\DataSources\SumEva.datasource" />
+    <None Include="Properties\DataSources\tbl_EvaPoint.datasource" />
     <None Include="Properties\DataSources\tbl_School.datasource" />
     <None Include="Properties\DataSources\tbl_Student.datasource" />
     <None Include="Properties\Settings.settings">
