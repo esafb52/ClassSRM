@@ -1106,6 +1106,7 @@
             this.btnQuastion.Id = 6;
             this.btnQuastion.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnQuastion.ImageOptions.SvgImage")));
             this.btnQuastion.Name = "btnQuastion";
+            this.btnQuastion.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuastion_ItemClick);
             // 
             // ribbonPageGroup3
             // 

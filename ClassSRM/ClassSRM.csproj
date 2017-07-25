@@ -143,6 +143,12 @@
     <Compile Include="Forms\AddTask.Designer.cs">
       <DependentUpon>AddTask.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Ask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ask.Designer.cs">
+      <DependentUpon>Ask.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Backup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,12 @@
     <Compile Include="Forms\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TopStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TopStudent.Designer.cs">
+      <DependentUpon>TopStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserAcount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +238,9 @@
     <EmbeddedResource Include="Forms\AddTask.resx">
       <DependentUpon>AddTask.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ask.resx">
+      <DependentUpon>Ask.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Backup.resx">
       <DependentUpon>Backup.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TopStudent.resx">
+      <DependentUpon>TopStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserAcount.resx">
       <DependentUpon>UserAcount.cs</DependentUpon>

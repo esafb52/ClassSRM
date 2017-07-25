@@ -56,5 +56,11 @@
         <elementListCompartment Id="527c03c6-fa75-4396-84a4-a557c3ed81d5" absoluteBounds="7.14, 1.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="3eeb54be-013a-4c1b-9adc-ed676b20d903" absoluteBounds="6.5, 4.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ClassSRMDataContext/tbl_Quastion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ce06472-7b7c-4e8e-8e02-a590ea0466d0" absoluteBounds="6.515, 5.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

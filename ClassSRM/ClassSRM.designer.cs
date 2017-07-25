@@ -51,6 +51,9 @@ namespace ClassSRM
     partial void Inserttbl_Task(tbl_Task instance);
     partial void Updatetbl_Task(tbl_Task instance);
     partial void Deletetbl_Task(tbl_Task instance);
+    partial void Inserttbl_Quastion(tbl_Quastion instance);
+    partial void Updatetbl_Quastion(tbl_Quastion instance);
+    partial void Deletetbl_Quastion(tbl_Quastion instance);
     #endregion
 		
 		public ClassSRMDataContext() : 
@@ -155,6 +158,14 @@ namespace ClassSRM
 			}
 		}
 		
+		public System.Data.Linq.Table<tbl_Quastion> tbl_Quastions
+		{
+			get
+			{
+				return this.GetTable<tbl_Quastion>();
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectSumEvaDate")]
 		public ISingleResult<SelectSumEvaDateResult> SelectSumEvaDate([global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date1", DbType="NVarChar(12)")] string date1, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date2", DbType="NVarChar(12)")] string date2)
 		{
@@ -244,6 +255,34 @@ namespace ClassSRM
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), studentId, score, date, desc);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteAllQuastion")]
+		public int DeleteAllQuastion([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchId", DbType="Int")] System.Nullable<int> schId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schId);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AddQuastion")]
+		public int AddQuastion([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchId", DbType="Int")] System.Nullable<int> schId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StuId", DbType="Int")] System.Nullable<int> stuId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Book", DbType="NVarChar(50)")] string book)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schId, stuId, book);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectTopYear")]
+		public ISingleResult<SelectTopYearResult> SelectTopYear([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId);
+			return ((ISingleResult<SelectTopYearResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectTopMonth")]
+		public ISingleResult<SelectTopMonthResult> SelectTopMonth([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date1", DbType="NVarChar(12)")] string date1, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date2", DbType="NVarChar(12)")] string date2)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId, date1, date2);
+			return ((ISingleResult<SelectTopMonthResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1587,6 +1626,140 @@ namespace ClassSRM
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_Quastion")]
+	public sealed partial class tbl_Quastion : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<int> _SchId;
+		
+		private System.Nullable<int> _StudentId;
+		
+		private string _Book;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnSchIdChanging(System.Nullable<int> value);
+    partial void OnSchIdChanged();
+    partial void OnStudentIdChanging(System.Nullable<int> value);
+    partial void OnStudentIdChanged();
+    partial void OnBookChanging(string value);
+    partial void OnBookChanged();
+    #endregion
+		
+		public tbl_Quastion()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SchId", DbType="Int")]
+		public System.Nullable<int> SchId
+		{
+			get
+			{
+				return this._SchId;
+			}
+			set
+			{
+				if ((this._SchId != value))
+				{
+					this.OnSchIdChanging(value);
+					this.SendPropertyChanging();
+					this._SchId = value;
+					this.SendPropertyChanged("SchId");
+					this.OnSchIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
+		public System.Nullable<int> StudentId
+		{
+			get
+			{
+				return this._StudentId;
+			}
+			set
+			{
+				if ((this._StudentId != value))
+				{
+					this.OnStudentIdChanging(value);
+					this.SendPropertyChanging();
+					this._StudentId = value;
+					this.SendPropertyChanged("StudentId");
+					this.OnStudentIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Book", DbType="NVarChar(50)")]
+		public string Book
+		{
+			get
+			{
+				return this._Book;
+			}
+			set
+			{
+				if ((this._Book != value))
+				{
+					this.OnBookChanging(value);
+					this.SendPropertyChanging();
+					this._Book = value;
+					this.SendPropertyChanged("Book");
+					this.OnBookChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		private void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		private void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	public partial class SelectSumEvaDateResult
 	{
 		
@@ -1760,6 +1933,202 @@ namespace ClassSRM
 				if ((this._SchDate != value))
 				{
 					this._SchDate = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectTopYearResult
+	{
+		
+		private System.Nullable<int> _StudentId;
+		
+		private int _HighScoreUser;
+		
+		private string _StuName;
+		
+		private string _StuLName;
+		
+		private System.Data.Linq.Binary _StuImage;
+		
+		public SelectTopYearResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
+		public System.Nullable<int> StudentId
+		{
+			get
+			{
+				return this._StudentId;
+			}
+			set
+			{
+				if ((this._StudentId != value))
+				{
+					this._StudentId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HighScoreUser", DbType="Int NOT NULL")]
+		public int HighScoreUser
+		{
+			get
+			{
+				return this._HighScoreUser;
+			}
+			set
+			{
+				if ((this._HighScoreUser != value))
+				{
+					this._HighScoreUser = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
+		public string StuName
+		{
+			get
+			{
+				return this._StuName;
+			}
+			set
+			{
+				if ((this._StuName != value))
+				{
+					this._StuName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
+		public string StuLName
+		{
+			get
+			{
+				return this._StuLName;
+			}
+			set
+			{
+				if ((this._StuLName != value))
+				{
+					this._StuLName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuImage", DbType="Image")]
+		public System.Data.Linq.Binary StuImage
+		{
+			get
+			{
+				return this._StuImage;
+			}
+			set
+			{
+				if ((this._StuImage != value))
+				{
+					this._StuImage = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectTopMonthResult
+	{
+		
+		private System.Nullable<int> _StudentId;
+		
+		private string _StuName;
+		
+		private string _StuLName;
+		
+		private string _StuFName;
+		
+		private int _HighScoreUser;
+		
+		public SelectTopMonthResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
+		public System.Nullable<int> StudentId
+		{
+			get
+			{
+				return this._StudentId;
+			}
+			set
+			{
+				if ((this._StudentId != value))
+				{
+					this._StudentId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
+		public string StuName
+		{
+			get
+			{
+				return this._StuName;
+			}
+			set
+			{
+				if ((this._StuName != value))
+				{
+					this._StuName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
+		public string StuLName
+		{
+			get
+			{
+				return this._StuLName;
+			}
+			set
+			{
+				if ((this._StuLName != value))
+				{
+					this._StuLName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuFName", DbType="NVarChar(100)")]
+		public string StuFName
+		{
+			get
+			{
+				return this._StuFName;
+			}
+			set
+			{
+				if ((this._StuFName != value))
+				{
+					this._StuFName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HighScoreUser", DbType="Int NOT NULL")]
+		public int HighScoreUser
+		{
+			get
+			{
+				return this._HighScoreUser;
+			}
+			set
+			{
+				if ((this._HighScoreUser != value))
+				{
+					this._HighScoreUser = value;
 				}
 			}
 		}

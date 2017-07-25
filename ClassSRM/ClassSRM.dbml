@@ -83,6 +83,14 @@
       <Column Name="Label" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.tbl_Quastion" Member="tbl_Quastions">
+    <Type Name="tbl_Quastion" Modifier="Sealed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SchId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Book" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Function Name="dbo.SelectSumEvaDate" Method="SelectSumEvaDate">
     <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
     <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
@@ -175,5 +183,37 @@
     <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(12)" />
     <Parameter Name="Desc" Parameter="desc" Type="System.String" DbType="NVarChar(MAX)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteAllQuastion" Method="DeleteAllQuastion">
+    <Parameter Name="SchId" Parameter="schId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.AddQuastion" Method="AddQuastion">
+    <Parameter Name="SchId" Parameter="schId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StuId" Parameter="stuId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Book" Parameter="book" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SelectTopYear" Method="SelectTopYear">
+    <Parameter Name="SchoolId" Parameter="schoolId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectTopYearResult">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HighScoreUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuImage" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectTopMonth" Method="SelectTopMonth">
+    <Parameter Name="SchoolId" Parameter="schoolId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="Date2" Parameter="date2" Type="System.String" DbType="NVarChar(12)" />
+    <ElementType Name="SelectTopMonthResult">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="HighScoreUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
   </Function>
 </Database>

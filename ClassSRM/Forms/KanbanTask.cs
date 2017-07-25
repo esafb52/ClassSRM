@@ -174,7 +174,7 @@ namespace ClassSRM
 
         private void KanBanTask_Load(object sender, System.EventArgs e)
         {
-            InitData();
+            InitData();            
         }
     }
 }
