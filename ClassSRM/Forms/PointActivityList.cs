@@ -72,7 +72,7 @@ namespace ClassSRM.Forms
         {
                 if (e.Column.FieldName == "Score")
                     e.RepositoryItem = editorForEditing;
-            }
+        }
 
         private void btnDel_Click(object sender, EventArgs e)
         {

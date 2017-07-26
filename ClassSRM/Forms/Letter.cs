@@ -20,7 +20,6 @@ namespace ClassSRM
             var dc = new ClassSRMDataContext();
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
-            System.Windows.Forms.MessageBox.Show(tempPath + " ");
         }
         static object tempPath = System.IO.Path.GetTempPath();
 

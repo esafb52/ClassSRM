@@ -17,13 +17,11 @@ namespace ClassSRM.Forms
         ClassSRMDataContext dc = new ClassSRMDataContext();
 
         private PersianCalendar pc = new PersianCalendar();
-        private string strDate;
-
+        string strDate;
         public DailyCheck()
         {
             InitializeComponent();
-            strDate = pc.GetYear(DateTime.Now).ToString("0000") + "/" + pc.GetMonth(DateTime.Now).ToString("00") + "/" + pc.GetDayOfMonth(DateTime.Now).ToString("00");
-            lblDate.Text = "تاریخ امروز : " + dateTimePickerX1.Text + "          " + strDate;
+           strDate = pc.GetYear(DateTime.Now).ToString("0000") + "/" + pc.GetMonth(DateTime.Now).ToString("00") + "/" + pc.GetDayOfMonth(DateTime.Now).ToString("00");
         }
 
         private void DailyCheck_Load(object sender, EventArgs e)

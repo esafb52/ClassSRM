@@ -67,9 +67,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
-    <Reference Include="BehComponents">
-      <HintPath>D:\Barnamenevisi\My Projects\Accountancy 2016\Dll\BehComponents.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.BonusSkins.v17.1" />
     <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v17.1" />
@@ -231,6 +228,12 @@
     <Compile Include="Forms\PointBook.Designer.cs">
       <DependentUpon>PointBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PointBookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PointBookList.Designer.cs">
+      <DependentUpon>PointBookList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Process.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PointBook.resx">
       <DependentUpon>PointBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PointBookList.resx">
+      <DependentUpon>PointBookList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Process.resx">
       <DependentUpon>Process.cs</DependentUpon>

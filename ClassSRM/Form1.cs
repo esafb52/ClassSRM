@@ -458,6 +458,11 @@ namespace ClassSRM
             new PointActivityList().ShowDialog();
         }
 
+        private void btnEvaPointList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new PointBookList().ShowDialog();
+        }
+
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
         {

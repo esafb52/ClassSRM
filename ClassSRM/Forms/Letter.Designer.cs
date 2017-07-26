@@ -73,14 +73,12 @@
             this.pdfZoomRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfZoomRibbonPageGroup();
             this.cmbDay = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cmbQuet = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.txtDate = new BehComponents.DateTimePickerX();
             this.cmbTem = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtTeacher = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -92,6 +90,8 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClassSRM.WaitForm1), true, true);
+            this.txtDate = new FarsiLibrary.Win.DevExpress.XtraFADateEdit();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -110,7 +110,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
@@ -121,12 +120,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbClass
             // 
             this.cmbClass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbClass.Location = new System.Drawing.Point(1002, 12);
+            this.cmbClass.Location = new System.Drawing.Point(1013, 12);
             this.cmbClass.Name = "cmbClass";
             this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -139,7 +141,7 @@
             this.cmbClass.Properties.NullText = "";
             this.cmbClass.Properties.PopupSizeable = false;
             this.cmbClass.Properties.ValueMember = "Id";
-            this.cmbClass.Size = new System.Drawing.Size(278, 20);
+            this.cmbClass.Size = new System.Drawing.Size(267, 20);
             this.cmbClass.StyleController = this.layoutControl1;
             this.cmbClass.TabIndex = 6;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
@@ -150,18 +152,19 @@
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.txtDate);
             this.layoutControl1.Controls.Add(this.btnGen);
             this.layoutControl1.Controls.Add(this.gridControl2);
             this.layoutControl1.Controls.Add(this.txtBody);
             this.layoutControl1.Controls.Add(this.cmbClass);
             this.layoutControl1.Controls.Add(this.cmbDay);
             this.layoutControl1.Controls.Add(this.cmbQuet);
-            this.layoutControl1.Controls.Add(this.txtDate);
             this.layoutControl1.Controls.Add(this.cmbTem);
             this.layoutControl1.Controls.Add(this.txtTeacher);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(2, 20);
             this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(580, 92, 450, 400);
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.layoutControlGroup1;
             this.layoutControl1.Size = new System.Drawing.Size(1340, 180);
@@ -505,7 +508,7 @@
             // 
             this.cmbDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbDay.EditValue = "شنبه";
-            this.cmbDay.Location = new System.Drawing.Point(342, 12);
+            this.cmbDay.Location = new System.Drawing.Point(340, 12);
             this.cmbDay.Name = "cmbDay";
             this.cmbDay.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -517,7 +520,7 @@
             "چهارشنبه",
             "پنجشنبه"});
             this.cmbDay.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbDay.Size = new System.Drawing.Size(278, 20);
+            this.cmbDay.Size = new System.Drawing.Size(280, 20);
             this.cmbDay.StyleController = this.layoutControl1;
             this.cmbDay.TabIndex = 6;
             // 
@@ -550,80 +553,6 @@
             this.cmbQuet.StyleController = this.layoutControl1;
             this.cmbQuet.TabIndex = 13;
             // 
-            // txtDate
-            // 
-            this.txtDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDate.AnchorSize = new System.Drawing.Size(278, 20);
-            this.txtDate.BackColor = System.Drawing.Color.White;
-            this.txtDate.CalendarBoldedDayForeColor = System.Drawing.Color.Blue;
-            this.txtDate.CalendarBorderColor = System.Drawing.Color.CadetBlue;
-            this.txtDate.CalendarDayRectTickness = 2F;
-            this.txtDate.CalendarDaysBackColor = System.Drawing.SystemColors.Control;
-            this.txtDate.CalendarDaysFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.txtDate.CalendarDaysForeColor = System.Drawing.Color.DodgerBlue;
-            this.txtDate.CalendarEnglishAnnuallyBoldedDates = new System.DateTime[0];
-            this.txtDate.CalendarEnglishBoldedDates = new System.DateTime[0];
-            this.txtDate.CalendarEnglishHolidayDates = new System.DateTime[0];
-            this.txtDate.CalendarEnglishMonthlyBoldedDates = new System.DateTime[0];
-            this.txtDate.CalendarHolidayForeColor = System.Drawing.Color.Red;
-            this.txtDate.CalendarHolidayWeekly = BehComponents.MonthCalendarX.DayOfWeekForHoliday.Friday;
-            this.txtDate.CalendarLineWeekColor = System.Drawing.Color.Black;
-            this.txtDate.CalendarPersianAnnuallyBoldedDates = new BehComponents.PersianDateTime[0];
-            this.txtDate.CalendarPersianBoldedDates = new BehComponents.PersianDateTime[0];
-            this.txtDate.CalendarPersianHolidayDates = new BehComponents.PersianDateTime[0];
-            this.txtDate.CalendarPersianMonthlyBoldedDates = new BehComponents.PersianDateTime[0];
-            this.txtDate.CalendarShowToday = true;
-            this.txtDate.CalendarShowTodayRect = true;
-            this.txtDate.CalendarShowToolTips = false;
-            this.txtDate.CalendarShowTrailing = true;
-            this.txtDate.CalendarStyle_DaysButton = BehComponents.ButtonX.ButtonStyles.Simple;
-            this.txtDate.CalendarStyle_GotoTodayButton = BehComponents.ButtonX.ButtonStyles.Green;
-            this.txtDate.CalendarStyle_MonthButton = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.txtDate.CalendarStyle_NextMonthButton = BehComponents.ButtonX.ButtonStyles.Green;
-            this.txtDate.CalendarStyle_PreviousMonthButton = BehComponents.ButtonX.ButtonStyles.Green;
-            this.txtDate.CalendarStyle_YearButton = BehComponents.ButtonX.ButtonStyles.Blue;
-            this.txtDate.CalendarTitleBackColor = System.Drawing.SystemColors.Control;
-            this.txtDate.CalendarTitleFont = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtDate.CalendarTitleForeColor = System.Drawing.Color.Black;
-            this.txtDate.CalendarTodayBackColor = System.Drawing.SystemColors.Control;
-            this.txtDate.CalendarTodayFont = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.txtDate.CalendarTodayForeColor = System.Drawing.Color.Black;
-            this.txtDate.CalendarTodayRectColor = System.Drawing.SystemColors.Control;
-            this.txtDate.CalendarTodayRectTickness = 2F;
-            this.txtDate.CalendarTrailingForeColor = System.Drawing.Color.DarkGray;
-            this.txtDate.CalendarType = BehComponents.CalendarTypes.Persian;
-            this.txtDate.CalendarWeekDaysBackColor = System.Drawing.SystemColors.Control;
-            this.txtDate.CalendarWeekDaysFont = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtDate.CalendarWeekDaysForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtDate.CalendarWeekStartsOn = BehComponents.MonthCalendarX.WeekDays.Saturday;
-            this.txtDate.ClearButtonAlignment = BehComponents.DropDownEmpty.Alignments.Left;
-            this.txtDate.ClearButtonBackColor = System.Drawing.SystemColors.Window;
-            this.txtDate.ClearButtonForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtDate.ClearButtonImage = ((System.Drawing.Image)(resources.GetObject("txtDate.ClearButtonImage")));
-            this.txtDate.ClearButtonImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txtDate.ClearButtonImageFixedSize = new System.Drawing.Size(0, 0);
-            this.txtDate.ClearButtonImageSizeMode = BehComponents.DropDownEmpty.ImageSizeModes.Zoom;
-            this.txtDate.ClearButtonText = "";
-            this.txtDate.ClearButtonTextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txtDate.ClearButtonToolTip = "";
-            this.txtDate.ClearButtonWidth = 17;
-            this.txtDate.ClearDateTimeWhenDownDeleteKey = true;
-            this.txtDate.CustomFormat = "yyyy/MM/dd";
-            this.txtDate.DockSide = BehComponents.DropDownEmpty.Alignments.Left;
-            this.txtDate.DropDownClosedWhenClickOnDays = true;
-            this.txtDate.DropDownClosedWhenSelectedDateChanged = false;
-            this.txtDate.Format = BehComponents.DateTimePickerX.FormatDate.Custom;
-            this.txtDate.Format4Binding = "yyyy/MM/dd";
-            this.txtDate.Location = new System.Drawing.Point(12, 12);
-            this.txtDate.Margin = new System.Windows.Forms.Padding(5);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.RightToLeftLayout = false;
-            this.txtDate.ShowClearButton = false;
-            this.txtDate.Size = new System.Drawing.Size(278, 20);
-            this.txtDate.TabIndex = 10;
-            this.txtDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txtDate.TextWhenClearButtonClicked = "";
-            // 
             // cmbTem
             // 
             this.cmbTem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -636,7 +565,7 @@
             "آماده از پیش نوشته شده",
             "خام"});
             this.cmbTem.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbTem.Size = new System.Drawing.Size(278, 20);
+            this.cmbTem.Size = new System.Drawing.Size(289, 20);
             this.cmbTem.StyleController = this.layoutControl1;
             this.cmbTem.TabIndex = 6;
             this.cmbTem.SelectedIndexChanged += new System.EventHandler(this.cmbTem_SelectedIndexChanged);
@@ -658,13 +587,13 @@
             this.layoutControlItem1,
             this.emptySpaceItem1,
             this.layoutControlItem2,
-            this.layoutControlItem3,
             this.layoutControlItem4,
             this.layoutControlItem5,
             this.layoutControlItem7,
             this.lyBody,
             this.layoutControlItem9,
-            this.layoutControlItem10});
+            this.layoutControlItem10,
+            this.layoutControlItem8});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(1340, 180);
@@ -673,9 +602,9 @@
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.cmbClass;
-            this.layoutControlItem1.Location = new System.Drawing.Point(990, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(1001, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(330, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(319, 24);
             this.layoutControlItem1.Text = "کلاس/پایه";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(45, 13);
             // 
@@ -690,27 +619,18 @@
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.cmbDay;
-            this.layoutControlItem2.Location = new System.Drawing.Point(330, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(328, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(330, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(332, 24);
             this.layoutControlItem2.Text = "روز";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(45, 13);
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.txtDate;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(330, 24);
-            this.layoutControlItem3.Text = "تاریخ";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(45, 13);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.cmbTem;
             this.layoutControlItem4.Location = new System.Drawing.Point(660, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(330, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(341, 24);
             this.layoutControlItem4.Text = "قالب";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(45, 13);
             // 
@@ -817,6 +737,31 @@
             // 
             this.splashScreenManager1.ClosingDelay = 500;
             // 
+            // txtDate
+            // 
+            this.txtDate.EditValue = new System.DateTime(2017, 7, 26, 13, 19, 52, 0);
+            this.txtDate.Location = new System.Drawing.Point(12, 12);
+            this.txtDate.MenuManager = this.ribbonControl1;
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDate.Size = new System.Drawing.Size(276, 20);
+            this.txtDate.StyleController = this.layoutControl1;
+            this.txtDate.TabIndex = 14;
+            this.txtDate.UpdateSelectionWhenNavigating = true;
+            // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.txtDate;
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(328, 24);
+            this.layoutControlItem8.Text = "تاریخ";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(45, 13);
+            // 
             // Letter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -853,7 +798,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
@@ -864,6 +808,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -881,7 +828,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colStuClassId;
         private DevExpress.XtraGrid.Columns.GridColumn colStuName;
         private DevExpress.XtraGrid.Columns.GridColumn colStuLName;
-        private BehComponents.DateTimePickerX txtDate;
         private DevExpress.XtraEditors.TextEdit txtTeacher;
         private DevExpress.XtraPdfViewer.PdfViewer pdfViewer1;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
@@ -923,7 +869,6 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
@@ -932,5 +877,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1;
+        private FarsiLibrary.Win.DevExpress.XtraFADateEdit txtDate;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
     }
 }

@@ -45,7 +45,7 @@ namespace ClassSRM
                     WindowsFormsSettings.DefaultFont = new System.Drawing.Font("Tahoma", 8);
                 }
                 //Set Login
-                Application.Run(new Form1());
+                Application.Run(new Forms.Login());
                 Application.DoEvents();
                 mtx.ReleaseMutex();
             }
