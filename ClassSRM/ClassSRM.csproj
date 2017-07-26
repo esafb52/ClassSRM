@@ -177,6 +177,12 @@
     <Compile Include="Forms\DailyCheck.Designer.cs">
       <DependentUpon>DailyCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DailyCheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DailyCheckList.Designer.cs">
+      <DependentUpon>DailyCheckList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\EditAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,12 @@
     <Compile Include="Forms\PointActivity.Designer.cs">
       <DependentUpon>PointActivity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PointActivityList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PointActivityList.Designer.cs">
+      <DependentUpon>PointActivityList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\PointBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +248,12 @@
     </Compile>
     <Compile Include="Forms\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StudentList.Designer.cs">
+      <DependentUpon>StudentList.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TopStudent.cs">
       <SubType>Form</SubType>
@@ -293,6 +311,9 @@
     <EmbeddedResource Include="Forms\DailyCheck.resx">
       <DependentUpon>DailyCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyCheckList.resx">
+      <DependentUpon>DailyCheckList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EditAccount.resx">
       <DependentUpon>EditAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,6 +329,9 @@
     <EmbeddedResource Include="Forms\PointActivity.resx">
       <DependentUpon>PointActivity.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PointActivityList.resx">
+      <DependentUpon>PointActivityList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\PointBook.resx">
       <DependentUpon>PointBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StudentList.resx">
+      <DependentUpon>StudentList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TopStudent.resx">
       <DependentUpon>TopStudent.cs</DependentUpon>
@@ -361,8 +388,10 @@
       <LastGenOutput>ClassSRM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\DataSources\CheckV.datasource" />
     <None Include="Properties\DataSources\SumAE.datasource" />
     <None Include="Properties\DataSources\SumEva.datasource" />
+    <None Include="Properties\DataSources\tbl_ActPoint.datasource" />
     <None Include="Properties\DataSources\tbl_EvaPoint.datasource" />
     <None Include="Properties\DataSources\tbl_School.datasource" />
     <None Include="Properties\DataSources\tbl_Student.datasource" />

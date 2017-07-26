@@ -261,4 +261,41 @@
     <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.DeleteStudent" Method="DeleteStudent">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UpdateStudent" Method="UpdateStudent">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SchoolId" Parameter="schoolId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="LName" Parameter="lName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="FName" Parameter="fName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Image" Parameter="image" Type="System.Data.Linq.Binary" DbType="Image" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UpdateCheck" Method="UpdateCheck">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Exist" Parameter="exist" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(12)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteCheck" Method="DeleteCheck">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.DeleteActPoint" Method="DeleteActPoint">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UpdateActBook" Method="UpdateActBook">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="StudentId" Parameter="studentId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Score" Parameter="score" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="Desc" Parameter="desc" Type="System.String" DbType="NVarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
 </Database>

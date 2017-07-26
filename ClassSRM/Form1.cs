@@ -443,6 +443,21 @@ namespace ClassSRM
             new Schoollist().ShowDialog();
         }
 
+        private void btnStudentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new StudentList().ShowDialog();
+        }
+
+        private void btnLstCheck_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new DailyCheckList().ShowDialog();
+        }
+
+        private void btnActPointList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new PointActivityList().ShowDialog();
+        }
+
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
         {

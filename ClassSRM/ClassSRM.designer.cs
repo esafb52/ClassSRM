@@ -327,6 +327,48 @@ namespace ClassSRM
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteStudent")]
+		public int DeleteStudent([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.UpdateStudent")]
+		public int UpdateStudent([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Name", DbType="NVarChar(100)")] string name, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="LName", DbType="NVarChar(100)")] string lName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FName", DbType="NVarChar(100)")] string fName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Gender", DbType="NVarChar(50)")] string gender, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Image", DbType="Image")] System.Data.Linq.Binary image)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, schoolId, name, lName, fName, gender, image);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.UpdateCheck")]
+		public int UpdateCheck([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Exist", DbType="Bit")] System.Nullable<bool> exist, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date", DbType="NVarChar(12)")] string date)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, studentId, exist, date);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteCheck")]
+		public int DeleteCheck([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteActPoint")]
+		public int DeleteActPoint([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.UpdateActBook")]
+		public int UpdateActBook([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StudentId", DbType="Int")] System.Nullable<int> studentId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Score", DbType="Int")] System.Nullable<int> score, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date", DbType="NVarChar(12)")] string date, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Desc", DbType="NVarChar(MAX)")] string desc)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, studentId, score, date, desc);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_User")]

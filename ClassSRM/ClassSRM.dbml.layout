@@ -38,10 +38,10 @@
         <elementListCompartment Id="350d8845-2479-48ca-98c7-1b335a62794d" absoluteBounds="1.2649999999999997, 4.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="ff2d3703-27b3-4c6c-b6e7-705f5570d10d" absoluteBounds="3.625, 3.875, 2, 2.3478011067708335">
+    <classShape Id="ff2d3703-27b3-4c6c-b6e7-705f5570d10d" absoluteBounds="3.25, 4.375, 2, 2.3478011067708335">
       <DataClassMoniker Name="/ClassSRMDataContext/CheckV" />
       <nestedChildShapes>
-        <elementListCompartment Id="1830535e-c277-4fdb-b59d-5121ddb08863" absoluteBounds="3.64, 4.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="1830535e-c277-4fdb-b59d-5121ddb08863" absoluteBounds="3.265, 4.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <classShape Id="1e52b3bc-6910-4964-bece-88fddead2131" absoluteBounds="1, 1.375, 2, 1.7708968098958331">
