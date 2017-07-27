@@ -463,6 +463,11 @@ namespace ClassSRM
             new PointBookList().ShowDialog();
         }
 
+        private void btnWebsite_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://ipfile.ir/classsrm/");
+        }
+
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
         {

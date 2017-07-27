@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraSplashScreen.SplashScreenManager splash = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClassSRM.Splash), true, true);
             DevExpress.XtraCharts.UI.ChartControlCommandGalleryItemGroup2DColumn chartControlCommandGalleryItemGroup2DColumn1 = new DevExpress.XtraCharts.UI.ChartControlCommandGalleryItemGroup2DColumn();
             DevExpress.XtraCharts.UI.CreateBarChartItem createBarChartItem1 = new DevExpress.XtraCharts.UI.CreateBarChartItem();
             DevExpress.XtraCharts.UI.CreateFullStackedBarChartItem createFullStackedBarChartItem1 = new DevExpress.XtraCharts.UI.CreateFullStackedBarChartItem();
@@ -139,12 +138,13 @@
             DevExpress.XtraCharts.UI.CreateSideBySideGanttChartItem createSideBySideGanttChartItem1 = new DevExpress.XtraCharts.UI.CreateSideBySideGanttChartItem();
             DevExpress.Skins.SkinPaddingEdges skinPaddingEdges1 = new DevExpress.Skins.SkinPaddingEdges();
             DevExpress.Skins.SkinPaddingEdges skinPaddingEdges2 = new DevExpress.Skins.SkinPaddingEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
             DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClassSRM.Splash), true, true);
             this.sumEvaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sumEvaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -181,6 +181,7 @@
             this.exportToJPEGChartItem1 = new DevExpress.XtraCharts.UI.ExportToJPEGChartItem();
             this.exportToPNGChartItem1 = new DevExpress.XtraCharts.UI.ExportToPNGChartItem();
             this.exportToTIFFChartItem1 = new DevExpress.XtraCharts.UI.ExportToTIFFChartItem();
+            this.btnWebsite = new DevExpress.XtraBars.BarButtonItem();
             this.chartRibbonPageCategory1 = new DevExpress.XtraCharts.UI.ChartRibbonPageCategory();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.createChartRibbonPage1 = new DevExpress.XtraCharts.UI.CreateChartRibbonPage();
@@ -466,10 +467,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).BeginInit();
             this.SuspendLayout();
             // 
-            // splash
-            // 
-            splash.ClosingDelay = 300;
-            // 
             // sumEvaBindingSource
             // 
             this.sumEvaBindingSource.DataSource = typeof(ClassSRM.SumEva);
@@ -508,9 +505,10 @@
             this.exportToJPEGChartItem1,
             this.exportToPNGChartItem1,
             this.exportToTIFFChartItem1,
-            this.createExportToImageBaseItem1});
+            this.createExportToImageBaseItem1,
+            this.btnWebsite});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 58;
+            this.ribbonControl1.MaxItemId = 59;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.chartRibbonPageCategory1});
@@ -937,6 +935,14 @@
             this.exportToTIFFChartItem1.Id = 56;
             this.exportToTIFFChartItem1.Name = "exportToTIFFChartItem1";
             // 
+            // btnWebsite
+            // 
+            this.btnWebsite.Caption = "وب سایت ما";
+            this.btnWebsite.Id = 58;
+            this.btnWebsite.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnWebsite.ImageOptions.SvgImage")));
+            this.btnWebsite.Name = "btnWebsite";
+            this.btnWebsite.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnWebsite_ItemClick);
+            // 
             // chartRibbonPageCategory1
             // 
             this.chartRibbonPageCategory1.Control = this.chartControl1;
@@ -973,7 +979,7 @@
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2};
-            this.chartControl1.Size = new System.Drawing.Size(1016, 156);
+            this.chartControl1.Size = new System.Drawing.Size(1024, 156);
             this.chartControl1.TabIndex = 0;
             // 
             // createChartRibbonPage1
@@ -1330,6 +1336,7 @@
             this.ribbonPageGroup11.ItemLinks.Add(this.btnHistory);
             this.ribbonPageGroup11.ItemLinks.Add(this.btnLic);
             this.ribbonPageGroup11.ItemLinks.Add(this.btnGit);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btnWebsite);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
             this.ribbonPageGroup11.Text = "درباره ما";
             // 
@@ -2731,9 +2738,9 @@
             this.pCalendar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pCalendar.EditValue = new System.DateTime(2017, 7, 23, 0, 0, 0, 0);
             this.pCalendar.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
-            this.pCalendar.Location = new System.Drawing.Point(1018, 2);
+            this.pCalendar.Location = new System.Drawing.Point(1026, 2);
             this.pCalendar.Name = "pCalendar";
-            this.pCalendar.Size = new System.Drawing.Size(240, 156);
+            this.pCalendar.Size = new System.Drawing.Size(232, 156);
             this.pCalendar.TabIndex = 1;
             this.pCalendar.UpdateSelectionWhenNavigating = true;
             this.pCalendar.CustomDrawDayNumberCell += new DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventHandler(this.pCalendar_CustomDrawDayNumberCell);
@@ -2768,6 +2775,10 @@
             this.chartBarController1.BarItems.Add(this.exportToTIFFChartItem1);
             this.chartBarController1.Control = this.chartControl1;
             // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 200;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2779,9 +2790,10 @@
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.hideContainerRight);
             this.Controls.Add(this.ribbonControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Text = "ClsassSRM BETA";
+            this.Text = "ClsassSRM BETA 7";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -3128,6 +3140,7 @@
         private DevExpress.XtraCharts.UI.ChartBarController chartBarController1;
         private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerRight;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
+        private DevExpress.XtraBars.BarButtonItem btnWebsite;
     }
 }
 
