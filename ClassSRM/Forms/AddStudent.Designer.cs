@@ -171,6 +171,7 @@
             "پسر",
             "دختر"});
             this.cmbGender.Properties.Sorted = true;
+            this.cmbGender.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbGender.Size = new System.Drawing.Size(287, 20);
             this.cmbGender.StyleController = this.layoutControl1;
             this.cmbGender.TabIndex = 7;

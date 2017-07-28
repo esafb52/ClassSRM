@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PointBook));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.txtDate = new FarsiLibrary.Win.DevExpress.XtraFADateEdit();
             this.cmbScore2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.txtDesc = new DevExpress.XtraEditors.MemoEdit();
@@ -54,11 +55,12 @@
             this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.cmbScore2Visibility = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.txtDate = new FarsiLibrary.Win.DevExpress.XtraFADateEdit();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layout = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbScore2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDesc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBook.Properties)).BeginInit();
@@ -81,10 +83,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbScore2Visibility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -106,6 +106,23 @@
             this.layoutControl1.Size = new System.Drawing.Size(361, 385);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // txtDate
+            // 
+            this.txtDate.EditValue = new System.DateTime(2017, 7, 24, 13, 7, 45, 0);
+            this.txtDate.Location = new System.Drawing.Point(12, 172);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
+            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
+            this.txtDate.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.txtDate.Size = new System.Drawing.Size(271, 20);
+            this.txtDate.StyleController = this.layoutControl1;
+            this.txtDate.TabIndex = 12;
+            this.txtDate.UpdateSelectionWhenNavigating = true;
             // 
             // cmbScore2
             // 
@@ -146,6 +163,7 @@
             // 
             // cmbBook
             // 
+            this.cmbBook.EditValue = "اجتماعی";
             this.cmbBook.Location = new System.Drawing.Point(12, 138);
             this.cmbBook.Name = "cmbBook";
             this.cmbBook.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -372,22 +390,14 @@
             this.emptySpaceItem4.Size = new System.Drawing.Size(341, 10);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // txtDate
+            // layout
             // 
-            this.txtDate.EditValue = new System.DateTime(2017, 7, 24, 13, 7, 45, 0);
-            this.txtDate.Location = new System.Drawing.Point(12, 172);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;
-            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
-            this.txtDate.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.txtDate.Size = new System.Drawing.Size(271, 20);
-            this.txtDate.StyleController = this.layoutControl1;
-            this.txtDate.TabIndex = 12;
-            this.txtDate.UpdateSelectionWhenNavigating = true;
+            this.layout.Control = this.txtDate;
+            this.layout.Location = new System.Drawing.Point(0, 160);
+            this.layout.Name = "layout";
+            this.layout.Size = new System.Drawing.Size(341, 24);
+            this.layout.Text = "تاریخ";
+            this.layout.TextSize = new System.Drawing.Size(63, 13);
             // 
             // layoutControlItem3
             // 
@@ -397,15 +407,6 @@
             this.layoutControlItem3.Size = new System.Drawing.Size(341, 24);
             this.layoutControlItem3.Text = "تاریخ";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(63, 13);
-            // 
-            // layout
-            // 
-            this.layout.Control = this.txtDate;
-            this.layout.Location = new System.Drawing.Point(0, 160);
-            this.layout.Name = "layout";
-            this.layout.Size = new System.Drawing.Size(341, 24);
-            this.layout.Text = "تاریخ";
-            this.layout.TextSize = new System.Drawing.Size(63, 13);
             // 
             // PointBook
             // 
@@ -426,6 +427,8 @@
             this.Load += new System.EventHandler(this.PointBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbScore2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDesc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbBook.Properties)).EndInit();
@@ -448,10 +451,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbScore2Visibility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddSchool));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtDate = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtSchool = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtAdmin = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.cmbClass = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.cmbClass = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.txtAdmin = new DevExpress.XtraEditors.TextEdit();
+            this.txtSchool = new DevExpress.XtraEditors.TextEdit();
+            this.txtDate = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
@@ -47,14 +47,14 @@
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSchool.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdmin.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdmin.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSchool.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
@@ -80,6 +80,64 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // btnSave
+            // 
+            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSave.ImageOptions.SvgImage")));
+            this.btnSave.Location = new System.Drawing.Point(12, 156);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(331, 38);
+            this.btnSave.StyleController = this.layoutControl1;
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "ثبت و ذخیره";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // cmbClass
+            // 
+            this.cmbClass.EditValue = "اول";
+            this.cmbClass.Location = new System.Drawing.Point(12, 114);
+            this.cmbClass.Name = "cmbClass";
+            this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbClass.Properties.Items.AddRange(new object[] {
+            "اول",
+            "دوم",
+            "سوم",
+            "چهارم",
+            "پنجم",
+            "ششم"});
+            this.cmbClass.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbClass.Size = new System.Drawing.Size(266, 20);
+            this.cmbClass.StyleController = this.layoutControl1;
+            this.cmbClass.TabIndex = 7;
+            // 
+            // txtAdmin
+            // 
+            this.txtAdmin.Location = new System.Drawing.Point(12, 80);
+            this.txtAdmin.Name = "txtAdmin";
+            this.txtAdmin.Size = new System.Drawing.Size(266, 20);
+            this.txtAdmin.StyleController = this.layoutControl1;
+            this.txtAdmin.TabIndex = 6;
+            // 
+            // txtSchool
+            // 
+            this.txtSchool.Location = new System.Drawing.Point(12, 46);
+            this.txtSchool.Name = "txtSchool";
+            this.txtSchool.Size = new System.Drawing.Size(266, 20);
+            this.txtSchool.StyleController = this.layoutControl1;
+            this.txtSchool.TabIndex = 5;
+            // 
+            // txtDate
+            // 
+            this.txtDate.EditValue = "00-00";
+            this.txtDate.Location = new System.Drawing.Point(12, 12);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.Mask.EditMask = "00-00";
+            this.txtDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
+            this.txtDate.Properties.Mask.UseMaskAsDisplayFormat = true;
+            this.txtDate.Size = new System.Drawing.Size(266, 20);
+            this.txtDate.StyleController = this.layoutControl1;
+            this.txtDate.TabIndex = 4;
+            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -99,18 +157,6 @@
             this.layoutControlGroup1.Size = new System.Drawing.Size(355, 206);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // txtDate
-            // 
-            this.txtDate.EditValue = "00-00";
-            this.txtDate.Location = new System.Drawing.Point(12, 12);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Properties.Mask.EditMask = "00-00";
-            this.txtDate.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
-            this.txtDate.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.txtDate.Size = new System.Drawing.Size(265, 20);
-            this.txtDate.StyleController = this.layoutControl1;
-            this.txtDate.TabIndex = 4;
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.txtDate;
@@ -119,14 +165,6 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(335, 24);
             this.layoutControlItem1.Text = "سال تحصیلی";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(62, 13);
-            // 
-            // txtSchool
-            // 
-            this.txtSchool.Location = new System.Drawing.Point(12, 46);
-            this.txtSchool.Name = "txtSchool";
-            this.txtSchool.Size = new System.Drawing.Size(265, 20);
-            this.txtSchool.StyleController = this.layoutControl1;
-            this.txtSchool.TabIndex = 5;
             // 
             // layoutControlItem2
             // 
@@ -137,14 +175,6 @@
             this.layoutControlItem2.Text = "نام مدرسه";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(62, 13);
             // 
-            // txtAdmin
-            // 
-            this.txtAdmin.Location = new System.Drawing.Point(12, 80);
-            this.txtAdmin.Name = "txtAdmin";
-            this.txtAdmin.Size = new System.Drawing.Size(265, 20);
-            this.txtAdmin.StyleController = this.layoutControl1;
-            this.txtAdmin.TabIndex = 6;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtAdmin;
@@ -154,25 +184,6 @@
             this.layoutControlItem3.Text = "نام مدیر";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(62, 13);
             // 
-            // cmbClass
-            // 
-            this.cmbClass.EditValue = "اول";
-            this.cmbClass.Location = new System.Drawing.Point(12, 114);
-            this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbClass.Properties.Items.AddRange(new object[] {
-            "اول",
-            "دوم",
-            "سوم",
-            "چهارم",
-            "پنجم",
-            "ششم"});
-            this.cmbClass.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbClass.Size = new System.Drawing.Size(265, 20);
-            this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 7;
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.cmbClass;
@@ -181,17 +192,6 @@
             this.layoutControlItem4.Size = new System.Drawing.Size(335, 24);
             this.layoutControlItem4.Text = "کلاس/پایه";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(62, 13);
-            // 
-            // btnSave
-            // 
-            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.btnSave.Location = new System.Drawing.Point(12, 156);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(331, 38);
-            this.btnSave.StyleController = this.layoutControl1;
-            this.btnSave.TabIndex = 8;
-            this.btnSave.Text = "ثبت و ذخیره";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // layoutControlItem5
             // 
@@ -242,6 +242,7 @@
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "AddSchool";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
@@ -251,14 +252,14 @@
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSchool.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdmin.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdmin.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSchool.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();

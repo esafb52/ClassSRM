@@ -147,32 +147,42 @@
             DevExpress.XtraCharts.UI.ChartControlCommandGalleryItemGroupGantt chartControlCommandGalleryItemGroupGantt1 = new DevExpress.XtraCharts.UI.ChartControlCommandGalleryItemGroupGantt();
             DevExpress.XtraCharts.UI.CreateGanttChartItem createGanttChartItem1 = new DevExpress.XtraCharts.UI.CreateGanttChartItem();
             DevExpress.XtraCharts.UI.CreateSideBySideGanttChartItem createSideBySideGanttChartItem1 = new DevExpress.XtraCharts.UI.CreateSideBySideGanttChartItem();
+            DevExpress.Skins.SkinPaddingEdges skinPaddingEdges1 = new DevExpress.Skins.SkinPaddingEdges();
+            DevExpress.Skins.SkinPaddingEdges skinPaddingEdges2 = new DevExpress.Skins.SkinPaddingEdges();
+            this.tblEvaPointBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblEvaPointBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblEvaPointBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tblEvaPointBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.cmbBook = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.chkFirstTotal = new DevExpress.XtraEditors.CheckEdit();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.chkFirstAvg = new DevExpress.XtraEditors.CheckEdit();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.chkFirstBook = new DevExpress.XtraEditors.CheckEdit();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuClassId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuLName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuImage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
+            this.chkFirstBook = new DevExpress.XtraEditors.CheckEdit();
+            this.chkFirstAvg = new DevExpress.XtraEditors.CheckEdit();
+            this.chkFirstTotal = new DevExpress.XtraEditors.CheckEdit();
+            this.cmbBook = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
+            this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.chartBarController1 = new DevExpress.XtraCharts.UI.ChartBarController();
-            this.chartTypeRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartTypeRibbonPageGroup();
-            this.createChartRibbonPage1 = new DevExpress.XtraCharts.UI.CreateChartRibbonPage();
-            this.chartRibbonPageCategory1 = new DevExpress.XtraCharts.UI.ChartRibbonPageCategory();
             this.createBarBaseItem1 = new DevExpress.XtraCharts.UI.CreateBarBaseItem();
             this.commandBarGalleryDropDown1 = new DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(this.components);
             this.createLineBaseItem1 = new DevExpress.XtraCharts.UI.CreateLineBaseItem();
@@ -185,17 +195,12 @@
             this.commandBarGalleryDropDown5 = new DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(this.components);
             this.createOtherSeriesTypesBaseItem1 = new DevExpress.XtraCharts.UI.CreateOtherSeriesTypesBaseItem();
             this.commandBarGalleryDropDown6 = new DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(this.components);
-            this.chartAppearanceRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartAppearanceRibbonPageGroup();
             this.changePaletteGalleryBaseItem1 = new DevExpress.XtraCharts.UI.ChangePaletteGalleryBaseItem();
             this.commandBarGalleryDropDown7 = new DevExpress.XtraBars.Commands.CommandBarGalleryDropDown(this.components);
             this.changeAppearanceGalleryBaseItem1 = new DevExpress.XtraCharts.UI.ChangeAppearanceGalleryBaseItem();
-            this.chartWizardRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartWizardRibbonPageGroup();
-            this.createChartOtherRibbonPage1 = new DevExpress.XtraCharts.UI.CreateChartOtherRibbonPage();
             this.runDesignerChartItem1 = new DevExpress.XtraCharts.UI.RunDesignerChartItem();
-            this.chartTemplatesRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartTemplatesRibbonPageGroup();
             this.saveAsTemplateChartItem1 = new DevExpress.XtraCharts.UI.SaveAsTemplateChartItem();
             this.loadTemplateChartItem1 = new DevExpress.XtraCharts.UI.LoadTemplateChartItem();
-            this.chartPrintExportRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartPrintExportRibbonPageGroup();
             this.printPreviewChartItem1 = new DevExpress.XtraCharts.UI.PrintPreviewChartItem();
             this.printChartItem1 = new DevExpress.XtraCharts.UI.PrintChartItem();
             this.createExportBaseItem1 = new DevExpress.XtraCharts.UI.CreateExportBaseItem();
@@ -211,35 +216,22 @@
             this.exportToJPEGChartItem1 = new DevExpress.XtraCharts.UI.ExportToJPEGChartItem();
             this.exportToPNGChartItem1 = new DevExpress.XtraCharts.UI.ExportToPNGChartItem();
             this.exportToTIFFChartItem1 = new DevExpress.XtraCharts.UI.ExportToTIFFChartItem();
-            this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuClassId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuLName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuImage = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
-            this.tblEvaPointBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblEvaPointBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblEvaPointBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.tblEvaPointBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.chartRibbonPageCategory1 = new DevExpress.XtraCharts.UI.ChartRibbonPageCategory();
+            this.createChartRibbonPage1 = new DevExpress.XtraCharts.UI.CreateChartRibbonPage();
+            this.chartTypeRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartTypeRibbonPageGroup();
+            this.chartAppearanceRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartAppearanceRibbonPageGroup();
+            this.createChartOtherRibbonPage1 = new DevExpress.XtraCharts.UI.CreateChartOtherRibbonPage();
+            this.chartWizardRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartWizardRibbonPageGroup();
+            this.chartTemplatesRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartTemplatesRibbonPageGroup();
+            this.chartPrintExportRibbonPageGroup1 = new DevExpress.XtraCharts.UI.ChartPrintExportRibbonPageGroup();
+            this.chartBarController1 = new DevExpress.XtraCharts.UI.ChartBarController();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClassSRM.WaitForm1), true, true);
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbBook.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkFirstTotal.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkFirstAvg.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkFirstBook.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
@@ -250,13 +242,29 @@
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkFirstBook.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkFirstAvg.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkFirstTotal.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBook.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown3)).BeginInit();
@@ -264,14 +272,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // tblEvaPointBindingSource
+            // 
+            this.tblEvaPointBindingSource.DataSource = typeof(ClassSRM.tbl_EvaPoint);
+            // 
+            // tblEvaPointBindingSource1
+            // 
+            this.tblEvaPointBindingSource1.DataSource = typeof(ClassSRM.tbl_EvaPoint);
+            // 
+            // tblEvaPointBindingSource2
+            // 
+            this.tblEvaPointBindingSource2.DataSource = typeof(ClassSRM.tbl_EvaPoint);
+            // 
+            // tblEvaPointBindingSource3
+            // 
+            this.tblEvaPointBindingSource3.DataSource = typeof(ClassSRM.tbl_EvaPoint);
             // 
             // layoutControl1
             // 
@@ -291,189 +309,6 @@
             this.layoutControl1.Size = new System.Drawing.Size(1347, 520);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1,
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem4,
-            this.layoutControlItem5,
-            this.layoutControlItem6,
-            this.layoutControlItem7,
-            this.emptySpaceItem1,
-            this.emptySpaceItem2,
-            this.emptySpaceItem3,
-            this.emptySpaceItem4});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1347, 520);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // cmbClass
-            // 
-            this.cmbClass.Location = new System.Drawing.Point(976, 12);
-            this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbClass.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 33, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchName", "مدرسه", 57, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchClass", "کلاس/پایه", 55, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchDate", "سال تحصیلی", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
-            this.cmbClass.Properties.DataSource = this.tblSchoolBindingSource;
-            this.cmbClass.Properties.DisplayMember = "SchClass";
-            this.cmbClass.Properties.NullText = "مدرسه را انتخاب کنید";
-            this.cmbClass.Properties.ValueMember = "Id";
-            this.cmbClass.Size = new System.Drawing.Size(293, 20);
-            this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 4;
-            this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.cmbClass;
-            this.layoutControlItem1.Location = new System.Drawing.Point(964, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(363, 24);
-            this.layoutControlItem1.Text = "مدرسه/کلاس";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
-            // 
-            // cmbBook
-            // 
-            this.cmbBook.EditValue = "اجتماعی";
-            this.cmbBook.Location = new System.Drawing.Point(631, 12);
-            this.cmbBook.Name = "cmbBook";
-            this.cmbBook.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbBook.Properties.Items.AddRange(new object[] {
-            "اجتماعی",
-            "املا/انشا",
-            "بخوانیم و بنویسیم",
-            "تفکر",
-            "ریاضی",
-            "علوم",
-            "قرآن",
-            "کار و فناوری",
-            "مهارت های زندگی و تربیتی",
-            "هدیه های آسمانی"});
-            this.cmbBook.Properties.Sorted = true;
-            this.cmbBook.Size = new System.Drawing.Size(275, 20);
-            this.cmbBook.StyleController = this.layoutControl1;
-            this.cmbBook.TabIndex = 5;
-            this.cmbBook.SelectedIndexChanged += new System.EventHandler(this.cmbBook_SelectedIndexChanged);
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.cmbBook;
-            this.layoutControlItem2.Location = new System.Drawing.Point(619, 0);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(345, 24);
-            this.layoutControlItem2.Text = "درس";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 13);
-            // 
-            // chkFirstTotal
-            // 
-            this.chkFirstTotal.Location = new System.Drawing.Point(1106, 46);
-            this.chkFirstTotal.Name = "chkFirstTotal";
-            this.chkFirstTotal.Properties.AllowFocused = false;
-            this.chkFirstTotal.Properties.Caption = "نفر اول کلاس طبق مجموع امتیازات فعالیت ها";
-            this.chkFirstTotal.Size = new System.Drawing.Size(229, 19);
-            this.chkFirstTotal.StyleController = this.layoutControl1;
-            this.chkFirstTotal.TabIndex = 6;
-            this.chkFirstTotal.CheckedChanged += new System.EventHandler(this.chkFirstTotal_CheckedChanged);
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.chkFirstTotal;
-            this.layoutControlItem3.Location = new System.Drawing.Point(1094, 34);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(233, 23);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            // 
-            // chkFirstAvg
-            // 
-            this.chkFirstAvg.Location = new System.Drawing.Point(588, 46);
-            this.chkFirstAvg.Name = "chkFirstAvg";
-            this.chkFirstAvg.Properties.AllowFocused = false;
-            this.chkFirstAvg.Properties.Caption = "نفر اول کلاس طبق میانگین امتیازات دروس و فعالیت ها";
-            this.chkFirstAvg.Size = new System.Drawing.Size(299, 19);
-            this.chkFirstAvg.StyleController = this.layoutControl1;
-            this.chkFirstAvg.TabIndex = 7;
-            this.chkFirstAvg.CheckedChanged += new System.EventHandler(this.chkFirstAvg_CheckedChanged);
-            // 
-            // layoutControlItem4
-            // 
-            this.layoutControlItem4.Control = this.chkFirstAvg;
-            this.layoutControlItem4.Location = new System.Drawing.Point(576, 34);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(303, 23);
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
-            // 
-            // chkFirstBook
-            // 
-            this.chkFirstBook.Location = new System.Drawing.Point(891, 46);
-            this.chkFirstBook.Name = "chkFirstBook";
-            this.chkFirstBook.Properties.AllowFocused = false;
-            this.chkFirstBook.Properties.Caption = "نفر اول کلاس طبق مجموع امتیازات دروس";
-            this.chkFirstBook.Size = new System.Drawing.Size(211, 19);
-            this.chkFirstBook.StyleController = this.layoutControl1;
-            this.chkFirstBook.TabIndex = 8;
-            this.chkFirstBook.CheckedChanged += new System.EventHandler(this.chkFirstBook_CheckedChanged);
-            // 
-            // layoutControlItem5
-            // 
-            this.layoutControlItem5.Control = this.chkFirstBook;
-            this.layoutControlItem5.Location = new System.Drawing.Point(879, 34);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(215, 23);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextVisible = false;
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.DataSource = this.tblStudentBindingSource;
-            this.gridControl1.Location = new System.Drawing.Point(987, 79);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemPictureEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(348, 429);
-            this.gridControl1.TabIndex = 9;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colId,
-            this.colStuClassId,
-            this.colStuName,
-            this.colStuLName,
-            this.colStuImage});
-            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.OptionsImageLoad.DesiredThumbnailSize = new System.Drawing.Size(60, 60);
-            this.gridView1.OptionsView.ShowFooter = true;
-            this.gridView1.OptionsView.ShowGroupPanel = false;
-            this.gridView1.RowHeight = 60;
-            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.gridControl1;
-            this.layoutControlItem6.Location = new System.Drawing.Point(975, 67);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(352, 433);
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextVisible = false;
             // 
             // chartControl1
             // 
@@ -529,6 +364,241 @@
             this.chartControl1.SeriesTemplate.ShowInLegend = false;
             this.chartControl1.Size = new System.Drawing.Size(971, 429);
             this.chartControl1.TabIndex = 10;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.DataSource = this.tblStudentBindingSource;
+            this.gridControl1.Location = new System.Drawing.Point(987, 79);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemPictureEdit1});
+            this.gridControl1.Size = new System.Drawing.Size(348, 429);
+            this.gridControl1.TabIndex = 9;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // tblStudentBindingSource
+            // 
+            this.tblStudentBindingSource.DataSource = typeof(ClassSRM.tbl_Student);
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colStuClassId,
+            this.colStuName,
+            this.colStuLName,
+            this.colStuImage});
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.OptionsImageLoad.DesiredThumbnailSize = new System.Drawing.Size(60, 60);
+            this.gridView1.OptionsView.ShowFooter = true;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.RowHeight = 60;
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            // 
+            // colStuClassId
+            // 
+            this.colStuClassId.FieldName = "StuClassId";
+            this.colStuClassId.Name = "colStuClassId";
+            // 
+            // colStuName
+            // 
+            this.colStuName.Caption = "نام";
+            this.colStuName.FieldName = "StuName";
+            this.colStuName.Name = "colStuName";
+            this.colStuName.Visible = true;
+            this.colStuName.VisibleIndex = 0;
+            this.colStuName.Width = 91;
+            // 
+            // colStuLName
+            // 
+            this.colStuLName.Caption = "نام خانوادگی";
+            this.colStuLName.FieldName = "StuLName";
+            this.colStuLName.Name = "colStuLName";
+            this.colStuLName.Visible = true;
+            this.colStuLName.VisibleIndex = 1;
+            this.colStuLName.Width = 111;
+            // 
+            // colStuImage
+            // 
+            this.colStuImage.Caption = "عکس";
+            this.colStuImage.ColumnEdit = this.repositoryItemPictureEdit1;
+            this.colStuImage.FieldName = "StuImage";
+            this.colStuImage.Name = "colStuImage";
+            this.colStuImage.Visible = true;
+            this.colStuImage.VisibleIndex = 2;
+            this.colStuImage.Width = 128;
+            // 
+            // repositoryItemPictureEdit1
+            // 
+            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
+            this.repositoryItemPictureEdit1.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            // 
+            // chkFirstBook
+            // 
+            this.chkFirstBook.Location = new System.Drawing.Point(891, 46);
+            this.chkFirstBook.Name = "chkFirstBook";
+            this.chkFirstBook.Properties.AllowFocused = false;
+            this.chkFirstBook.Properties.Caption = "نفر اول کلاس طبق مجموع امتیازات دروس";
+            this.chkFirstBook.Size = new System.Drawing.Size(211, 19);
+            this.chkFirstBook.StyleController = this.layoutControl1;
+            this.chkFirstBook.TabIndex = 8;
+            this.chkFirstBook.CheckedChanged += new System.EventHandler(this.chkFirstBook_CheckedChanged);
+            // 
+            // chkFirstAvg
+            // 
+            this.chkFirstAvg.Location = new System.Drawing.Point(588, 46);
+            this.chkFirstAvg.Name = "chkFirstAvg";
+            this.chkFirstAvg.Properties.AllowFocused = false;
+            this.chkFirstAvg.Properties.Caption = "نفر اول کلاس طبق میانگین امتیازات دروس و فعالیت ها";
+            this.chkFirstAvg.Size = new System.Drawing.Size(299, 19);
+            this.chkFirstAvg.StyleController = this.layoutControl1;
+            this.chkFirstAvg.TabIndex = 7;
+            this.chkFirstAvg.CheckedChanged += new System.EventHandler(this.chkFirstAvg_CheckedChanged);
+            // 
+            // chkFirstTotal
+            // 
+            this.chkFirstTotal.Location = new System.Drawing.Point(1106, 46);
+            this.chkFirstTotal.Name = "chkFirstTotal";
+            this.chkFirstTotal.Properties.AllowFocused = false;
+            this.chkFirstTotal.Properties.Caption = "نفر اول کلاس طبق مجموع امتیازات فعالیت ها";
+            this.chkFirstTotal.Size = new System.Drawing.Size(229, 19);
+            this.chkFirstTotal.StyleController = this.layoutControl1;
+            this.chkFirstTotal.TabIndex = 6;
+            this.chkFirstTotal.CheckedChanged += new System.EventHandler(this.chkFirstTotal_CheckedChanged);
+            // 
+            // cmbBook
+            // 
+            this.cmbBook.EditValue = "اجتماعی";
+            this.cmbBook.Location = new System.Drawing.Point(631, 12);
+            this.cmbBook.Name = "cmbBook";
+            this.cmbBook.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbBook.Properties.Items.AddRange(new object[] {
+            "اجتماعی",
+            "املا/انشا",
+            "بخوانیم و بنویسیم",
+            "تفکر",
+            "ریاضی",
+            "علوم",
+            "قرآن",
+            "کار و فناوری",
+            "مهارت های زندگی و تربیتی",
+            "هدیه های آسمانی"});
+            this.cmbBook.Properties.Sorted = true;
+            this.cmbBook.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cmbBook.Size = new System.Drawing.Size(275, 20);
+            this.cmbBook.StyleController = this.layoutControl1;
+            this.cmbBook.TabIndex = 5;
+            this.cmbBook.SelectedIndexChanged += new System.EventHandler(this.cmbBook_SelectedIndexChanged);
+            // 
+            // cmbClass
+            // 
+            this.cmbClass.Location = new System.Drawing.Point(976, 12);
+            this.cmbClass.Name = "cmbClass";
+            this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbClass.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Id", "Id", 33, DevExpress.Utils.FormatType.Numeric, "", false, DevExpress.Utils.HorzAlignment.Far),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchName", "مدرسه", 57, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchClass", "کلاس/پایه", 55, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SchDate", "سال تحصیلی", 53, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            this.cmbClass.Properties.DataSource = this.tblSchoolBindingSource;
+            this.cmbClass.Properties.DisplayMember = "SchClass";
+            this.cmbClass.Properties.NullText = "مدرسه را انتخاب کنید";
+            this.cmbClass.Properties.ValueMember = "Id";
+            this.cmbClass.Size = new System.Drawing.Size(293, 20);
+            this.cmbClass.StyleController = this.layoutControl1;
+            this.cmbClass.TabIndex = 4;
+            this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
+            // 
+            // tblSchoolBindingSource
+            // 
+            this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem5,
+            this.layoutControlItem6,
+            this.layoutControlItem7,
+            this.emptySpaceItem1,
+            this.emptySpaceItem2,
+            this.emptySpaceItem3,
+            this.emptySpaceItem4});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1347, 520);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.cmbClass;
+            this.layoutControlItem1.Location = new System.Drawing.Point(964, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(363, 24);
+            this.layoutControlItem1.Text = "مدرسه/کلاس";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.cmbBook;
+            this.layoutControlItem2.Location = new System.Drawing.Point(619, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(345, 24);
+            this.layoutControlItem2.Text = "درس";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 13);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.chkFirstTotal;
+            this.layoutControlItem3.Location = new System.Drawing.Point(1094, 34);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(233, 23);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // layoutControlItem4
+            // 
+            this.layoutControlItem4.Control = this.chkFirstAvg;
+            this.layoutControlItem4.Location = new System.Drawing.Point(576, 34);
+            this.layoutControlItem4.Name = "layoutControlItem4";
+            this.layoutControlItem4.Size = new System.Drawing.Size(303, 23);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem4.TextVisible = false;
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.chkFirstBook;
+            this.layoutControlItem5.Location = new System.Drawing.Point(879, 34);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(215, 23);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextVisible = false;
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.gridControl1;
+            this.layoutControlItem6.Location = new System.Drawing.Point(975, 67);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(352, 433);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlItem7
             // 
@@ -611,61 +681,6 @@
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.Size = new System.Drawing.Size(1347, 141);
             // 
-            // chartBarController1
-            // 
-            this.chartBarController1.BarItems.Add(this.createBarBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createLineBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createPieBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createRotatedBarBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createAreaBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createOtherSeriesTypesBaseItem1);
-            this.chartBarController1.BarItems.Add(this.changePaletteGalleryBaseItem1);
-            this.chartBarController1.BarItems.Add(this.changeAppearanceGalleryBaseItem1);
-            this.chartBarController1.BarItems.Add(this.runDesignerChartItem1);
-            this.chartBarController1.BarItems.Add(this.saveAsTemplateChartItem1);
-            this.chartBarController1.BarItems.Add(this.loadTemplateChartItem1);
-            this.chartBarController1.BarItems.Add(this.printPreviewChartItem1);
-            this.chartBarController1.BarItems.Add(this.printChartItem1);
-            this.chartBarController1.BarItems.Add(this.createExportBaseItem1);
-            this.chartBarController1.BarItems.Add(this.exportToPDFChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToHTMLChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToMHTChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToXLSChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToXLSXChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToRTFChartItem1);
-            this.chartBarController1.BarItems.Add(this.createExportToImageBaseItem1);
-            this.chartBarController1.BarItems.Add(this.exportToBMPChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToGIFChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToJPEGChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToPNGChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToTIFFChartItem1);
-            this.chartBarController1.Control = this.chartControl1;
-            // 
-            // chartTypeRibbonPageGroup1
-            // 
-            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createBarBaseItem1);
-            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createLineBaseItem1);
-            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createPieBaseItem1);
-            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createRotatedBarBaseItem1);
-            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createAreaBaseItem1);
-            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createOtherSeriesTypesBaseItem1);
-            this.chartTypeRibbonPageGroup1.Name = "chartTypeRibbonPageGroup1";
-            // 
-            // createChartRibbonPage1
-            // 
-            this.createChartRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.chartTypeRibbonPageGroup1,
-            this.chartAppearanceRibbonPageGroup1});
-            this.createChartRibbonPage1.Name = "createChartRibbonPage1";
-            // 
-            // chartRibbonPageCategory1
-            // 
-            this.chartRibbonPageCategory1.Control = this.chartControl1;
-            this.chartRibbonPageCategory1.Name = "chartRibbonPageCategory1";
-            this.chartRibbonPageCategory1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.createChartRibbonPage1,
-            this.createChartOtherRibbonPage1});
-            // 
             // createBarBaseItem1
             // 
             this.createBarBaseItem1.DropDownControl = this.commandBarGalleryDropDown1;
@@ -677,6 +692,8 @@
             // 
             // 
             // 
+            this.commandBarGalleryDropDown1.Gallery.AllowFilter = false;
+            this.commandBarGalleryDropDown1.Gallery.ColumnCount = 4;
             chartControlCommandGalleryItemGroup2DColumn1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             createBarChartItem1,
             createFullStackedBarChartItem1,
@@ -717,6 +734,9 @@
             chartControlCommandGalleryItemGroupCylinderColumn1,
             chartControlCommandGalleryItemGroupConeColumn1,
             chartControlCommandGalleryItemGroupPyramidColumn1});
+            this.commandBarGalleryDropDown1.Gallery.ImageSize = new System.Drawing.Size(32, 32);
+            this.commandBarGalleryDropDown1.Gallery.RowCount = 10;
+            this.commandBarGalleryDropDown1.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Auto;
             this.commandBarGalleryDropDown1.Name = "commandBarGalleryDropDown1";
             this.commandBarGalleryDropDown1.Ribbon = this.ribbonControl1;
             // 
@@ -731,6 +751,8 @@
             // 
             // 
             // 
+            this.commandBarGalleryDropDown2.Gallery.AllowFilter = false;
+            this.commandBarGalleryDropDown2.Gallery.ColumnCount = 3;
             chartControlCommandGalleryItemGroup2DLine1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             createLineChartItem1,
             createFullStackedLineChartItem1,
@@ -747,6 +769,9 @@
             this.commandBarGalleryDropDown2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             chartControlCommandGalleryItemGroup2DLine1,
             chartControlCommandGalleryItemGroup3DLine1});
+            this.commandBarGalleryDropDown2.Gallery.ImageSize = new System.Drawing.Size(32, 32);
+            this.commandBarGalleryDropDown2.Gallery.RowCount = 4;
+            this.commandBarGalleryDropDown2.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Auto;
             this.commandBarGalleryDropDown2.Name = "commandBarGalleryDropDown2";
             this.commandBarGalleryDropDown2.Ribbon = this.ribbonControl1;
             // 
@@ -761,6 +786,8 @@
             // 
             // 
             // 
+            this.commandBarGalleryDropDown3.Gallery.AllowFilter = false;
+            this.commandBarGalleryDropDown3.Gallery.ColumnCount = 3;
             chartControlCommandGalleryItemGroup2DPie1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             createPieChartItem1,
             createDoughnutChartItem1,
@@ -771,6 +798,9 @@
             this.commandBarGalleryDropDown3.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             chartControlCommandGalleryItemGroup2DPie1,
             chartControlCommandGalleryItemGroup3DPie1});
+            this.commandBarGalleryDropDown3.Gallery.ImageSize = new System.Drawing.Size(32, 32);
+            this.commandBarGalleryDropDown3.Gallery.RowCount = 2;
+            this.commandBarGalleryDropDown3.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Auto;
             this.commandBarGalleryDropDown3.Name = "commandBarGalleryDropDown3";
             this.commandBarGalleryDropDown3.Ribbon = this.ribbonControl1;
             // 
@@ -785,6 +815,8 @@
             // 
             // 
             // 
+            this.commandBarGalleryDropDown4.Gallery.AllowFilter = false;
+            this.commandBarGalleryDropDown4.Gallery.ColumnCount = 3;
             chartControlCommandGalleryItemGroup2DBar1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             createRotatedBarChartItem1,
             createRotatedFullStackedBarChartItem1,
@@ -793,6 +825,9 @@
             createRotatedStackedBarChartItem1});
             this.commandBarGalleryDropDown4.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             chartControlCommandGalleryItemGroup2DBar1});
+            this.commandBarGalleryDropDown4.Gallery.ImageSize = new System.Drawing.Size(32, 32);
+            this.commandBarGalleryDropDown4.Gallery.RowCount = 2;
+            this.commandBarGalleryDropDown4.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Auto;
             this.commandBarGalleryDropDown4.Name = "commandBarGalleryDropDown4";
             this.commandBarGalleryDropDown4.Ribbon = this.ribbonControl1;
             // 
@@ -807,6 +842,8 @@
             // 
             // 
             // 
+            this.commandBarGalleryDropDown5.Gallery.AllowFilter = false;
+            this.commandBarGalleryDropDown5.Gallery.ColumnCount = 4;
             chartControlCommandGalleryItemGroup2DArea1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             createAreaChartItem1,
             createFullStackedAreaChartItem1,
@@ -828,6 +865,9 @@
             this.commandBarGalleryDropDown5.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
             chartControlCommandGalleryItemGroup2DArea1,
             chartControlCommandGalleryItemGroup3DArea1});
+            this.commandBarGalleryDropDown5.Gallery.ImageSize = new System.Drawing.Size(32, 32);
+            this.commandBarGalleryDropDown5.Gallery.RowCount = 5;
+            this.commandBarGalleryDropDown5.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Auto;
             this.commandBarGalleryDropDown5.Name = "commandBarGalleryDropDown5";
             this.commandBarGalleryDropDown5.Ribbon = this.ribbonControl1;
             // 
@@ -842,6 +882,8 @@
             // 
             // 
             // 
+            this.commandBarGalleryDropDown6.Gallery.AllowFilter = false;
+            this.commandBarGalleryDropDown6.Gallery.ColumnCount = 4;
             chartControlCommandGalleryItemGroupPoint1.Items.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItem[] {
             createPointChartItem1,
             createBubbleChartItem1});
@@ -879,14 +921,11 @@
             chartControlCommandGalleryItemGroupPolar1,
             chartControlCommandGalleryItemGroupRange1,
             chartControlCommandGalleryItemGroupGantt1});
+            this.commandBarGalleryDropDown6.Gallery.ImageSize = new System.Drawing.Size(32, 32);
+            this.commandBarGalleryDropDown6.Gallery.RowCount = 9;
+            this.commandBarGalleryDropDown6.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Auto;
             this.commandBarGalleryDropDown6.Name = "commandBarGalleryDropDown6";
             this.commandBarGalleryDropDown6.Ribbon = this.ribbonControl1;
-            // 
-            // chartAppearanceRibbonPageGroup1
-            // 
-            this.chartAppearanceRibbonPageGroup1.ItemLinks.Add(this.changePaletteGalleryBaseItem1);
-            this.chartAppearanceRibbonPageGroup1.ItemLinks.Add(this.changeAppearanceGalleryBaseItem1);
-            this.chartAppearanceRibbonPageGroup1.Name = "chartAppearanceRibbonPageGroup1";
             // 
             // changePaletteGalleryBaseItem1
             // 
@@ -896,6 +935,42 @@
             // 
             // commandBarGalleryDropDown7
             // 
+            // 
+            // 
+            // 
+            this.commandBarGalleryDropDown7.Gallery.AllowFilter = false;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Hovered.Options.UseFont = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Hovered.Options.UseTextOptions = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseFont = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Normal.Options.UseTextOptions = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseFont = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Pressed.Options.UseTextOptions = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemCaptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Hovered.Options.UseFont = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Hovered.Options.UseTextOptions = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Hovered.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Normal.Options.UseFont = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Normal.Options.UseTextOptions = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Normal.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Pressed.Options.UseFont = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Pressed.Options.UseTextOptions = true;
+            this.commandBarGalleryDropDown7.Gallery.Appearance.ItemDescriptionAppearance.Pressed.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.commandBarGalleryDropDown7.Gallery.ColumnCount = 1;
+            this.commandBarGalleryDropDown7.Gallery.ImageSize = new System.Drawing.Size(160, 10);
+            this.commandBarGalleryDropDown7.Gallery.ItemImageLayout = DevExpress.Utils.Drawing.ImageLayoutMode.MiddleLeft;
+            this.commandBarGalleryDropDown7.Gallery.ItemImageLocation = DevExpress.Utils.Locations.Right;
+            skinPaddingEdges1.Bottom = -3;
+            skinPaddingEdges1.Top = -3;
+            this.commandBarGalleryDropDown7.Gallery.ItemImagePadding = skinPaddingEdges1;
+            skinPaddingEdges2.Bottom = -3;
+            skinPaddingEdges2.Top = -3;
+            this.commandBarGalleryDropDown7.Gallery.ItemTextPadding = skinPaddingEdges2;
+            this.commandBarGalleryDropDown7.Gallery.RowCount = 10;
+            this.commandBarGalleryDropDown7.Gallery.ShowGroupCaption = false;
+            this.commandBarGalleryDropDown7.Gallery.ShowItemText = true;
+            this.commandBarGalleryDropDown7.Gallery.ShowScrollBar = DevExpress.XtraBars.Ribbon.Gallery.ShowScrollBar.Auto;
             this.commandBarGalleryDropDown7.Name = "commandBarGalleryDropDown7";
             this.commandBarGalleryDropDown7.Ribbon = this.ribbonControl1;
             // 
@@ -910,29 +985,10 @@
             this.changeAppearanceGalleryBaseItem1.Id = 8;
             this.changeAppearanceGalleryBaseItem1.Name = "changeAppearanceGalleryBaseItem1";
             // 
-            // chartWizardRibbonPageGroup1
-            // 
-            this.chartWizardRibbonPageGroup1.ItemLinks.Add(this.runDesignerChartItem1);
-            this.chartWizardRibbonPageGroup1.Name = "chartWizardRibbonPageGroup1";
-            // 
-            // createChartOtherRibbonPage1
-            // 
-            this.createChartOtherRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.chartWizardRibbonPageGroup1,
-            this.chartTemplatesRibbonPageGroup1,
-            this.chartPrintExportRibbonPageGroup1});
-            this.createChartOtherRibbonPage1.Name = "createChartOtherRibbonPage1";
-            // 
             // runDesignerChartItem1
             // 
             this.runDesignerChartItem1.Id = 9;
             this.runDesignerChartItem1.Name = "runDesignerChartItem1";
-            // 
-            // chartTemplatesRibbonPageGroup1
-            // 
-            this.chartTemplatesRibbonPageGroup1.ItemLinks.Add(this.saveAsTemplateChartItem1);
-            this.chartTemplatesRibbonPageGroup1.ItemLinks.Add(this.loadTemplateChartItem1);
-            this.chartTemplatesRibbonPageGroup1.Name = "chartTemplatesRibbonPageGroup1";
             // 
             // saveAsTemplateChartItem1
             // 
@@ -943,13 +999,6 @@
             // 
             this.loadTemplateChartItem1.Id = 11;
             this.loadTemplateChartItem1.Name = "loadTemplateChartItem1";
-            // 
-            // chartPrintExportRibbonPageGroup1
-            // 
-            this.chartPrintExportRibbonPageGroup1.ItemLinks.Add(this.printPreviewChartItem1);
-            this.chartPrintExportRibbonPageGroup1.ItemLinks.Add(this.printChartItem1);
-            this.chartPrintExportRibbonPageGroup1.ItemLinks.Add(this.createExportBaseItem1);
-            this.chartPrintExportRibbonPageGroup1.Name = "chartPrintExportRibbonPageGroup1";
             // 
             // printPreviewChartItem1
             // 
@@ -1042,72 +1091,92 @@
             this.exportToTIFFChartItem1.Id = 25;
             this.exportToTIFFChartItem1.Name = "exportToTIFFChartItem1";
             // 
-            // tblSchoolBindingSource
+            // chartRibbonPageCategory1
             // 
-            this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
+            this.chartRibbonPageCategory1.Control = this.chartControl1;
+            this.chartRibbonPageCategory1.Name = "chartRibbonPageCategory1";
+            this.chartRibbonPageCategory1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.createChartRibbonPage1,
+            this.createChartOtherRibbonPage1});
             // 
-            // tblStudentBindingSource
+            // createChartRibbonPage1
             // 
-            this.tblStudentBindingSource.DataSource = typeof(ClassSRM.tbl_Student);
+            this.createChartRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.chartTypeRibbonPageGroup1,
+            this.chartAppearanceRibbonPageGroup1});
+            this.createChartRibbonPage1.Name = "createChartRibbonPage1";
             // 
-            // colId
+            // chartTypeRibbonPageGroup1
             // 
-            this.colId.FieldName = "Id";
-            this.colId.Name = "colId";
+            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createBarBaseItem1);
+            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createLineBaseItem1);
+            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createPieBaseItem1);
+            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createRotatedBarBaseItem1);
+            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createAreaBaseItem1);
+            this.chartTypeRibbonPageGroup1.ItemLinks.Add(this.createOtherSeriesTypesBaseItem1);
+            this.chartTypeRibbonPageGroup1.Name = "chartTypeRibbonPageGroup1";
             // 
-            // colStuClassId
+            // chartAppearanceRibbonPageGroup1
             // 
-            this.colStuClassId.FieldName = "StuClassId";
-            this.colStuClassId.Name = "colStuClassId";
+            this.chartAppearanceRibbonPageGroup1.ItemLinks.Add(this.changePaletteGalleryBaseItem1);
+            this.chartAppearanceRibbonPageGroup1.ItemLinks.Add(this.changeAppearanceGalleryBaseItem1);
+            this.chartAppearanceRibbonPageGroup1.Name = "chartAppearanceRibbonPageGroup1";
             // 
-            // colStuName
+            // createChartOtherRibbonPage1
             // 
-            this.colStuName.Caption = "نام";
-            this.colStuName.FieldName = "StuName";
-            this.colStuName.Name = "colStuName";
-            this.colStuName.Visible = true;
-            this.colStuName.VisibleIndex = 0;
-            this.colStuName.Width = 91;
+            this.createChartOtherRibbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.chartWizardRibbonPageGroup1,
+            this.chartTemplatesRibbonPageGroup1,
+            this.chartPrintExportRibbonPageGroup1});
+            this.createChartOtherRibbonPage1.Name = "createChartOtherRibbonPage1";
             // 
-            // colStuLName
+            // chartWizardRibbonPageGroup1
             // 
-            this.colStuLName.Caption = "نام خانوادگی";
-            this.colStuLName.FieldName = "StuLName";
-            this.colStuLName.Name = "colStuLName";
-            this.colStuLName.Visible = true;
-            this.colStuLName.VisibleIndex = 1;
-            this.colStuLName.Width = 111;
+            this.chartWizardRibbonPageGroup1.ItemLinks.Add(this.runDesignerChartItem1);
+            this.chartWizardRibbonPageGroup1.Name = "chartWizardRibbonPageGroup1";
             // 
-            // colStuImage
+            // chartTemplatesRibbonPageGroup1
             // 
-            this.colStuImage.Caption = "عکس";
-            this.colStuImage.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.colStuImage.FieldName = "StuImage";
-            this.colStuImage.Name = "colStuImage";
-            this.colStuImage.Visible = true;
-            this.colStuImage.VisibleIndex = 2;
-            this.colStuImage.Width = 128;
+            this.chartTemplatesRibbonPageGroup1.ItemLinks.Add(this.saveAsTemplateChartItem1);
+            this.chartTemplatesRibbonPageGroup1.ItemLinks.Add(this.loadTemplateChartItem1);
+            this.chartTemplatesRibbonPageGroup1.Name = "chartTemplatesRibbonPageGroup1";
             // 
-            // repositoryItemPictureEdit1
+            // chartPrintExportRibbonPageGroup1
             // 
-            this.repositoryItemPictureEdit1.Name = "repositoryItemPictureEdit1";
-            this.repositoryItemPictureEdit1.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.chartPrintExportRibbonPageGroup1.ItemLinks.Add(this.printPreviewChartItem1);
+            this.chartPrintExportRibbonPageGroup1.ItemLinks.Add(this.printChartItem1);
+            this.chartPrintExportRibbonPageGroup1.ItemLinks.Add(this.createExportBaseItem1);
+            this.chartPrintExportRibbonPageGroup1.Name = "chartPrintExportRibbonPageGroup1";
             // 
-            // tblEvaPointBindingSource
+            // chartBarController1
             // 
-            this.tblEvaPointBindingSource.DataSource = typeof(ClassSRM.tbl_EvaPoint);
-            // 
-            // tblEvaPointBindingSource1
-            // 
-            this.tblEvaPointBindingSource1.DataSource = typeof(ClassSRM.tbl_EvaPoint);
-            // 
-            // tblEvaPointBindingSource2
-            // 
-            this.tblEvaPointBindingSource2.DataSource = typeof(ClassSRM.tbl_EvaPoint);
-            // 
-            // tblEvaPointBindingSource3
-            // 
-            this.tblEvaPointBindingSource3.DataSource = typeof(ClassSRM.tbl_EvaPoint);
+            this.chartBarController1.BarItems.Add(this.createBarBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createLineBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createPieBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createRotatedBarBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createAreaBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createOtherSeriesTypesBaseItem1);
+            this.chartBarController1.BarItems.Add(this.changePaletteGalleryBaseItem1);
+            this.chartBarController1.BarItems.Add(this.changeAppearanceGalleryBaseItem1);
+            this.chartBarController1.BarItems.Add(this.runDesignerChartItem1);
+            this.chartBarController1.BarItems.Add(this.saveAsTemplateChartItem1);
+            this.chartBarController1.BarItems.Add(this.loadTemplateChartItem1);
+            this.chartBarController1.BarItems.Add(this.printPreviewChartItem1);
+            this.chartBarController1.BarItems.Add(this.printChartItem1);
+            this.chartBarController1.BarItems.Add(this.createExportBaseItem1);
+            this.chartBarController1.BarItems.Add(this.exportToPDFChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToHTMLChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToMHTChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToXLSChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToXLSXChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToRTFChartItem1);
+            this.chartBarController1.BarItems.Add(this.createExportToImageBaseItem1);
+            this.chartBarController1.BarItems.Add(this.exportToBMPChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToGIFChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToJPEGChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToPNGChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToTIFFChartItem1);
+            this.chartBarController1.Control = this.chartControl1;
             // 
             // splashScreenManager1
             // 
@@ -1129,22 +1198,12 @@
             this.Text = "پیشرفت تحصیلی دانش آموزان";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Process_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbBook.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkFirstTotal.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkFirstAvg.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkFirstBook.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
@@ -1155,13 +1214,29 @@
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkFirstBook.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkFirstAvg.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkFirstTotal.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbBook.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown3)).EndInit();
@@ -1169,13 +1244,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPictureEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

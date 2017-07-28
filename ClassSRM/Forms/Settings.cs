@@ -201,6 +201,8 @@ namespace ClassSRM.Forms
             if (q != null)
             {
                 q.ToList().ForEach(x => x.Remove());
+                cmbActivity.Properties.Items.Clear();
+                getAllItemsName();
                 XtraMessageBox.Show("فعالیت موردنظر با موفقیت حذف شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 doc.Save("Activity.xml");
             }

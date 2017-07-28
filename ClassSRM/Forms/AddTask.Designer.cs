@@ -62,6 +62,7 @@
             "برای انجام",
             "درحال انجام",
             "انجام شده"});
+            this.cmbCat.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbCat.Size = new System.Drawing.Size(203, 20);
             this.cmbCat.TabIndex = 1;
             this.cmbCat.SelectedIndexChanged += new System.EventHandler(this.cmbCat_SelectedIndexChanged);

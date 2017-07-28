@@ -199,6 +199,7 @@
             "مهارت های زندگی و تربیتی",
             "هدیه های آسمانی"});
             this.cmbBook.Properties.Sorted = true;
+            this.cmbBook.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbBook.Size = new System.Drawing.Size(176, 20);
             this.cmbBook.StyleController = this.layoutControl1;
             this.cmbBook.TabIndex = 5;
