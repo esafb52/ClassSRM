@@ -33,15 +33,7 @@
             this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
             this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.btnGen = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuClassId = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuLName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.txtBody = new DevExpress.XtraEditors.MemoEdit();
+            this.txtDate = new FarsiLibrary.Win.DevExpress.XtraFADateEdit();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.pdfFilePrintBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfFilePrintBarItem();
             this.pdfPreviousPageBarItem1 = new DevExpress.XtraPdfViewer.Bars.PdfPreviousPageBarItem();
@@ -71,6 +63,15 @@
             this.pdfFileRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfFileRibbonPageGroup();
             this.pdfNavigationRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfNavigationRibbonPageGroup();
             this.pdfZoomRibbonPageGroup1 = new DevExpress.XtraPdfViewer.Bars.PdfZoomRibbonPageGroup();
+            this.btnGen = new DevExpress.XtraEditors.SimpleButton();
+            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
+            this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuClassId = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuLName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.txtBody = new DevExpress.XtraEditors.MemoEdit();
             this.cmbDay = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cmbQuet = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cmbTem = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -85,23 +86,24 @@
             this.lyBody = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.pdfViewer1 = new DevExpress.XtraPdfViewer.PdfViewer();
             this.pdfBarController1 = new DevExpress.XtraPdfViewer.Bars.PdfBarController();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::ClassSRM.WaitForm1), true, true);
-            this.txtDate = new FarsiLibrary.Win.DevExpress.XtraFADateEdit();
-            this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBody.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDay.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbQuet.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTem.Properties)).BeginInit();
@@ -116,13 +118,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.lyBody)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdfBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbClass
@@ -143,7 +143,7 @@
             this.cmbClass.Properties.ValueMember = "Id";
             this.cmbClass.Size = new System.Drawing.Size(267, 20);
             this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 6;
+            this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
             // 
             // tblSchoolBindingSource
@@ -171,111 +171,21 @@
             this.layoutControl1.TabIndex = 14;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // btnGen
+            // txtDate
             // 
-            this.btnGen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGen.Location = new System.Drawing.Point(12, 146);
-            this.btnGen.Name = "btnGen";
-            this.btnGen.Size = new System.Drawing.Size(436, 22);
-            this.btnGen.StyleController = this.layoutControl1;
-            this.btnGen.TabIndex = 8;
-            this.btnGen.Text = "ایجاد نامه";
-            this.btnGen.Click += new System.EventHandler(this.btnGen_Click);
-            // 
-            // gridControl2
-            // 
-            this.gridControl2.DataSource = this.tblStudentBindingSource;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl2.Location = new System.Drawing.Point(452, 60);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(436, 108);
-            this.gridControl2.TabIndex = 9;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
-            // 
-            // tblStudentBindingSource
-            // 
-            this.tblStudentBindingSource.DataSource = typeof(ClassSRM.tbl_Student);
-            // 
-            // gridView2
-            // 
-            this.gridView2.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.gridView2.Appearance.FocusedRow.Options.UseFont = true;
-            this.gridView2.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.gridView2.Appearance.Row.Options.UseFont = true;
-            this.gridView2.Appearance.SelectedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.gridView2.Appearance.SelectedRow.Options.UseFont = true;
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colId,
-            this.colStuClassId,
-            this.colStuName,
-            this.colStuLName});
-            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
-            this.gridView2.GridControl = this.gridControl2;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsBehavior.Editable = false;
-            this.gridView2.OptionsImageLoad.DesiredThumbnailSize = new System.Drawing.Size(150, 150);
-            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView2.OptionsView.EnableAppearanceEvenRow = true;
-            this.gridView2.OptionsView.EnableAppearanceOddRow = true;
-            this.gridView2.OptionsView.RowAutoHeight = true;
-            this.gridView2.OptionsView.ShowFooter = true;
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            // 
-            // colId
-            // 
-            this.colId.FieldName = "Id";
-            this.colId.Name = "colId";
-            this.colId.OptionsColumn.AllowEdit = false;
-            this.colId.OptionsColumn.AllowMove = false;
-            this.colId.OptionsColumn.AllowShowHide = false;
-            this.colId.OptionsColumn.FixedWidth = true;
-            this.colId.OptionsColumn.ReadOnly = true;
-            // 
-            // colStuClassId
-            // 
-            this.colStuClassId.FieldName = "StuClassId";
-            this.colStuClassId.Name = "colStuClassId";
-            // 
-            // colStuName
-            // 
-            this.colStuName.Caption = "نام";
-            this.colStuName.FieldName = "StuName";
-            this.colStuName.Name = "colStuName";
-            this.colStuName.OptionsColumn.AllowEdit = false;
-            this.colStuName.OptionsColumn.AllowMove = false;
-            this.colStuName.OptionsColumn.AllowShowHide = false;
-            this.colStuName.OptionsColumn.FixedWidth = true;
-            this.colStuName.OptionsColumn.ReadOnly = true;
-            this.colStuName.Visible = true;
-            this.colStuName.VisibleIndex = 0;
-            this.colStuName.Width = 140;
-            // 
-            // colStuLName
-            // 
-            this.colStuLName.Caption = "نام خانوادگی";
-            this.colStuLName.FieldName = "StuLName";
-            this.colStuLName.Name = "colStuLName";
-            this.colStuLName.OptionsColumn.AllowMove = false;
-            this.colStuLName.OptionsColumn.AllowShowHide = false;
-            this.colStuLName.OptionsColumn.FixedWidth = true;
-            this.colStuLName.OptionsColumn.ReadOnly = true;
-            this.colStuLName.Visible = true;
-            this.colStuLName.VisibleIndex = 1;
-            this.colStuLName.Width = 150;
-            // 
-            // txtBody
-            // 
-            this.txtBody.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBody.Location = new System.Drawing.Point(892, 60);
-            this.txtBody.MenuManager = this.ribbonControl1;
-            this.txtBody.Name = "txtBody";
-            this.txtBody.Size = new System.Drawing.Size(388, 108);
-            this.txtBody.StyleController = this.layoutControl1;
-            this.txtBody.TabIndex = 12;
-            this.txtBody.Visible = false;
+            this.txtDate.EditValue = new System.DateTime(2017, 7, 26, 13, 19, 52, 0);
+            this.txtDate.Location = new System.Drawing.Point(12, 12);
+            this.txtDate.MenuManager = this.ribbonControl1;
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtDate.Size = new System.Drawing.Size(276, 20);
+            this.txtDate.StyleController = this.layoutControl1;
+            this.txtDate.TabIndex = 3;
+            this.txtDate.UpdateSelectionWhenNavigating = true;
             // 
             // ribbonControl1
             // 
@@ -504,6 +414,112 @@
             this.pdfZoomRibbonPageGroup1.Name = "pdfZoomRibbonPageGroup1";
             this.pdfZoomRibbonPageGroup1.Text = "زوم";
             // 
+            // btnGen
+            // 
+            this.btnGen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnGen.Location = new System.Drawing.Point(12, 146);
+            this.btnGen.Name = "btnGen";
+            this.btnGen.Size = new System.Drawing.Size(436, 22);
+            this.btnGen.StyleController = this.layoutControl1;
+            this.btnGen.TabIndex = 8;
+            this.btnGen.Text = "ایجاد نامه";
+            this.btnGen.Click += new System.EventHandler(this.btnGen_Click);
+            // 
+            // gridControl2
+            // 
+            this.gridControl2.DataSource = this.tblStudentBindingSource;
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl2.Location = new System.Drawing.Point(452, 60);
+            this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridControl2.Name = "gridControl2";
+            this.gridControl2.Size = new System.Drawing.Size(436, 108);
+            this.gridControl2.TabIndex = 7;
+            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView2});
+            // 
+            // tblStudentBindingSource
+            // 
+            this.tblStudentBindingSource.DataSource = typeof(ClassSRM.tbl_Student);
+            // 
+            // gridView2
+            // 
+            this.gridView2.Appearance.FocusedRow.Font = new System.Drawing.Font("Tahoma", 8F);
+            this.gridView2.Appearance.FocusedRow.Options.UseFont = true;
+            this.gridView2.Appearance.Row.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.gridView2.Appearance.Row.Options.UseFont = true;
+            this.gridView2.Appearance.SelectedRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.gridView2.Appearance.SelectedRow.Options.UseFont = true;
+            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colId,
+            this.colStuClassId,
+            this.colStuName,
+            this.colStuLName});
+            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
+            this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsBehavior.Editable = false;
+            this.gridView2.OptionsImageLoad.DesiredThumbnailSize = new System.Drawing.Size(150, 150);
+            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView2.OptionsView.EnableAppearanceEvenRow = true;
+            this.gridView2.OptionsView.EnableAppearanceOddRow = true;
+            this.gridView2.OptionsView.RowAutoHeight = true;
+            this.gridView2.OptionsView.ShowFooter = true;
+            this.gridView2.OptionsView.ShowGroupPanel = false;
+            // 
+            // colId
+            // 
+            this.colId.FieldName = "Id";
+            this.colId.Name = "colId";
+            this.colId.OptionsColumn.AllowEdit = false;
+            this.colId.OptionsColumn.AllowMove = false;
+            this.colId.OptionsColumn.AllowShowHide = false;
+            this.colId.OptionsColumn.FixedWidth = true;
+            this.colId.OptionsColumn.ReadOnly = true;
+            // 
+            // colStuClassId
+            // 
+            this.colStuClassId.FieldName = "StuClassId";
+            this.colStuClassId.Name = "colStuClassId";
+            // 
+            // colStuName
+            // 
+            this.colStuName.Caption = "نام";
+            this.colStuName.FieldName = "StuName";
+            this.colStuName.Name = "colStuName";
+            this.colStuName.OptionsColumn.AllowEdit = false;
+            this.colStuName.OptionsColumn.AllowMove = false;
+            this.colStuName.OptionsColumn.AllowShowHide = false;
+            this.colStuName.OptionsColumn.FixedWidth = true;
+            this.colStuName.OptionsColumn.ReadOnly = true;
+            this.colStuName.Visible = true;
+            this.colStuName.VisibleIndex = 0;
+            this.colStuName.Width = 140;
+            // 
+            // colStuLName
+            // 
+            this.colStuLName.Caption = "نام خانوادگی";
+            this.colStuLName.FieldName = "StuLName";
+            this.colStuLName.Name = "colStuLName";
+            this.colStuLName.OptionsColumn.AllowMove = false;
+            this.colStuLName.OptionsColumn.AllowShowHide = false;
+            this.colStuLName.OptionsColumn.FixedWidth = true;
+            this.colStuLName.OptionsColumn.ReadOnly = true;
+            this.colStuLName.Visible = true;
+            this.colStuLName.VisibleIndex = 1;
+            this.colStuLName.Width = 150;
+            // 
+            // txtBody
+            // 
+            this.txtBody.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBody.Location = new System.Drawing.Point(892, 60);
+            this.txtBody.MenuManager = this.ribbonControl1;
+            this.txtBody.Name = "txtBody";
+            this.txtBody.Size = new System.Drawing.Size(388, 108);
+            this.txtBody.StyleController = this.layoutControl1;
+            this.txtBody.TabIndex = 6;
+            this.txtBody.Visible = false;
+            // 
             // cmbDay
             // 
             this.cmbDay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -522,7 +538,7 @@
             this.cmbDay.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbDay.Size = new System.Drawing.Size(280, 20);
             this.cmbDay.StyleController = this.layoutControl1;
-            this.cmbDay.TabIndex = 6;
+            this.cmbDay.TabIndex = 2;
             // 
             // cmbQuet
             // 
@@ -551,7 +567,7 @@
             this.cmbQuet.Properties.PopupSizeable = true;
             this.cmbQuet.Size = new System.Drawing.Size(608, 20);
             this.cmbQuet.StyleController = this.layoutControl1;
-            this.cmbQuet.TabIndex = 13;
+            this.cmbQuet.TabIndex = 5;
             // 
             // cmbTem
             // 
@@ -567,7 +583,7 @@
             this.cmbTem.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbTem.Size = new System.Drawing.Size(289, 20);
             this.cmbTem.StyleController = this.layoutControl1;
-            this.cmbTem.TabIndex = 6;
+            this.cmbTem.TabIndex = 1;
             this.cmbTem.SelectedIndexChanged += new System.EventHandler(this.cmbTem_SelectedIndexChanged);
             // 
             // txtTeacher
@@ -577,7 +593,7 @@
             this.txtTeacher.Name = "txtTeacher";
             this.txtTeacher.Size = new System.Drawing.Size(608, 20);
             this.txtTeacher.StyleController = this.layoutControl1;
-            this.txtTeacher.TabIndex = 11;
+            this.txtTeacher.TabIndex = 4;
             // 
             // layoutControlGroup1
             // 
@@ -680,13 +696,22 @@
             this.layoutControlItem10.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem10.TextVisible = false;
             // 
+            // layoutControlItem8
+            // 
+            this.layoutControlItem8.Control = this.txtDate;
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(328, 24);
+            this.layoutControlItem8.Text = "تاریخ";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(45, 13);
+            // 
             // pdfViewer1
             // 
             this.pdfViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pdfViewer1.Location = new System.Drawing.Point(0, 343);
             this.pdfViewer1.Name = "pdfViewer1";
             this.pdfViewer1.Size = new System.Drawing.Size(1344, 493);
-            this.pdfViewer1.TabIndex = 13;
+            this.pdfViewer1.TabIndex = 0;
             // 
             // pdfBarController1
             // 
@@ -737,31 +762,6 @@
             // 
             this.splashScreenManager1.ClosingDelay = 500;
             // 
-            // txtDate
-            // 
-            this.txtDate.EditValue = new System.DateTime(2017, 7, 26, 13, 19, 52, 0);
-            this.txtDate.Location = new System.Drawing.Point(12, 12);
-            this.txtDate.MenuManager = this.ribbonControl1;
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtDate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtDate.Size = new System.Drawing.Size(276, 20);
-            this.txtDate.StyleController = this.layoutControl1;
-            this.txtDate.TabIndex = 14;
-            this.txtDate.UpdateSelectionWhenNavigating = true;
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.txtDate;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(328, 24);
-            this.layoutControlItem8.Text = "تاریخ";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(45, 13);
-            // 
             // Letter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -784,12 +784,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblStudentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBody.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemPageNumberEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbDay.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbQuet.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbTem.Properties)).EndInit();
@@ -804,13 +806,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.lyBody)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pdfBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

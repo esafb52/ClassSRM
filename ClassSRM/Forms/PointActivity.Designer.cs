@@ -123,7 +123,7 @@
             this.cmbScore.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbScore.Size = new System.Drawing.Size(249, 20);
             this.cmbScore.StyleController = this.layoutControl1;
-            this.cmbScore.TabIndex = 12;
+            this.cmbScore.TabIndex = 4;
             this.cmbScore.SelectedIndexChanged += new System.EventHandler(this.cmbScore_SelectedIndexChanged);
             // 
             // rd
@@ -138,7 +138,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "امتیاز پیشفرض")});
             this.rd.Size = new System.Drawing.Size(315, 25);
             this.rd.StyleController = this.layoutControl1;
-            this.rd.TabIndex = 11;
+            this.rd.TabIndex = 2;
             this.rd.SelectedIndexChanged += new System.EventHandler(this.rd_SelectedIndexChanged);
             // 
             // btnSave
@@ -148,7 +148,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(315, 38);
             this.btnSave.StyleController = this.layoutControl1;
-            this.btnSave.TabIndex = 10;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "ثبت و ذخیره";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -158,7 +158,7 @@
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(249, 105);
             this.txtDesc.StyleController = this.layoutControl1;
-            this.txtDesc.TabIndex = 9;
+            this.txtDesc.TabIndex = 6;
             // 
             // txtDate
             // 
@@ -172,7 +172,7 @@
             this.txtDate.Properties.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
             this.txtDate.Size = new System.Drawing.Size(249, 20);
             this.txtDate.StyleController = this.layoutControl1;
-            this.txtDate.TabIndex = 8;
+            this.txtDate.TabIndex = 5;
             this.txtDate.UpdateSelectionWhenNavigating = true;
             // 
             // txtScore
@@ -190,7 +190,7 @@
             this.txtScore.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtScore.Size = new System.Drawing.Size(249, 20);
             this.txtScore.StyleController = this.layoutControl1;
-            this.txtScore.TabIndex = 7;
+            this.txtScore.TabIndex = 3;
             // 
             // cmbStudent
             // 
@@ -210,7 +210,7 @@
             this.cmbStudent.Properties.ValueMember = "Id";
             this.cmbStudent.Size = new System.Drawing.Size(249, 20);
             this.cmbStudent.StyleController = this.layoutControl1;
-            this.cmbStudent.TabIndex = 5;
+            this.cmbStudent.TabIndex = 1;
             this.cmbStudent.EditValueChanged += new System.EventHandler(this.cmbStudent_EditValueChanged);
             // 
             // tblStudentBindingSource
@@ -234,7 +234,7 @@
             this.cmbClass.Properties.ValueMember = "Id";
             this.cmbClass.Size = new System.Drawing.Size(249, 20);
             this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 4;
+            this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
             // 
             // tblSchoolBindingSource

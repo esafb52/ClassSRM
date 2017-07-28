@@ -121,7 +121,7 @@
             this.txtDate.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.txtDate.Size = new System.Drawing.Size(271, 20);
             this.txtDate.StyleController = this.layoutControl1;
-            this.txtDate.TabIndex = 12;
+            this.txtDate.TabIndex = 5;
             this.txtDate.UpdateSelectionWhenNavigating = true;
             // 
             // cmbScore2
@@ -139,7 +139,7 @@
             this.cmbScore2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbScore2.Size = new System.Drawing.Size(271, 20);
             this.cmbScore2.StyleController = this.layoutControl1;
-            this.cmbScore2.TabIndex = 11;
+            this.cmbScore2.TabIndex = 3;
             this.cmbScore2.Visible = false;
             // 
             // btnSave
@@ -149,7 +149,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(337, 38);
             this.btnSave.StyleController = this.layoutControl1;
-            this.btnSave.TabIndex = 10;
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "ثبت و ذخیره";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -159,7 +159,7 @@
             this.txtDesc.Name = "txtDesc";
             this.txtDesc.Size = new System.Drawing.Size(271, 115);
             this.txtDesc.StyleController = this.layoutControl1;
-            this.txtDesc.TabIndex = 9;
+            this.txtDesc.TabIndex = 6;
             // 
             // cmbBook
             // 
@@ -183,7 +183,7 @@
             this.cmbBook.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbBook.Size = new System.Drawing.Size(271, 20);
             this.cmbBook.StyleController = this.layoutControl1;
-            this.cmbBook.TabIndex = 7;
+            this.cmbBook.TabIndex = 4;
             // 
             // txtScore
             // 
@@ -205,7 +205,7 @@
             this.txtScore.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtScore.Size = new System.Drawing.Size(271, 20);
             this.txtScore.StyleController = this.layoutControl1;
-            this.txtScore.TabIndex = 6;
+            this.txtScore.TabIndex = 2;
             // 
             // cmbStudent
             // 
@@ -225,7 +225,7 @@
             this.cmbStudent.Properties.ValueMember = "Id";
             this.cmbStudent.Size = new System.Drawing.Size(271, 20);
             this.cmbStudent.StyleController = this.layoutControl1;
-            this.cmbStudent.TabIndex = 5;
+            this.cmbStudent.TabIndex = 1;
             // 
             // tblStudentBindingSource
             // 
@@ -248,7 +248,7 @@
             this.cmbClass.Properties.ValueMember = "Id";
             this.cmbClass.Size = new System.Drawing.Size(271, 20);
             this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 4;
+            this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
             // 
             // tblSchoolBindingSource

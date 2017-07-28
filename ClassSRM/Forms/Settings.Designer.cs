@@ -188,7 +188,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "سیستم توصیفی")});
             this.rdCore.Size = new System.Drawing.Size(332, 72);
             this.rdCore.StyleController = this.layoutControl2;
-            this.rdCore.TabIndex = 1;
+            this.rdCore.TabIndex = 0;
             this.rdCore.SelectedIndexChanged += new System.EventHandler(this.rdCore_SelectedIndexChanged);
             // 
             // label1
@@ -271,6 +271,7 @@
             // fSize
             // 
             this.fSize.EditValue = 8;
+            this.fSize.Enabled = false;
             this.fSize.Location = new System.Drawing.Point(12, 134);
             this.fSize.Name = "fSize";
             this.fSize.Properties.AllowFocused = false;
@@ -304,7 +305,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.fontEdit1.Size = new System.Drawing.Size(274, 20);
             this.fontEdit1.StyleController = this.layoutControl1;
-            this.fontEdit1.TabIndex = 2;
+            this.fontEdit1.TabIndex = 3;
             this.fontEdit1.SelectedIndexChanged += new System.EventHandler(this.fontEdit1_SelectedIndexChanged);
             // 
             // chkFont
@@ -316,7 +317,7 @@
             this.chkFont.Properties.Caption = "استفاده از فونت دلخواه";
             this.chkFont.Size = new System.Drawing.Size(332, 19);
             this.chkFont.StyleController = this.layoutControl1;
-            this.chkFont.TabIndex = 0;
+            this.chkFont.TabIndex = 2;
             this.chkFont.CheckedChanged += new System.EventHandler(this.chkFont_CheckedChanged);
             // 
             // chkAutoRun
@@ -340,7 +341,7 @@
             this.chkLogin.Properties.Caption = "ورود به نرم افزار با استفاده از رمز عبور";
             this.chkLogin.Size = new System.Drawing.Size(332, 19);
             this.chkLogin.StyleController = this.layoutControl1;
-            this.chkLogin.TabIndex = 0;
+            this.chkLogin.TabIndex = 1;
             this.chkLogin.CheckedChanged += new System.EventHandler(this.chkLogin_CheckedChanged);
             // 
             // layoutControlGroup1
@@ -472,7 +473,7 @@
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(332, 38);
             this.btnDel.StyleController = this.layoutControl3;
-            this.btnDel.TabIndex = 9;
+            this.btnDel.TabIndex = 3;
             this.btnDel.Text = "حذف فعالیت";
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
@@ -483,7 +484,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(332, 38);
             this.btnSave.StyleController = this.layoutControl3;
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 4;
             this.btnSave.Text = "ثبت و ذخیره";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -502,7 +503,7 @@
             this.txtValue.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtValue.Size = new System.Drawing.Size(252, 20);
             this.txtValue.StyleController = this.layoutControl3;
-            this.txtValue.TabIndex = 7;
+            this.txtValue.TabIndex = 2;
             // 
             // txtTitle
             // 
@@ -510,7 +511,7 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(252, 20);
             this.txtTitle.StyleController = this.layoutControl3;
-            this.txtTitle.TabIndex = 6;
+            this.txtTitle.TabIndex = 1;
             // 
             // cmbActivity
             // 
@@ -521,7 +522,7 @@
             this.cmbActivity.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbActivity.Size = new System.Drawing.Size(252, 20);
             this.cmbActivity.StyleController = this.layoutControl3;
-            this.cmbActivity.TabIndex = 5;
+            this.cmbActivity.TabIndex = 0;
             this.cmbActivity.SelectedIndexChanged += new System.EventHandler(this.cmbActivity_SelectedIndexChanged);
             // 
             // labelControl1

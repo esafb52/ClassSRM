@@ -42,6 +42,7 @@
             // 
             this.txtUserName.Location = new System.Drawing.Point(12, 23);
             this.txtUserName.Name = "txtUserName";
+            this.txtUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtUserName.Size = new System.Drawing.Size(237, 20);
             this.txtUserName.TabIndex = 0;
             // 
@@ -50,8 +51,9 @@
             this.txtPass.Location = new System.Drawing.Point(12, 59);
             this.txtPass.Name = "txtPass";
             this.txtPass.Properties.UseSystemPasswordChar = true;
+            this.txtPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtPass.Size = new System.Drawing.Size(237, 20);
-            this.txtPass.TabIndex = 0;
+            this.txtPass.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -77,7 +79,7 @@
             // 
             this.btnLogin.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Appearance.Options.UseFont = true;
-            this.btnLogin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnLogin.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLogin.ImageOptions.SvgImage")));
             this.btnLogin.Location = new System.Drawing.Point(13, 98);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(236, 35);

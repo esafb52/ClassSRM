@@ -374,7 +374,7 @@
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1});
             this.gridControl1.Size = new System.Drawing.Size(348, 429);
-            this.gridControl1.TabIndex = 9;
+            this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -451,7 +451,7 @@
             this.chkFirstBook.Properties.Caption = "نفر اول کلاس طبق مجموع امتیازات دروس";
             this.chkFirstBook.Size = new System.Drawing.Size(211, 19);
             this.chkFirstBook.StyleController = this.layoutControl1;
-            this.chkFirstBook.TabIndex = 8;
+            this.chkFirstBook.TabIndex = 3;
             this.chkFirstBook.CheckedChanged += new System.EventHandler(this.chkFirstBook_CheckedChanged);
             // 
             // chkFirstAvg
@@ -462,7 +462,7 @@
             this.chkFirstAvg.Properties.Caption = "نفر اول کلاس طبق میانگین امتیازات دروس و فعالیت ها";
             this.chkFirstAvg.Size = new System.Drawing.Size(299, 19);
             this.chkFirstAvg.StyleController = this.layoutControl1;
-            this.chkFirstAvg.TabIndex = 7;
+            this.chkFirstAvg.TabIndex = 4;
             this.chkFirstAvg.CheckedChanged += new System.EventHandler(this.chkFirstAvg_CheckedChanged);
             // 
             // chkFirstTotal
@@ -473,7 +473,7 @@
             this.chkFirstTotal.Properties.Caption = "نفر اول کلاس طبق مجموع امتیازات فعالیت ها";
             this.chkFirstTotal.Size = new System.Drawing.Size(229, 19);
             this.chkFirstTotal.StyleController = this.layoutControl1;
-            this.chkFirstTotal.TabIndex = 6;
+            this.chkFirstTotal.TabIndex = 2;
             this.chkFirstTotal.CheckedChanged += new System.EventHandler(this.chkFirstTotal_CheckedChanged);
             // 
             // cmbBook
@@ -498,7 +498,7 @@
             this.cmbBook.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbBook.Size = new System.Drawing.Size(275, 20);
             this.cmbBook.StyleController = this.layoutControl1;
-            this.cmbBook.TabIndex = 5;
+            this.cmbBook.TabIndex = 1;
             this.cmbBook.SelectedIndexChanged += new System.EventHandler(this.cmbBook_SelectedIndexChanged);
             // 
             // cmbClass
@@ -518,7 +518,7 @@
             this.cmbClass.Properties.ValueMember = "Id";
             this.cmbClass.Size = new System.Drawing.Size(293, 20);
             this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 4;
+            this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
             // 
             // tblSchoolBindingSource

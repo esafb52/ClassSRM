@@ -104,12 +104,14 @@ namespace ClassSRM.Forms
             if (chkFont.Checked)
             {
                 fontEdit1.Enabled = true;
+                fSize.Enabled = true;
                 Config.AddUpdateAppSettings("Font", "Custome");
                 DevExpress.XtraEditors.WindowsFormsSettings.DefaultFont = new Font(fontEdit1.Text, fSize.Value);
             }
             else
             {
                 fontEdit1.Enabled = false;
+                fSize.Enabled = false;
                 Config.AddUpdateAppSettings("Font", "Default");
                 Config.AddUpdateAppSettings("FontFamily", "Tahoma");
                 Config.AddUpdateAppSettings("FontSize", "8");

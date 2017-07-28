@@ -120,16 +120,17 @@ namespace ClassSRM.Forms
 
         private void chkFirstTotal_CheckedChanged(object sender, EventArgs e)
         {
+            //Todo: Must Be Fix object instance error
             if (chkFirstTotal.Checked)
             {
                 try
                 {
                     tblEvaPointBindingSource1.DataSource = from v in dc.tbl_EvaPoints where v.StudentId == userId1 select v; //نمایش پیشرفت نفر برتر
-                    chartControl1.Series["Series 2"].LegendText = "نفر برتر فعالیت ها " + (from v in dc.tbl_Students where v.Id == userId1 & v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
+                    chartControl1.Series["Series 2"].LegendText = "نفر برتر فعالیت ها " + (from v in dc.tbl_Students where v.Id == userId1 && v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    XtraMessageBox.Show("مشکلی پیش آمده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                   // XtraMessageBox.Show("مشکلی پیش آمده است"+ ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -145,7 +146,7 @@ namespace ClassSRM.Forms
                 try
                 {
                     tblEvaPointBindingSource2.DataSource = from v in dc.tbl_EvaPoints where v.StudentId == userId2 select v; //نمایش پیشرفت نفر برتر
-                    chartControl1.Series["Series 3"].LegendText = "نفر برتر دروس " + (from v in dc.tbl_Students where v.Id == userId2 & v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
+                    chartControl1.Series["Series 3"].LegendText = "نفر برتر دروس " + (from v in dc.tbl_Students where v.Id == userId2 && v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
                 }
                 catch (Exception)
                 {
@@ -165,7 +166,7 @@ namespace ClassSRM.Forms
                 try
                 {
                     tblEvaPointBindingSource3.DataSource = from v in dc.tbl_EvaPoints where v.StudentId == userId3 select v; //نمایش پیشرفت نفر برتر
-                    chartControl1.Series["Series 4"].LegendText = "نفر برتر کل " + (from v in dc.tbl_Students where v.Id == userId3 & v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
+                    chartControl1.Series["Series 4"].LegendText = "نفر برتر کل " + (from v in dc.tbl_Students where v.Id == userId3 && v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
                 }
                 catch (Exception)
                 {

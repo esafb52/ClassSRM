@@ -66,7 +66,7 @@ namespace ClassSRM
 
                 var schoolName = cmbClass.GetColumnValue("SchName");
                 var className = cmbClass.GetColumnValue("SchClass");
-                var stuName = gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "StuName");
+                var stuName = gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "StuName") + " " + gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "StuLName");
 
                 foreach (Microsoft.Office.Interop.Word.Field myMergeField in oWordDoc.Fields)
                 {

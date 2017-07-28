@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditAccount));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.btnDel = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.tblUserBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -47,9 +48,8 @@
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnDel = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -64,8 +64,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -84,6 +84,17 @@
             this.layoutControl1.Size = new System.Drawing.Size(656, 392);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // btnDel
+            // 
+            this.btnDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDel.ImageOptions.SvgImage")));
+            this.btnDel.Location = new System.Drawing.Point(12, 46);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(314, 38);
+            this.btnDel.StyleController = this.layoutControl1;
+            this.btnDel.TabIndex = 8;
+            this.btnDel.Text = "حذف حساب کاربری";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // gridControl1
             // 
@@ -150,6 +161,7 @@
             // 
             this.txtPass.Location = new System.Drawing.Point(12, 12);
             this.txtPass.Name = "txtPass";
+            this.txtPass.Properties.UseSystemPasswordChar = true;
             this.txtPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtPass.Size = new System.Drawing.Size(265, 20);
             this.txtPass.StyleController = this.layoutControl1;
@@ -236,16 +248,13 @@
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
-            // btnDel
+            // emptySpaceItem1
             // 
-            this.btnDel.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDel.ImageOptions.SvgImage")));
-            this.btnDel.Location = new System.Drawing.Point(12, 46);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(314, 38);
-            this.btnDel.StyleController = this.layoutControl1;
-            this.btnDel.TabIndex = 8;
-            this.btnDel.Text = "حذف حساب کاربری";
-            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            this.emptySpaceItem1.AllowHotTrack = false;
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 76);
+            this.emptySpaceItem1.Name = "emptySpaceItem1";
+            this.emptySpaceItem1.Size = new System.Drawing.Size(636, 10);
+            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
             // 
@@ -255,14 +264,6 @@
             this.layoutControlItem5.Size = new System.Drawing.Size(318, 42);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
-            // 
-            // emptySpaceItem1
-            // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 76);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(636, 10);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
             // EditAccount
             // 
@@ -294,8 +295,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ClassSRM" Class="ClassSRMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLExpress;Initial Catalog=ClassSRM;Integrated Security=True" SettingsObjectName="ClassSRM.Properties.Settings" SettingsPropertyName="ClassSRMConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=ClassSRM;Integrated Security=True" SettingsObjectName="ClassSRM.Properties.Settings" SettingsPropertyName="ClassSRMConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.tbl_User" Member="tbl_Users">
     <Type Name="tbl_User">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />

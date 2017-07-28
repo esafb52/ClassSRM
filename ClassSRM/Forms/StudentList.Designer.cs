@@ -140,7 +140,7 @@
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1});
             this.gridControl1.Size = new System.Drawing.Size(1153, 480);
-            this.gridControl1.TabIndex = 15;
+            this.gridControl1.TabIndex = 10;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -232,7 +232,7 @@
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(285, 38);
             this.btnDel.StyleController = this.layoutControl1;
-            this.btnDel.TabIndex = 14;
+            this.btnDel.TabIndex = 9;
             this.btnDel.Text = "حذف";
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
@@ -243,7 +243,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(285, 38);
             this.btnEdit.StyleController = this.layoutControl1;
-            this.btnEdit.TabIndex = 13;
+            this.btnEdit.TabIndex = 8;
             this.btnEdit.Text = "ویرایش";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -269,7 +269,7 @@
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(43, 38);
             this.btnLoad.StyleController = this.layoutControl1;
-            this.btnLoad.TabIndex = 11;
+            this.btnLoad.TabIndex = 7;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // lookUpEdit2
@@ -289,7 +289,7 @@
             this.lookUpEdit2.Properties.ValueMember = "Id";
             this.lookUpEdit2.Size = new System.Drawing.Size(218, 20);
             this.lookUpEdit2.StyleController = this.layoutControl1;
-            this.lookUpEdit2.TabIndex = 10;
+            this.lookUpEdit2.TabIndex = 6;
             // 
             // tblSchoolBindingSource
             // 
@@ -308,7 +308,7 @@
             this.cmbGender.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cmbGender.Size = new System.Drawing.Size(219, 20);
             this.cmbGender.StyleController = this.layoutControl1;
-            this.cmbGender.TabIndex = 9;
+            this.cmbGender.TabIndex = 5;
             // 
             // txtLName
             // 
@@ -316,7 +316,7 @@
             this.txtLName.Name = "txtLName";
             this.txtLName.Size = new System.Drawing.Size(219, 20);
             this.txtLName.StyleController = this.layoutControl1;
-            this.txtLName.TabIndex = 8;
+            this.txtLName.TabIndex = 3;
             // 
             // txtName
             // 
@@ -324,7 +324,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(220, 20);
             this.txtName.StyleController = this.layoutControl1;
-            this.txtName.TabIndex = 7;
+            this.txtName.TabIndex = 2;
             // 
             // txtFName
             // 
@@ -332,7 +332,7 @@
             this.txtFName.Name = "txtFName";
             this.txtFName.Size = new System.Drawing.Size(219, 20);
             this.txtFName.StyleController = this.layoutControl1;
-            this.txtFName.TabIndex = 6;
+            this.txtFName.TabIndex = 4;
             // 
             // rd
             // 
@@ -347,7 +347,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "دختر")});
             this.rd.Size = new System.Drawing.Size(508, 25);
             this.rd.StyleController = this.layoutControl1;
-            this.rd.TabIndex = 5;
+            this.rd.TabIndex = 1;
             this.rd.SelectedIndexChanged += new System.EventHandler(this.rd_SelectedIndexChanged);
             // 
             // cmbClass
@@ -367,7 +367,7 @@
             this.cmbClass.Properties.ValueMember = "Id";
             this.cmbClass.Size = new System.Drawing.Size(509, 20);
             this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 4;
+            this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
             // 
             // layoutControlGroup1

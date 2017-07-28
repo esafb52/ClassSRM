@@ -159,7 +159,7 @@
             this.btnExport2.Name = "btnExport2";
             this.btnExport2.Size = new System.Drawing.Size(351, 38);
             this.btnExport2.StyleController = this.layoutControl2;
-            this.btnExport2.TabIndex = 8;
+            this.btnExport2.TabIndex = 1;
             this.btnExport2.Text = "خروجی به PDF";
             this.btnExport2.Click += new System.EventHandler(this.btnExport2_Click);
             // 
@@ -172,7 +172,7 @@
             this.repositoryItemPictureEdit1});
             this.gridControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridControl2.Size = new System.Drawing.Size(615, 253);
-            this.gridControl2.TabIndex = 7;
+            this.gridControl2.TabIndex = 2;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
             // 
@@ -259,7 +259,7 @@
             this.cmbClass2.Properties.ValueMember = "Id";
             this.cmbClass2.Size = new System.Drawing.Size(261, 20);
             this.cmbClass2.StyleController = this.layoutControl2;
-            this.cmbClass2.TabIndex = 4;
+            this.cmbClass2.TabIndex = 0;
             this.cmbClass2.EditValueChanged += new System.EventHandler(this.cmbClass2_EditValueChanged);
             // 
             // tblSchoolBindingSource
@@ -365,7 +365,7 @@
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(293, 38);
             this.btnExport.StyleController = this.layoutControl1;
-            this.btnExport.TabIndex = 9;
+            this.btnExport.TabIndex = 2;
             this.btnExport.Text = "خروجی به PDF";
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
@@ -376,7 +376,7 @@
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.gridControl1.Size = new System.Drawing.Size(615, 253);
-            this.gridControl1.TabIndex = 6;
+            this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -456,7 +456,7 @@
             this.cmbClass.Properties.ValueMember = "Id";
             this.cmbClass.Size = new System.Drawing.Size(227, 20);
             this.cmbClass.StyleController = this.layoutControl1;
-            this.cmbClass.TabIndex = 2;
+            this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
             // 
             // txtDate
@@ -471,7 +471,7 @@
             this.txtDate.Properties.CalendarTimeProperties.Mask.EditMask = "d";
             this.txtDate.Size = new System.Drawing.Size(252, 20);
             this.txtDate.StyleController = this.layoutControl1;
-            this.txtDate.TabIndex = 0;
+            this.txtDate.TabIndex = 1;
             this.txtDate.UpdateSelectionWhenNavigating = true;
             this.txtDate.DateTimeChanged += new System.EventHandler(this.txtDate_DateTimeChanged);
             // 
