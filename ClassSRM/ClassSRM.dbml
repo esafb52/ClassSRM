@@ -138,14 +138,6 @@
     <Parameter Name="Label" Parameter="label" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.UpdateTask" Method="UpdateTask">
-    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Caption" Parameter="caption" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="Desc" Parameter="desc" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="NVarChar(MAX)" />
-    <Parameter Name="Label" Parameter="label" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.DeleteTask" Method="DeleteTask">
     <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
@@ -309,6 +301,14 @@
   </Function>
   <Function Name="dbo.DeleteEvaBook" Method="DeleteEvaBook">
     <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.UpdateTask" Method="UpdateTask">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Caption" Parameter="caption" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Desc" Parameter="desc" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Label" Parameter="label" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

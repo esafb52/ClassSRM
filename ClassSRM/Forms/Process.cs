@@ -120,7 +120,6 @@ namespace ClassSRM.Forms
 
         private void chkFirstTotal_CheckedChanged(object sender, EventArgs e)
         {
-            //Todo: Must Be Fix object instance error
             if (chkFirstTotal.Checked)
             {
                 try
@@ -128,9 +127,8 @@ namespace ClassSRM.Forms
                     tblEvaPointBindingSource1.DataSource = from v in dc.tbl_EvaPoints where v.StudentId == userId1 select v; //نمایش پیشرفت نفر برتر
                     chartControl1.Series["Series 2"].LegendText = "نفر برتر فعالیت ها " + (from v in dc.tbl_Students where v.Id == userId1 && v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                   // XtraMessageBox.Show("مشکلی پیش آمده است"+ ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else

@@ -146,12 +146,15 @@ namespace ClassSRM
             }
             else
             {
+                AddTask.id = (int)tileView.GetRowCellValue(tileView.FocusedRowHandle, "Id");
                 AddTask.label = (int)tileView.GetRowCellValue(tileView.FocusedRowHandle, "Label");
                 AddTask.status = tileView.GetRowCellValue(tileView.FocusedRowHandle, "Status").ToString();
                 AddTask.caption = tileView.GetRowCellValue(tileView.FocusedRowHandle, "Caption").ToString();
                 AddTask.desc = tileView.GetRowCellValue(tileView.FocusedRowHandle, "Description").ToString();
                 AddTask.isEdit = true;
                 new AddTask().ShowDialog();
+                tblTaskBindingSource.EndEdit();
+                dc = new ClassSRMDataContext();
                 InitData();
             }
             

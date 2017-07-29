@@ -28,13 +28,7 @@ namespace ClassSRM.Forms
             Config.DelScript();
 
             //          *******************************************      \\
-
-            //Todo: Change Temp Folder Path
-            ////**********    TEMP FOLDER FOR LETTER GENERATER      **********\\
-            //string temp = Application.StartupPath + @"\temp";
-            //if (!System.IO.Directory.Exists(temp))
-            //    System.IO.Directory.CreateDirectory(temp);
-
+            
             //Read Login Config
             var login = Config.ReadSetting("Login");
             if (login == "false")

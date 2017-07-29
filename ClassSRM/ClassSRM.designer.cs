@@ -209,13 +209,6 @@ namespace ClassSRM
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.UpdateTask")]
-		public int UpdateTask([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Caption", DbType="NVarChar(MAX)")] string caption, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Desc", DbType="NVarChar(MAX)")] string desc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Status", DbType="NVarChar(MAX)")] string status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Label", DbType="Int")] System.Nullable<int> label)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, caption, desc, status, label);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteTask")]
 		public int DeleteTask([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
 		{
@@ -381,6 +374,13 @@ namespace ClassSRM
 		public int DeleteEvaBook([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.UpdateTask")]
+		public int UpdateTask([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Caption", DbType="NVarChar(MAX)")] string caption, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Desc", DbType="NVarChar(MAX)")] string desc, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Status", DbType="NVarChar(MAX)")] string status, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Label", DbType="Int")] System.Nullable<int> label)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, caption, desc, status, label);
 			return ((int)(result.ReturnValue));
 		}
 	}

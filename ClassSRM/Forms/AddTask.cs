@@ -36,9 +36,10 @@ namespace ClassSRM.Forms
         {
             if (isEdit)
             {
-              dc.UpdateTask(id, txtCaption.Text, txtDesc.Text, cmbCat.Text, cmbColor.SelectedIndex);
-              XtraMessageBox.Show("با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
-              Close();
+                dc.UpdateTask(id, txtCaption.Text, txtDesc.Text, cmbCat.Text, cmbColor.SelectedIndex);
+                dc = new ClassSRMDataContext();
+                XtraMessageBox.Show("با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Close();
             }
             else
             {
