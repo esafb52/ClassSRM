@@ -764,6 +764,7 @@
             // 
             // Letter
             // 
+            this.AcceptButton = this.btnGen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1344, 836);
@@ -771,6 +772,7 @@
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonControl1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.Name = "Letter";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
@@ -780,6 +782,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmLetter_FormClosed);
             this.Load += new System.EventHandler(this.frmLetterAll_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Letter_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

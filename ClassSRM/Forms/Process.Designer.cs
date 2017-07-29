@@ -1190,6 +1190,7 @@
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.ribbonControl1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.Name = "Process";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
@@ -1198,6 +1199,7 @@
             this.Text = "پیشرفت تحصیلی دانش آموزان";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Process_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Process_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource2)).EndInit();

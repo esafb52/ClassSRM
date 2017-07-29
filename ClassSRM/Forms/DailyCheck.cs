@@ -27,19 +27,7 @@ namespace ClassSRM.Forms
 
         private void gridView1_KeyDown(object sender, KeyEventArgs e)
         {
-            //ثبت حضور با کلید اینتر
-            if (e.KeyCode == Keys.Enter)
-            {
-                var dc = new ClassSRMDataContext();
-                dc.InsertCheck((int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id"), true, strDate);
-                gridView1.DeleteSelectedRows();
-                gridView1.SelectRow(0);
-                lblCount.Text = gridView1.DataRowCount + " نفر بررسی نشده اند";
-                if (gridView1.DataRowCount == 0)
-                {
-                    Close();
-                }
-            }
+            
             //ثبت غیبت با کلید اسپیس
             if (e.KeyCode == Keys.Space)
             {
@@ -92,6 +80,12 @@ namespace ClassSRM.Forms
             {
                 Close();
             }
+        }
+
+        private void DailyCheck_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
         }
     }
 }

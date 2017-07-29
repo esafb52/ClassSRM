@@ -56,5 +56,11 @@ namespace ClassSRM.Forms
         {
             tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
         }
+
+        private void AddStudent_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

@@ -149,5 +149,11 @@ namespace ClassSRM.Forms
         {
             loadStudent();
         }
+
+        private void StudentList_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

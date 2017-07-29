@@ -72,5 +72,11 @@ namespace ClassSRM.Forms
                 XtraMessageBox.Show("حسابی برای حذف وجود ندارد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void EditAccount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

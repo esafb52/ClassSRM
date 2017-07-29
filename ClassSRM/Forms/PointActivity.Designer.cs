@@ -429,12 +429,14 @@
             // 
             // PointActivity
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(339, 401);
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "PointActivity";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -444,6 +446,7 @@
             this.Text = "ارزشیابی فعالیت ها";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.PointActivity_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PointActivity_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cmbScore.Properties)).EndInit();

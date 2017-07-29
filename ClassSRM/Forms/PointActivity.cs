@@ -177,5 +177,11 @@ namespace ClassSRM.Forms
             else
                 return 0;
         }
+
+        private void PointActivity_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

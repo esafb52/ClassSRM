@@ -54,5 +54,11 @@ namespace ClassSRM.Forms
             PointBook.SchoolId = (int)cmbClass.EditValue;
             new PointBook().ShowDialog();
         }
+
+        private void Ask_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

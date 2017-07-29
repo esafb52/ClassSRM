@@ -651,6 +651,7 @@
             this.Controls.Add(this.tabPane1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Settings";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -660,6 +661,7 @@
             this.Text = "تنظیمات برنامه";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Settings_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Settings_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);

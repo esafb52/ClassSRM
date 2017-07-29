@@ -38,5 +38,11 @@ namespace ClassSRM.Forms
                 XtraMessageBox.Show("مشکلی پیش آمده است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
+
+        private void CompareBarChart_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

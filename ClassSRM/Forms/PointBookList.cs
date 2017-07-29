@@ -120,6 +120,12 @@ namespace ClassSRM.Forms
                 e.RepositoryItem = editorForEditing;
         }
 
+        private void PointBookList_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
+
         private void EditableProgressBar()
         {
             editorForDisplay = new RepositoryItemProgressBar();

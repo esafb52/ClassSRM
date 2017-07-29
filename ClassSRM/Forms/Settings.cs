@@ -217,5 +217,11 @@ namespace ClassSRM.Forms
         {
             txtValue.Value = getValeofItem(cmbActivity.Text);
         }
+
+        private void Settings_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

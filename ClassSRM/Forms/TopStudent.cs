@@ -52,5 +52,11 @@ namespace ClassSRM.Forms
         {
             Config.ExportPdf(gridControl2, txtDate.Text);
         }
+
+        private void TopStudent_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

@@ -410,12 +410,14 @@
             // 
             // PointBook
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(361, 385);
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "PointBook";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -425,6 +427,7 @@
             this.Text = "ارزشیابی دروس";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.PointBook_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PointBook_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties.CalendarTimeProperties)).EndInit();

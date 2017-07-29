@@ -546,11 +546,13 @@
             // 
             // StudentList
             // 
+            this.AcceptButton = this.btnEdit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 631);
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.Name = "StudentList";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
@@ -559,6 +561,7 @@
             this.Text = "لیست دانش آموزان کلاس";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.StudentList_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.StudentList_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

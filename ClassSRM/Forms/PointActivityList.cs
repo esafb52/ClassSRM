@@ -71,6 +71,12 @@ namespace ClassSRM.Forms
                 e.RepositoryItem = editorForEditing;
         }
 
+        private void PointActivityList_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
+
         private void btnDel_Click(object sender, EventArgs e)
         {
             if (gridView1.RowCount != 0)

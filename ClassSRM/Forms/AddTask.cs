@@ -62,5 +62,11 @@ namespace ClassSRM.Forms
                     txtDesc.Text = string.Empty;
             }
         }
+
+        private void AddTask_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

@@ -40,5 +40,11 @@ namespace ClassSRM.Forms
             txtSchool.Focus();
             txtSchool.Select();
         }
+
+        private void AddSchool_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

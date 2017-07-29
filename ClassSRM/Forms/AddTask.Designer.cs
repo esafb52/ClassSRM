@@ -127,6 +127,7 @@
             // 
             // AddTask
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 216);
@@ -140,6 +141,7 @@
             this.Controls.Add(this.labelControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "AddTask";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -148,6 +150,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
             this.Load += new System.EventHandler(this.AddTask_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AddTask_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.cmbCat.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCaption.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDesc.Properties)).EndInit();

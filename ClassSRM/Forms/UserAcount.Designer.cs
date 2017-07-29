@@ -30,28 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserAcount));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
+            this.txtPass2 = new DevExpress.XtraEditors.TextEdit();
+            this.txtPass = new DevExpress.XtraEditors.TextEdit();
             this.txtUserName = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.txtPass = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtPass2 = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPass2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUserName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPass2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
@@ -75,6 +75,48 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // btnSave
+            // 
+            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnSave.ImageOptions.SvgImage")));
+            this.btnSave.Location = new System.Drawing.Point(12, 135);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(318, 38);
+            this.btnSave.StyleController = this.layoutControl1;
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "ثبت و ذخیره";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtPass2
+            // 
+            this.txtPass2.Location = new System.Drawing.Point(12, 83);
+            this.txtPass2.Name = "txtPass2";
+            this.txtPass2.Properties.UseSystemPasswordChar = true;
+            this.txtPass2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPass2.Size = new System.Drawing.Size(236, 20);
+            this.txtPass2.StyleController = this.layoutControl1;
+            this.txtPass2.TabIndex = 6;
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(12, 47);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Properties.UseSystemPasswordChar = true;
+            this.txtPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtPass.Size = new System.Drawing.Size(236, 20);
+            this.txtPass.StyleController = this.layoutControl1;
+            this.txtPass.TabIndex = 5;
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Location = new System.Drawing.Point(12, 12);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Properties.Mask.EditMask = "[a-zA-Z]+";
+            this.txtUserName.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.txtUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtUserName.Size = new System.Drawing.Size(236, 20);
+            this.txtUserName.StyleController = this.layoutControl1;
+            this.txtUserName.TabIndex = 4;
+            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -93,17 +135,6 @@
             this.layoutControlGroup1.Size = new System.Drawing.Size(342, 185);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // txtUserName
-            // 
-            this.txtUserName.Location = new System.Drawing.Point(12, 12);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Properties.Mask.EditMask = "[a-zA-Z]+";
-            this.txtUserName.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.txtUserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtUserName.Size = new System.Drawing.Size(236, 20);
-            this.txtUserName.StyleController = this.layoutControl1;
-            this.txtUserName.TabIndex = 4;
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.txtUserName;
@@ -121,16 +152,6 @@
             this.emptySpaceItem1.Size = new System.Drawing.Size(322, 16);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // txtPass
-            // 
-            this.txtPass.Location = new System.Drawing.Point(12, 47);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Properties.UseSystemPasswordChar = true;
-            this.txtPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPass.Size = new System.Drawing.Size(236, 20);
-            this.txtPass.StyleController = this.layoutControl1;
-            this.txtPass.TabIndex = 5;
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.txtPass;
@@ -140,16 +161,6 @@
             this.layoutControlItem2.Text = "رمز عبور";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(79, 13);
             // 
-            // txtPass2
-            // 
-            this.txtPass2.Location = new System.Drawing.Point(12, 83);
-            this.txtPass2.Name = "txtPass2";
-            this.txtPass2.Properties.UseSystemPasswordChar = true;
-            this.txtPass2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPass2.Size = new System.Drawing.Size(236, 20);
-            this.txtPass2.StyleController = this.layoutControl1;
-            this.txtPass2.TabIndex = 6;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtPass2;
@@ -158,17 +169,6 @@
             this.layoutControlItem3.Size = new System.Drawing.Size(322, 24);
             this.layoutControlItem3.Text = "تکرار رمز عبور";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(79, 13);
-            // 
-            // btnSave
-            // 
-            this.btnSave.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.btnSave.Location = new System.Drawing.Point(12, 135);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(318, 38);
-            this.btnSave.StyleController = this.layoutControl1;
-            this.btnSave.TabIndex = 7;
-            this.btnSave.Text = "ثبت و ذخیره";
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // layoutControlItem4
             // 
@@ -205,12 +205,14 @@
             // 
             // UserAcount
             // 
+            this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 185);
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "UserAcount";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -219,15 +221,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن حساب کاربری";
             this.TopMost = true;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserAcount_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPass2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtUserName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPass2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();

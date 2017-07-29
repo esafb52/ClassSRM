@@ -83,5 +83,11 @@ namespace ClassSRM.Forms
             cmbStudent2_EditValueChanged(null, null);
             cmbStudent_EditValueChanged(null, null);
         }
+
+        private void Compare_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

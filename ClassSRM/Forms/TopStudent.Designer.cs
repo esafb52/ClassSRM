@@ -550,6 +550,7 @@
             this.ClientSize = new System.Drawing.Size(657, 398);
             this.Controls.Add(this.tabPane1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "TopStudent";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -559,6 +560,7 @@
             this.Text = "انتخاب دانش آموزان برتر کلاس";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.TopStudent_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TopStudent_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);

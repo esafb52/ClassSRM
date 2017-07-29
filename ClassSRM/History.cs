@@ -13,5 +13,11 @@ namespace ClassSRM
         {
             txtHistory.Text = Properties.Resources.History;
         }
+
+        private void History_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

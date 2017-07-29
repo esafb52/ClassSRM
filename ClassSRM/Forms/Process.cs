@@ -176,5 +176,11 @@ namespace ClassSRM.Forms
             tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
             ChartQuery();
         }
+
+        private void Process_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

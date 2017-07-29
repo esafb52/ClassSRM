@@ -145,12 +145,14 @@
             // 
             // Backup
             // 
+            this.AcceptButton = this.btnBackup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 166);
             this.Controls.Add(this.tabPane1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Backup";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -160,6 +162,7 @@
             this.Text = "پشتیبان گیری از اطلاعات";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Backup_FormClosing);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Backup_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);

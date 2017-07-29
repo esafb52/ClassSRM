@@ -1031,6 +1031,7 @@
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.ribbonControl1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.Name = "Compare";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
@@ -1039,6 +1040,7 @@
             this.Text = "مقایسه دانش آموزان";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Compare_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Compare_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblEvaPointBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

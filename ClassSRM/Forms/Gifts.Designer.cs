@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gifts));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.btnExport = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colStuName = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -47,7 +48,6 @@
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.btnExport = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -78,6 +78,17 @@
             this.layoutControl1.Size = new System.Drawing.Size(774, 421);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // btnExport
+            // 
+            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
+            this.btnExport.Location = new System.Drawing.Point(200, 12);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(185, 38);
+            this.btnExport.StyleController = this.layoutControl1;
+            this.btnExport.TabIndex = 9;
+            this.btnExport.Text = "خروجی به PDF";
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // gridControl1
             // 
@@ -244,17 +255,6 @@
             this.emptySpaceItem2.Size = new System.Drawing.Size(754, 10);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // btnExport
-            // 
-            this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
-            this.btnExport.Location = new System.Drawing.Point(200, 12);
-            this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(185, 38);
-            this.btnExport.StyleController = this.layoutControl1;
-            this.btnExport.TabIndex = 9;
-            this.btnExport.Text = "خروجی به PDF";
-            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.btnExport;
@@ -272,6 +272,7 @@
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Gifts";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -281,6 +282,7 @@
             this.Text = "دانش آموزان واجد شرایط دریافت جایزه و تشویقی";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Gifts_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Gifts_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

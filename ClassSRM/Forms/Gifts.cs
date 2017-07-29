@@ -51,6 +51,12 @@ namespace ClassSRM.Forms
             Config.ExportPdf(gridControl1);
         }
 
+        private void Gifts_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
+
         private void CreateCustomDate()
         {
             strCurMonth = pc.GetMonth(DateTime.Now).ToString("00");

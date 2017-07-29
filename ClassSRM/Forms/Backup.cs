@@ -132,5 +132,11 @@ namespace ClassSRM.Forms
                 e.Cancel = false;
             }
         }
+
+        private void Backup_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Close();
+        }
     }
 }

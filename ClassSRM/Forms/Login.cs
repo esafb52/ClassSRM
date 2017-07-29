@@ -73,5 +73,11 @@ namespace ClassSRM.Forms
                 XtraMessageBox.Show(ex.Message, "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                Environment.Exit(0);
+        }
     }
 }

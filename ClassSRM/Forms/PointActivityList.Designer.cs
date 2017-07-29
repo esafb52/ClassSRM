@@ -354,6 +354,7 @@
             this.ClientSize = new System.Drawing.Size(1101, 597);
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.Name = "PointActivityList";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
@@ -362,6 +363,7 @@
             this.Text = "لیست فعالیت های دانش آموزان";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.PointActivityList_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PointActivityList_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

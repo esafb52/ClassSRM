@@ -463,6 +463,7 @@
             this.ClientSize = new System.Drawing.Size(1173, 567);
             this.Controls.Add(this.layoutControl1);
             this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.Name = "DailyCheckList";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.ShowIcon = false;
@@ -471,6 +472,7 @@
             this.Text = "لیست حضور و غیاب دانش آموزان";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.DailyCheckList_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DailyCheckList_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
