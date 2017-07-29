@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using System.Globalization;
 using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace ClassSRM.Forms
 {
     public partial class StudentList : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         public StudentList()
         {
@@ -33,7 +28,7 @@ namespace ClassSRM.Forms
             loadStudent();
         }
 
-        void loadStudent()
+        private void loadStudent()
         {
             switch (rd.Properties.Items[rd.SelectedIndex].ToString())
             {
@@ -64,7 +59,7 @@ namespace ClassSRM.Forms
                     break;
             }
         }
-     
+
         private void btnEdit_Click(object sender, EventArgs e)
         {
             if (gridView1.RowCount != 0)
@@ -78,7 +73,6 @@ namespace ClassSRM.Forms
                     dc = new ClassSRMDataContext();
                     XtraMessageBox.Show("دانش آموز موردنظر با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loadStudent();
-
                 }
                 catch (Exception ex)
                 {
@@ -89,12 +83,10 @@ namespace ClassSRM.Forms
             {
                 XtraMessageBox.Show("اطلاعاتی برای ویرایش وجود ندارد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-          
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-
             if (gridView1.RowCount != 0)
             {
                 try
@@ -116,7 +108,7 @@ namespace ClassSRM.Forms
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if(gridView1.RowCount != 0)
+            if (gridView1.RowCount != 0)
             {
                 try
                 {
@@ -127,7 +119,6 @@ namespace ClassSRM.Forms
                         dc.DeleteStudent(id);
                         XtraMessageBox.Show("دانش آموز موردنظر با موفقیت حذف شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         loadStudent();
-
                     }
                 }
                 catch (Exception ex)
@@ -148,6 +139,7 @@ namespace ClassSRM.Forms
             imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
             return ms.ToArray();
         }
+
         private void btnLoad_Click(object sender, EventArgs e)
         {
             img.LoadImage();

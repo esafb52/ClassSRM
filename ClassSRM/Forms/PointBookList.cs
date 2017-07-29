@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.XtraGrid.Views.Grid;
+﻿using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.Data;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace ClassSRM.Forms
 {
     public partial class PointBookList : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         public PointBookList()
         {
@@ -64,7 +59,7 @@ namespace ClassSRM.Forms
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if(gridView1.RowCount != 0)
+            if (gridView1.RowCount != 0)
             {
                 try
                 {
@@ -76,7 +71,6 @@ namespace ClassSRM.Forms
                         dc.DeleteEvaBook(id);
                         XtraMessageBox.Show("امتیاز موردنظر با موفقیت حذف شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         cmbStudent_EditValueChanged(null, null);
-                        
                     }
                 }
                 catch (Exception)
@@ -118,7 +112,7 @@ namespace ClassSRM.Forms
             }
         }
 
-        RepositoryItem editorForDisplay, editorForEditing;
+        private RepositoryItem editorForDisplay, editorForEditing;
 
         private void gridView1_CustomRowCellEditForEditing(object sender, CustomRowCellEditEventArgs e)
         {
@@ -126,7 +120,7 @@ namespace ClassSRM.Forms
                 e.RepositoryItem = editorForEditing;
         }
 
-        void EditableProgressBar()
+        private void EditableProgressBar()
         {
             editorForDisplay = new RepositoryItemProgressBar();
             editorForEditing = new RepositoryItemSpinEdit();

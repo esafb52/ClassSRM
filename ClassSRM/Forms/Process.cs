@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace ClassSRM.Forms
 {
     public partial class Process : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         private int userId1;
         private int userId2;
@@ -28,7 +23,6 @@ namespace ClassSRM.Forms
         {
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
-
         }
 
         private void ChartQuery()
@@ -100,11 +94,11 @@ namespace ClassSRM.Forms
                 int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                 var bookName = cmbBook.Text;
                 tblEvaPointBindingSource.DataSource = from tbl_EvaPoints in dc.tbl_EvaPoints
-                                                        orderby tbl_EvaPoints.Date
-                                                        where tbl_EvaPoints.StudentId == id
-                                                        &&
-                                                        tbl_EvaPoints.Book == bookName
-                                                        select tbl_EvaPoints;
+                                                      orderby tbl_EvaPoints.Date
+                                                      where tbl_EvaPoints.StudentId == id
+                                                      &&
+                                                      tbl_EvaPoints.Book == bookName
+                                                      select tbl_EvaPoints;
                 chartControl1.Series["Series 1"].LegendText = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuName").ToString() + " " + gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuLName").ToString();
             }
             catch (Exception)

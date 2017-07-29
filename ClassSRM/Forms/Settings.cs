@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using System.Xml.Linq;
-using System.Xml;
 
 namespace ClassSRM.Forms
 {
@@ -19,10 +14,10 @@ namespace ClassSRM.Forms
         {
             InitializeComponent();
         }
-       
+
         private void rdCore_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (rdCore.SelectedIndex==1)
+            if (rdCore.SelectedIndex == 1)
             {
                 Config.AddUpdateAppSettings("Tosifi System", "true");
             }
@@ -84,7 +79,8 @@ namespace ClassSRM.Forms
             if (!System.IO.File.Exists("Activity.xml"))
                 emptyXml();
         }
-        void emptyXml()
+
+        private void emptyXml()
         {
             new XDocument(
             new XElement("Activity",
@@ -93,6 +89,7 @@ namespace ClassSRM.Forms
         )
                 .Save("Activity.xml");
         }
+
         private void Settings_Load(object sender, EventArgs e)
         {
             CheckConfig();
@@ -132,6 +129,7 @@ namespace ClassSRM.Forms
             Config.AddUpdateAppSettings("FontFamily", fontEdit1.Text);
             Config.AddUpdateAppSettings("FontSize", fSize.Value.ToString());
         }
+
         private void getAllItemsName()
         {
             XDocument doc = XDocument.Load("Activity.xml");
@@ -162,6 +160,7 @@ namespace ClassSRM.Forms
            ));
             doc.Save("Activity.xml");
         }
+
         private int getLastId()
         {
             XDocument doc = XDocument.Load("Activity.xml");
@@ -172,7 +171,7 @@ namespace ClassSRM.Forms
             else
                 return 0;
         }
-       
+
         private int getValeofItem(string itemName)
         {
             XDocument doc = XDocument.Load("Activity.xml");
@@ -187,7 +186,7 @@ namespace ClassSRM.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            createActivity((getLastId()+1).ToString(), txtTitle.Text, txtValue.Value.ToString());
+            createActivity((getLastId() + 1).ToString(), txtTitle.Text, txtValue.Value.ToString());
             cmbActivity.Properties.Items.Clear();
             getAllItemsName();
             XtraMessageBox.Show("فعالیت موردنظر با موفقیت اضافه شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -212,8 +211,6 @@ namespace ClassSRM.Forms
             {
                 XtraMessageBox.Show("فعالیتی برای حذف وجود ندارد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-
         }
 
         private void cmbActivity_SelectedIndexChanged(object sender, EventArgs e)

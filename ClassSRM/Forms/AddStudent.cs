@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using System.IO;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace ClassSRM.Forms
 {
     public partial class AddStudent : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
-        
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
+
         public AddStudent()
         {
             InitializeComponent();

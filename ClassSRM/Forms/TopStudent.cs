@@ -1,19 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace ClassSRM.Forms
 {
     public partial class TopStudent : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         public TopStudent()
         {
@@ -48,7 +39,7 @@ namespace ClassSRM.Forms
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-            Config.ExportPdf(gridControl1,txtDate.Text);
+            Config.ExportPdf(gridControl1, txtDate.Text);
         }
 
         private void cmbClass2_EditValueChanged(object sender, EventArgs e)
@@ -58,8 +49,7 @@ namespace ClassSRM.Forms
 
         private void btnExport2_Click(object sender, EventArgs e)
         {
-            Config.ExportPdf(gridControl2,txtDate.Text);
+            Config.ExportPdf(gridControl2, txtDate.Text);
         }
-       
     }
 }

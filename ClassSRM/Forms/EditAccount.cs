@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using System.Security.Cryptography;
+using System.Text;
+using System.Windows.Forms;
 
 namespace ClassSRM.Forms
 {
     public partial class EditAccount : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         private SHA256CryptoServiceProvider sha = new SHA256CryptoServiceProvider();
         private string Hash = string.Empty;
@@ -33,17 +29,16 @@ namespace ClassSRM.Forms
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            if(gridView1.RowCount != 0)
+            if (gridView1.RowCount != 0)
             {
                 txtUserName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Name").ToString();
                 txtPass.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Pass").ToString();
             }
-           
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (gridView1.RowCount !=0 )
+            if (gridView1.RowCount != 0)
             {
                 int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                 byte1 = UTF8Encoding.UTF8.GetBytes(txtPass.Text);
@@ -59,7 +54,6 @@ namespace ClassSRM.Forms
             {
                 XtraMessageBox.Show("حسابی برای ویرایش وجود ندارد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-          
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -76,7 +70,6 @@ namespace ClassSRM.Forms
             else
             {
                 XtraMessageBox.Show("حسابی برای حذف وجود ندارد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             }
         }
     }

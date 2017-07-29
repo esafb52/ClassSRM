@@ -1,30 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace ClassSRM.Forms
 {
     public partial class Schoollist : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         private PersianCalendar pc = new PersianCalendar();
         private string strDate;
+
         public Schoollist()
         {
             InitializeComponent();
 
             strDate = pc.GetYear(DateTime.Now).ToString("0000") + "/" + pc.GetMonth(DateTime.Now).ToString("00") + "/" + pc.GetDayOfMonth(DateTime.Now).ToString("00");
             GenerateEducateYear();
-           
         }
 
         private void Schoollist_Load(object sender, EventArgs e)
@@ -34,7 +27,7 @@ namespace ClassSRM.Forms
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (gridView1.RowCount!=0)
+            if (gridView1.RowCount != 0)
             {
                 try
                 {
@@ -69,12 +62,11 @@ namespace ClassSRM.Forms
         {
             if (gridView1.RowCount != 0)
             {
-                   txtSName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchName").ToString();
-                    txtAName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchAdmin").ToString();
-                    txtDate.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchDate").ToString();
-                    cmbClass.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchClass").ToString();
+                txtSName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchName").ToString();
+                txtAName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchAdmin").ToString();
+                txtDate.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchDate").ToString();
+                cmbClass.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "SchClass").ToString();
             }
-           
         }
 
         private void btnDel_Click(object sender, EventArgs e)

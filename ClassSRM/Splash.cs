@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
+﻿using DevExpress.LookAndFeel;
 using DevExpress.XtraSplashScreen;
-using DevExpress.LookAndFeel;
-using System.Threading.Tasks;
+using System;
 using System.Diagnostics;
 using System.Reflection;
+using System.Threading.Tasks;
 
 namespace ClassSRM
 {
@@ -68,7 +62,7 @@ namespace ClassSRM
             base.ProcessCommand(cmd, arg);
         }
 
-        #endregion
+        #endregion Overrides
 
         public enum SplashScreenCommand
         {

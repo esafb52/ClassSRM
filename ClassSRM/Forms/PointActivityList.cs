@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
+using System;
+using System.Data;
+using System.Linq;
+using System.Windows.Forms;
 
 namespace ClassSRM.Forms
 {
     public partial class PointActivityList : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         public PointActivityList()
         {
@@ -58,8 +53,10 @@ namespace ClassSRM.Forms
             {
             }
         }
-        RepositoryItem editorForDisplay, editorForEditing;
-        void EditableProgressBar()
+
+        private RepositoryItem editorForDisplay, editorForEditing;
+
+        private void EditableProgressBar()
         {
             editorForDisplay = new RepositoryItemProgressBar();
             editorForEditing = new RepositoryItemSpinEdit();
@@ -70,13 +67,13 @@ namespace ClassSRM.Forms
 
         private void gridView1_CustomRowCellEditForEditing(object sender, DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventArgs e)
         {
-                if (e.Column.FieldName == "Score")
-                    e.RepositoryItem = editorForEditing;
+            if (e.Column.FieldName == "Score")
+                e.RepositoryItem = editorForEditing;
         }
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if (gridView1.RowCount !=0)
+            if (gridView1.RowCount != 0)
             {
                 try
                 {
@@ -87,7 +84,6 @@ namespace ClassSRM.Forms
                         dc.DeleteActPoint(id);
                         XtraMessageBox.Show("امتیاز موردنظر با موفقیت حذف شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         cmbStudent_EditValueChanged(null, null);
-                      
                     }
                 }
                 catch (Exception)

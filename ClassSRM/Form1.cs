@@ -3,14 +3,11 @@ using ClassSRM.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraSplashScreen;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,6 +17,7 @@ namespace ClassSRM
     {
         //Get Persian Date
         private PersianCalendar pc = new PersianCalendar();
+
         private string strCurMonth, strYear;
         private int PrevMonth;
 
@@ -71,7 +69,6 @@ namespace ClassSRM
                     var stream = new MemoryStream(data);
                     imgStudent.Image = Image.FromStream(stream);
 
-                    
                     SplashScreenManager.ShowForm(typeof(WaitForm1));
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     var qActivity = (from v in dc.tbl_ActPoints where v.StudentId == id select v.Score).Sum().GetValueOrDefault(0); //دریافت مجموع امتیاز فعالیت ها
@@ -278,8 +275,6 @@ namespace ClassSRM
             prgEmla.EnableAnimation = true;
             prgLife.EnableAnimation = true;
         }
-
-      
 
         //Load Student
         private void LoadStudent()
@@ -493,7 +488,5 @@ namespace ClassSRM
             e.Graphics.DrawString(day, e.Style.Font, brush, e.Bounds, strFormat);
             e.Handled = true;
         }
-
-       
     }
 }

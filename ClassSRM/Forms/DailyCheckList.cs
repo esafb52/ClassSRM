@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace ClassSRM.Forms
 {
     public partial class DailyCheckList : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         public DailyCheckList()
         {
@@ -93,7 +88,7 @@ namespace ClassSRM.Forms
 
         private void btnDel_Click(object sender, EventArgs e)
         {
-            if(gridView1.RowCount != 0)
+            if (gridView1.RowCount != 0)
             {
                 try
                 {
@@ -104,7 +99,6 @@ namespace ClassSRM.Forms
                         dc.DeleteCheck(id);
                         XtraMessageBox.Show("حضورغیاب موردنظر با موفقیت حذف شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         cmbStudent_EditValueChanged(null, null);
-                       
                     }
                 }
                 catch (Exception)

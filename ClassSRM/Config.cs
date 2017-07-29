@@ -1,18 +1,15 @@
 ﻿using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Windows.Forms;
 
 namespace ClassSRM
 {
-    class Config
+    internal class Config
     {
         //Read Application Settings from Config File
         public static string ReadSetting(string key)
@@ -70,7 +67,7 @@ namespace ClassSRM
             }
         }
 
-        public static void ExportPdf(DevExpress.XtraGrid.GridControl grid,string date)
+        public static void ExportPdf(DevExpress.XtraGrid.GridControl grid, string date)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.DefaultExt = "PDF";
@@ -89,8 +86,8 @@ namespace ClassSRM
                     View.ExportToPdf(saveFileDialog1.FileName);
                 }
             }
-
         }
+
         public static void ExportPdf(DevExpress.XtraGrid.GridControl grid)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -110,8 +107,8 @@ namespace ClassSRM
                     View.ExportToPdf(saveFileDialog1.FileName);
                 }
             }
-
         }
+
         #region "Sql Script Execute"
 
         //Script Path
@@ -158,9 +155,9 @@ namespace ClassSRM
             }
         }
 
-        #endregion
+        #endregion "Sql Script Execute"
 
-#region "Persian Calendar Holiday"
+        #region "Persian Calendar Holiday"
 
         //Convert Georgian Date to Persian Date
         public static string PersianDate(DateTime DateTime1)
@@ -216,7 +213,7 @@ namespace ClassSRM
 
             return false;
         }
-#endregion
 
+        #endregion "Persian Calendar Holiday"
     }
 }

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using System.Security.Cryptography;
+using System.Text;
+using System.Windows.Forms;
 
 namespace ClassSRM.Forms
 {
@@ -28,7 +25,7 @@ namespace ClassSRM.Forms
             Config.DelScript();
 
             //          *******************************************      \\
-            
+
             //Read Login Config
             var login = Config.ReadSetting("Login");
             if (login == "false")
@@ -52,7 +49,7 @@ namespace ClassSRM.Forms
         {
             try
             {
-                //Generate Password Hash and Check Login Data 
+                //Generate Password Hash and Check Login Data
                 var dc = new ClassSRMDataContext();
                 byte1 = UTF8Encoding.UTF8.GetBytes(txtPass.Text);
                 byte2 = sha.ComputeHash(byte1);

@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using System.Xml.Linq;
 
 namespace ClassSRM.Forms
 {
     public partial class PointActivity : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext();
 
         public PointActivity()
         {
@@ -63,7 +58,6 @@ namespace ClassSRM.Forms
             {
                 if (rd.SelectedIndex == 0)
                 {
-
                     dc.InsertActPoint((int)cmbStudent.EditValue, (int)txtScore.Value, txtDate.Text, txtDesc.Text);
                     XtraMessageBox.Show("امتیاز موردنظر با موفقیت ثبت شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -72,7 +66,7 @@ namespace ClassSRM.Forms
                 else
                 {
                     int val = getValeofItem(cmbScore.Text);
-                     dc.InsertActPoint((int)cmbStudent.EditValue, val, txtDate.Text, txtDesc.Text);
+                    dc.InsertActPoint((int)cmbStudent.EditValue, val, txtDate.Text, txtDesc.Text);
                     XtraMessageBox.Show("امتیاز موردنظر با موفقیت ثبت شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     cmbStudent_EditValueChanged(null, null);
@@ -170,6 +164,7 @@ namespace ClassSRM.Forms
             }
             cmbScore.SelectedIndex = 0;
         }
+
         private int getValeofItem(string itemName)
         {
             XDocument doc = XDocument.Load("Activity.xml");

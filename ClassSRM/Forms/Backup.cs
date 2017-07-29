@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
+﻿using DevExpress.XtraEditors;
+using System;
+using System.Data.SqlClient;
+using System.Globalization;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using System.Globalization;
-using System.Data.SqlClient;
 
 namespace ClassSRM.Forms
 {
     public partial class Backup : DevExpress.XtraEditors.XtraForm
     {
-
         private PersianCalendar PC = new PersianCalendar();
         private string strShamsi;
         private bool isWorking = false;

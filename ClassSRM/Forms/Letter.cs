@@ -21,7 +21,8 @@ namespace ClassSRM
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
         }
-        static object tempPath = System.IO.Path.GetTempPath();
+
+        private static object tempPath = System.IO.Path.GetTempPath();
 
         private object docPath = tempPath + @"\sample.doc";
         private string pdfPath = tempPath + @"\sample.pdf";
@@ -34,7 +35,7 @@ namespace ClassSRM
 
         private void btnGen_Click(object sender, EventArgs e)
         {
-            if (gridView2.RowCount==0)
+            if (gridView2.RowCount == 0)
             {
                 XtraMessageBox.Show("دانش آموزی وجود ندارد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

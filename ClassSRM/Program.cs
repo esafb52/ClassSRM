@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
-using DevExpress.UserSkins;
+﻿using DevExpress.LookAndFeel;
 using DevExpress.Skins;
-using DevExpress.LookAndFeel;
-using System.Threading;
-using System.Globalization;
+using DevExpress.UserSkins;
 using DevExpress.XtraEditors;
+using System;
+using System.Globalization;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace ClassSRM
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             //Set Culture to Farsi for Localization
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("fa");
@@ -35,7 +33,7 @@ namespace ClassSRM
                 SkinManager.EnableFormSkins();
                 UserLookAndFeel.Default.SetSkinStyle(Config.ReadSetting("Skin"));
                 var fontFamily = Config.ReadSetting("FontFamily");
-                int fontSize =Convert.ToInt32(Config.ReadSetting("FontSize"));
+                int fontSize = Convert.ToInt32(Config.ReadSetting("FontSize"));
                 try
                 {
                     WindowsFormsSettings.DefaultFont = new System.Drawing.Font(fontFamily, fontSize);
@@ -45,7 +43,7 @@ namespace ClassSRM
                     WindowsFormsSettings.DefaultFont = new System.Drawing.Font("Tahoma", 8);
                 }
                 //Set Login
-                Application.Run(new KanBanTask());
+                Application.Run(new Forms.Login());
                 Application.DoEvents();
                 mtx.ReleaseMutex();
             }
@@ -53,8 +51,6 @@ namespace ClassSRM
             {
                 XtraMessageBox.Show("برنامه درحال اجرا است", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
-
-            
         }
     }
 }
