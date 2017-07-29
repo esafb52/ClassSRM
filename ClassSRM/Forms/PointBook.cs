@@ -18,6 +18,7 @@ namespace ClassSRM.Forms
         public PointBook()
         {
             InitializeComponent();
+            txtDate.EditValue = DateTime.Now;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

@@ -10,6 +10,8 @@ namespace ClassSRM
 {
     public partial class Letter : DevExpress.XtraEditors.XtraForm
     {
+        ClassSRMDataContext dc = new ClassSRMDataContext();
+
         public Letter()
         {
             InitializeComponent();
@@ -17,9 +19,9 @@ namespace ClassSRM
 
         private void frmLetterAll_Load(object sender, EventArgs e)
         {
-            var dc = new ClassSRMDataContext();
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
+            txtDate.EditValue = DateTime.Now;
         }
 
         private static object tempPath = System.IO.Path.GetTempPath();
@@ -29,7 +31,6 @@ namespace ClassSRM
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
-            var dc = new ClassSRMDataContext();
             tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
         }
 

@@ -14,6 +14,7 @@ namespace ClassSRM.Forms
         public PointActivity()
         {
             InitializeComponent();
+            txtDate.EditValue = DateTime.Now;
         }
 
         private void PointActivity_Load(object sender, EventArgs e)

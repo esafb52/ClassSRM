@@ -109,7 +109,7 @@
             // 
             // txtDate
             // 
-            this.txtDate.EditValue = new System.DateTime(2017, 7, 24, 13, 7, 45, 0);
+            this.txtDate.EditValue = new System.DateTime(((long)(0)));
             this.txtDate.Location = new System.Drawing.Point(12, 172);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.False;

@@ -24,6 +24,7 @@ namespace ClassSRM.Forms
                 {
                 }
             }
+            txtDate.EditValue = DateTime.Now;
         }
 
         private void txtDate_DateTimeChanged(object sender, EventArgs e)

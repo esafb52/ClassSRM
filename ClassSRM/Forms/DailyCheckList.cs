@@ -13,6 +13,7 @@ namespace ClassSRM.Forms
         public DailyCheckList()
         {
             InitializeComponent();
+           
         }
 
         private void chkFilter_CheckedChanged(object sender, EventArgs e)
@@ -34,6 +35,8 @@ namespace ClassSRM.Forms
         {
             tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
             cmbClass.ItemIndex = 0;
+            txtDate1.EditValue = DateTime.Now;
+            txtDate2.EditValue = DateTime.Now;
         }
 
         private void cmbStudent_EditValueChanged(object sender, EventArgs e)

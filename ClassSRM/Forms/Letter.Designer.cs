@@ -173,7 +173,7 @@
             // 
             // txtDate
             // 
-            this.txtDate.EditValue = new System.DateTime(2017, 7, 26, 13, 19, 52, 0);
+            this.txtDate.EditValue = new System.DateTime(((long)(0)));
             this.txtDate.Location = new System.Drawing.Point(12, 12);
             this.txtDate.MenuManager = this.ribbonControl1;
             this.txtDate.Name = "txtDate";

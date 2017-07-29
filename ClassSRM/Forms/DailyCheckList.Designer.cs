@@ -241,7 +241,7 @@
             // 
             // txtDate2
             // 
-            this.txtDate2.EditValue = new System.DateTime(2017, 7, 26, 12, 10, 1, 0);
+            this.txtDate2.EditValue = new System.DateTime(((long)(0)));
             this.txtDate2.Enabled = false;
             this.txtDate2.Location = new System.Drawing.Point(165, 12);
             this.txtDate2.Name = "txtDate2";
@@ -257,7 +257,7 @@
             // 
             // txtDate1
             // 
-            this.txtDate1.EditValue = new System.DateTime(2017, 7, 26, 12, 9, 11, 0);
+            this.txtDate1.EditValue = new System.DateTime(((long)(0)));
             this.txtDate1.Enabled = false;
             this.txtDate1.Location = new System.Drawing.Point(318, 12);
             this.txtDate1.Name = "txtDate1";

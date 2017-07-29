@@ -162,7 +162,7 @@
             // 
             // txtDate
             // 
-            this.txtDate.EditValue = new System.DateTime(2017, 7, 24, 13, 34, 13, 0);
+            this.txtDate.EditValue = new System.DateTime(((long)(0)));
             this.txtDate.Location = new System.Drawing.Point(12, 198);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
