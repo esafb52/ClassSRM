@@ -10,7 +10,7 @@ namespace ClassSRM.Forms
 {
     public partial class PointBookList : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public PointBookList()
         {
@@ -49,7 +49,7 @@ namespace ClassSRM.Forms
 
                 dc.UpdateEvaBook(id, idStu, score, book, date, desc);
                 tblEvaPointBindingSource.EndEdit();
-                dc = new ClassSRMDataContext();
+                dc = new ClassSRMDataContext(Config.connection);
                 XtraMessageBox.Show("امتیاز موردنظر با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)

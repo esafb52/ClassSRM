@@ -223,5 +223,10 @@ namespace ClassSRM.Forms
             if (e.KeyCode == Keys.Escape)
                 Close();
         }
+
+        private void btnConServer_Click(object sender, EventArgs e)
+        {
+            new ConfigServer().ShowDialog();
+        }
     }
 }

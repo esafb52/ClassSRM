@@ -8,7 +8,7 @@ namespace ClassSRM.Forms
 {
     public partial class CompareBarChart : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public CompareBarChart()
         {

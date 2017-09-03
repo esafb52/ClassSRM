@@ -20,7 +20,7 @@ namespace ClassSRM.Forms
         {
             try
             {
-                var dc = new ClassSRMDataContext();
+                var dc = new ClassSRMDataContext(Config.connection);
                 dc.InsertSchool(txtSchool.Text, txtAdmin.Text, cmbClass.Text, txtDate.Text);
                 XtraMessageBox.Show("مدرسه موردنظر با موفقیت ثبت شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

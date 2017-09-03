@@ -8,7 +8,7 @@ namespace ClassSRM.Forms
 {
     public partial class DailyCheck : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         private PersianCalendar pc = new PersianCalendar();
         private string strDate;
@@ -31,7 +31,7 @@ namespace ClassSRM.Forms
             //ثبت غیبت با کلید اسپیس
             if (e.KeyCode == Keys.Space)
             {
-                var dc = new ClassSRMDataContext();
+                var dc = new ClassSRMDataContext(Config.connection);
                 dc.InsertCheck((int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id"), false, strDate);
                 gridView1.DeleteSelectedRows();
                 gridView1.SelectRow(0);

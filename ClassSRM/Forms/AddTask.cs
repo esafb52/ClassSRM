@@ -20,7 +20,7 @@ namespace ClassSRM.Forms
         public static string caption;
         public static string desc;
 
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public AddTask()
         {
@@ -37,7 +37,7 @@ namespace ClassSRM.Forms
             if (isEdit)
             {
                 dc.UpdateTask(id, txtCaption.Text, txtDesc.Text, cmbCat.Text, cmbColor.SelectedIndex);
-                dc = new ClassSRMDataContext();
+                dc = new ClassSRMDataContext(Config.connection);
                 XtraMessageBox.Show("با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }

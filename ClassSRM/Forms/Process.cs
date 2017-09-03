@@ -8,7 +8,7 @@ namespace ClassSRM.Forms
 {
     public partial class Process : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         private int userId1;
         private int userId2;

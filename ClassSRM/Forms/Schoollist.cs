@@ -7,7 +7,7 @@ namespace ClassSRM.Forms
 {
     public partial class Schoollist : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         private PersianCalendar pc = new PersianCalendar();
         private string strDate;
@@ -34,7 +34,7 @@ namespace ClassSRM.Forms
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     dc.UpdateSchool(id, txtSName.Text, txtAName.Text, cmbClass.Text, txtDate.Text);
                     tblSchoolBindingSource.EndEdit();
-                    dc = new ClassSRMDataContext();
+                    dc = new ClassSRMDataContext(Config.connection);
                     XtraMessageBox.Show("مدرسه موردنظر با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Schoollist_Load(null, null);
                 }

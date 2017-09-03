@@ -10,7 +10,7 @@ namespace ClassSRM.Forms
 {
     public partial class StudentList : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public StudentList()
         {
@@ -70,7 +70,7 @@ namespace ClassSRM.Forms
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     dc.UpdateStudent(id, (int)cmbClass.EditValue, txtName.Text, txtLName.Text, txtFName.Text, cmbGender.Text, imageData);
                     tblStudentBindingSource.EndEdit();
-                    dc = new ClassSRMDataContext();
+                    dc = new ClassSRMDataContext(Config.connection);
                     XtraMessageBox.Show("دانش آموز موردنظر با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     loadStudent();
                 }

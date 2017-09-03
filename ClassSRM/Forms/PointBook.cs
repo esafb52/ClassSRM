@@ -8,7 +8,7 @@ namespace ClassSRM.Forms
 {
     public partial class PointBook : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public static bool isQuastion = false;
         public static int bookIndex = 0;

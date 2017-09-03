@@ -20,7 +20,7 @@ namespace ClassSRM.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var dc = new ClassSRMDataContext();
+            var dc = new ClassSRMDataContext(Config.connection);
             if (txtPass.Text != txtPass2.Text)
             {
                 XtraMessageBox.Show("رمز عبور وارد شده همخوانی ندارد لطفا دوباره وارد کنید", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);

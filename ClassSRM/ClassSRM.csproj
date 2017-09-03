@@ -88,11 +88,9 @@
     <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Pdf.v17.1.Drawing, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      
     </Reference>
     <Reference Include="DevExpress.XtraPdfViewer.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="FarsiLibrary.Win.DevExpress.17.1">
@@ -127,6 +125,12 @@
       <DependentUpon>ClassSRM.dbml</DependentUpon>
     </Compile>
     <Compile Include="Config.cs" />
+    <Compile Include="ConfigServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigServer.Designer.cs">
+      <DependentUpon>ConfigServer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,6 +301,9 @@
     <Compile Include="WaitForm1.Designer.cs">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConfigServer.resx">
+      <DependentUpon>ConfigServer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddSchool.resx">
       <DependentUpon>AddSchool.cs</DependentUpon>
     </EmbeddedResource>
@@ -372,7 +379,9 @@
     <EmbeddedResource Include="WaitForm1.resx">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="ClassSRM.dbml.layout">
       <DependentUpon>ClassSRM.dbml</DependentUpon>
     </None>

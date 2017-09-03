@@ -22,7 +22,7 @@ namespace ClassSRM
         private int PrevMonth;
 
         //Data Context
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public Form1()
         {

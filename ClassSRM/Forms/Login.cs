@@ -26,6 +26,14 @@ namespace ClassSRM.Forms
 
             //          *******************************************      \\
 
+            //**********    Check if Server Config Exist    *********\\
+
+            var conServer = Config.ReadSetting("IsConServer");
+            if (conServer == "false")
+                new ConfigServer().ShowDialog();
+
+            //          *******************************************      \\
+
             //Read Login Config
             var login = Config.ReadSetting("Login");
             if (login == "false")
@@ -50,7 +58,7 @@ namespace ClassSRM.Forms
             try
             {
                 //Generate Password Hash and Check Login Data
-                var dc = new ClassSRMDataContext();
+                var dc = new ClassSRMDataContext(Config.connection);
                 byte1 = UTF8Encoding.UTF8.GetBytes(txtPass.Text);
                 byte2 = sha.ComputeHash(byte1);
                 Hash = BitConverter.ToString(byte2);

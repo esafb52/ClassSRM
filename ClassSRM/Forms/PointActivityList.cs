@@ -9,7 +9,7 @@ namespace ClassSRM.Forms
 {
     public partial class PointActivityList : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public PointActivityList()
         {
@@ -46,7 +46,7 @@ namespace ClassSRM.Forms
 
                 dc.UpdateActBook(id, idStu, score, date, desc);
                 tblActPointBindingSource.EndEdit();
-                dc = new ClassSRMDataContext();
+                dc = new ClassSRMDataContext(Config.connection);
                 XtraMessageBox.Show("امتیاز موردنظر با موفقیت ویرایش شد", "حطا", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)

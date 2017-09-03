@@ -10,7 +10,7 @@ namespace ClassSRM.Forms
 {
     public partial class EditAccount : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         private SHA256CryptoServiceProvider sha = new SHA256CryptoServiceProvider();
         private string Hash = string.Empty;
@@ -46,7 +46,7 @@ namespace ClassSRM.Forms
                 Hash = BitConverter.ToString(byte2);
                 dc.UpdateUser(id, txtUserName.Text, Hash);
                 tblUserBindingSource.EndEdit();
-                dc = new ClassSRMDataContext();
+                dc = new ClassSRMDataContext(Config.connection);
                 XtraMessageBox.Show("اطلاعات با موفقیت بروزرسانی شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 EditAccount_Load(null, null);
             }

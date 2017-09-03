@@ -116,21 +116,14 @@ namespace ClassSRM.Forms
         private void Backup_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (isWorking)
-            {
                 e.Cancel = true;
-            }
             else
-            {
                 e.Cancel = false;
-            }
+
             if (isForce)
-            {
                 e.Cancel = true;
-            }
             else
-            {
                 e.Cancel = false;
-            }
         }
 
         private void Backup_KeyDown(object sender, KeyEventArgs e)

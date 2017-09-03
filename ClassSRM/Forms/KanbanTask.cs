@@ -10,7 +10,7 @@ namespace ClassSRM
 {
     public partial class KanBanTask : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext();
+        ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public KanBanTask()
         {
@@ -67,7 +67,7 @@ namespace ClassSRM
 
                 dc.UpdateTaskLabel((int)id, newStatus.ToString(), lbl);
                 dc.SubmitChanges();
-                dc = new ClassSRMDataContext();
+                dc = new ClassSRMDataContext(Config.connection);
                 InitData();
             }
         }
@@ -154,7 +154,7 @@ namespace ClassSRM
                 AddTask.isEdit = true;
                 new AddTask().ShowDialog();
                 tblTaskBindingSource.EndEdit();
-                dc = new ClassSRMDataContext();
+                dc = new ClassSRMDataContext(Config.connection);
                 InitData();
             }
             

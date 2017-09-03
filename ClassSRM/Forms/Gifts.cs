@@ -9,7 +9,7 @@ namespace ClassSRM.Forms
 {
     public partial class Gifts : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         private PersianCalendar pc = new PersianCalendar();
         private string strCurMonth, strYear;

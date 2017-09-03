@@ -8,7 +8,7 @@ namespace ClassSRM.Forms
 {
     public partial class DailyCheckList : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public DailyCheckList()
         {
@@ -81,7 +81,7 @@ namespace ClassSRM.Forms
                 }
                 dc.UpdateCheck(id, idStu, exist, date);
                 checkVBindingSource.EndEdit();
-                dc = new ClassSRMDataContext();
+                dc = new ClassSRMDataContext(Config.connection);
                 XtraMessageBox.Show("حضورغیاب موردنظر با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)

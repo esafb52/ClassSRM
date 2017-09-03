@@ -9,7 +9,7 @@ namespace ClassSRM.Forms
 {
     public partial class PointActivity : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext();
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public PointActivity()
         {
