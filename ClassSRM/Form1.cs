@@ -1,8 +1,10 @@
 ﻿using ArazUpdater;
 using ClassSRM.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraScheduler;
 using DevExpress.XtraSplashScreen;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
@@ -10,8 +12,6 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraScheduler;
-using System.Collections.Generic;
 
 namespace ClassSRM
 {
@@ -503,10 +503,10 @@ namespace ClassSRM
         {
             new Shedule().ShowDialog();
             Form1_Load(null, null);
-
         }
 
         #region "Scheduler Handler"
+
         private void schedulerStorage1_AppointmentsInserted(object sender, PersistentObjectsEventArgs e)
         {
             foreach (Appointment apt in e.Objects)
@@ -516,6 +516,7 @@ namespace ClassSRM
                 dc.SubmitChanges();
             }
         }
+
         private void schedulerStorage1_AppointmentsChanged(object sender, PersistentObjectsEventArgs e)
         {
             dc.SubmitChanges();
@@ -528,7 +529,8 @@ namespace ClassSRM
             dc.DBAppointments.DeleteOnSubmit(dbApt);
             dc.SubmitChanges();
         }
-#endregion
+
+        #endregion "Scheduler Handler"
 
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)

@@ -3,14 +3,13 @@ using DevExpress.XtraEditors;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ClassSRM
 {
     public partial class KanBanTask : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public KanBanTask()
         {
@@ -21,14 +20,14 @@ namespace ClassSRM
         {
             splashScreenManager1.ShowWaitForm();
             var res = from v in dc.tbl_Tasks
-                          select new
-                          {
-                              v.Id,
-                              v.Label,
-                              v.Status,
-                              v.Description,
-                              v.Caption
-                          };
+                      select new
+                      {
+                          v.Id,
+                          v.Label,
+                          v.Status,
+                          v.Description,
+                          v.Caption
+                      };
 
             gridControl.DataSource = res;
             splashScreenManager1.CloseWaitForm();
@@ -121,7 +120,7 @@ namespace ClassSRM
 
         private void btnRemove_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (tileView.RowCount==0)
+            if (tileView.RowCount == 0)
             {
                 XtraMessageBox.Show("اطلاعاتی برای حذف وجود ندارد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -135,7 +134,6 @@ namespace ClassSRM
                     XtraMessageBox.Show("با موفقیت حذف شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-          
         }
 
         private void btnUpdate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -157,7 +155,6 @@ namespace ClassSRM
                 dc = new ClassSRMDataContext(Config.connection);
                 InitData();
             }
-            
         }
 
         private void ribbonControl1_SelectedPageChanged(object sender, System.EventArgs e)
@@ -177,7 +174,7 @@ namespace ClassSRM
 
         private void KanBanTask_Load(object sender, System.EventArgs e)
         {
-            InitData();            
+            InitData();
         }
 
         private void KanBanTask_KeyDown(object sender, KeyEventArgs e)

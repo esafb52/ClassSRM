@@ -27,7 +27,6 @@ namespace ClassSRM.Forms
 
         private void gridView1_KeyDown(object sender, KeyEventArgs e)
         {
-            
             //ثبت غیبت با کلید اسپیس
             if (e.KeyCode == Keys.Space)
             {

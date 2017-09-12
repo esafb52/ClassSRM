@@ -31,7 +31,7 @@ namespace ClassSRM.Forms
             tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
             cmbClass.ItemIndex = 0;
             int count = (cmbClass.Properties.DataSource as IList).Count;
-            if(count > 0)
+            if (count > 0)
             {
                 tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
                 cmbStudent.ItemIndex = 0;

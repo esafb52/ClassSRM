@@ -102,7 +102,7 @@ namespace ClassSRM.Forms
                 tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
                 cmbStudent.ItemIndex = 0;
             }
-            
+
             cmbBook.SelectedIndex = 0;
             if (isQuastion)
             {

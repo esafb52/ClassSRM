@@ -33,16 +33,7 @@ namespace ClassSRM
                 BonusSkins.Register();
                 SkinManager.EnableFormSkins();
                 UserLookAndFeel.Default.SetSkinStyle(Config.ReadSetting("Skin"));
-                var fontFamily = Config.ReadSetting("FontFamily");
-                int fontSize = Convert.ToInt32(Config.ReadSetting("FontSize"));
-                try
-                {
-                    WindowsFormsSettings.DefaultFont = new System.Drawing.Font(fontFamily, fontSize);
-                }
-                catch (Exception)
-                {
-                    WindowsFormsSettings.DefaultFont = new System.Drawing.Font("Tahoma", 8);
-                }
+
                 //Set Login
                 Application.Run(new Login());
                 Application.DoEvents();

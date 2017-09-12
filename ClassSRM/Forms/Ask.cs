@@ -45,7 +45,6 @@ namespace ClassSRM.Forms
                     btnSave.Enabled = true;
                 }
             }
-           
         }
 
         private void btnSave_Click(object sender, EventArgs e)

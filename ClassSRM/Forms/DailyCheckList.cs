@@ -14,7 +14,6 @@ namespace ClassSRM.Forms
         public DailyCheckList()
         {
             InitializeComponent();
-           
         }
 
         private void chkFilter_CheckedChanged(object sender, EventArgs e)
@@ -60,7 +59,6 @@ namespace ClassSRM.Forms
                     int id = (int)cmbStudent.EditValue;
                     checkVBindingSource.DataSource = dc.Select2Dates(id, txtDate1.Text, txtDate2.Text);
                 }
-                
             }
         }
 
@@ -74,7 +72,6 @@ namespace ClassSRM.Forms
                     int id = (int)cmbStudent.EditValue;
                     checkVBindingSource.DataSource = dc.Select2Dates(id, txtDate1.Text, txtDate2.Text);
                 }
-                
             }
         }
 

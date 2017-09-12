@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace ClassSRM.Forms
 {
@@ -20,7 +13,7 @@ namespace ClassSRM.Forms
         public static string caption;
         public static string desc;
 
-        ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public AddTask()
         {

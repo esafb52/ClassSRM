@@ -10,7 +10,7 @@ namespace ClassSRM
 {
     public partial class Letter : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
+        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public Letter()
         {

@@ -11,7 +11,6 @@ namespace ClassSRM
 {
     internal class Config
     {
-
         public static string connection = Config.ReadSetting("ConServer");
 
         //Read Application Settings from Config File

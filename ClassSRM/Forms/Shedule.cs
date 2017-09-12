@@ -1,20 +1,14 @@
-﻿using System;
+﻿using DevExpress.XtraScheduler;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using DevExpress.XtraScheduler;
 
 namespace ClassSRM.Forms
 {
     public partial class Shedule : DevExpress.XtraEditors.XtraForm
     {
-        ClassSRMDataContext context;
+        private ClassSRMDataContext context;
+
         public Shedule()
         {
             InitializeComponent();
@@ -52,6 +46,7 @@ namespace ClassSRM.Forms
             resStorage.DataSource = resources;
             aptStorage.DataSource = apts;
         }
+
         private void schedulerStorage1_AppointmentsInserted(object sender, PersistentObjectsEventArgs e)
         {
             foreach (Appointment apt in e.Objects)
