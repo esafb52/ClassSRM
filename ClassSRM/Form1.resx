@@ -1150,7 +1150,7 @@
     <value>617, 17</value>
   </metadata>
   <metadata name="schedulerStorage1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>206, 60</value>
+    <value>17, 60</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -7326,6 +7326,6 @@
 </value>
   </data>
   <metadata name="chartBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 60</value>
+    <value>1258, 17</value>
   </metadata>
 </root>

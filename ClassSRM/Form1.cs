@@ -22,7 +22,7 @@ namespace ClassSRM
 
         private string strCurMonth, strYear;
         private int PrevMonth;
-
+        int id;
         //Data Context
         private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
@@ -59,6 +59,8 @@ namespace ClassSRM
             strYear = pc.GetYear(DateTime.Now).ToString("0000");
             PrevMonth = Convert.ToInt32(strCurMonth) - 1;
         }
+
+        
 
         private void initScheduler()
         {
@@ -104,7 +106,7 @@ namespace ClassSRM
                     imgStudent.Image = Image.FromStream(stream);
 
                     SplashScreenManager.ShowForm(typeof(WaitForm1));
-                    int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
+                    id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     var qActivity = (from v in dc.tbl_ActPoints where v.StudentId == id select v.Score).Sum().GetValueOrDefault(0); //دریافت مجموع امتیاز فعالیت ها
                     var qbitAct = (from v in dc.tbl_Checks where v.StudentId == id && v.Exist == true select v.Exist).Count();  //دریافت حضور فعال
                     var qbitDeAct = (from v in dc.tbl_Checks where v.StudentId == id && v.Exist == false select v.Exist).Count();   //دریافت حضور غیرفعال
@@ -280,9 +282,7 @@ namespace ClassSRM
                         prgTotalScore.Value = (float)qActivity;
                     }
 
-                    CreateCustomDate();
-                    sumEvaBindingSource.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + strCurMonth + "/" + "01", strYear + "/" + strCurMonth + "/" + "31");
-                    sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + PrevMonth.ToString("00") + "/" + "01", strYear + "/" + PrevMonth.ToString("00") + "/" + "31");
+                    drawChart(id);
                 }
             }
             catch (Exception)
@@ -290,6 +290,38 @@ namespace ClassSRM
             }
         }
 
+        private void drawChart(int id)
+        {
+            CreateCustomDate();
+            if (strCurMonth.Equals("01"))
+            {
+                int nyear = Convert.ToInt32(strYear) - 1;
+                sumEvaBindingSource.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + strCurMonth + "/" + "01", strYear + "/" + strCurMonth + "/" + "31");
+                sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, nyear + "/" + "12" + "/" + "01", nyear + "/" + "12" + "/" + "31");
+            }
+            else
+            {
+                sumEvaBindingSource.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + strCurMonth + "/" + "01", strYear + "/" + strCurMonth + "/" + "31");
+                sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + PrevMonth + "/" + "01", strYear + "/" + PrevMonth + "/" + "31");
+            }
+            
+        }
+        // isOne => if month is 01 we must set prevMonth 12 and prevYear - 1
+        private void drawChart(int id, string Date1, string Date2, bool isOne)
+        {
+            if (isOne)
+            {
+                int nyear = Convert.ToInt32(strYear) - 1;
+                sumEvaBindingSource.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + Date1 + "/" + "01", strYear + "/" + Date1 + "/" + "31");
+                sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, nyear + "/" + Date2 + "/" + "01", nyear + "/" + Date2 + "/" + "31");
+            }
+            else
+            {
+                sumEvaBindingSource.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + Date1 + "/" + "01", strYear + "/" + Date1 + "/" + "31");
+                sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + Date2 + "/" + "01", strYear + "/" + Date2 + "/" + "31");
+            }
+        }
+      
         //Enable ProgressBar Animation
         private void EnableAnim()
         {
@@ -327,6 +359,8 @@ namespace ClassSRM
             EnableAnim();
             pCalendar.DateTime = DateTime.Now;
             initScheduler();
+            txtDate1.DateTime = DateTime.Now;
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -528,6 +562,31 @@ namespace ClassSRM
             DBAppointment dbApt = (DBAppointment)apt.GetSourceObject(schedulerStorage1);
             dc.DBAppointments.DeleteOnSubmit(dbApt);
             dc.SubmitChanges();
+        }
+
+        private void chkMFilter_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkMFilter.Checked)
+                txtDate1.Enabled = true;
+            else
+                txtDate1.Enabled = false;
+        }
+
+        private void txtDate1_EditValueChanged(object sender, EventArgs e)
+        {
+            string month = txtDate1.Text.Substring(5, 2);
+            int prev;
+            if (month.Equals("01"))
+            {
+                prev = 12;
+                drawChart(id, month, prev.ToString("00"),true);
+            }
+            else
+            {
+                prev = Convert.ToInt32(month) - 1;
+                drawChart(id, month, prev.ToString("00"),false);
+            }
+
         }
 
         #endregion "Scheduler Handler"
