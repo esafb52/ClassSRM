@@ -120,13 +120,14 @@
             this.tabPane1.Controls.Add(this.tbMonth);
             this.tabPane1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabPane1.Location = new System.Drawing.Point(0, 0);
+            this.tabPane1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPane1.Name = "tabPane1";
             this.tabPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tbMonth,
             this.tbYear});
-            this.tabPane1.RegularSize = new System.Drawing.Size(657, 398);
+            this.tabPane1.RegularSize = new System.Drawing.Size(766, 490);
             this.tabPane1.SelectedPage = this.tbMonth;
-            this.tabPane1.Size = new System.Drawing.Size(657, 398);
+            this.tabPane1.Size = new System.Drawing.Size(766, 490);
             this.tabPane1.TabIndex = 0;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -134,8 +135,9 @@
             // 
             this.tbYear.Caption = "شاگردان سالانه کلاس";
             this.tbYear.Controls.Add(this.layoutControl2);
+            this.tbYear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbYear.Name = "tbYear";
-            this.tbYear.Size = new System.Drawing.Size(639, 353);
+            this.tbYear.Size = new System.Drawing.Size(744, 433);
             // 
             // layoutControl2
             // 
@@ -144,20 +146,22 @@
             this.layoutControl2.Controls.Add(this.cmbClass2);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl2.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(703, 141, 450, 400);
             this.layoutControl2.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl2.Root = this.layoutControlGroup2;
-            this.layoutControl2.Size = new System.Drawing.Size(639, 353);
+            this.layoutControl2.Size = new System.Drawing.Size(744, 433);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
             // btnExport2
             // 
             this.btnExport2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport2.ImageOptions.Image")));
-            this.btnExport2.Location = new System.Drawing.Point(276, 36);
+            this.btnExport2.Location = new System.Drawing.Point(322, 44);
+            this.btnExport2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExport2.Name = "btnExport2";
-            this.btnExport2.Size = new System.Drawing.Size(351, 38);
+            this.btnExport2.Size = new System.Drawing.Size(406, 40);
             this.btnExport2.StyleController = this.layoutControl2;
             this.btnExport2.TabIndex = 1;
             this.btnExport2.Text = "خروجی به PDF";
@@ -165,13 +169,15 @@
             // 
             // gridControl2
             // 
-            this.gridControl2.Location = new System.Drawing.Point(12, 88);
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gridControl2.Location = new System.Drawing.Point(16, 121);
             this.gridControl2.MainView = this.gridView2;
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1});
             this.gridControl2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gridControl2.Size = new System.Drawing.Size(615, 253);
+            this.gridControl2.Size = new System.Drawing.Size(712, 296);
             this.gridControl2.TabIndex = 2;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -244,7 +250,8 @@
             // 
             // cmbClass2
             // 
-            this.cmbClass2.Location = new System.Drawing.Point(276, 12);
+            this.cmbClass2.Location = new System.Drawing.Point(322, 16);
+            this.cmbClass2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbClass2.Name = "cmbClass2";
             this.cmbClass2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -257,7 +264,7 @@
             this.cmbClass2.Properties.DisplayMember = "SchClass";
             this.cmbClass2.Properties.NullText = "مدرسه را انتخاب کنید";
             this.cmbClass2.Properties.ValueMember = "Id";
-            this.cmbClass2.Size = new System.Drawing.Size(261, 20);
+            this.cmbClass2.Size = new System.Drawing.Size(302, 22);
             this.cmbClass2.StyleController = this.layoutControl2;
             this.cmbClass2.TabIndex = 0;
             this.cmbClass2.EditValueChanged += new System.EventHandler(this.cmbClass2_EditValueChanged);
@@ -279,15 +286,15 @@
             this.layoutControlItem5});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "Root";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(639, 353);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(744, 433);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.cmbClass2;
-            this.layoutControlItem4.Location = new System.Drawing.Point(264, 0);
+            this.layoutControlItem4.Location = new System.Drawing.Point(306, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(265, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(308, 28);
             this.layoutControlItem4.Text = "مدرسه/کلاس";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
@@ -295,43 +302,43 @@
             // simpleLabelItem1
             // 
             this.simpleLabelItem1.AllowHotTrack = false;
-            this.simpleLabelItem1.Location = new System.Drawing.Point(529, 0);
+            this.simpleLabelItem1.Location = new System.Drawing.Point(614, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
-            this.simpleLabelItem1.Size = new System.Drawing.Size(90, 24);
+            this.simpleLabelItem1.Size = new System.Drawing.Size(104, 28);
             this.simpleLabelItem1.Text = "مدرسه/کلاس";
-            this.simpleLabelItem1.TextSize = new System.Drawing.Size(63, 13);
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(81, 17);
             // 
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
             this.emptySpaceItem4.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
-            this.emptySpaceItem4.Size = new System.Drawing.Size(264, 66);
+            this.emptySpaceItem4.Size = new System.Drawing.Size(306, 74);
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.gridControl2;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 76);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 105);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(619, 257);
+            this.layoutControlItem6.Size = new System.Drawing.Size(718, 302);
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 66);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 74);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
-            this.emptySpaceItem3.Size = new System.Drawing.Size(619, 10);
+            this.emptySpaceItem3.Size = new System.Drawing.Size(718, 31);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.btnExport2;
-            this.layoutControlItem5.Location = new System.Drawing.Point(264, 24);
+            this.layoutControlItem5.Location = new System.Drawing.Point(306, 28);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(355, 42);
+            this.layoutControlItem5.Size = new System.Drawing.Size(412, 46);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
@@ -339,8 +346,9 @@
             // 
             this.tbMonth.Caption = "شاگردان ماهانه کلاس";
             this.tbMonth.Controls.Add(this.layoutControl1);
+            this.tbMonth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbMonth.Name = "tbMonth";
-            this.tbMonth.Size = new System.Drawing.Size(639, 353);
+            this.tbMonth.Size = new System.Drawing.Size(744, 433);
             // 
             // layoutControl1
             // 
@@ -350,20 +358,22 @@
             this.layoutControl1.Controls.Add(this.txtDate);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(1255, 202, 450, 400);
             this.layoutControl1.OptionsView.RightToLeftMirroringApplied = true;
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(639, 353);
+            this.layoutControl1.Size = new System.Drawing.Size(744, 433);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // btnExport
             // 
             this.btnExport.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.ImageOptions.Image")));
-            this.btnExport.Location = new System.Drawing.Point(334, 36);
+            this.btnExport.Location = new System.Drawing.Point(390, 44);
+            this.btnExport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(293, 38);
+            this.btnExport.Size = new System.Drawing.Size(338, 40);
             this.btnExport.StyleController = this.layoutControl1;
             this.btnExport.TabIndex = 2;
             this.btnExport.Text = "خروجی به PDF";
@@ -371,11 +381,13 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 88);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.gridControl1.Location = new System.Drawing.Point(16, 120);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gridControl1.Size = new System.Drawing.Size(615, 253);
+            this.gridControl1.Size = new System.Drawing.Size(712, 297);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -441,7 +453,8 @@
             // 
             // cmbClass
             // 
-            this.cmbClass.Location = new System.Drawing.Point(334, 12);
+            this.cmbClass.Location = new System.Drawing.Point(390, 16);
+            this.cmbClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbClass.Name = "cmbClass";
             this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -454,7 +467,7 @@
             this.cmbClass.Properties.DisplayMember = "SchClass";
             this.cmbClass.Properties.NullText = "مدرسه را انتخاب کنید";
             this.cmbClass.Properties.ValueMember = "Id";
-            this.cmbClass.Size = new System.Drawing.Size(227, 20);
+            this.cmbClass.Size = new System.Drawing.Size(254, 22);
             this.cmbClass.StyleController = this.layoutControl1;
             this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
@@ -462,14 +475,15 @@
             // txtDate
             // 
             this.txtDate.EditValue = new System.DateTime(((long)(0)));
-            this.txtDate.Location = new System.Drawing.Point(12, 12);
+            this.txtDate.Location = new System.Drawing.Point(16, 16);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDate.Name = "txtDate";
             this.txtDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtDate.Properties.CalendarTimeProperties.Mask.EditMask = "d";
-            this.txtDate.Size = new System.Drawing.Size(252, 20);
+            this.txtDate.Size = new System.Drawing.Size(284, 22);
             this.txtDate.StyleController = this.layoutControl1;
             this.txtDate.TabIndex = 1;
             this.txtDate.UpdateSelectionWhenNavigating = true;
@@ -488,7 +502,7 @@
             this.emptySpaceItem8});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(639, 353);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(744, 433);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -496,61 +510,62 @@
             this.layoutControlItem1.Control = this.txtDate;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(322, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(374, 28);
             this.layoutControlItem1.Text = "تاریخ";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(81, 17);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.cmbClass;
-            this.layoutControlItem2.Location = new System.Drawing.Point(322, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(374, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(297, 24);
+            this.layoutControlItem2.Size = new System.Drawing.Size(344, 28);
             this.layoutControlItem2.Text = "مدرسه/کلاس";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(81, 17);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.gridControl1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 76);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 104);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(619, 257);
+            this.layoutControlItem3.Size = new System.Drawing.Size(718, 303);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 66);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 74);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
-            this.emptySpaceItem2.Size = new System.Drawing.Size(619, 10);
+            this.emptySpaceItem2.Size = new System.Drawing.Size(718, 30);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.btnExport;
-            this.layoutControlItem8.Location = new System.Drawing.Point(322, 24);
+            this.layoutControlItem8.Location = new System.Drawing.Point(374, 28);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(297, 42);
+            this.layoutControlItem8.Size = new System.Drawing.Size(344, 46);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
             // 
             // emptySpaceItem8
             // 
             this.emptySpaceItem8.AllowHotTrack = false;
-            this.emptySpaceItem8.Location = new System.Drawing.Point(0, 24);
+            this.emptySpaceItem8.Location = new System.Drawing.Point(0, 28);
             this.emptySpaceItem8.Name = "emptySpaceItem8";
-            this.emptySpaceItem8.Size = new System.Drawing.Size(322, 42);
+            this.emptySpaceItem8.Size = new System.Drawing.Size(374, 46);
             this.emptySpaceItem8.TextSize = new System.Drawing.Size(0, 0);
             // 
             // TopStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 398);
+            this.ClientSize = new System.Drawing.Size(766, 490);
             this.Controls.Add(this.tabPane1);
             this.DoubleBuffered = true;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "TopStudent";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

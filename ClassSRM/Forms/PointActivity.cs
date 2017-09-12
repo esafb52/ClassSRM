@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using System;
+using System.Collections;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -29,27 +30,31 @@ namespace ClassSRM.Forms
 
             tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
             cmbClass.ItemIndex = 0;
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
-            cmbStudent.ItemIndex = 0;
-            var query = from tbl_ActPoints in (from tbl_ActPoints in dc.tbl_ActPoints
-                                               where tbl_ActPoints.StudentId == (int)cmbStudent.EditValue
-                                               select new
-                                               {
-                                                   tbl_ActPoints.Score,
-                                                   Dummy = "x"
-                                               })
-                        group tbl_ActPoints by new { tbl_ActPoints.Dummy } into g
-                        select new
-                        {
-                            ScoreSum = (int?)g.Sum(p => p.Score)
-                        };
-            if (query.FirstOrDefault() == null)
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if(count > 0)
             {
-                lblCurScore.Text = "0";
-            }
-            else
-            {
-                lblCurScore.Text = query.FirstOrDefault().ScoreSum.ToString();
+                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
+                cmbStudent.ItemIndex = 0;
+                var query = from tbl_ActPoints in (from tbl_ActPoints in dc.tbl_ActPoints
+                                                   where tbl_ActPoints.StudentId == (int)cmbStudent.EditValue
+                                                   select new
+                                                   {
+                                                       tbl_ActPoints.Score,
+                                                       Dummy = "x"
+                                                   })
+                            group tbl_ActPoints by new { tbl_ActPoints.Dummy } into g
+                            select new
+                            {
+                                ScoreSum = (int?)g.Sum(p => p.Score)
+                            };
+                if (query.FirstOrDefault() == null)
+                {
+                    lblCurScore.Text = "0";
+                }
+                else
+                {
+                    lblCurScore.Text = query.FirstOrDefault().ScoreSum.ToString();
+                }
             }
         }
 

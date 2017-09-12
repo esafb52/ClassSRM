@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Windows.Forms;
 
 namespace ClassSRM.Forms
@@ -36,7 +37,9 @@ namespace ClassSRM.Forms
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
             string date = txtDate.Text.Substring(0, 7);
-            gridControl1.DataSource = dc.SelectTopMonth((int)cmbClass.EditValue, date + "/01", date + "/31");
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if (count > 0)
+                gridControl1.DataSource = dc.SelectTopMonth((int)cmbClass.EditValue, date + "/01", date + "/31");
         }
 
         private void btnExport_Click(object sender, EventArgs e)
@@ -46,7 +49,9 @@ namespace ClassSRM.Forms
 
         private void cmbClass2_EditValueChanged(object sender, EventArgs e)
         {
-            gridControl2.DataSource = dc.SelectTopYear((int)cmbClass2.EditValue);
+            int count = (cmbClass2.Properties.DataSource as IList).Count;
+            if (count > 0)
+                gridControl2.DataSource = dc.SelectTopYear((int)cmbClass2.EditValue);
         }
 
         private void btnExport2_Click(object sender, EventArgs e)

@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using System;
+using System.Collections;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
@@ -41,26 +42,50 @@ namespace ClassSRM.Forms
 
         private void cmbStudent_EditValueChanged(object sender, EventArgs e)
         {
-            int id = (int)cmbStudent.EditValue;
-            checkVBindingSource.DataSource = from v in dc.CheckVs where v.StudentId == id orderby v.Date descending select v;
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if (count > 0)
+            {
+                int id = (int)cmbStudent.EditValue;
+                checkVBindingSource.DataSource = from v in dc.CheckVs where v.StudentId == id orderby v.Date descending select v;
+            }
         }
 
         private void txtDate1_DateTimeChanged(object sender, EventArgs e)
         {
-            int id = (int)cmbStudent.EditValue;
-            checkVBindingSource.DataSource = dc.Select2Dates(id, txtDate1.Text, txtDate2.Text);
+            if (chkFilter.Checked)
+            {
+                int count = (cmbClass.Properties.DataSource as IList).Count;
+                if (count > 0)
+                {
+                    int id = (int)cmbStudent.EditValue;
+                    checkVBindingSource.DataSource = dc.Select2Dates(id, txtDate1.Text, txtDate2.Text);
+                }
+                
+            }
         }
 
         private void txtDate2_DateTimeChanged(object sender, EventArgs e)
         {
-            int id = (int)cmbStudent.EditValue;
-            checkVBindingSource.DataSource = dc.Select2Dates(id, txtDate1.Text, txtDate2.Text);
+            if (chkFilter.Checked)
+            {
+                int count = (cmbClass.Properties.DataSource as IList).Count;
+                if (count > 0)
+                {
+                    int id = (int)cmbStudent.EditValue;
+                    checkVBindingSource.DataSource = dc.Select2Dates(id, txtDate1.Text, txtDate2.Text);
+                }
+                
+            }
         }
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
-            cmbStudent.ItemIndex = 0;
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if (count > 0)
+            {
+                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
+                cmbStudent.ItemIndex = 0;
+            }
         }
 
         private void gridView1_CellValueChanging(object sender, DevExpress.XtraGrid.Views.Base.CellValueChangedEventArgs e)
