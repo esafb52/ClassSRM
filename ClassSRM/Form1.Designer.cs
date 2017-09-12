@@ -256,103 +256,106 @@
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
             this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
-            this.imgStudent = new DevExpress.XtraEditors.PictureEdit();
-            this.gaugeControl5 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge5 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblDifference = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent5 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgDifference = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl4 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge4 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblDeAct = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent4 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgDeActive = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl3 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge3 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblActive = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent3 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgActive = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl2 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge2 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblActivity = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent2 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgActiveClass = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl1 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge1 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblEvaPoint = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgTotalScore = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
-            this.gaugeControl15 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge15 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblEjtemayi = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent15 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgEjtemayi = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl9 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge9 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblHedye = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent9 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgHedye = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl8 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge8 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblOlom = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent8 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgOlom = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl7 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge7 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblRiazi = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent7 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgRiazi = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.gaugeControl6 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.label = new DevExpress.XtraEditors.LabelControl();
-            this.circularGauge6 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
-            this.lblFarsi = new DevExpress.XtraGauges.Win.Base.LabelComponent();
-            this.arcScaleRangeBarComponent6 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
-            this.prgFarsi = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.pCalendar = new FarsiLibrary.Win.DevExpress.XtraFACalendarControl();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.chartBarController1 = new DevExpress.XtraCharts.UI.ChartBarController();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gaugeControl14 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.label15 = new System.Windows.Forms.Label();
             this.circularGauge14 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.lblWorkLife = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent14 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.prgWorkLife = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl13 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.label14 = new System.Windows.Forms.Label();
             this.circularGauge13 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.lblTafakor = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent13 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.prgTafakor = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl12 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.label13 = new System.Windows.Forms.Label();
             this.circularGauge12 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.lblLife = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent12 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.prgLife = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl11 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.label12 = new System.Windows.Forms.Label();
             this.circularGauge11 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.lblEmla = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent11 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.prgEmla = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.gaugeControl10 = new DevExpress.XtraGauges.Win.GaugeControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.label11 = new System.Windows.Forms.Label();
             this.circularGauge10 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
             this.lblQuran = new DevExpress.XtraGauges.Win.Base.LabelComponent();
             this.arcScaleRangeBarComponent10 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.prgQuran = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
-            this.chartBarController1 = new DevExpress.XtraCharts.UI.ChartBarController();
+            this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
+            this.gaugeControl15 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label10 = new System.Windows.Forms.Label();
+            this.circularGauge15 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblEjtemayi = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent15 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgEjtemayi = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl9 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label9 = new System.Windows.Forms.Label();
+            this.circularGauge9 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblHedye = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent9 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgHedye = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl8 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label8 = new System.Windows.Forms.Label();
+            this.circularGauge8 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblOlom = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent8 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgOlom = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl7 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label7 = new System.Windows.Forms.Label();
+            this.circularGauge7 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblRiazi = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent7 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgRiazi = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl6 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label6 = new System.Windows.Forms.Label();
+            this.circularGauge6 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblFarsi = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent6 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgFarsi = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.imgStudent = new DevExpress.XtraEditors.PictureEdit();
+            this.gaugeControl5 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label5 = new System.Windows.Forms.Label();
+            this.circularGauge5 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblDifference = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent5 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgDifference = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl4 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.circularGauge4 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblDeAct = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent4 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgDeActive = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl3 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label2 = new System.Windows.Forms.Label();
+            this.circularGauge3 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblActive = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent3 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgActive = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl2 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label3 = new System.Windows.Forms.Label();
+            this.circularGauge2 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblActivity = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent2 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgActiveClass = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.gaugeControl1 = new DevExpress.XtraGauges.Win.GaugeControl();
+            this.label4 = new System.Windows.Forms.Label();
+            this.circularGauge1 = new DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge();
+            this.lblEvaPoint = new DevExpress.XtraGauges.Win.Base.LabelComponent();
+            this.arcScaleRangeBarComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
+            this.prgTotalScore = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
@@ -381,6 +384,67 @@
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
+            this.panelControl3.SuspendLayout();
+            this.gaugeControl14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblWorkLife)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgWorkLife)).BeginInit();
+            this.gaugeControl13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTafakor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgTafakor)).BeginInit();
+            this.gaugeControl12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblLife)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgLife)).BeginInit();
+            this.gaugeControl11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblEmla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgEmla)).BeginInit();
+            this.gaugeControl10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblQuran)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgQuran)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
+            this.panelControl2.SuspendLayout();
+            this.gaugeControl15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblEjtemayi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgEjtemayi)).BeginInit();
+            this.gaugeControl9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblHedye)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgHedye)).BeginInit();
+            this.gaugeControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblOlom)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgOlom)).BeginInit();
+            this.gaugeControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblRiazi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgRiazi)).BeginInit();
+            this.gaugeControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblFarsi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgFarsi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgStudent.Properties)).BeginInit();
@@ -409,64 +473,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblEvaPoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prgTotalScore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
-            this.panelControl2.SuspendLayout();
-            this.gaugeControl15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblEjtemayi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgEjtemayi)).BeginInit();
-            this.gaugeControl9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblHedye)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgHedye)).BeginInit();
-            this.gaugeControl8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblOlom)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgOlom)).BeginInit();
-            this.gaugeControl7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblRiazi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgRiazi)).BeginInit();
-            this.gaugeControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblFarsi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgFarsi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
-            this.panelControl3.SuspendLayout();
-            this.gaugeControl14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblWorkLife)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgWorkLife)).BeginInit();
-            this.gaugeControl13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblTafakor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgTafakor)).BeginInit();
-            this.gaugeControl12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblLife)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgLife)).BeginInit();
-            this.gaugeControl11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblEmla)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgEmla)).BeginInit();
-            this.gaugeControl10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblQuran)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgQuran)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager1
@@ -997,7 +1003,7 @@
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2};
-            this.chartControl1.Size = new System.Drawing.Size(1169, 294);
+            this.chartControl1.Size = new System.Drawing.Size(1169, 259);
             this.chartControl1.TabIndex = 0;
             // 
             // createChartRibbonPage1
@@ -1459,7 +1465,7 @@
             this.dockPanel1.OriginalSize = new System.Drawing.Size(417, 200);
             this.dockPanel1.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanel1.SavedIndex = 0;
-            this.dockPanel1.Size = new System.Drawing.Size(486, 895);
+            this.dockPanel1.Size = new System.Drawing.Size(417, 868);
             this.dockPanel1.Text = "دانش آموزان";
             this.dockPanel1.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             // 
@@ -1467,10 +1473,10 @@
             // 
             this.dockPanel1_Container.Controls.Add(this.gridControl1);
             this.dockPanel1_Container.Controls.Add(this.panelControl5);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(6, 28);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(7, 27);
             this.dockPanel1_Container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(476, 862);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(405, 836);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // gridControl1
@@ -1485,7 +1491,7 @@
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(476, 813);
+            this.gridControl1.Size = new System.Drawing.Size(405, 787);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1561,7 +1567,7 @@
             this.panelControl5.Location = new System.Drawing.Point(0, 0);
             this.panelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(476, 49);
+            this.panelControl5.Size = new System.Drawing.Size(405, 49);
             this.panelControl5.TabIndex = 1;
             // 
             // labelControl15
@@ -1598,807 +1604,6 @@
             // 
             this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
             // 
-            // panelControl1
-            // 
-            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.panelControl1.Appearance.Options.UseBackColor = true;
-            this.panelControl1.Controls.Add(this.imgStudent);
-            this.panelControl1.Controls.Add(this.gaugeControl5);
-            this.panelControl1.Controls.Add(this.gaugeControl4);
-            this.panelControl1.Controls.Add(this.gaugeControl3);
-            this.panelControl1.Controls.Add(this.gaugeControl2);
-            this.panelControl1.Controls.Add(this.gaugeControl1);
-            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl1.Location = new System.Drawing.Point(0, 177);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1468, 210);
-            this.panelControl1.TabIndex = 2;
-            // 
-            // imgStudent
-            // 
-            this.imgStudent.Cursor = System.Windows.Forms.Cursors.Default;
-            this.imgStudent.Dock = System.Windows.Forms.DockStyle.Left;
-            this.imgStudent.Location = new System.Drawing.Point(1182, 2);
-            this.imgStudent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.imgStudent.MenuManager = this.ribbonControl1;
-            this.imgStudent.Name = "imgStudent";
-            this.imgStudent.Properties.AllowFocused = false;
-            this.imgStudent.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.imgStudent.Properties.Appearance.Options.UseBackColor = true;
-            this.imgStudent.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.imgStudent.Properties.Caption.Text = "تصویر دانش آموز";
-            this.imgStudent.Properties.NullText = "بدون عکس";
-            this.imgStudent.Properties.OptionsMask.MaskType = DevExpress.XtraEditors.Controls.PictureEditMaskType.Circle;
-            this.imgStudent.Properties.ReadOnly = true;
-            this.imgStudent.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.imgStudent.Size = new System.Drawing.Size(243, 206);
-            this.imgStudent.TabIndex = 5;
-            // 
-            // gaugeControl5
-            // 
-            this.gaugeControl5.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl5.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl5.Controls.Add(this.labelControl5);
-            this.gaugeControl5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl5.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge5});
-            this.gaugeControl5.Location = new System.Drawing.Point(946, 2);
-            this.gaugeControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl5.Name = "gaugeControl5";
-            this.gaugeControl5.Size = new System.Drawing.Size(236, 206);
-            this.gaugeControl5.TabIndex = 4;
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Location = new System.Drawing.Point(48, 117);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(141, 17);
-            this.labelControl5.TabIndex = 0;
-            this.labelControl5.Text = "اختلاف با نفر برتر (درصد)";
-            // 
-            // circularGauge5
-            // 
-            this.circularGauge5.Bounds = new System.Drawing.Rectangle(6, 6, 224, 194);
-            this.circularGauge5.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblDifference});
-            this.circularGauge5.Name = "circularGauge5";
-            this.circularGauge5.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent5});
-            this.circularGauge5.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgDifference});
-            // 
-            // lblDifference
-            // 
-            this.lblDifference.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblDifference.Name = "circularGauge1_Label1";
-            this.lblDifference.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblDifference.Text = "0";
-            this.lblDifference.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent5
-            // 
-            this.arcScaleRangeBarComponent5.ArcScale = this.prgDifference;
-            this.arcScaleRangeBarComponent5.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent5.RoundedCaps = true;
-            this.arcScaleRangeBarComponent5.ShowBackground = true;
-            this.arcScaleRangeBarComponent5.StartOffset = 80F;
-            this.arcScaleRangeBarComponent5.ZOrder = -10;
-            // 
-            // prgDifference
-            // 
-            this.prgDifference.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDifference.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDifference.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDifference.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDifference.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgDifference.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgDifference.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgDifference.EndAngle = 90F;
-            this.prgDifference.MajorTickCount = 0;
-            this.prgDifference.MajorTickmark.FormatString = "{0:F0}";
-            this.prgDifference.MajorTickmark.ShapeOffset = -14F;
-            this.prgDifference.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgDifference.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgDifference.MaxValue = 170F;
-            this.prgDifference.MinorTickCount = 0;
-            this.prgDifference.MinorTickmark.ShapeOffset = -7F;
-            this.prgDifference.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgDifference.Name = "scale1";
-            this.prgDifference.StartAngle = -270F;
-            this.prgDifference.Value = 20F;
-            // 
-            // gaugeControl4
-            // 
-            this.gaugeControl4.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl4.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl4.Controls.Add(this.labelControl4);
-            this.gaugeControl4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl4.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge4});
-            this.gaugeControl4.Location = new System.Drawing.Point(710, 2);
-            this.gaugeControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl4.Name = "gaugeControl4";
-            this.gaugeControl4.Size = new System.Drawing.Size(236, 206);
-            this.gaugeControl4.TabIndex = 3;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Location = new System.Drawing.Point(79, 117);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(82, 17);
-            this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = " غیبت ها (روز)";
-            // 
-            // circularGauge4
-            // 
-            this.circularGauge4.Bounds = new System.Drawing.Rectangle(6, 6, 224, 194);
-            this.circularGauge4.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblDeAct});
-            this.circularGauge4.Name = "circularGauge4";
-            this.circularGauge4.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent4});
-            this.circularGauge4.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgDeActive});
-            // 
-            // lblDeAct
-            // 
-            this.lblDeAct.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblDeAct.Name = "circularGauge1_Label1";
-            this.lblDeAct.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblDeAct.Text = "0";
-            this.lblDeAct.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent4
-            // 
-            this.arcScaleRangeBarComponent4.ArcScale = this.prgDeActive;
-            this.arcScaleRangeBarComponent4.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent4.RoundedCaps = true;
-            this.arcScaleRangeBarComponent4.ShowBackground = true;
-            this.arcScaleRangeBarComponent4.StartOffset = 80F;
-            this.arcScaleRangeBarComponent4.ZOrder = -10;
-            // 
-            // prgDeActive
-            // 
-            this.prgDeActive.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDeActive.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDeActive.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDeActive.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgDeActive.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgDeActive.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgDeActive.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgDeActive.EndAngle = 90F;
-            this.prgDeActive.MajorTickCount = 0;
-            this.prgDeActive.MajorTickmark.FormatString = "{0:F0}";
-            this.prgDeActive.MajorTickmark.ShapeOffset = -14F;
-            this.prgDeActive.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgDeActive.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgDeActive.MaxValue = 170F;
-            this.prgDeActive.MinorTickCount = 0;
-            this.prgDeActive.MinorTickmark.ShapeOffset = -7F;
-            this.prgDeActive.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgDeActive.Name = "scale1";
-            this.prgDeActive.StartAngle = -270F;
-            this.prgDeActive.Value = 20F;
-            // 
-            // gaugeControl3
-            // 
-            this.gaugeControl3.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl3.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl3.Controls.Add(this.labelControl3);
-            this.gaugeControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl3.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge3});
-            this.gaugeControl3.Location = new System.Drawing.Point(474, 2);
-            this.gaugeControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl3.Name = "gaugeControl3";
-            this.gaugeControl3.Size = new System.Drawing.Size(236, 206);
-            this.gaugeControl3.TabIndex = 2;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Location = new System.Drawing.Point(64, 117);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(111, 17);
-            this.labelControl3.TabIndex = 0;
-            this.labelControl3.Text = "حضور در کلاس(روز)";
-            // 
-            // circularGauge3
-            // 
-            this.circularGauge3.Bounds = new System.Drawing.Rectangle(6, 6, 224, 194);
-            this.circularGauge3.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblActive});
-            this.circularGauge3.Name = "circularGauge3";
-            this.circularGauge3.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent3});
-            this.circularGauge3.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgActive});
-            // 
-            // lblActive
-            // 
-            this.lblActive.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblActive.Name = "circularGauge1_Label1";
-            this.lblActive.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblActive.Text = "0";
-            this.lblActive.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent3
-            // 
-            this.arcScaleRangeBarComponent3.ArcScale = this.prgActive;
-            this.arcScaleRangeBarComponent3.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent3.RoundedCaps = true;
-            this.arcScaleRangeBarComponent3.ShowBackground = true;
-            this.arcScaleRangeBarComponent3.StartOffset = 80F;
-            this.arcScaleRangeBarComponent3.ZOrder = -10;
-            // 
-            // prgActive
-            // 
-            this.prgActive.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActive.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActive.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActive.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActive.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgActive.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgActive.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgActive.EndAngle = 90F;
-            this.prgActive.MajorTickCount = 0;
-            this.prgActive.MajorTickmark.FormatString = "{0:F0}";
-            this.prgActive.MajorTickmark.ShapeOffset = -14F;
-            this.prgActive.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgActive.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgActive.MaxValue = 170F;
-            this.prgActive.MinorTickCount = 0;
-            this.prgActive.MinorTickmark.ShapeOffset = -7F;
-            this.prgActive.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgActive.Name = "scale1";
-            this.prgActive.StartAngle = -270F;
-            this.prgActive.Value = 20F;
-            // 
-            // gaugeControl2
-            // 
-            this.gaugeControl2.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl2.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl2.Controls.Add(this.labelControl16);
-            this.gaugeControl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl2.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge2});
-            this.gaugeControl2.Location = new System.Drawing.Point(238, 2);
-            this.gaugeControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl2.Name = "gaugeControl2";
-            this.gaugeControl2.Size = new System.Drawing.Size(236, 206);
-            this.gaugeControl2.TabIndex = 1;
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Location = new System.Drawing.Point(51, 117);
-            this.labelControl16.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(138, 17);
-            this.labelControl16.TabIndex = 0;
-            this.labelControl16.Text = "فعالیت در کلاس (درصد)";
-            // 
-            // circularGauge2
-            // 
-            this.circularGauge2.Bounds = new System.Drawing.Rectangle(6, 6, 224, 194);
-            this.circularGauge2.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblActivity});
-            this.circularGauge2.Name = "circularGauge2";
-            this.circularGauge2.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent2});
-            this.circularGauge2.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgActiveClass});
-            // 
-            // lblActivity
-            // 
-            this.lblActivity.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblActivity.Name = "circularGauge1_Label1";
-            this.lblActivity.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblActivity.Text = "0";
-            this.lblActivity.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent2
-            // 
-            this.arcScaleRangeBarComponent2.ArcScale = this.prgActiveClass;
-            this.arcScaleRangeBarComponent2.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent2.RoundedCaps = true;
-            this.arcScaleRangeBarComponent2.ShowBackground = true;
-            this.arcScaleRangeBarComponent2.StartOffset = 80F;
-            this.arcScaleRangeBarComponent2.ZOrder = -10;
-            // 
-            // prgActiveClass
-            // 
-            this.prgActiveClass.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActiveClass.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActiveClass.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActiveClass.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgActiveClass.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgActiveClass.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgActiveClass.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgActiveClass.EndAngle = 90F;
-            this.prgActiveClass.MajorTickCount = 0;
-            this.prgActiveClass.MajorTickmark.FormatString = "{0:F0}";
-            this.prgActiveClass.MajorTickmark.ShapeOffset = -14F;
-            this.prgActiveClass.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgActiveClass.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgActiveClass.MaxValue = 100F;
-            this.prgActiveClass.MinorTickCount = 0;
-            this.prgActiveClass.MinorTickmark.ShapeOffset = -7F;
-            this.prgActiveClass.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgActiveClass.Name = "scale1";
-            this.prgActiveClass.StartAngle = -270F;
-            this.prgActiveClass.Value = 20F;
-            // 
-            // gaugeControl1
-            // 
-            this.gaugeControl1.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl1.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl1.Controls.Add(this.labelControl1);
-            this.gaugeControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl1.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge1});
-            this.gaugeControl1.Location = new System.Drawing.Point(2, 2);
-            this.gaugeControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl1.Name = "gaugeControl1";
-            this.gaugeControl1.Size = new System.Drawing.Size(236, 206);
-            this.gaugeControl1.TabIndex = 0;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Location = new System.Drawing.Point(52, 117);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(131, 17);
-            this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "مجموع امتیازات درسی";
-            // 
-            // circularGauge1
-            // 
-            this.circularGauge1.Bounds = new System.Drawing.Rectangle(6, 6, 224, 194);
-            this.circularGauge1.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblEvaPoint});
-            this.circularGauge1.Name = "circularGauge1";
-            this.circularGauge1.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent1});
-            this.circularGauge1.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgTotalScore});
-            // 
-            // lblEvaPoint
-            // 
-            this.lblEvaPoint.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblEvaPoint.Name = "circularGauge1_Label1";
-            this.lblEvaPoint.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblEvaPoint.Text = "0";
-            this.lblEvaPoint.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent1
-            // 
-            this.arcScaleRangeBarComponent1.ArcScale = this.prgTotalScore;
-            this.arcScaleRangeBarComponent1.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent1.RoundedCaps = true;
-            this.arcScaleRangeBarComponent1.ShowBackground = true;
-            this.arcScaleRangeBarComponent1.StartOffset = 80F;
-            this.arcScaleRangeBarComponent1.ZOrder = -10;
-            // 
-            // prgTotalScore
-            // 
-            this.prgTotalScore.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgTotalScore.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgTotalScore.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgTotalScore.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgTotalScore.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgTotalScore.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgTotalScore.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgTotalScore.EndAngle = 90F;
-            this.prgTotalScore.MajorTickCount = 0;
-            this.prgTotalScore.MajorTickmark.FormatString = "{0:F0}";
-            this.prgTotalScore.MajorTickmark.ShapeOffset = -14F;
-            this.prgTotalScore.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgTotalScore.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgTotalScore.MaxValue = 1000F;
-            this.prgTotalScore.MinorTickCount = 0;
-            this.prgTotalScore.MinorTickmark.ShapeOffset = -7F;
-            this.prgTotalScore.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgTotalScore.Name = "scale1";
-            this.prgTotalScore.StartAngle = -270F;
-            this.prgTotalScore.Value = 20F;
-            // 
-            // panelControl2
-            // 
-            this.panelControl2.Controls.Add(this.gaugeControl15);
-            this.panelControl2.Controls.Add(this.gaugeControl9);
-            this.panelControl2.Controls.Add(this.gaugeControl8);
-            this.panelControl2.Controls.Add(this.gaugeControl7);
-            this.panelControl2.Controls.Add(this.gaugeControl6);
-            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl2.Location = new System.Drawing.Point(0, 567);
-            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1468, 180);
-            this.panelControl2.TabIndex = 3;
-            // 
-            // gaugeControl15
-            // 
-            this.gaugeControl15.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl15.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl15.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl15.Controls.Add(this.labelControl9);
-            this.gaugeControl15.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl15.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge15});
-            this.gaugeControl15.Location = new System.Drawing.Point(946, 2);
-            this.gaugeControl15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl15.Name = "gaugeControl15";
-            this.gaugeControl15.Size = new System.Drawing.Size(236, 176);
-            this.gaugeControl15.TabIndex = 6;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(96, 107);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(47, 17);
-            this.labelControl9.TabIndex = 7;
-            this.labelControl9.Text = "مطالعات";
-            // 
-            // circularGauge15
-            // 
-            this.circularGauge15.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
-            this.circularGauge15.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblEjtemayi});
-            this.circularGauge15.Name = "circularGauge15";
-            this.circularGauge15.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent15});
-            this.circularGauge15.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgEjtemayi});
-            // 
-            // lblEjtemayi
-            // 
-            this.lblEjtemayi.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblEjtemayi.Name = "circularGauge1_Label1";
-            this.lblEjtemayi.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblEjtemayi.Text = "0";
-            this.lblEjtemayi.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent15
-            // 
-            this.arcScaleRangeBarComponent15.ArcScale = this.prgEjtemayi;
-            this.arcScaleRangeBarComponent15.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent15.RoundedCaps = true;
-            this.arcScaleRangeBarComponent15.ShowBackground = true;
-            this.arcScaleRangeBarComponent15.StartOffset = 80F;
-            this.arcScaleRangeBarComponent15.ZOrder = -10;
-            // 
-            // prgEjtemayi
-            // 
-            this.prgEjtemayi.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgEjtemayi.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgEjtemayi.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgEjtemayi.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgEjtemayi.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgEjtemayi.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgEjtemayi.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgEjtemayi.EndAngle = 90F;
-            this.prgEjtemayi.MajorTickCount = 0;
-            this.prgEjtemayi.MajorTickmark.FormatString = "{0:F0}";
-            this.prgEjtemayi.MajorTickmark.ShapeOffset = -14F;
-            this.prgEjtemayi.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgEjtemayi.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgEjtemayi.MaxValue = 100F;
-            this.prgEjtemayi.MinorTickCount = 0;
-            this.prgEjtemayi.MinorTickmark.ShapeOffset = -7F;
-            this.prgEjtemayi.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgEjtemayi.Name = "scale1";
-            this.prgEjtemayi.StartAngle = -270F;
-            this.prgEjtemayi.Value = 20F;
-            // 
-            // gaugeControl9
-            // 
-            this.gaugeControl9.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl9.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl9.Controls.Add(this.labelControl8);
-            this.gaugeControl9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl9.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge9});
-            this.gaugeControl9.Location = new System.Drawing.Point(710, 2);
-            this.gaugeControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl9.Name = "gaugeControl9";
-            this.gaugeControl9.Size = new System.Drawing.Size(236, 176);
-            this.gaugeControl9.TabIndex = 5;
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Location = new System.Drawing.Point(101, 107);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(29, 17);
-            this.labelControl8.TabIndex = 7;
-            this.labelControl8.Text = "هدیه";
-            // 
-            // circularGauge9
-            // 
-            this.circularGauge9.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
-            this.circularGauge9.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblHedye});
-            this.circularGauge9.Name = "circularGauge9";
-            this.circularGauge9.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent9});
-            this.circularGauge9.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgHedye});
-            // 
-            // lblHedye
-            // 
-            this.lblHedye.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblHedye.Name = "circularGauge1_Label1";
-            this.lblHedye.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblHedye.Text = "0";
-            this.lblHedye.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent9
-            // 
-            this.arcScaleRangeBarComponent9.ArcScale = this.prgHedye;
-            this.arcScaleRangeBarComponent9.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent9.RoundedCaps = true;
-            this.arcScaleRangeBarComponent9.ShowBackground = true;
-            this.arcScaleRangeBarComponent9.StartOffset = 80F;
-            this.arcScaleRangeBarComponent9.ZOrder = -10;
-            // 
-            // prgHedye
-            // 
-            this.prgHedye.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgHedye.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgHedye.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgHedye.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgHedye.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgHedye.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgHedye.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgHedye.EndAngle = 90F;
-            this.prgHedye.MajorTickCount = 0;
-            this.prgHedye.MajorTickmark.FormatString = "{0:F0}";
-            this.prgHedye.MajorTickmark.ShapeOffset = -14F;
-            this.prgHedye.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgHedye.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgHedye.MaxValue = 100F;
-            this.prgHedye.MinorTickCount = 0;
-            this.prgHedye.MinorTickmark.ShapeOffset = -7F;
-            this.prgHedye.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgHedye.Name = "scale1";
-            this.prgHedye.StartAngle = -270F;
-            this.prgHedye.Value = 20F;
-            // 
-            // gaugeControl8
-            // 
-            this.gaugeControl8.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl8.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl8.Controls.Add(this.labelControl7);
-            this.gaugeControl8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl8.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge8});
-            this.gaugeControl8.Location = new System.Drawing.Point(474, 2);
-            this.gaugeControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl8.Name = "gaugeControl8";
-            this.gaugeControl8.Size = new System.Drawing.Size(236, 176);
-            this.gaugeControl8.TabIndex = 4;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(105, 107);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(27, 17);
-            this.labelControl7.TabIndex = 7;
-            this.labelControl7.Text = "علوم";
-            // 
-            // circularGauge8
-            // 
-            this.circularGauge8.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
-            this.circularGauge8.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblOlom});
-            this.circularGauge8.Name = "circularGauge8";
-            this.circularGauge8.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent8});
-            this.circularGauge8.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgOlom});
-            // 
-            // lblOlom
-            // 
-            this.lblOlom.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblOlom.Name = "circularGauge1_Label1";
-            this.lblOlom.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblOlom.Text = "0";
-            this.lblOlom.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent8
-            // 
-            this.arcScaleRangeBarComponent8.ArcScale = this.prgOlom;
-            this.arcScaleRangeBarComponent8.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent8.RoundedCaps = true;
-            this.arcScaleRangeBarComponent8.ShowBackground = true;
-            this.arcScaleRangeBarComponent8.StartOffset = 80F;
-            this.arcScaleRangeBarComponent8.ZOrder = -10;
-            // 
-            // prgOlom
-            // 
-            this.prgOlom.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgOlom.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgOlom.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgOlom.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgOlom.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgOlom.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgOlom.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgOlom.EndAngle = 90F;
-            this.prgOlom.MajorTickCount = 0;
-            this.prgOlom.MajorTickmark.FormatString = "{0:F0}";
-            this.prgOlom.MajorTickmark.ShapeOffset = -14F;
-            this.prgOlom.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgOlom.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgOlom.MaxValue = 100F;
-            this.prgOlom.MinorTickCount = 0;
-            this.prgOlom.MinorTickmark.ShapeOffset = -7F;
-            this.prgOlom.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgOlom.Name = "scale1";
-            this.prgOlom.StartAngle = -270F;
-            this.prgOlom.Value = 20F;
-            // 
-            // gaugeControl7
-            // 
-            this.gaugeControl7.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl7.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl7.Controls.Add(this.labelControl6);
-            this.gaugeControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl7.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge7});
-            this.gaugeControl7.Location = new System.Drawing.Point(238, 2);
-            this.gaugeControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl7.Name = "gaugeControl7";
-            this.gaugeControl7.Size = new System.Drawing.Size(236, 176);
-            this.gaugeControl7.TabIndex = 3;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Location = new System.Drawing.Point(105, 107);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(38, 17);
-            this.labelControl6.TabIndex = 7;
-            this.labelControl6.Text = "ریاضی";
-            // 
-            // circularGauge7
-            // 
-            this.circularGauge7.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
-            this.circularGauge7.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblRiazi});
-            this.circularGauge7.Name = "circularGauge7";
-            this.circularGauge7.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent7});
-            this.circularGauge7.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgRiazi});
-            // 
-            // lblRiazi
-            // 
-            this.lblRiazi.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblRiazi.Name = "circularGauge1_Label1";
-            this.lblRiazi.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblRiazi.Text = "0";
-            this.lblRiazi.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent7
-            // 
-            this.arcScaleRangeBarComponent7.ArcScale = this.prgRiazi;
-            this.arcScaleRangeBarComponent7.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent7.RoundedCaps = true;
-            this.arcScaleRangeBarComponent7.ShowBackground = true;
-            this.arcScaleRangeBarComponent7.StartOffset = 80F;
-            this.arcScaleRangeBarComponent7.ZOrder = -10;
-            // 
-            // prgRiazi
-            // 
-            this.prgRiazi.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgRiazi.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgRiazi.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgRiazi.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgRiazi.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgRiazi.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgRiazi.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgRiazi.EndAngle = 90F;
-            this.prgRiazi.MajorTickCount = 0;
-            this.prgRiazi.MajorTickmark.FormatString = "{0:F0}";
-            this.prgRiazi.MajorTickmark.ShapeOffset = -14F;
-            this.prgRiazi.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgRiazi.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgRiazi.MaxValue = 100F;
-            this.prgRiazi.MinorTickCount = 0;
-            this.prgRiazi.MinorTickmark.ShapeOffset = -7F;
-            this.prgRiazi.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgRiazi.Name = "scale1";
-            this.prgRiazi.StartAngle = -270F;
-            this.prgRiazi.Value = 20F;
-            // 
-            // gaugeControl6
-            // 
-            this.gaugeControl6.BackColor = System.Drawing.Color.Transparent;
-            this.gaugeControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.gaugeControl6.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl6.Controls.Add(this.label);
-            this.gaugeControl6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gaugeControl6.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
-            this.circularGauge6});
-            this.gaugeControl6.Location = new System.Drawing.Point(2, 2);
-            this.gaugeControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gaugeControl6.Name = "gaugeControl6";
-            this.gaugeControl6.Size = new System.Drawing.Size(236, 176);
-            this.gaugeControl6.TabIndex = 2;
-            // 
-            // label
-            // 
-            this.label.Location = new System.Drawing.Point(69, 107);
-            this.label.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(96, 17);
-            this.label.TabIndex = 7;
-            this.label.Text = "بخوانیم/بنویسیم";
-            // 
-            // circularGauge6
-            // 
-            this.circularGauge6.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
-            this.circularGauge6.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
-            this.lblFarsi});
-            this.circularGauge6.Name = "circularGauge6";
-            this.circularGauge6.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
-            this.arcScaleRangeBarComponent6});
-            this.circularGauge6.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
-            this.prgFarsi});
-            // 
-            // lblFarsi
-            // 
-            this.lblFarsi.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
-            this.lblFarsi.Name = "circularGauge1_Label1";
-            this.lblFarsi.Size = new System.Drawing.SizeF(140F, 60F);
-            this.lblFarsi.Text = "0";
-            this.lblFarsi.ZOrder = -1001;
-            // 
-            // arcScaleRangeBarComponent6
-            // 
-            this.arcScaleRangeBarComponent6.ArcScale = this.prgFarsi;
-            this.arcScaleRangeBarComponent6.Name = "circularGauge1_RangeBar2";
-            this.arcScaleRangeBarComponent6.RoundedCaps = true;
-            this.arcScaleRangeBarComponent6.ShowBackground = true;
-            this.arcScaleRangeBarComponent6.StartOffset = 80F;
-            this.arcScaleRangeBarComponent6.ZOrder = -10;
-            // 
-            // prgFarsi
-            // 
-            this.prgFarsi.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgFarsi.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgFarsi.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgFarsi.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
-            this.prgFarsi.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
-            this.prgFarsi.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
-            this.prgFarsi.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
-            this.prgFarsi.EndAngle = 90F;
-            this.prgFarsi.MajorTickCount = 0;
-            this.prgFarsi.MajorTickmark.FormatString = "{0:F0}";
-            this.prgFarsi.MajorTickmark.ShapeOffset = -14F;
-            this.prgFarsi.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
-            this.prgFarsi.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
-            this.prgFarsi.MaxValue = 100F;
-            this.prgFarsi.MinorTickCount = 0;
-            this.prgFarsi.MinorTickmark.ShapeOffset = -7F;
-            this.prgFarsi.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
-            this.prgFarsi.Name = "scale1";
-            this.prgFarsi.StartAngle = -270F;
-            this.prgFarsi.Value = 20F;
-            // 
             // pCalendar
             // 
             this.pCalendar.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2410,10 +1615,77 @@
             this.pCalendar.Location = new System.Drawing.Point(1171, 2);
             this.pCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pCalendar.Name = "pCalendar";
-            this.pCalendar.Size = new System.Drawing.Size(295, 294);
+            this.pCalendar.Size = new System.Drawing.Size(295, 259);
             this.pCalendar.TabIndex = 1;
             this.pCalendar.UpdateSelectionWhenNavigating = true;
             this.pCalendar.CustomDrawDayNumberCell += new DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventHandler(this.pCalendar_CustomDrawDayNumberCell);
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.chartControl1);
+            this.panelControl4.Controls.Add(this.pCalendar);
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl4.Location = new System.Drawing.Point(0, 782);
+            this.panelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(1468, 263);
+            this.panelControl4.TabIndex = 7;
+            // 
+            // chartBarController1
+            // 
+            this.chartBarController1.BarItems.Add(this.createBarBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createLineBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createPieBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createRotatedBarBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createAreaBaseItem1);
+            this.chartBarController1.BarItems.Add(this.createOtherSeriesTypesBaseItem1);
+            this.chartBarController1.BarItems.Add(this.changePaletteGalleryBaseItem1);
+            this.chartBarController1.BarItems.Add(this.changeAppearanceGalleryBaseItem1);
+            this.chartBarController1.BarItems.Add(this.runDesignerChartItem1);
+            this.chartBarController1.BarItems.Add(this.saveAsTemplateChartItem1);
+            this.chartBarController1.BarItems.Add(this.loadTemplateChartItem1);
+            this.chartBarController1.BarItems.Add(this.printPreviewChartItem1);
+            this.chartBarController1.BarItems.Add(this.printChartItem1);
+            this.chartBarController1.BarItems.Add(this.createExportBaseItem1);
+            this.chartBarController1.BarItems.Add(this.exportToPDFChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToHTMLChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToMHTChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToXLSChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToXLSXChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToRTFChartItem1);
+            this.chartBarController1.BarItems.Add(this.createExportToImageBaseItem1);
+            this.chartBarController1.BarItems.Add(this.exportToBMPChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToGIFChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToJPEGChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToPNGChartItem1);
+            this.chartBarController1.BarItems.Add(this.exportToTIFFChartItem1);
+            this.chartBarController1.Control = this.chartControl1;
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.xtraTabControl1.Appearance.Options.UseBackColor = true;
+            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.xtraTabControl1.Location = new System.Drawing.Point(0, 177);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(1468, 605);
+            this.xtraTabControl1.TabIndex = 10;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1,
+            this.xtraTabPage2});
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Appearance.PageClient.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.xtraTabPage1.Appearance.PageClient.BackColor2 = System.Drawing.Color.Transparent;
+            this.xtraTabPage1.Appearance.PageClient.Options.UseBackColor = true;
+            this.xtraTabPage1.Controls.Add(this.panelControl3);
+            this.xtraTabPage1.Controls.Add(this.panelControl2);
+            this.xtraTabPage1.Controls.Add(this.panelControl1);
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(1461, 570);
+            this.xtraTabPage1.Text = "وضعیت آماری";
             // 
             // panelControl3
             // 
@@ -2423,18 +1695,18 @@
             this.panelControl3.Controls.Add(this.gaugeControl11);
             this.panelControl3.Controls.Add(this.gaugeControl10);
             this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl3.Location = new System.Drawing.Point(0, 387);
+            this.panelControl3.Location = new System.Drawing.Point(0, 360);
             this.panelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1468, 180);
-            this.panelControl3.TabIndex = 4;
+            this.panelControl3.Size = new System.Drawing.Size(1461, 180);
+            this.panelControl3.TabIndex = 5;
             // 
             // gaugeControl14
             // 
             this.gaugeControl14.BackColor = System.Drawing.Color.Transparent;
             this.gaugeControl14.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl14.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl14.Controls.Add(this.labelControl14);
+            this.gaugeControl14.Controls.Add(this.label15);
             this.gaugeControl14.Dock = System.Windows.Forms.DockStyle.Left;
             this.gaugeControl14.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.circularGauge14});
@@ -2444,14 +1716,15 @@
             this.gaugeControl14.Size = new System.Drawing.Size(236, 176);
             this.gaugeControl14.TabIndex = 6;
             // 
-            // labelControl14
+            // label15
             // 
-            this.labelControl14.Location = new System.Drawing.Point(84, 105);
-            this.labelControl14.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(68, 17);
-            this.labelControl14.TabIndex = 7;
-            this.labelControl14.Text = "کار و فناوری";
+            this.label15.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label15.Location = new System.Drawing.Point(62, 100);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(120, 40);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "کار و فناوری";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // circularGauge14
             // 
@@ -2502,14 +1775,13 @@
             this.prgWorkLife.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
             this.prgWorkLife.Name = "scale1";
             this.prgWorkLife.StartAngle = -270F;
-            this.prgWorkLife.Value = 20F;
             // 
             // gaugeControl13
             // 
             this.gaugeControl13.BackColor = System.Drawing.Color.Transparent;
             this.gaugeControl13.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl13.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl13.Controls.Add(this.labelControl13);
+            this.gaugeControl13.Controls.Add(this.label14);
             this.gaugeControl13.Dock = System.Windows.Forms.DockStyle.Left;
             this.gaugeControl13.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.circularGauge13});
@@ -2519,14 +1791,15 @@
             this.gaugeControl13.Size = new System.Drawing.Size(236, 176);
             this.gaugeControl13.TabIndex = 5;
             // 
-            // labelControl13
+            // label14
             // 
-            this.labelControl13.Location = new System.Drawing.Point(106, 105);
-            this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(24, 17);
-            this.labelControl13.TabIndex = 7;
-            this.labelControl13.Text = "تفکر";
+            this.label14.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label14.Location = new System.Drawing.Point(59, 100);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(120, 40);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "تفکر";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // circularGauge13
             // 
@@ -2577,14 +1850,13 @@
             this.prgTafakor.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
             this.prgTafakor.Name = "scale1";
             this.prgTafakor.StartAngle = -270F;
-            this.prgTafakor.Value = 20F;
             // 
             // gaugeControl12
             // 
             this.gaugeControl12.BackColor = System.Drawing.Color.Transparent;
             this.gaugeControl12.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl12.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl12.Controls.Add(this.labelControl12);
+            this.gaugeControl12.Controls.Add(this.label13);
             this.gaugeControl12.Dock = System.Windows.Forms.DockStyle.Left;
             this.gaugeControl12.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.circularGauge12});
@@ -2594,14 +1866,15 @@
             this.gaugeControl12.Size = new System.Drawing.Size(236, 176);
             this.gaugeControl12.TabIndex = 4;
             // 
-            // labelControl12
+            // label13
             // 
-            this.labelControl12.Location = new System.Drawing.Point(80, 105);
-            this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(77, 17);
-            this.labelControl12.TabIndex = 7;
-            this.labelControl12.Text = "مهارت زندگی";
+            this.label13.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label13.Location = new System.Drawing.Point(59, 100);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(120, 40);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "مهارت زندگی";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // circularGauge12
             // 
@@ -2659,7 +1932,7 @@
             this.gaugeControl11.BackColor = System.Drawing.Color.Transparent;
             this.gaugeControl11.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl11.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl11.Controls.Add(this.labelControl11);
+            this.gaugeControl11.Controls.Add(this.label12);
             this.gaugeControl11.Dock = System.Windows.Forms.DockStyle.Left;
             this.gaugeControl11.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.circularGauge11});
@@ -2669,14 +1942,15 @@
             this.gaugeControl11.Size = new System.Drawing.Size(236, 176);
             this.gaugeControl11.TabIndex = 3;
             // 
-            // labelControl11
+            // label12
             // 
-            this.labelControl11.Location = new System.Drawing.Point(92, 105);
-            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(51, 17);
-            this.labelControl11.TabIndex = 7;
-            this.labelControl11.Text = "املا/انشا";
+            this.label12.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label12.Location = new System.Drawing.Point(57, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(120, 40);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "املا/انشا";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // circularGauge11
             // 
@@ -2734,7 +2008,7 @@
             this.gaugeControl10.BackColor = System.Drawing.Color.Transparent;
             this.gaugeControl10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.gaugeControl10.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
-            this.gaugeControl10.Controls.Add(this.labelControl10);
+            this.gaugeControl10.Controls.Add(this.label11);
             this.gaugeControl10.Dock = System.Windows.Forms.DockStyle.Left;
             this.gaugeControl10.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
             this.circularGauge10});
@@ -2744,14 +2018,15 @@
             this.gaugeControl10.Size = new System.Drawing.Size(236, 176);
             this.gaugeControl10.TabIndex = 2;
             // 
-            // labelControl10
+            // label11
             // 
-            this.labelControl10.Location = new System.Drawing.Point(104, 105);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(24, 17);
-            this.labelControl10.TabIndex = 7;
-            this.labelControl10.Text = "قرآن";
+            this.label11.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label11.Location = new System.Drawing.Point(59, 100);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(120, 40);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "قرآن";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // circularGauge10
             // 
@@ -2804,56 +2079,830 @@
             this.prgQuran.StartAngle = -270F;
             this.prgQuran.Value = 20F;
             // 
-            // panelControl4
+            // panelControl2
             // 
-            this.panelControl4.Controls.Add(this.chartControl1);
-            this.panelControl4.Controls.Add(this.pCalendar);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl4.Location = new System.Drawing.Point(0, 747);
-            this.panelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1468, 298);
-            this.panelControl4.TabIndex = 7;
+            this.panelControl2.Controls.Add(this.gaugeControl15);
+            this.panelControl2.Controls.Add(this.gaugeControl9);
+            this.panelControl2.Controls.Add(this.gaugeControl8);
+            this.panelControl2.Controls.Add(this.gaugeControl7);
+            this.panelControl2.Controls.Add(this.gaugeControl6);
+            this.panelControl2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl2.Location = new System.Drawing.Point(0, 180);
+            this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl2.Name = "panelControl2";
+            this.panelControl2.Size = new System.Drawing.Size(1461, 180);
+            this.panelControl2.TabIndex = 6;
             // 
-            // chartBarController1
+            // gaugeControl15
             // 
-            this.chartBarController1.BarItems.Add(this.createBarBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createLineBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createPieBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createRotatedBarBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createAreaBaseItem1);
-            this.chartBarController1.BarItems.Add(this.createOtherSeriesTypesBaseItem1);
-            this.chartBarController1.BarItems.Add(this.changePaletteGalleryBaseItem1);
-            this.chartBarController1.BarItems.Add(this.changeAppearanceGalleryBaseItem1);
-            this.chartBarController1.BarItems.Add(this.runDesignerChartItem1);
-            this.chartBarController1.BarItems.Add(this.saveAsTemplateChartItem1);
-            this.chartBarController1.BarItems.Add(this.loadTemplateChartItem1);
-            this.chartBarController1.BarItems.Add(this.printPreviewChartItem1);
-            this.chartBarController1.BarItems.Add(this.printChartItem1);
-            this.chartBarController1.BarItems.Add(this.createExportBaseItem1);
-            this.chartBarController1.BarItems.Add(this.exportToPDFChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToHTMLChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToMHTChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToXLSChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToXLSXChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToRTFChartItem1);
-            this.chartBarController1.BarItems.Add(this.createExportToImageBaseItem1);
-            this.chartBarController1.BarItems.Add(this.exportToBMPChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToGIFChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToJPEGChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToPNGChartItem1);
-            this.chartBarController1.BarItems.Add(this.exportToTIFFChartItem1);
-            this.chartBarController1.Control = this.chartControl1;
+            this.gaugeControl15.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl15.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl15.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl15.Controls.Add(this.label10);
+            this.gaugeControl15.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl15.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge15});
+            this.gaugeControl15.Location = new System.Drawing.Point(946, 2);
+            this.gaugeControl15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl15.Name = "gaugeControl15";
+            this.gaugeControl15.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl15.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label10.Location = new System.Drawing.Point(62, 100);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(120, 40);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "مطالعات";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge15
+            // 
+            this.circularGauge15.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge15.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblEjtemayi});
+            this.circularGauge15.Name = "circularGauge15";
+            this.circularGauge15.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent15});
+            this.circularGauge15.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgEjtemayi});
+            // 
+            // lblEjtemayi
+            // 
+            this.lblEjtemayi.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblEjtemayi.Name = "circularGauge1_Label1";
+            this.lblEjtemayi.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblEjtemayi.Text = "0";
+            this.lblEjtemayi.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent15
+            // 
+            this.arcScaleRangeBarComponent15.ArcScale = this.prgEjtemayi;
+            this.arcScaleRangeBarComponent15.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent15.RoundedCaps = true;
+            this.arcScaleRangeBarComponent15.ShowBackground = true;
+            this.arcScaleRangeBarComponent15.StartOffset = 80F;
+            this.arcScaleRangeBarComponent15.ZOrder = -10;
+            // 
+            // prgEjtemayi
+            // 
+            this.prgEjtemayi.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgEjtemayi.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgEjtemayi.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgEjtemayi.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgEjtemayi.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgEjtemayi.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgEjtemayi.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgEjtemayi.EndAngle = 90F;
+            this.prgEjtemayi.MajorTickCount = 0;
+            this.prgEjtemayi.MajorTickmark.FormatString = "{0:F0}";
+            this.prgEjtemayi.MajorTickmark.ShapeOffset = -14F;
+            this.prgEjtemayi.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgEjtemayi.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgEjtemayi.MaxValue = 100F;
+            this.prgEjtemayi.MinorTickCount = 0;
+            this.prgEjtemayi.MinorTickmark.ShapeOffset = -7F;
+            this.prgEjtemayi.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgEjtemayi.Name = "scale1";
+            this.prgEjtemayi.StartAngle = -270F;
+            this.prgEjtemayi.Value = 20F;
+            // 
+            // gaugeControl9
+            // 
+            this.gaugeControl9.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl9.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl9.Controls.Add(this.label9);
+            this.gaugeControl9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl9.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge9});
+            this.gaugeControl9.Location = new System.Drawing.Point(710, 2);
+            this.gaugeControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl9.Name = "gaugeControl9";
+            this.gaugeControl9.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl9.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label9.Location = new System.Drawing.Point(59, 100);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(120, 40);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "هدیه";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge9
+            // 
+            this.circularGauge9.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge9.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblHedye});
+            this.circularGauge9.Name = "circularGauge9";
+            this.circularGauge9.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent9});
+            this.circularGauge9.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgHedye});
+            // 
+            // lblHedye
+            // 
+            this.lblHedye.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblHedye.Name = "circularGauge1_Label1";
+            this.lblHedye.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblHedye.Text = "0";
+            this.lblHedye.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent9
+            // 
+            this.arcScaleRangeBarComponent9.ArcScale = this.prgHedye;
+            this.arcScaleRangeBarComponent9.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent9.RoundedCaps = true;
+            this.arcScaleRangeBarComponent9.ShowBackground = true;
+            this.arcScaleRangeBarComponent9.StartOffset = 80F;
+            this.arcScaleRangeBarComponent9.ZOrder = -10;
+            // 
+            // prgHedye
+            // 
+            this.prgHedye.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgHedye.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgHedye.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgHedye.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgHedye.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgHedye.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgHedye.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgHedye.EndAngle = 90F;
+            this.prgHedye.MajorTickCount = 0;
+            this.prgHedye.MajorTickmark.FormatString = "{0:F0}";
+            this.prgHedye.MajorTickmark.ShapeOffset = -14F;
+            this.prgHedye.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgHedye.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgHedye.MaxValue = 100F;
+            this.prgHedye.MinorTickCount = 0;
+            this.prgHedye.MinorTickmark.ShapeOffset = -7F;
+            this.prgHedye.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgHedye.Name = "scale1";
+            this.prgHedye.StartAngle = -270F;
+            this.prgHedye.Value = 20F;
+            // 
+            // gaugeControl8
+            // 
+            this.gaugeControl8.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl8.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl8.Controls.Add(this.label8);
+            this.gaugeControl8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl8.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge8});
+            this.gaugeControl8.Location = new System.Drawing.Point(474, 2);
+            this.gaugeControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl8.Name = "gaugeControl8";
+            this.gaugeControl8.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl8.TabIndex = 4;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label8.Location = new System.Drawing.Point(59, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 40);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "علوم";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge8
+            // 
+            this.circularGauge8.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge8.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblOlom});
+            this.circularGauge8.Name = "circularGauge8";
+            this.circularGauge8.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent8});
+            this.circularGauge8.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgOlom});
+            // 
+            // lblOlom
+            // 
+            this.lblOlom.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblOlom.Name = "circularGauge1_Label1";
+            this.lblOlom.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblOlom.Text = "0";
+            this.lblOlom.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent8
+            // 
+            this.arcScaleRangeBarComponent8.ArcScale = this.prgOlom;
+            this.arcScaleRangeBarComponent8.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent8.RoundedCaps = true;
+            this.arcScaleRangeBarComponent8.ShowBackground = true;
+            this.arcScaleRangeBarComponent8.StartOffset = 80F;
+            this.arcScaleRangeBarComponent8.ZOrder = -10;
+            // 
+            // prgOlom
+            // 
+            this.prgOlom.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgOlom.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgOlom.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgOlom.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgOlom.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgOlom.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgOlom.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgOlom.EndAngle = 90F;
+            this.prgOlom.MajorTickCount = 0;
+            this.prgOlom.MajorTickmark.FormatString = "{0:F0}";
+            this.prgOlom.MajorTickmark.ShapeOffset = -14F;
+            this.prgOlom.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgOlom.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgOlom.MaxValue = 100F;
+            this.prgOlom.MinorTickCount = 0;
+            this.prgOlom.MinorTickmark.ShapeOffset = -7F;
+            this.prgOlom.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgOlom.Name = "scale1";
+            this.prgOlom.StartAngle = -270F;
+            this.prgOlom.Value = 20F;
+            // 
+            // gaugeControl7
+            // 
+            this.gaugeControl7.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl7.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl7.Controls.Add(this.label7);
+            this.gaugeControl7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl7.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge7});
+            this.gaugeControl7.Location = new System.Drawing.Point(238, 2);
+            this.gaugeControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl7.Name = "gaugeControl7";
+            this.gaugeControl7.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl7.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label7.Location = new System.Drawing.Point(57, 100);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 40);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "ریاضی";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge7
+            // 
+            this.circularGauge7.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge7.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblRiazi});
+            this.circularGauge7.Name = "circularGauge7";
+            this.circularGauge7.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent7});
+            this.circularGauge7.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgRiazi});
+            // 
+            // lblRiazi
+            // 
+            this.lblRiazi.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblRiazi.Name = "circularGauge1_Label1";
+            this.lblRiazi.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblRiazi.Text = "0";
+            this.lblRiazi.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent7
+            // 
+            this.arcScaleRangeBarComponent7.ArcScale = this.prgRiazi;
+            this.arcScaleRangeBarComponent7.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent7.RoundedCaps = true;
+            this.arcScaleRangeBarComponent7.ShowBackground = true;
+            this.arcScaleRangeBarComponent7.StartOffset = 80F;
+            this.arcScaleRangeBarComponent7.ZOrder = -10;
+            // 
+            // prgRiazi
+            // 
+            this.prgRiazi.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgRiazi.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgRiazi.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgRiazi.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgRiazi.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgRiazi.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgRiazi.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgRiazi.EndAngle = 90F;
+            this.prgRiazi.MajorTickCount = 0;
+            this.prgRiazi.MajorTickmark.FormatString = "{0:F0}";
+            this.prgRiazi.MajorTickmark.ShapeOffset = -14F;
+            this.prgRiazi.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgRiazi.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgRiazi.MaxValue = 100F;
+            this.prgRiazi.MinorTickCount = 0;
+            this.prgRiazi.MinorTickmark.ShapeOffset = -7F;
+            this.prgRiazi.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgRiazi.Name = "scale1";
+            this.prgRiazi.StartAngle = -270F;
+            this.prgRiazi.Value = 20F;
+            // 
+            // gaugeControl6
+            // 
+            this.gaugeControl6.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl6.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl6.Controls.Add(this.label6);
+            this.gaugeControl6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl6.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge6});
+            this.gaugeControl6.Location = new System.Drawing.Point(2, 2);
+            this.gaugeControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl6.Name = "gaugeControl6";
+            this.gaugeControl6.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl6.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label6.Location = new System.Drawing.Point(59, 100);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 40);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "بخوانیم/بنویسیم";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge6
+            // 
+            this.circularGauge6.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge6.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblFarsi});
+            this.circularGauge6.Name = "circularGauge6";
+            this.circularGauge6.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent6});
+            this.circularGauge6.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgFarsi});
+            // 
+            // lblFarsi
+            // 
+            this.lblFarsi.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblFarsi.Name = "circularGauge1_Label1";
+            this.lblFarsi.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblFarsi.Text = "0";
+            this.lblFarsi.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent6
+            // 
+            this.arcScaleRangeBarComponent6.ArcScale = this.prgFarsi;
+            this.arcScaleRangeBarComponent6.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent6.RoundedCaps = true;
+            this.arcScaleRangeBarComponent6.ShowBackground = true;
+            this.arcScaleRangeBarComponent6.StartOffset = 80F;
+            this.arcScaleRangeBarComponent6.ZOrder = -10;
+            // 
+            // prgFarsi
+            // 
+            this.prgFarsi.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgFarsi.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgFarsi.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgFarsi.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgFarsi.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgFarsi.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgFarsi.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgFarsi.EndAngle = 90F;
+            this.prgFarsi.MajorTickCount = 0;
+            this.prgFarsi.MajorTickmark.FormatString = "{0:F0}";
+            this.prgFarsi.MajorTickmark.ShapeOffset = -14F;
+            this.prgFarsi.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgFarsi.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgFarsi.MaxValue = 100F;
+            this.prgFarsi.MinorTickCount = 0;
+            this.prgFarsi.MinorTickmark.ShapeOffset = -7F;
+            this.prgFarsi.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgFarsi.Name = "scale1";
+            this.prgFarsi.StartAngle = -270F;
+            this.prgFarsi.Value = 20F;
+            // 
+            // panelControl1
+            // 
+            this.panelControl1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
+            this.panelControl1.Appearance.Options.UseBackColor = true;
+            this.panelControl1.Controls.Add(this.imgStudent);
+            this.panelControl1.Controls.Add(this.gaugeControl5);
+            this.panelControl1.Controls.Add(this.gaugeControl4);
+            this.panelControl1.Controls.Add(this.gaugeControl3);
+            this.panelControl1.Controls.Add(this.gaugeControl2);
+            this.panelControl1.Controls.Add(this.gaugeControl1);
+            this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl1.Location = new System.Drawing.Point(0, 0);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl1.Name = "panelControl1";
+            this.panelControl1.Size = new System.Drawing.Size(1461, 180);
+            this.panelControl1.TabIndex = 3;
+            // 
+            // imgStudent
+            // 
+            this.imgStudent.Cursor = System.Windows.Forms.Cursors.Default;
+            this.imgStudent.Dock = System.Windows.Forms.DockStyle.Left;
+            this.imgStudent.Location = new System.Drawing.Point(1182, 2);
+            this.imgStudent.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.imgStudent.MenuManager = this.ribbonControl1;
+            this.imgStudent.Name = "imgStudent";
+            this.imgStudent.Properties.AllowFocused = false;
+            this.imgStudent.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.imgStudent.Properties.Appearance.Options.UseBackColor = true;
+            this.imgStudent.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.imgStudent.Properties.Caption.Text = "تصویر دانش آموز";
+            this.imgStudent.Properties.NullText = "بدون عکس";
+            this.imgStudent.Properties.OptionsMask.MaskType = DevExpress.XtraEditors.Controls.PictureEditMaskType.Circle;
+            this.imgStudent.Properties.ReadOnly = true;
+            this.imgStudent.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.imgStudent.Size = new System.Drawing.Size(243, 176);
+            this.imgStudent.TabIndex = 5;
+            // 
+            // gaugeControl5
+            // 
+            this.gaugeControl5.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl5.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl5.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl5.Controls.Add(this.label5);
+            this.gaugeControl5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl5.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge5});
+            this.gaugeControl5.Location = new System.Drawing.Point(946, 2);
+            this.gaugeControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl5.Name = "gaugeControl5";
+            this.gaugeControl5.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl5.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label5.Location = new System.Drawing.Point(62, 102);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(120, 40);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "اختلاف با نفر برتر (درصد)";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge5
+            // 
+            this.circularGauge5.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge5.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblDifference});
+            this.circularGauge5.Name = "circularGauge5";
+            this.circularGauge5.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent5});
+            this.circularGauge5.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgDifference});
+            // 
+            // lblDifference
+            // 
+            this.lblDifference.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblDifference.Name = "circularGauge1_Label1";
+            this.lblDifference.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblDifference.Text = "0";
+            this.lblDifference.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent5
+            // 
+            this.arcScaleRangeBarComponent5.ArcScale = this.prgDifference;
+            this.arcScaleRangeBarComponent5.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent5.RoundedCaps = true;
+            this.arcScaleRangeBarComponent5.ShowBackground = true;
+            this.arcScaleRangeBarComponent5.StartOffset = 80F;
+            this.arcScaleRangeBarComponent5.ZOrder = -10;
+            // 
+            // prgDifference
+            // 
+            this.prgDifference.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDifference.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDifference.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDifference.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDifference.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgDifference.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgDifference.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgDifference.EndAngle = 90F;
+            this.prgDifference.MajorTickCount = 0;
+            this.prgDifference.MajorTickmark.FormatString = "{0:F0}";
+            this.prgDifference.MajorTickmark.ShapeOffset = -14F;
+            this.prgDifference.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgDifference.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgDifference.MaxValue = 170F;
+            this.prgDifference.MinorTickCount = 0;
+            this.prgDifference.MinorTickmark.ShapeOffset = -7F;
+            this.prgDifference.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgDifference.Name = "scale1";
+            this.prgDifference.StartAngle = -270F;
+            this.prgDifference.Value = 20F;
+            // 
+            // gaugeControl4
+            // 
+            this.gaugeControl4.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl4.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl4.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl4.Controls.Add(this.label1);
+            this.gaugeControl4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl4.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge4});
+            this.gaugeControl4.Location = new System.Drawing.Point(710, 2);
+            this.gaugeControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl4.Name = "gaugeControl4";
+            this.gaugeControl4.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl4.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label1.Location = new System.Drawing.Point(59, 100);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "میزان غیبت ها (روز)";
+            // 
+            // circularGauge4
+            // 
+            this.circularGauge4.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge4.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblDeAct});
+            this.circularGauge4.Name = "circularGauge4";
+            this.circularGauge4.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent4});
+            this.circularGauge4.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgDeActive});
+            // 
+            // lblDeAct
+            // 
+            this.lblDeAct.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblDeAct.Name = "circularGauge1_Label1";
+            this.lblDeAct.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblDeAct.Text = "0";
+            this.lblDeAct.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent4
+            // 
+            this.arcScaleRangeBarComponent4.ArcScale = this.prgDeActive;
+            this.arcScaleRangeBarComponent4.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent4.RoundedCaps = true;
+            this.arcScaleRangeBarComponent4.ShowBackground = true;
+            this.arcScaleRangeBarComponent4.StartOffset = 80F;
+            this.arcScaleRangeBarComponent4.ZOrder = -10;
+            // 
+            // prgDeActive
+            // 
+            this.prgDeActive.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDeActive.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDeActive.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDeActive.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgDeActive.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgDeActive.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgDeActive.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgDeActive.EndAngle = 90F;
+            this.prgDeActive.MajorTickCount = 0;
+            this.prgDeActive.MajorTickmark.FormatString = "{0:F0}";
+            this.prgDeActive.MajorTickmark.ShapeOffset = -14F;
+            this.prgDeActive.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgDeActive.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgDeActive.MaxValue = 170F;
+            this.prgDeActive.MinorTickCount = 0;
+            this.prgDeActive.MinorTickmark.ShapeOffset = -7F;
+            this.prgDeActive.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgDeActive.Name = "scale1";
+            this.prgDeActive.StartAngle = -270F;
+            this.prgDeActive.Value = 20F;
+            // 
+            // gaugeControl3
+            // 
+            this.gaugeControl3.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl3.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl3.Controls.Add(this.label2);
+            this.gaugeControl3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl3.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge3});
+            this.gaugeControl3.Location = new System.Drawing.Point(474, 2);
+            this.gaugeControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl3.Name = "gaugeControl3";
+            this.gaugeControl3.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl3.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label2.Location = new System.Drawing.Point(59, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 44);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "میزان حضور در کلاس (روز)";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge3
+            // 
+            this.circularGauge3.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge3.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblActive});
+            this.circularGauge3.Name = "circularGauge3";
+            this.circularGauge3.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent3});
+            this.circularGauge3.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgActive});
+            // 
+            // lblActive
+            // 
+            this.lblActive.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblActive.Name = "circularGauge1_Label1";
+            this.lblActive.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblActive.Text = "0";
+            this.lblActive.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent3
+            // 
+            this.arcScaleRangeBarComponent3.ArcScale = this.prgActive;
+            this.arcScaleRangeBarComponent3.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent3.RoundedCaps = true;
+            this.arcScaleRangeBarComponent3.ShowBackground = true;
+            this.arcScaleRangeBarComponent3.StartOffset = 80F;
+            this.arcScaleRangeBarComponent3.ZOrder = -10;
+            // 
+            // prgActive
+            // 
+            this.prgActive.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActive.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActive.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActive.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActive.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgActive.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgActive.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgActive.EndAngle = 90F;
+            this.prgActive.MajorTickCount = 0;
+            this.prgActive.MajorTickmark.FormatString = "{0:F0}";
+            this.prgActive.MajorTickmark.ShapeOffset = -14F;
+            this.prgActive.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgActive.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgActive.MaxValue = 170F;
+            this.prgActive.MinorTickCount = 0;
+            this.prgActive.MinorTickmark.ShapeOffset = -7F;
+            this.prgActive.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgActive.Name = "scale1";
+            this.prgActive.StartAngle = -270F;
+            this.prgActive.Value = 20F;
+            // 
+            // gaugeControl2
+            // 
+            this.gaugeControl2.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl2.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl2.Controls.Add(this.label3);
+            this.gaugeControl2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl2.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge2});
+            this.gaugeControl2.Location = new System.Drawing.Point(238, 2);
+            this.gaugeControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl2.Name = "gaugeControl2";
+            this.gaugeControl2.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl2.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label3.Location = new System.Drawing.Point(57, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(120, 44);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "فعالیت در کلاس (درصد)";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge2
+            // 
+            this.circularGauge2.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge2.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblActivity});
+            this.circularGauge2.Name = "circularGauge2";
+            this.circularGauge2.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent2});
+            this.circularGauge2.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgActiveClass});
+            // 
+            // lblActivity
+            // 
+            this.lblActivity.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblActivity.Name = "circularGauge1_Label1";
+            this.lblActivity.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblActivity.Text = "0";
+            this.lblActivity.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent2
+            // 
+            this.arcScaleRangeBarComponent2.ArcScale = this.prgActiveClass;
+            this.arcScaleRangeBarComponent2.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent2.RoundedCaps = true;
+            this.arcScaleRangeBarComponent2.ShowBackground = true;
+            this.arcScaleRangeBarComponent2.StartOffset = 80F;
+            this.arcScaleRangeBarComponent2.ZOrder = -10;
+            // 
+            // prgActiveClass
+            // 
+            this.prgActiveClass.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActiveClass.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActiveClass.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActiveClass.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgActiveClass.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgActiveClass.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgActiveClass.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgActiveClass.EndAngle = 90F;
+            this.prgActiveClass.MajorTickCount = 0;
+            this.prgActiveClass.MajorTickmark.FormatString = "{0:F0}";
+            this.prgActiveClass.MajorTickmark.ShapeOffset = -14F;
+            this.prgActiveClass.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgActiveClass.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgActiveClass.MaxValue = 100F;
+            this.prgActiveClass.MinorTickCount = 0;
+            this.prgActiveClass.MinorTickmark.ShapeOffset = -7F;
+            this.prgActiveClass.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgActiveClass.Name = "scale1";
+            this.prgActiveClass.StartAngle = -270F;
+            this.prgActiveClass.Value = 20F;
+            // 
+            // gaugeControl1
+            // 
+            this.gaugeControl1.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.gaugeControl1.ColorScheme.TargetElements = ((DevExpress.XtraGauges.Core.Base.TargetElement)((DevExpress.XtraGauges.Core.Base.TargetElement.RangeBar | DevExpress.XtraGauges.Core.Base.TargetElement.Label)));
+            this.gaugeControl1.Controls.Add(this.label4);
+            this.gaugeControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.gaugeControl1.Gauges.AddRange(new DevExpress.XtraGauges.Base.IGauge[] {
+            this.circularGauge1});
+            this.gaugeControl1.Location = new System.Drawing.Point(2, 2);
+            this.gaugeControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gaugeControl1.Name = "gaugeControl1";
+            this.gaugeControl1.Size = new System.Drawing.Size(236, 176);
+            this.gaugeControl1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.label4.Location = new System.Drawing.Point(59, 100);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 44);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "مجموع امتیازات درسی";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // circularGauge1
+            // 
+            this.circularGauge1.Bounds = new System.Drawing.Rectangle(6, 6, 224, 164);
+            this.circularGauge1.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
+            this.lblEvaPoint});
+            this.circularGauge1.Name = "circularGauge1";
+            this.circularGauge1.RangeBars.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent[] {
+            this.arcScaleRangeBarComponent1});
+            this.circularGauge1.Scales.AddRange(new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent[] {
+            this.prgTotalScore});
+            // 
+            // lblEvaPoint
+            // 
+            this.lblEvaPoint.AppearanceText.Font = new System.Drawing.Font("Segoe UI", 27.75F);
+            this.lblEvaPoint.Name = "circularGauge1_Label1";
+            this.lblEvaPoint.Size = new System.Drawing.SizeF(140F, 60F);
+            this.lblEvaPoint.Text = "0";
+            this.lblEvaPoint.ZOrder = -1001;
+            // 
+            // arcScaleRangeBarComponent1
+            // 
+            this.arcScaleRangeBarComponent1.ArcScale = this.prgTotalScore;
+            this.arcScaleRangeBarComponent1.Name = "circularGauge1_RangeBar2";
+            this.arcScaleRangeBarComponent1.RoundedCaps = true;
+            this.arcScaleRangeBarComponent1.ShowBackground = true;
+            this.arcScaleRangeBarComponent1.StartOffset = 80F;
+            this.arcScaleRangeBarComponent1.ZOrder = -10;
+            // 
+            // prgTotalScore
+            // 
+            this.prgTotalScore.AppearanceMajorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgTotalScore.AppearanceMajorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgTotalScore.AppearanceMinorTickmark.BorderBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgTotalScore.AppearanceMinorTickmark.ContentBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:White");
+            this.prgTotalScore.AppearanceTickmarkText.Font = new System.Drawing.Font("Tahoma", 8.5F);
+            this.prgTotalScore.AppearanceTickmarkText.TextBrush = new DevExpress.XtraGauges.Core.Drawing.SolidBrushObject("Color:#484E5A");
+            this.prgTotalScore.Center = new DevExpress.XtraGauges.Core.Base.PointF2D(125F, 125F);
+            this.prgTotalScore.EndAngle = 90F;
+            this.prgTotalScore.MajorTickCount = 0;
+            this.prgTotalScore.MajorTickmark.FormatString = "{0:F0}";
+            this.prgTotalScore.MajorTickmark.ShapeOffset = -14F;
+            this.prgTotalScore.MajorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_1;
+            this.prgTotalScore.MajorTickmark.TextOrientation = DevExpress.XtraGauges.Core.Model.LabelOrientation.LeftToRight;
+            this.prgTotalScore.MaxValue = 1000F;
+            this.prgTotalScore.MinorTickCount = 0;
+            this.prgTotalScore.MinorTickmark.ShapeOffset = -7F;
+            this.prgTotalScore.MinorTickmark.ShapeType = DevExpress.XtraGauges.Core.Model.TickmarkShapeType.Circular_Style16_2;
+            this.prgTotalScore.Name = "scale1";
+            this.prgTotalScore.StartAngle = -270F;
+            this.prgTotalScore.Value = 20F;
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(1461, 570);
+            this.xtraTabPage2.Text = "کارهای زمانبندی شده";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1492, 1045);
+            this.Controls.Add(this.xtraTabControl1);
             this.Controls.Add(this.panelControl4);
-            this.Controls.Add(this.panelControl2);
-            this.Controls.Add(this.panelControl3);
-            this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.hideContainerRight);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2893,11 +2942,72 @@
             this.panelControl5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            this.panelControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
+            this.panelControl3.ResumeLayout(false);
+            this.gaugeControl14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblWorkLife)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgWorkLife)).EndInit();
+            this.gaugeControl13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblTafakor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgTafakor)).EndInit();
+            this.gaugeControl12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblLife)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgLife)).EndInit();
+            this.gaugeControl11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblEmla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgEmla)).EndInit();
+            this.gaugeControl10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblQuran)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgQuran)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
+            this.panelControl2.ResumeLayout(false);
+            this.gaugeControl15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblEjtemayi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgEjtemayi)).EndInit();
+            this.gaugeControl9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblHedye)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgHedye)).EndInit();
+            this.gaugeControl8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblOlom)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgOlom)).EndInit();
+            this.gaugeControl7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblRiazi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgRiazi)).EndInit();
+            this.gaugeControl6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lblFarsi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prgFarsi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgStudent.Properties)).EndInit();
             this.gaugeControl5.ResumeLayout(false);
-            this.gaugeControl5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblDifference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent5)).EndInit();
@@ -2909,92 +3019,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prgDeActive)).EndInit();
             this.gaugeControl3.ResumeLayout(false);
-            this.gaugeControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblActive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prgActive)).EndInit();
             this.gaugeControl2.ResumeLayout(false);
-            this.gaugeControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblActivity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prgActiveClass)).EndInit();
             this.gaugeControl1.ResumeLayout(false);
-            this.gaugeControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circularGauge1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblEvaPoint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prgTotalScore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
-            this.panelControl2.ResumeLayout(false);
-            this.gaugeControl15.ResumeLayout(false);
-            this.gaugeControl15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblEjtemayi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgEjtemayi)).EndInit();
-            this.gaugeControl9.ResumeLayout(false);
-            this.gaugeControl9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblHedye)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgHedye)).EndInit();
-            this.gaugeControl8.ResumeLayout(false);
-            this.gaugeControl8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblOlom)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgOlom)).EndInit();
-            this.gaugeControl7.ResumeLayout(false);
-            this.gaugeControl7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblRiazi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgRiazi)).EndInit();
-            this.gaugeControl6.ResumeLayout(false);
-            this.gaugeControl6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblFarsi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgFarsi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
-            this.panelControl3.ResumeLayout(false);
-            this.gaugeControl14.ResumeLayout(false);
-            this.gaugeControl14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblWorkLife)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgWorkLife)).EndInit();
-            this.gaugeControl13.ResumeLayout(false);
-            this.gaugeControl13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblTafakor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgTafakor)).EndInit();
-            this.gaugeControl12.ResumeLayout(false);
-            this.gaugeControl12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblLife)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgLife)).EndInit();
-            this.gaugeControl11.ResumeLayout(false);
-            this.gaugeControl11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblEmla)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgEmla)).EndInit();
-            this.gaugeControl10.ResumeLayout(false);
-            this.gaugeControl10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.circularGauge10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblQuran)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prgQuran)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            this.panelControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3052,108 +3090,14 @@
         private DevExpress.XtraBars.Docking.DockManager dockManager1;
         private DevExpress.XtraBars.Docking.DockPanel dockPanel1;
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
-        private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.PanelControl panelControl3;
-        private DevExpress.XtraEditors.PanelControl panelControl2;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl1;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge1;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblEvaPoint;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent1;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgTotalScore;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl4;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge4;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblDeAct;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent4;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgDeActive;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl3;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge3;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblActive;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent3;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgActive;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl2;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge2;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblActivity;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent2;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgActiveClass;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge5;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblDifference;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent5;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgDifference;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl14;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge14;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblWorkLife;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent14;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgWorkLife;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl13;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge13;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblTafakor;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent13;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgTafakor;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl12;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge12;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblLife;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent12;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgLife;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl11;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge11;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblEmla;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent11;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgEmla;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl10;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge10;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblQuran;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent10;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgQuran;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl15;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge15;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblEjtemayi;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent15;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgEjtemayi;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl9;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge9;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblHedye;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent9;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgHedye;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl8;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge8;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblOlom;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent8;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgOlom;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl7;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge7;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblRiazi;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent7;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgRiazi;
-        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl6;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge6;
-        private DevExpress.XtraGauges.Win.Base.LabelComponent lblFarsi;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent6;
-        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgFarsi;
-        private DevExpress.XtraEditors.PictureEdit imgStudent;
         private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraCharts.ChartControl chartControl1;
         private FarsiLibrary.Win.DevExpress.XtraFACalendarControl pCalendar;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.LabelControl label;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.PanelControl panelControl5;
         private DevExpress.XtraEditors.LookUpEdit cmbClass;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
         private System.Windows.Forms.BindingSource tblStudentBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colStuClassId;
@@ -3210,6 +3154,103 @@
         private DevExpress.XtraBars.BarButtonItem btnWebsite;
         private DevExpress.XtraBars.BarButtonItem btnShedule;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
+        private DevExpress.XtraEditors.PanelControl panelControl2;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl15;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge15;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblEjtemayi;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent15;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgEjtemayi;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl9;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge9;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblHedye;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent9;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgHedye;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl8;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge8;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblOlom;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent8;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgOlom;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl7;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge7;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblRiazi;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent7;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgRiazi;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl6;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge6;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblFarsi;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent6;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgFarsi;
+        private DevExpress.XtraEditors.PanelControl panelControl3;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl14;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge14;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblWorkLife;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent14;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgWorkLife;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl13;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge13;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblTafakor;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent13;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgTafakor;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl12;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge12;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblLife;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent12;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgLife;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl11;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge11;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblEmla;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent11;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgEmla;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl10;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge10;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblQuran;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent10;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgQuran;
+        private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.PictureEdit imgStudent;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl5;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge5;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblDifference;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent5;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgDifference;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl4;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge4;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblDeAct;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent4;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgDeActive;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl3;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge3;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblActive;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent3;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgActive;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl2;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge2;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblActivity;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent2;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgActiveClass;
+        private DevExpress.XtraGauges.Win.GaugeControl gaugeControl1;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge circularGauge1;
+        private DevExpress.XtraGauges.Win.Base.LabelComponent lblEvaPoint;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent arcScaleRangeBarComponent1;
+        private DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent prgTotalScore;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
 

@@ -117,8 +117,10 @@
             this.schedulerControl1.Text = "schedulerControl1";
             this.schedulerControl1.Views.AgendaView.Enabled = false;
             this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
+            this.schedulerControl1.Views.DayView.VisibleTime = new DevExpress.XtraScheduler.TimeOfDayInterval(System.TimeSpan.Parse("08:00:00"), System.TimeSpan.Parse("17:30:00"));
             this.schedulerControl1.Views.FullWeekView.Enabled = true;
             this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler2);
+            this.schedulerControl1.Views.FullWeekView.VisibleTime = new DevExpress.XtraScheduler.TimeOfDayInterval(System.TimeSpan.Parse("08:00:00"), System.TimeSpan.Parse("17:30:00"));
             this.schedulerControl1.Views.GanttView.Enabled = false;
             this.schedulerControl1.Views.TimelineView.Enabled = false;
             this.schedulerControl1.Views.WeekView.Enabled = false;
