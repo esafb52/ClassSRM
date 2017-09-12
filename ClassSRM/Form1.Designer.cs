@@ -243,7 +243,6 @@
             this.btnUpdate = new DevExpress.XtraBars.BarButtonItem();
             this.btnOfflineUpdate = new DevExpress.XtraBars.BarButtonItem();
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
-            this.hideContainerRight = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -385,7 +384,6 @@
             ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(lineSeriesView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
-            this.hideContainerRight.SuspendLayout();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -1027,7 +1025,7 @@
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2};
-            this.chartControl1.Size = new System.Drawing.Size(1457, 440);
+            this.chartControl1.Size = new System.Drawing.Size(1155, 440);
             this.chartControl1.TabIndex = 0;
             // 
             // createChartRibbonPage1
@@ -1453,9 +1451,9 @@
             // 
             // dockManager1
             // 
-            this.dockManager1.AutoHideContainers.AddRange(new DevExpress.XtraBars.Docking.AutoHideContainer[] {
-            this.hideContainerRight});
             this.dockManager1.Form = this;
+            this.dockManager1.RootPanels.AddRange(new DevExpress.XtraBars.Docking.DockPanel[] {
+            this.dockPanel1});
             this.dockManager1.TopZIndexControls.AddRange(new string[] {
             "DevExpress.XtraBars.BarDockControl",
             "DevExpress.XtraBars.StandaloneBarDockControl",
@@ -1467,40 +1465,28 @@
             "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
             "DevExpress.XtraBars.Navigation.TileNavPane",
             "DevExpress.XtraBars.TabFormControl"});
-            // 
-            // hideContainerRight
-            // 
-            this.hideContainerRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(236)))), ((int)(((byte)(239)))));
-            this.hideContainerRight.Controls.Add(this.dockPanel1);
-            this.hideContainerRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.hideContainerRight.Location = new System.Drawing.Point(1468, 177);
-            this.hideContainerRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.hideContainerRight.Name = "hideContainerRight";
-            this.hideContainerRight.Size = new System.Drawing.Size(24, 868);
+            this.dockManager1.Expanded += new DevExpress.XtraBars.Docking.DockPanelEventHandler(this.dockManager1_Expanded);
             // 
             // dockPanel1
             // 
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanel1.ID = new System.Guid("63e80633-5d48-4c7f-b478-9c23f5ad6c3d");
-            this.dockPanel1.Location = new System.Drawing.Point(0, 0);
+            this.dockPanel1.Location = new System.Drawing.Point(1166, 177);
             this.dockPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1.Name = "dockPanel1";
-            this.dockPanel1.OriginalSize = new System.Drawing.Size(417, 200);
-            this.dockPanel1.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
-            this.dockPanel1.SavedIndex = 0;
-            this.dockPanel1.Size = new System.Drawing.Size(417, 868);
+            this.dockPanel1.OriginalSize = new System.Drawing.Size(326, 200);
+            this.dockPanel1.Size = new System.Drawing.Size(326, 868);
             this.dockPanel1.Text = "دانش آموزان";
-            this.dockPanel1.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             // 
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.gridControl1);
             this.dockPanel1_Container.Controls.Add(this.panelControl5);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(7, 27);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(5, 27);
             this.dockPanel1_Container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(405, 836);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(314, 836);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // gridControl1
@@ -1515,7 +1501,7 @@
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemPictureEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(405, 787);
+            this.gridControl1.Size = new System.Drawing.Size(314, 787);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -1591,12 +1577,13 @@
             this.panelControl5.Location = new System.Drawing.Point(0, 0);
             this.panelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(405, 49);
+            this.panelControl5.Size = new System.Drawing.Size(314, 49);
             this.panelControl5.TabIndex = 1;
             // 
             // labelControl15
             // 
-            this.labelControl15.Location = new System.Drawing.Point(345, 15);
+            this.labelControl15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelControl15.Location = new System.Drawing.Point(185, 14);
             this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(122, 17);
@@ -1605,7 +1592,8 @@
             // 
             // cmbClass
             // 
-            this.cmbClass.Location = new System.Drawing.Point(9, 11);
+            this.cmbClass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbClass.Location = new System.Drawing.Point(-33, 11);
             this.cmbClass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cmbClass.MenuManager = this.ribbonControl1;
             this.cmbClass.Name = "cmbClass";
@@ -1620,7 +1608,7 @@
             this.cmbClass.Properties.DisplayMember = "SchClass";
             this.cmbClass.Properties.NullText = "کلاس را انتخاب کنید";
             this.cmbClass.Properties.ValueMember = "Id";
-            this.cmbClass.Size = new System.Drawing.Size(313, 22);
+            this.cmbClass.Size = new System.Drawing.Size(212, 22);
             this.cmbClass.TabIndex = 0;
             this.cmbClass.EditValueChanged += new System.EventHandler(this.cmbClass_EditValueChanged);
             // 
@@ -1666,7 +1654,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 177);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1468, 868);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1166, 868);
             this.xtraTabControl1.TabIndex = 10;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -1683,7 +1671,7 @@
             this.xtraTabPage1.Controls.Add(this.panelControl2);
             this.xtraTabPage1.Controls.Add(this.panelControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1461, 833);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1159, 833);
             this.xtraTabPage1.Text = "وضعیت آماری";
             // 
             // panelControl6
@@ -1691,7 +1679,7 @@
             this.panelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl6.Location = new System.Drawing.Point(0, 660);
             this.panelControl6.Name = "panelControl6";
-            this.panelControl6.Size = new System.Drawing.Size(1461, 173);
+            this.panelControl6.Size = new System.Drawing.Size(1159, 173);
             this.panelControl6.TabIndex = 7;
             // 
             // panelControl3
@@ -1705,7 +1693,7 @@
             this.panelControl3.Location = new System.Drawing.Point(0, 440);
             this.panelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(1461, 220);
+            this.panelControl3.Size = new System.Drawing.Size(1159, 220);
             this.panelControl3.TabIndex = 5;
             // 
             // gaugeControl14
@@ -2097,7 +2085,7 @@
             this.panelControl2.Location = new System.Drawing.Point(0, 220);
             this.panelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl2.Name = "panelControl2";
-            this.panelControl2.Size = new System.Drawing.Size(1461, 220);
+            this.panelControl2.Size = new System.Drawing.Size(1159, 220);
             this.panelControl2.TabIndex = 6;
             // 
             // gaugeControl15
@@ -2494,7 +2482,7 @@
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1461, 220);
+            this.panelControl1.Size = new System.Drawing.Size(1159, 220);
             this.panelControl1.TabIndex = 3;
             // 
             // imgStudent
@@ -2514,7 +2502,7 @@
             this.imgStudent.Properties.OptionsMask.MaskType = DevExpress.XtraEditors.Controls.PictureEditMaskType.Circle;
             this.imgStudent.Properties.ReadOnly = true;
             this.imgStudent.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.imgStudent.Size = new System.Drawing.Size(243, 216);
+            this.imgStudent.Size = new System.Drawing.Size(202, 216);
             this.imgStudent.TabIndex = 5;
             // 
             // gaugeControl5
@@ -2901,7 +2889,7 @@
             // 
             this.xtraTabPage3.Controls.Add(this.panelControl7);
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1461, 833);
+            this.xtraTabPage3.Size = new System.Drawing.Size(1159, 833);
             this.xtraTabPage3.Text = "وضعیت آماری نمودار";
             // 
             // panelControl7
@@ -2912,7 +2900,7 @@
             this.panelControl7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl7.Location = new System.Drawing.Point(0, 0);
             this.panelControl7.Name = "panelControl7";
-            this.panelControl7.Size = new System.Drawing.Size(1461, 833);
+            this.panelControl7.Size = new System.Drawing.Size(1159, 833);
             this.panelControl7.TabIndex = 10;
             // 
             // panelControl8
@@ -2923,12 +2911,13 @@
             this.panelControl8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl8.Location = new System.Drawing.Point(2, 2);
             this.panelControl8.Name = "panelControl8";
-            this.panelControl8.Size = new System.Drawing.Size(1457, 85);
+            this.panelControl8.Size = new System.Drawing.Size(1155, 85);
             this.panelControl8.TabIndex = 10;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(482, 24);
+            this.labelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelControl1.Location = new System.Drawing.Point(188, 28);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(489, 17);
             this.labelControl1.TabIndex = 3;
@@ -2937,9 +2926,10 @@
             // 
             // txtDate1
             // 
+            this.txtDate1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDate1.EditValue = new System.DateTime(2017, 9, 12, 23, 29, 3, 0);
             this.txtDate1.Enabled = false;
-            this.txtDate1.Location = new System.Drawing.Point(977, 21);
+            this.txtDate1.Location = new System.Drawing.Point(683, 25);
             this.txtDate1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDate1.Name = "txtDate1";
             this.txtDate1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2955,7 +2945,8 @@
             // 
             // chkMFilter
             // 
-            this.chkMFilter.Location = new System.Drawing.Point(1283, 22);
+            this.chkMFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkMFilter.Location = new System.Drawing.Point(989, 26);
             this.chkMFilter.MenuManager = this.ribbonControl1;
             this.chkMFilter.Name = "chkMFilter";
             this.chkMFilter.Properties.AllowFocused = false;
@@ -2973,7 +2964,7 @@
             this.panelControl4.Location = new System.Drawing.Point(2, 527);
             this.panelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1457, 304);
+            this.panelControl4.Size = new System.Drawing.Size(1155, 304);
             this.panelControl4.TabIndex = 9;
             // 
             // pCalendar
@@ -2984,7 +2975,7 @@
             this.pCalendar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pCalendar.EditValue = new System.DateTime(2017, 9, 12, 18, 18, 21, 0);
             this.pCalendar.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
-            this.pCalendar.Location = new System.Drawing.Point(1162, 0);
+            this.pCalendar.Location = new System.Drawing.Point(860, 0);
             this.pCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pCalendar.Name = "pCalendar";
             this.pCalendar.Size = new System.Drawing.Size(295, 304);
@@ -2995,7 +2986,7 @@
             // 
             this.xtraTabPage2.Controls.Add(this.schedulerControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1461, 833);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1159, 833);
             this.xtraTabPage2.Text = "کارهای زمانبندی شده";
             // 
             // schedulerControl1
@@ -3006,7 +2997,7 @@
             this.schedulerControl1.Location = new System.Drawing.Point(0, 0);
             this.schedulerControl1.MenuManager = this.ribbonControl1;
             this.schedulerControl1.Name = "schedulerControl1";
-            this.schedulerControl1.Size = new System.Drawing.Size(1461, 833);
+            this.schedulerControl1.Size = new System.Drawing.Size(1159, 833);
             this.schedulerControl1.Start = new System.DateTime(2017, 9, 9, 0, 0, 0, 0);
             this.schedulerControl1.TabIndex = 0;
             this.schedulerControl1.Text = "schedulerControl1";
@@ -3034,7 +3025,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1492, 1045);
             this.Controls.Add(this.xtraTabControl1);
-            this.Controls.Add(this.hideContainerRight);
+            this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -3061,7 +3052,6 @@
             ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
-            this.hideContainerRight.ResumeLayout(false);
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -3290,7 +3280,6 @@
         private DevExpress.XtraCharts.UI.ChartTemplatesRibbonPageGroup chartTemplatesRibbonPageGroup1;
         private DevExpress.XtraCharts.UI.ChartPrintExportRibbonPageGroup chartPrintExportRibbonPageGroup1;
         private DevExpress.XtraCharts.UI.ChartBarController chartBarController1;
-        private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerRight;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
         private DevExpress.XtraBars.BarButtonItem btnWebsite;
         private DevExpress.XtraBars.BarButtonItem btnShedule;

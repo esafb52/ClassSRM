@@ -4,6 +4,7 @@ using DevExpress.XtraEditors;
 using DevExpress.XtraScheduler;
 using DevExpress.XtraSplashScreen;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -302,9 +303,8 @@ namespace ClassSRM
             else
             {
                 sumEvaBindingSource.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + strCurMonth + "/" + "01", strYear + "/" + strCurMonth + "/" + "31");
-                sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + PrevMonth + "/" + "01", strYear + "/" + PrevMonth + "/" + "31");
+                sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + PrevMonth.ToString("00") + "/" + "01", strYear + "/" + PrevMonth + "/" + "31");
             }
-            
         }
         // isOne => if month is 01 we must set prevMonth 12 and prevYear - 1
         private void drawChart(int id, string Date1, string Date2, bool isOne)
@@ -361,6 +361,7 @@ namespace ClassSRM
             initScheduler();
             txtDate1.DateTime = DateTime.Now;
 
+           
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -563,13 +564,20 @@ namespace ClassSRM
             dc.DBAppointments.DeleteOnSubmit(dbApt);
             dc.SubmitChanges();
         }
+        #endregion "Scheduler Handler"
 
         private void chkMFilter_CheckedChanged(object sender, EventArgs e)
         {
             if (chkMFilter.Checked)
+            {
                 txtDate1.Enabled = true;
+                txtDate1_EditValueChanged(null, null);
+            }
             else
+            {
                 txtDate1.Enabled = false;
+                drawChart(id);
+            }
         }
 
         private void txtDate1_EditValueChanged(object sender, EventArgs e)
@@ -589,7 +597,15 @@ namespace ClassSRM
 
         }
 
-        #endregion "Scheduler Handler"
+        private void dockManager1_Expanded(object sender, DevExpress.XtraBars.Docking.DockPanelEventArgs e)
+        {
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if (count > 0)
+            {
+                cmbClass.ItemIndex = 0;
+            }
+        }
+
 
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)
