@@ -10,6 +10,8 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraScheduler;
+using System.Collections.Generic;
 
 namespace ClassSRM
 {
@@ -56,6 +58,38 @@ namespace ClassSRM
             strCurMonth = pc.GetMonth(DateTime.Now).ToString("00");
             strYear = pc.GetYear(DateTime.Now).ToString("0000");
             PrevMonth = Convert.ToInt32(strCurMonth) - 1;
+        }
+
+        private void initScheduler()
+        {
+            DBAppointmentList apts = new DBAppointmentList();
+            apts.AddRange(dc.DBAppointments.ToArray());
+
+            List<DBResource> resources = new List<DBResource>();
+            resources.AddRange(dc.DBResources.ToArray());
+
+            AppointmentStorage aptStorage = schedulerStorage1.Appointments;
+            ResourceStorage resStorage = schedulerStorage1.Resources;
+
+            aptStorage.Mappings.AllDay = "AllDay";
+            aptStorage.Mappings.Description = "Description";
+            aptStorage.Mappings.End = "EndTime";
+            aptStorage.Mappings.Label = "Label";
+            aptStorage.Mappings.Location = "Location";
+            aptStorage.Mappings.RecurrenceInfo = "RecurrenceInfo";
+            aptStorage.Mappings.ReminderInfo = "ReminderInfo";
+            aptStorage.Mappings.ResourceId = "CarIdShared";
+            aptStorage.Mappings.Start = "StartTime";
+            aptStorage.Mappings.Status = "Status";
+            aptStorage.Mappings.Subject = "Subject";
+            aptStorage.Mappings.Type = "EventType";
+
+            resStorage.Mappings.Id = "ID";
+            resStorage.Mappings.Caption = "Model";
+            resStorage.Mappings.Image = "Picture";
+
+            resStorage.DataSource = resources;
+            aptStorage.DataSource = apts;
         }
 
         //Get Student Statictic Scores and Data
@@ -291,6 +325,8 @@ namespace ClassSRM
             cmbClass.ItemIndex = Convert.ToInt32(Config.ReadSetting("Default School"));
             LoadStudent();
             EnableAnim();
+            pCalendar.DateTime = DateTime.Now;
+            initScheduler();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -466,7 +502,33 @@ namespace ClassSRM
         private void btnShedule_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new Shedule().ShowDialog();
+            Form1_Load(null, null);
+
         }
+
+        #region "Scheduler Handler"
+        private void schedulerStorage1_AppointmentsInserted(object sender, PersistentObjectsEventArgs e)
+        {
+            foreach (Appointment apt in e.Objects)
+            {
+                DBAppointment dbApt = (DBAppointment)apt.GetSourceObject(schedulerStorage1);
+                dc.DBAppointments.InsertOnSubmit(dbApt);
+                dc.SubmitChanges();
+            }
+        }
+        private void schedulerStorage1_AppointmentsChanged(object sender, PersistentObjectsEventArgs e)
+        {
+            dc.SubmitChanges();
+        }
+
+        private void schedulerStorage1_AppointmentDeleting(object sender, PersistentObjectCancelEventArgs e)
+        {
+            Appointment apt = (Appointment)e.Object;
+            DBAppointment dbApt = (DBAppointment)apt.GetSourceObject(schedulerStorage1);
+            dc.DBAppointments.DeleteOnSubmit(dbApt);
+            dc.SubmitChanges();
+        }
+#endregion
 
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)

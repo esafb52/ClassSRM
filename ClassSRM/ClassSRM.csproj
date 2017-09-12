@@ -143,6 +143,7 @@
     <Compile Include="ConfigServer.Designer.cs">
       <DependentUpon>ConfigServer.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBAppointmentList.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

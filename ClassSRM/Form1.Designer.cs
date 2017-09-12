@@ -145,6 +145,9 @@
             DevExpress.XtraCharts.LineSeriesView lineSeriesView1 = new DevExpress.XtraCharts.LineSeriesView();
             DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.LineSeriesView lineSeriesView2 = new DevExpress.XtraCharts.LineSeriesView();
+            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
             this.sumEvaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sumEvaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -256,11 +259,11 @@
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.cmbClass = new DevExpress.XtraEditors.LookUpEdit();
             this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pCalendar = new FarsiLibrary.Win.DevExpress.XtraFACalendarControl();
-            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.chartBarController1 = new DevExpress.XtraCharts.UI.ChartBarController();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
+            this.pCalendar = new FarsiLibrary.Win.DevExpress.XtraFACalendarControl();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.gaugeControl14 = new DevExpress.XtraGauges.Win.GaugeControl();
             this.label15 = new System.Windows.Forms.Label();
@@ -356,6 +359,8 @@
             this.arcScaleRangeBarComponent1 = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent();
             this.prgTotalScore = new DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
+            this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sumEvaBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
@@ -384,13 +389,13 @@
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
             this.gaugeControl14.SuspendLayout();
@@ -473,6 +478,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblEvaPoint)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prgTotalScore)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).BeginInit();
             this.SuspendLayout();
             // 
             // splashScreenManager1
@@ -1003,7 +1011,7 @@
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2};
-            this.chartControl1.Size = new System.Drawing.Size(1169, 259);
+            this.chartControl1.Size = new System.Drawing.Size(1162, 259);
             this.chartControl1.TabIndex = 0;
             // 
             // createChartRibbonPage1
@@ -1604,33 +1612,6 @@
             // 
             this.tblSchoolBindingSource.DataSource = typeof(ClassSRM.tbl_School);
             // 
-            // pCalendar
-            // 
-            this.pCalendar.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.pCalendar.DateTime = new System.DateTime(2017, 7, 23, 0, 0, 0, 0);
-            this.pCalendar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pCalendar.EditValue = new System.DateTime(2017, 7, 23, 0, 0, 0, 0);
-            this.pCalendar.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
-            this.pCalendar.Location = new System.Drawing.Point(1171, 2);
-            this.pCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pCalendar.Name = "pCalendar";
-            this.pCalendar.Size = new System.Drawing.Size(295, 259);
-            this.pCalendar.TabIndex = 1;
-            this.pCalendar.UpdateSelectionWhenNavigating = true;
-            this.pCalendar.CustomDrawDayNumberCell += new DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventHandler(this.pCalendar_CustomDrawDayNumberCell);
-            // 
-            // panelControl4
-            // 
-            this.panelControl4.Controls.Add(this.chartControl1);
-            this.panelControl4.Controls.Add(this.pCalendar);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelControl4.Location = new System.Drawing.Point(0, 782);
-            this.panelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(1468, 263);
-            this.panelControl4.TabIndex = 7;
-            // 
             // chartBarController1
             // 
             this.chartBarController1.BarItems.Add(this.createBarBaseItem1);
@@ -1669,7 +1650,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(0, 177);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1468, 605);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1468, 868);
             this.xtraTabControl1.TabIndex = 10;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -1680,12 +1661,39 @@
             this.xtraTabPage1.Appearance.PageClient.BackColor = System.Drawing.Color.WhiteSmoke;
             this.xtraTabPage1.Appearance.PageClient.BackColor2 = System.Drawing.Color.Transparent;
             this.xtraTabPage1.Appearance.PageClient.Options.UseBackColor = true;
+            this.xtraTabPage1.Controls.Add(this.panelControl4);
             this.xtraTabPage1.Controls.Add(this.panelControl3);
             this.xtraTabPage1.Controls.Add(this.panelControl2);
             this.xtraTabPage1.Controls.Add(this.panelControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1461, 570);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1461, 833);
             this.xtraTabPage1.Text = "وضعیت آماری";
+            // 
+            // panelControl4
+            // 
+            this.panelControl4.Controls.Add(this.chartControl1);
+            this.panelControl4.Controls.Add(this.pCalendar);
+            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelControl4.Location = new System.Drawing.Point(0, 570);
+            this.panelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl4.Name = "panelControl4";
+            this.panelControl4.Size = new System.Drawing.Size(1461, 263);
+            this.panelControl4.TabIndex = 8;
+            // 
+            // pCalendar
+            // 
+            this.pCalendar.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.pCalendar.DateTime = new System.DateTime(2017, 9, 12, 18, 18, 21, 0);
+            this.pCalendar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pCalendar.EditValue = new System.DateTime(2017, 9, 12, 18, 18, 21, 0);
+            this.pCalendar.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
+            this.pCalendar.Location = new System.Drawing.Point(1164, 2);
+            this.pCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pCalendar.Name = "pCalendar";
+            this.pCalendar.Size = new System.Drawing.Size(295, 259);
+            this.pCalendar.TabIndex = 1;
+            this.pCalendar.UpdateSelectionWhenNavigating = true;
             // 
             // panelControl3
             // 
@@ -2892,9 +2900,40 @@
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.schedulerControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1461, 570);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1461, 833);
             this.xtraTabPage2.Text = "کارهای زمانبندی شده";
+            // 
+            // schedulerControl1
+            // 
+            this.schedulerControl1.ActiveViewType = DevExpress.XtraScheduler.SchedulerViewType.FullWeek;
+            this.schedulerControl1.DataStorage = this.schedulerStorage1;
+            this.schedulerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.schedulerControl1.Location = new System.Drawing.Point(0, 0);
+            this.schedulerControl1.MenuManager = this.ribbonControl1;
+            this.schedulerControl1.Name = "schedulerControl1";
+            this.schedulerControl1.Size = new System.Drawing.Size(1461, 833);
+            this.schedulerControl1.Start = new System.DateTime(2017, 9, 9, 0, 0, 0, 0);
+            this.schedulerControl1.TabIndex = 0;
+            this.schedulerControl1.Text = "schedulerControl1";
+            this.schedulerControl1.Views.AgendaView.Enabled = false;
+            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
+            this.schedulerControl1.Views.DayView.VisibleTime = new DevExpress.XtraScheduler.TimeOfDayInterval(System.TimeSpan.Parse("08:00:00"), System.TimeSpan.Parse("17:30:00"));
+            this.schedulerControl1.Views.FullWeekView.Enabled = true;
+            this.schedulerControl1.Views.FullWeekView.TimeRulers.Add(timeRuler2);
+            this.schedulerControl1.Views.FullWeekView.VisibleTime = new DevExpress.XtraScheduler.TimeOfDayInterval(System.TimeSpan.Parse("08:00:00"), System.TimeSpan.Parse("17:30:00"));
+            this.schedulerControl1.Views.GanttView.Enabled = false;
+            this.schedulerControl1.Views.TimelineView.Enabled = false;
+            this.schedulerControl1.Views.WeekView.Enabled = false;
+            this.schedulerControl1.Views.WorkWeekView.Enabled = false;
+            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler3);
+            // 
+            // schedulerStorage1
+            // 
+            this.schedulerStorage1.AppointmentsInserted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage1_AppointmentsInserted);
+            this.schedulerStorage1.AppointmentsChanged += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage1_AppointmentsChanged);
+            this.schedulerStorage1.AppointmentDeleting += new DevExpress.XtraScheduler.PersistentObjectCancelEventHandler(this.schedulerStorage1_AppointmentDeleting);
             // 
             // Form1
             // 
@@ -2902,7 +2941,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1492, 1045);
             this.Controls.Add(this.xtraTabControl1);
-            this.Controls.Add(this.panelControl4);
             this.Controls.Add(this.hideContainerRight);
             this.Controls.Add(this.ribbonControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2942,14 +2980,14 @@
             this.panelControl5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSchoolBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
-            this.panelControl4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            this.panelControl4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pCalendar.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.gaugeControl14.ResumeLayout(false);
@@ -3033,6 +3071,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.lblEvaPoint)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arcScaleRangeBarComponent1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prgTotalScore)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3090,9 +3131,6 @@
         private DevExpress.XtraBars.Docking.DockManager dockManager1;
         private DevExpress.XtraBars.Docking.DockPanel dockPanel1;
         private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
-        private FarsiLibrary.Win.DevExpress.XtraFACalendarControl pCalendar;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.PanelControl panelControl5;
@@ -3251,6 +3289,11 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private DevExpress.XtraScheduler.SchedulerControl schedulerControl1;
+        private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
+        private FarsiLibrary.Win.DevExpress.XtraFACalendarControl pCalendar;
     }
 }
 
