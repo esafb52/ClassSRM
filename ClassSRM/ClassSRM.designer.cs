@@ -54,6 +54,9 @@ namespace ClassSRM
     partial void Inserttbl_Quastion(tbl_Quastion instance);
     partial void Updatetbl_Quastion(tbl_Quastion instance);
     partial void Deletetbl_Quastion(tbl_Quastion instance);
+    partial void InsertDBAppointment(DBAppointment instance);
+    partial void UpdateDBAppointment(DBAppointment instance);
+    partial void DeleteDBAppointment(DBAppointment instance);
     #endregion
 		
 		public ClassSRMDataContext() : 
@@ -171,6 +174,22 @@ namespace ClassSRM
 			get
 			{
 				return this.GetTable<SumAE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DBResource> DBResources
+		{
+			get
+			{
+				return this.GetTable<DBResource>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DBAppointment> DBAppointments
+		{
+			get
+			{
+				return this.GetTable<DBAppointment>();
 			}
 		}
 		
@@ -1936,6 +1955,743 @@ namespace ClassSRM
 				{
 					this._StudentName = value;
 				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Cars")]
+	public partial class DBResource
+	{
+		
+		private int _ID;
+		
+		private string _Trademark;
+		
+		private string _Model;
+		
+		private System.Nullable<short> _HP;
+		
+		private System.Nullable<double> _Liter;
+		
+		private System.Nullable<byte> _Cyl;
+		
+		private System.Nullable<byte> _TransmissSpeedCount;
+		
+		private string _TransmissAutomatic;
+		
+		private System.Nullable<byte> _MPG_City;
+		
+		private System.Nullable<byte> _MPG_Highway;
+		
+		private string _Category;
+		
+		private string _Description;
+		
+		private string _Hyperlink;
+		
+		private System.Data.Linq.Binary _Picture;
+		
+		private System.Nullable<decimal> _Price;
+		
+		private string _RtfContent;
+		
+		private System.Nullable<int> _Color;
+		
+		public DBResource()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Trademark", DbType="NVarChar(50)")]
+		public string Trademark
+		{
+			get
+			{
+				return this._Trademark;
+			}
+			set
+			{
+				if ((this._Trademark != value))
+				{
+					this._Trademark = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Model", DbType="NVarChar(50)")]
+		public string Model
+		{
+			get
+			{
+				return this._Model;
+			}
+			set
+			{
+				if ((this._Model != value))
+				{
+					this._Model = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HP", DbType="SmallInt")]
+		public System.Nullable<short> HP
+		{
+			get
+			{
+				return this._HP;
+			}
+			set
+			{
+				if ((this._HP != value))
+				{
+					this._HP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Liter", DbType="Float")]
+		public System.Nullable<double> Liter
+		{
+			get
+			{
+				return this._Liter;
+			}
+			set
+			{
+				if ((this._Liter != value))
+				{
+					this._Liter = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cyl", DbType="TinyInt")]
+		public System.Nullable<byte> Cyl
+		{
+			get
+			{
+				return this._Cyl;
+			}
+			set
+			{
+				if ((this._Cyl != value))
+				{
+					this._Cyl = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransmissSpeedCount", DbType="TinyInt")]
+		public System.Nullable<byte> TransmissSpeedCount
+		{
+			get
+			{
+				return this._TransmissSpeedCount;
+			}
+			set
+			{
+				if ((this._TransmissSpeedCount != value))
+				{
+					this._TransmissSpeedCount = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TransmissAutomatic", DbType="NVarChar(3)")]
+		public string TransmissAutomatic
+		{
+			get
+			{
+				return this._TransmissAutomatic;
+			}
+			set
+			{
+				if ((this._TransmissAutomatic != value))
+				{
+					this._TransmissAutomatic = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MPG_City", DbType="TinyInt")]
+		public System.Nullable<byte> MPG_City
+		{
+			get
+			{
+				return this._MPG_City;
+			}
+			set
+			{
+				if ((this._MPG_City != value))
+				{
+					this._MPG_City = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MPG_Highway", DbType="TinyInt")]
+		public System.Nullable<byte> MPG_Highway
+		{
+			get
+			{
+				return this._MPG_Highway;
+			}
+			set
+			{
+				if ((this._MPG_Highway != value))
+				{
+					this._MPG_Highway = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Category", DbType="NVarChar(7)")]
+		public string Category
+		{
+			get
+			{
+				return this._Category;
+			}
+			set
+			{
+				if ((this._Category != value))
+				{
+					this._Category = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="NVarChar(MAX)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this._Description = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Hyperlink", DbType="NVarChar(50)")]
+		public string Hyperlink
+		{
+			get
+			{
+				return this._Hyperlink;
+			}
+			set
+			{
+				if ((this._Hyperlink != value))
+				{
+					this._Hyperlink = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary Picture
+		{
+			get
+			{
+				return this._Picture;
+			}
+			set
+			{
+				if ((this._Picture != value))
+				{
+					this._Picture = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Price", DbType="Money")]
+		public System.Nullable<decimal> Price
+		{
+			get
+			{
+				return this._Price;
+			}
+			set
+			{
+				if ((this._Price != value))
+				{
+					this._Price = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RtfContent", DbType="NVarChar(MAX)")]
+		public string RtfContent
+		{
+			get
+			{
+				return this._RtfContent;
+			}
+			set
+			{
+				if ((this._RtfContent != value))
+				{
+					this._RtfContent = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Color", DbType="Int")]
+		public System.Nullable<int> Color
+		{
+			get
+			{
+				return this._Color;
+			}
+			set
+			{
+				if ((this._Color != value))
+				{
+					this._Color = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CarScheduling")]
+	public partial class DBAppointment : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private System.Nullable<int> _UserId;
+		
+		private System.Nullable<int> _Status;
+		
+		private string _Subject;
+		
+		private string _Description;
+		
+		private System.Nullable<int> _Label;
+		
+		private System.Nullable<System.DateTime> _StartTime;
+		
+		private System.Nullable<System.DateTime> _EndTime;
+		
+		private string _Location;
+		
+		private bool _AllDay;
+		
+		private System.Nullable<int> _EventType;
+		
+		private string _RecurrenceInfo;
+		
+		private string _ReminderInfo;
+		
+		private string _CarIdShared;
+		
+		private System.Nullable<double> _Price;
+		
+		private System.Nullable<int> _CarId;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnUserIdChanging(System.Nullable<int> value);
+    partial void OnUserIdChanged();
+    partial void OnStatusChanging(System.Nullable<int> value);
+    partial void OnStatusChanged();
+    partial void OnSubjectChanging(string value);
+    partial void OnSubjectChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
+    partial void OnLabelChanging(System.Nullable<int> value);
+    partial void OnLabelChanged();
+    partial void OnStartTimeChanging(System.Nullable<System.DateTime> value);
+    partial void OnStartTimeChanged();
+    partial void OnEndTimeChanging(System.Nullable<System.DateTime> value);
+    partial void OnEndTimeChanged();
+    partial void OnLocationChanging(string value);
+    partial void OnLocationChanged();
+    partial void OnAllDayChanging(bool value);
+    partial void OnAllDayChanged();
+    partial void OnEventTypeChanging(System.Nullable<int> value);
+    partial void OnEventTypeChanged();
+    partial void OnRecurrenceInfoChanging(string value);
+    partial void OnRecurrenceInfoChanged();
+    partial void OnReminderInfoChanging(string value);
+    partial void OnReminderInfoChanged();
+    partial void OnCarIdSharedChanging(string value);
+    partial void OnCarIdSharedChanged();
+    partial void OnPriceChanging(System.Nullable<double> value);
+    partial void OnPriceChanged();
+    partial void OnCarIdChanging(System.Nullable<int> value);
+    partial void OnCarIdChanged();
+    #endregion
+		
+		public DBAppointment()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", DbType="Int")]
+		public System.Nullable<int> UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					this.OnUserIdChanging(value);
+					this.SendPropertyChanging();
+					this._UserId = value;
+					this.SendPropertyChanged("UserId");
+					this.OnUserIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="Int")]
+		public System.Nullable<int> Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this.OnStatusChanging(value);
+					this.SendPropertyChanging();
+					this._Status = value;
+					this.SendPropertyChanged("Status");
+					this.OnStatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Subject", DbType="NVarChar(50)")]
+		public string Subject
+		{
+			get
+			{
+				return this._Subject;
+			}
+			set
+			{
+				if ((this._Subject != value))
+				{
+					this.OnSubjectChanging(value);
+					this.SendPropertyChanging();
+					this._Subject = value;
+					this.SendPropertyChanged("Subject");
+					this.OnSubjectChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="NVarChar(MAX)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this.OnDescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._Description = value;
+					this.SendPropertyChanged("Description");
+					this.OnDescriptionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Label", DbType="Int")]
+		public System.Nullable<int> Label
+		{
+			get
+			{
+				return this._Label;
+			}
+			set
+			{
+				if ((this._Label != value))
+				{
+					this.OnLabelChanging(value);
+					this.SendPropertyChanging();
+					this._Label = value;
+					this.SendPropertyChanged("Label");
+					this.OnLabelChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StartTime", DbType="DateTime")]
+		public System.Nullable<System.DateTime> StartTime
+		{
+			get
+			{
+				return this._StartTime;
+			}
+			set
+			{
+				if ((this._StartTime != value))
+				{
+					this.OnStartTimeChanging(value);
+					this.SendPropertyChanging();
+					this._StartTime = value;
+					this.SendPropertyChanged("StartTime");
+					this.OnStartTimeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EndTime", DbType="DateTime")]
+		public System.Nullable<System.DateTime> EndTime
+		{
+			get
+			{
+				return this._EndTime;
+			}
+			set
+			{
+				if ((this._EndTime != value))
+				{
+					this.OnEndTimeChanging(value);
+					this.SendPropertyChanging();
+					this._EndTime = value;
+					this.SendPropertyChanged("EndTime");
+					this.OnEndTimeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Location", DbType="NVarChar(50)")]
+		public string Location
+		{
+			get
+			{
+				return this._Location;
+			}
+			set
+			{
+				if ((this._Location != value))
+				{
+					this.OnLocationChanging(value);
+					this.SendPropertyChanging();
+					this._Location = value;
+					this.SendPropertyChanged("Location");
+					this.OnLocationChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AllDay", DbType="Bit NOT NULL")]
+		public bool AllDay
+		{
+			get
+			{
+				return this._AllDay;
+			}
+			set
+			{
+				if ((this._AllDay != value))
+				{
+					this.OnAllDayChanging(value);
+					this.SendPropertyChanging();
+					this._AllDay = value;
+					this.SendPropertyChanged("AllDay");
+					this.OnAllDayChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_EventType", DbType="Int")]
+		public System.Nullable<int> EventType
+		{
+			get
+			{
+				return this._EventType;
+			}
+			set
+			{
+				if ((this._EventType != value))
+				{
+					this.OnEventTypeChanging(value);
+					this.SendPropertyChanging();
+					this._EventType = value;
+					this.SendPropertyChanged("EventType");
+					this.OnEventTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RecurrenceInfo", DbType="NVarChar(MAX)")]
+		public string RecurrenceInfo
+		{
+			get
+			{
+				return this._RecurrenceInfo;
+			}
+			set
+			{
+				if ((this._RecurrenceInfo != value))
+				{
+					this.OnRecurrenceInfoChanging(value);
+					this.SendPropertyChanging();
+					this._RecurrenceInfo = value;
+					this.SendPropertyChanged("RecurrenceInfo");
+					this.OnRecurrenceInfoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ReminderInfo", DbType="NVarChar(MAX)")]
+		public string ReminderInfo
+		{
+			get
+			{
+				return this._ReminderInfo;
+			}
+			set
+			{
+				if ((this._ReminderInfo != value))
+				{
+					this.OnReminderInfoChanging(value);
+					this.SendPropertyChanging();
+					this._ReminderInfo = value;
+					this.SendPropertyChanged("ReminderInfo");
+					this.OnReminderInfoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CarIdShared", DbType="NVarChar(MAX)")]
+		public string CarIdShared
+		{
+			get
+			{
+				return this._CarIdShared;
+			}
+			set
+			{
+				if ((this._CarIdShared != value))
+				{
+					this.OnCarIdSharedChanging(value);
+					this.SendPropertyChanging();
+					this._CarIdShared = value;
+					this.SendPropertyChanged("CarIdShared");
+					this.OnCarIdSharedChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Price", DbType="Float")]
+		public System.Nullable<double> Price
+		{
+			get
+			{
+				return this._Price;
+			}
+			set
+			{
+				if ((this._Price != value))
+				{
+					this.OnPriceChanging(value);
+					this.SendPropertyChanging();
+					this._Price = value;
+					this.SendPropertyChanged("Price");
+					this.OnPriceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CarId", DbType="Int")]
+		public System.Nullable<int> CarId
+		{
+			get
+			{
+				return this._CarId;
+			}
+			set
+			{
+				if ((this._CarId != value))
+				{
+					this.OnCarIdChanging(value);
+					this.SendPropertyChanging();
+					this._CarId = value;
+					this.SendPropertyChanged("CarId");
+					this.OnCarIdChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

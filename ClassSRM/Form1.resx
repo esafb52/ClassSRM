@@ -150,6 +150,34 @@
         Lz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCiAgPGcgLz4NCjwvc3ZnPgs=
 </value>
   </data>
+  <data name="btnShedule.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v17.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE3LjEsIFZlcnNpb249MTcuMS41
+        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
+        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAO4EAAAC77u/
+        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
+        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIiBpZD0i0KHQu9C+0LlfMSI+DQogIDxwb2x5Z29uIHBvaW50cz0iMjQsNCAyNCw4
+        IDE4LDggMTgsNCA4LDQgOCw4IDIsOCAyLDQgMCw0IDAsMjggMjYsMjggMjYsNCAiIGZpbGw9IiM3Mjcy
+        NzIiIGNsYXNzPSJCbGFjayIgLz4NCiAgPHBhdGggZD0iTTIsMTJoMjJ2MTRIMlYxMnoiIGZpbGw9IiNG
+        RkZGRkYiIGNsYXNzPSJXaGl0ZSIgLz4NCiAgPHBhdGggZD0iTTQsNmgyVjJINFY2eiBNMjAsMnY0aDJW
+        MkgyMHoiIGZpbGw9IiM3MjcyNzIiIGNsYXNzPSJCbGFjayIgLz4NCiAgPHBhdGggZD0iTTIzLDE4YzMu
+        OSwwLDcsMy4xLDcsN3MtMy4xLDctNyw3cy03LTMuMS03LTdTMTkuMSwxOCwyMywxOHoiIGZpbGw9IiNE
+        MTFDMUMiIGNsYXNzPSJSZWQiIC8+DQogIDxwYXRoIGQ9Ik0yMywyMGMyLjgsMCw1LDIuMiw1LDVzLTIu
+        Miw1LTUsNXMtNS0yLjItNS01UzIwLjIsMjAsMjMsMjB6IiBmaWxsPSIjRkZGRkZGIiBjbGFzcz0iV2hp
+        dGUiIC8+DQogIDxwb2x5Z29uIHBvaW50cz0iMzEsMTkgMjksMTcgMjgsMTggMjguNSwxOC41IDI3LDIw
+        IDI4LDIxIDI5LjUsMTkuNSAzMCwyMCAiIGZpbGw9IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQogIDxw
+        YXRoIGQ9Ik0yMSwyNS4yYzAsMSwwLjgsMS44LDEuOCwxLjhjMC45LDAsMS43LTAuNywxLjgtMS43TDI2
+        LDIybC0zLjMsMS40QzIxLjcsMjMuNSwyMSwyNC4zLDIxLDI1LjJ6IiBmaWxsPSIjRDExQzFDIiBjbGFz
+        cz0iUmVkIiAvPg0KICA8cGF0aCBkPSJNOCwyMHYtNmg2djZIOHogTTEwLDE2djJoMnYtMkgxMHoiIGZp
+        bGw9IiNEMTFDMUMiIGNsYXNzPSJSZWQiIC8+DQogIDxnIG9wYWNpdHk9IjAuNiIgaWQ9ItCh0LvQvtC5
+        XzIiIGNsYXNzPSJzdDAiPg0KICAgIDxwYXRoIGQ9Ik00LDI0aDJ2LTJINFYyNHogTTQsMjBoMnYtMkg0
+        VjIweiBNNCwxNmgydi0ySDRWMTZ6IE04LDI0aDJ2LTJIOFYyNHogTTEyLDI0aDJ2LTJoLTJWMjR6IE0x
+        NiwyMGgydi0yaC0yVjIwICAgeiBNMTYsMTZoMnYtMmgtMlYxNnogTTIwLDE0djJoMnYtMkgyMHoiIGZp
+        bGw9IiM3MjcyNzIiIG9wYWNpdHk9IjAuNiIgY2xhc3M9IkJsYWNrIiAvPg0KICA8L2c+DQo8L3N2Zz4L
+</value>
+  </data>
   <data name="btnAddUser.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v17.1" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE3LjEsIFZlcnNpb249MTcuMS41

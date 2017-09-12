@@ -12,7 +12,7 @@ namespace ClassSRM.Forms
         private PersianCalendar PC = new PersianCalendar();
         private string strShamsi;
         private bool isWorking = false;
-        public static bool isForce = false;
+        public static bool isUpdate = false;
 
         public Backup()
         {
@@ -53,9 +53,9 @@ namespace ClassSRM.Forms
                     XtraMessageBox.Show("پشتیبان گیری با موفقیت انجام شد", "پشتیبان گیری", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     btnBackup.Enabled = true;
                     isWorking = false;
-                    if (isForce)
+                    if (isUpdate)
                     {
-                        isForce = false;
+                        isUpdate = false;
                         Close();
                     }
                 }
@@ -116,11 +116,6 @@ namespace ClassSRM.Forms
         private void Backup_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (isWorking)
-                e.Cancel = true;
-            else
-                e.Cancel = false;
-
-            if (isForce)
                 e.Cancel = true;
             else
                 e.Cancel = false;

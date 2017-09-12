@@ -1,4 +1,5 @@
-﻿using DevExpress.LookAndFeel;
+﻿using ClassSRM.Forms;
+using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 using DevExpress.XtraEditors;
@@ -43,7 +44,7 @@ namespace ClassSRM
                     WindowsFormsSettings.DefaultFont = new System.Drawing.Font("Tahoma", 8);
                 }
                 //Set Login
-                Application.Run(new Forms.Login());
+                Application.Run(new Shedule());
                 Application.DoEvents();
                 mtx.ReleaseMutex();
             }

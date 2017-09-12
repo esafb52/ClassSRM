@@ -182,6 +182,7 @@
             this.exportToPNGChartItem1 = new DevExpress.XtraCharts.UI.ExportToPNGChartItem();
             this.exportToTIFFChartItem1 = new DevExpress.XtraCharts.UI.ExportToTIFFChartItem();
             this.btnWebsite = new DevExpress.XtraBars.BarButtonItem();
+            this.btnShedule = new DevExpress.XtraBars.BarButtonItem();
             this.chartRibbonPageCategory1 = new DevExpress.XtraCharts.UI.ChartRibbonPageCategory();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.createChartRibbonPage1 = new DevExpress.XtraCharts.UI.CreateChartRibbonPage();
@@ -204,6 +205,7 @@
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnTaskListKanban = new DevExpress.XtraBars.BarButtonItem();
             this.btnLetterSingle = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnTop = new DevExpress.XtraBars.BarButtonItem();
@@ -510,10 +512,11 @@
             this.exportToPNGChartItem1,
             this.exportToTIFFChartItem1,
             this.createExportToImageBaseItem1,
-            this.btnWebsite});
+            this.btnWebsite,
+            this.btnShedule});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ribbonControl1.MaxItemId = 59;
+            this.ribbonControl1.MaxItemId = 60;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.chartRibbonPageCategory1});
@@ -948,6 +951,15 @@
             this.btnWebsite.Name = "btnWebsite";
             this.btnWebsite.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnWebsite_ItemClick);
             // 
+            // btnShedule
+            // 
+            this.btnShedule.Caption = "زمانبندی کارها";
+            this.btnShedule.Id = 59;
+            this.btnShedule.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnShedule.ImageOptions.SvgImage")));
+            this.btnShedule.LargeWidth = 100;
+            this.btnShedule.Name = "btnShedule";
+            this.btnShedule.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnShedule_ItemClick);
+            // 
             // chartRibbonPageCategory1
             // 
             this.chartRibbonPageCategory1.Control = this.chartControl1;
@@ -985,7 +997,7 @@
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2};
-            this.chartControl1.Size = new System.Drawing.Size(1180, 294);
+            this.chartControl1.Size = new System.Drawing.Size(1169, 294);
             this.chartControl1.TabIndex = 0;
             // 
             // createChartRibbonPage1
@@ -1042,7 +1054,8 @@
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
-            this.ribbonPageGroup3});
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup13});
             this.ribbonPage1.Name = "ribbonPage1";
             this.ribbonPage1.Text = "خانه";
             // 
@@ -1141,6 +1154,13 @@
             this.btnLetterSingle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLetterSingle.ImageOptions.SvgImage")));
             this.btnLetterSingle.Name = "btnLetterSingle";
             this.btnLetterSingle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLetterSingle_ItemClick);
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.AllowTextClipping = false;
+            this.ribbonPageGroup13.ItemLinks.Add(this.btnShedule);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            this.ribbonPageGroup13.Text = "زمانبندی کارها";
             // 
             // ribbonPage2
             // 
@@ -2387,10 +2407,10 @@
             this.pCalendar.Dock = System.Windows.Forms.DockStyle.Right;
             this.pCalendar.EditValue = new System.DateTime(2017, 7, 23, 0, 0, 0, 0);
             this.pCalendar.HighlightTodayCell = DevExpress.Utils.DefaultBoolean.True;
-            this.pCalendar.Location = new System.Drawing.Point(1182, 2);
+            this.pCalendar.Location = new System.Drawing.Point(1171, 2);
             this.pCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pCalendar.Name = "pCalendar";
-            this.pCalendar.Size = new System.Drawing.Size(284, 294);
+            this.pCalendar.Size = new System.Drawing.Size(295, 294);
             this.pCalendar.TabIndex = 1;
             this.pCalendar.UpdateSelectionWhenNavigating = true;
             this.pCalendar.CustomDrawDayNumberCell += new DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventHandler(this.pCalendar_CustomDrawDayNumberCell);
@@ -3188,6 +3208,8 @@
         private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerRight;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
         private DevExpress.XtraBars.BarButtonItem btnWebsite;
+        private DevExpress.XtraBars.BarButtonItem btnShedule;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
     }
 }
 

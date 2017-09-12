@@ -328,7 +328,7 @@ namespace ClassSRM
         private void btnGit_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraMessageBox.Show("در گیت هاب میتوانید پروژه های رایگان و متن باز دیگر ما را مشاهده کنید و در صورت داشتن توانایی، در توسعه بیشتر نرم افزار ها به ما کمک کنید.", "پروژه های توسعه دهنده", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            System.Diagnostics.Process.Start("https://github.com/ghost1372");
+            System.Diagnostics.Process.Start("https://github.com/ghost1372/ClassSRM");
         }
 
         private void btnTaskListKanban_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -344,7 +344,7 @@ namespace ClassSRM
         private void btnUpdate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraMessageBox.Show("قبل از بروزرسانی نرم افزار لازم است تا از اطلاعات\nنرم افزار فایل پشتیبان تهیه کنید.بعد از تایید\nپنجره پشتیبان گیری باز شده و اقدام به پشتیبان گیری کنید.", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            Backup.isForce = true;
+            Backup.isUpdate = true;
             new Backup().ShowDialog();
             Update up = new Update();
             String txt = "http://ipfile.ir/ClassSRMServer/ClassSRM.txt";
@@ -356,7 +356,7 @@ namespace ClassSRM
         private void btnOfflineUpdate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             XtraMessageBox.Show("قبل از بروزرسانی نرم افزار لازم است تا از اطلاعات\nنرم افزار فایل پشتیبان تهیه کنید.بعد از تایید\nپنجره پشتیبان گیری باز شده و اقدام به پشتیبان گیری کنید.", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            Backup.isForce = true;
+            Backup.isUpdate = true;
             new Backup().ShowDialog();
             Update up = new Update();
             if (up.UpdateFromDisk(Application.ExecutablePath) == true)
@@ -461,6 +461,11 @@ namespace ClassSRM
         private void btnWebsite_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             System.Diagnostics.Process.Start("https://ipfile.ir/classsrm/");
+        }
+
+        private void btnShedule_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new Shedule().ShowDialog();
         }
 
         //Draw Persian Holiday to Calendar

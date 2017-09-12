@@ -53,13 +53,14 @@
             this.tabPane1.Controls.Add(this.tabNavigationPage2);
             this.tabPane1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabPane1.Location = new System.Drawing.Point(0, 0);
+            this.tabPane1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPane1.Name = "tabPane1";
             this.tabPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage2,
             this.tabNavigationPage1});
-            this.tabPane1.RegularSize = new System.Drawing.Size(465, 166);
+            this.tabPane1.RegularSize = new System.Drawing.Size(542, 204);
             this.tabPane1.SelectedPage = this.tabNavigationPage2;
-            this.tabPane1.Size = new System.Drawing.Size(465, 166);
+            this.tabPane1.Size = new System.Drawing.Size(542, 204);
             this.tabPane1.TabIndex = 0;
             this.tabPane1.Text = "tabPane1";
             // 
@@ -68,16 +69,18 @@
             this.tabNavigationPage1.Caption = "بازگردانی اطلاعات";
             this.tabNavigationPage1.Controls.Add(this.btnRestore);
             this.tabNavigationPage1.Controls.Add(this.label1);
+            this.tabNavigationPage1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
-            this.tabNavigationPage1.Size = new System.Drawing.Size(447, 121);
+            this.tabNavigationPage1.Size = new System.Drawing.Size(520, 147);
             // 
             // btnRestore
             // 
             this.btnRestore.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestore.Location = new System.Drawing.Point(108, 74);
+            this.btnRestore.Location = new System.Drawing.Point(126, 89);
+            this.btnRestore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRestore.Name = "btnRestore";
-            this.btnRestore.Size = new System.Drawing.Size(245, 23);
+            this.btnRestore.Size = new System.Drawing.Size(285, 28);
             this.btnRestore.TabIndex = 1;
             this.btnRestore.Text = "بازیابی اطلاعات";
             this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
@@ -86,9 +89,9 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Location = new System.Drawing.Point(17, 4);
+            this.label1.Location = new System.Drawing.Point(20, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(414, 56);
+            this.label1.Size = new System.Drawing.Size(482, 69);
             this.label1.TabIndex = 0;
             this.label1.Text = "برای بازیابی اطلاعات و استفاده از فایل بکاپ روی بازیابی اطلاعات کلیک کنید\r\n و فای" +
     "ل پشتیبان خود را انتخاب کنید";
@@ -100,16 +103,17 @@
             this.tabNavigationPage2.Controls.Add(this.label2);
             this.tabNavigationPage2.Controls.Add(this.btnBackup);
             this.tabNavigationPage2.Controls.Add(this.txtPath);
+            this.tabNavigationPage2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(447, 121);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(520, 147);
             // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.Location = new System.Drawing.Point(3, 9);
+            this.label2.Location = new System.Drawing.Point(3, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(428, 62);
+            this.label2.Size = new System.Drawing.Size(502, 76);
             this.label2.TabIndex = 2;
             this.label2.Text = "برای پشتیبان گیری از اطلاعات روی آیکون پوشه کلیک کنید\r\nو مسیر ذخیره فایل را بجز د" +
     "رایو C انتخاب کنید عملیات بصورت خودکار انجام می شود";
@@ -119,20 +123,22 @@
             // 
             this.btnBackup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBackup.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnBackup.ImageOptions.SvgImage")));
-            this.btnBackup.Location = new System.Drawing.Point(375, 74);
+            this.btnBackup.Location = new System.Drawing.Point(440, 104);
+            this.btnBackup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnBackup.Name = "btnBackup";
             this.btnBackup.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnBackup.Size = new System.Drawing.Size(42, 38);
+            this.btnBackup.Size = new System.Drawing.Size(49, 47);
             this.btnBackup.TabIndex = 1;
             this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
             // 
             // txtPath
             // 
             this.txtPath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtPath.Location = new System.Drawing.Point(19, 83);
+            this.txtPath.Location = new System.Drawing.Point(22, 115);
+            this.txtPath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPath.Name = "txtPath";
             this.txtPath.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtPath.Size = new System.Drawing.Size(305, 20);
+            this.txtPath.Size = new System.Drawing.Size(356, 22);
             this.txtPath.TabIndex = 0;
             // 
             // splashScreenManager1
@@ -146,13 +152,14 @@
             // Backup
             // 
             this.AcceptButton = this.btnBackup;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(465, 166);
+            this.ClientSize = new System.Drawing.Size(542, 204);
             this.Controls.Add(this.tabPane1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "Backup";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
