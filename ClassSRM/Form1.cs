@@ -1,4 +1,15 @@
-﻿using ArazUpdater;
+﻿
+/****************************** ghost1372.github.io ******************************\
+*	Module Name:	Form1.cs
+*	Project:		ClassSRM
+*	Copyright (C) 2017 Mahdi Hosseini, All rights reserved.
+*	This software may be modified and distributed under the terms of the MIT license.  See LICENSE file for details.
+*
+*	Written by Mahdi Hosseini <Mahdidvb72@gmail.com>,  2017, 7, 26, 01:29 ب.ظ
+*	
+***********************************************************************************/
+
+using ArazUpdater;
 using ClassSRM.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraScheduler;
@@ -23,7 +34,8 @@ namespace ClassSRM
 
         private string strCurMonth, strYear;
         private int PrevMonth;
-        int id;
+        private int id;
+
         //Data Context
         private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
@@ -62,8 +74,6 @@ namespace ClassSRM
             PrevMonth = Convert.ToInt32(strCurMonth) - 1;
         }
 
-        
-
         private void initScheduler()
         {
             DBAppointmentList apts = new DBAppointmentList();
@@ -95,7 +105,6 @@ namespace ClassSRM
             resStorage.DataSource = resources;
             aptStorage.DataSource = apts;
             schedulerControl1.GoToToday();
-
         }
 
         //Get Student Statictic Scores and Data
@@ -309,6 +318,7 @@ namespace ClassSRM
                 sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + PrevMonth.ToString("00") + "/" + "01", strYear + "/" + PrevMonth + "/" + "31");
             }
         }
+
         // isOne => if month is 01 we must set prevMonth 12 and prevYear - 1
         private void drawChart(int id, string Date1, string Date2, bool isOne)
         {
@@ -324,7 +334,7 @@ namespace ClassSRM
                 sumEvaBindingSource1.DataSource = dc.SelectSumEvaDate(id, strYear + "/" + Date2 + "/" + "01", strYear + "/" + Date2 + "/" + "31");
             }
         }
-      
+
         //Enable ProgressBar Animation
         private void EnableAnim()
         {
@@ -348,11 +358,14 @@ namespace ClassSRM
         //Load Student
         private void LoadStudent()
         {
-
-            int id = (int)cmbClass.EditValue;
-            SplashScreenManager.ShowForm(typeof(WaitForm1));
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == id select v;
-            SplashScreenManager.CloseDefaultWaitForm();
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if (count > 0)
+            {
+                int id = (int)cmbClass.EditValue;
+                SplashScreenManager.ShowForm(typeof(WaitForm1));
+                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == id select v;
+                SplashScreenManager.CloseDefaultWaitForm();
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -575,6 +588,7 @@ namespace ClassSRM
             dc.DBAppointments.DeleteOnSubmit(dbApt);
             dc.SubmitChanges();
         }
+
         #endregion "Scheduler Handler"
 
         private void chkMFilter_CheckedChanged(object sender, EventArgs e)
@@ -598,14 +612,13 @@ namespace ClassSRM
             if (month.Equals("01"))
             {
                 prev = 12;
-                drawChart(id, month, prev.ToString("00"),true);
+                drawChart(id, month, prev.ToString("00"), true);
             }
             else
             {
                 prev = Convert.ToInt32(month) - 1;
-                drawChart(id, month, prev.ToString("00"),false);
+                drawChart(id, month, prev.ToString("00"), false);
             }
-
         }
 
         private void dockManager1_Expanded(object sender, DevExpress.XtraBars.Docking.DockPanelEventArgs e)
@@ -624,7 +637,6 @@ namespace ClassSRM
             LoadStudent();
             gridView1_FocusedRowChanged(null, null);
         }
-
 
         //Draw Persian Holiday to Calendar
         private void pCalendar_CustomDrawDayNumberCell(object sender, DevExpress.XtraEditors.Calendar.CustomDrawDayNumberCellEventArgs e)

@@ -432,6 +432,7 @@
       <LastGenOutput>ClassSRM.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="ClassSRM.licenseheader" />
     <None Include="Properties\DataSources\Appointment.datasource" />
     <None Include="Properties\DataSources\CheckV.datasource" />
     <None Include="Properties\DataSources\Resource.datasource" />

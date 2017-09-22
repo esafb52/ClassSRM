@@ -1,4 +1,15 @@
-﻿using System;
+﻿
+/****************************** ghost1372.github.io ******************************\
+*	Module Name:	TopStudent.cs
+*	Project:		ClassSRM
+*	Copyright (C) 2017 Mahdi Hosseini, All rights reserved.
+*	This software may be modified and distributed under the terms of the MIT license.  See LICENSE file for details.
+*
+*	Written by Mahdi Hosseini <Mahdidvb72@gmail.com>,  2017, 7, 26, 01:30 ب.ظ
+*	
+***********************************************************************************/
+
+using System;
 using System.Collections;
 using System.Windows.Forms;
 

@@ -1,4 +1,15 @@
-﻿using DevExpress.LookAndFeel;
+﻿
+/****************************** ghost1372.github.io ******************************\
+*	Module Name:	Splash.cs
+*	Project:		ClassSRM
+*	Copyright (C) 2017 Mahdi Hosseini, All rights reserved.
+*	This software may be modified and distributed under the terms of the MIT license.  See LICENSE file for details.
+*
+*	Written by Mahdi Hosseini <Mahdidvb72@gmail.com>,  2017, 7, 26, 01:29 ب.ظ
+*	
+***********************************************************************************/
+
+using DevExpress.LookAndFeel;
 using DevExpress.XtraSplashScreen;
 using System;
 using System.Diagnostics;
