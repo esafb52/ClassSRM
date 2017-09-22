@@ -276,23 +276,23 @@ namespace ClassSRM
                     if (qEvaPoint == null)
                     {
                         lblEvaPoint.Text = "0";
-                        prgActiveClass.Value = 0;
+                        prgTotalScore.Value = 0;
                     }
                     else
                     {
                         lblEvaPoint.Text = qEvaPoint.ToString();
-                        prgActiveClass.Value = qEvaPoint.Value;
+                        prgTotalScore.Value = qEvaPoint.Value;
                     }
                     //رفع خطای خالی بودن امتیاز ها
                     if (qActivity.ToString() == null)
                     {
-                        prgTotalScore.Value = 0;
+                        prgActiveClass.Value = 0;
                         lblActivity.Text = "0";
                     }
                     else
                     {
                         lblActivity.Text = qActivity.ToString();
-                        prgTotalScore.Value = (float)qActivity;
+                        prgActiveClass.Value = (float)qEvaPoint.Value;
                     }
 
                     drawChart(id);
@@ -479,13 +479,11 @@ namespace ClassSRM
         private void btnBookEva_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointBook().ShowDialog();
-            btnRefresh_Click(null, null);
         }
 
         private void btnActPoint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointActivity().ShowDialog();
-            btnRefresh_Click(null, null);
         }
 
         private void btnQuastion_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
