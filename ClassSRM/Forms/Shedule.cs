@@ -45,6 +45,7 @@ namespace ClassSRM.Forms
 
             resStorage.DataSource = resources;
             aptStorage.DataSource = apts;
+            schedulerControl1.GoToToday();
         }
 
         private void schedulerStorage1_AppointmentsInserted(object sender, PersistentObjectsEventArgs e)

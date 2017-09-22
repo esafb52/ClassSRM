@@ -76,7 +76,7 @@ namespace ClassSRM.Forms
                 try
                 {
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
-                    var result = XtraMessageBox.Show("با حذف مدرسه، تمامی دانش آموزان آن حذف خواهند شد.آیا ادامه می دهید؟", "خطا", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    var result = XtraMessageBox.Show("با حذف مدرسه، تمامی دانش آموزان آن حذف خواهند شد.آیا ادامه می دهید؟", "خطا", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)
                     {
                         dc.DeleteSchool(id);

@@ -49,8 +49,9 @@ namespace ClassSRM
         //Load Student and Set Default School to Config
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
-            Config.AddUpdateAppSettings("Default School", cmbClass.EditValue.ToString());
+            Config.AddUpdateAppSettings("Default School", cmbClass.ItemIndex.ToString());
             LoadStudent();
+            gridView1_FocusedRowChanged(null, null);
         }
 
         //Custome Persian Date
@@ -93,6 +94,8 @@ namespace ClassSRM
 
             resStorage.DataSource = resources;
             aptStorage.DataSource = apts;
+            schedulerControl1.GoToToday();
+
         }
 
         //Get Student Statictic Scores and Data
@@ -345,7 +348,8 @@ namespace ClassSRM
         //Load Student
         private void LoadStudent()
         {
-            int id = Convert.ToInt32(Config.ReadSetting("Default School"));
+
+            int id = (int)cmbClass.EditValue;
             SplashScreenManager.ShowForm(typeof(WaitForm1));
             tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == id select v;
             SplashScreenManager.CloseDefaultWaitForm();
@@ -360,8 +364,6 @@ namespace ClassSRM
             pCalendar.DateTime = DateTime.Now;
             initScheduler();
             txtDate1.DateTime = DateTime.Now;
-
-           
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -442,11 +444,13 @@ namespace ClassSRM
         private void btnAddSchool_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new AddSchool().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnAddStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new AddStudent().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnAddUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -462,11 +466,13 @@ namespace ClassSRM
         private void btnBookEva_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointBook().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnActPoint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointActivity().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnQuastion_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -507,26 +513,31 @@ namespace ClassSRM
         private void btnSchoolList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new Schoollist().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnStudentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new StudentList().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnLstCheck_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new DailyCheckList().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnActPointList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointActivityList().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnEvaPointList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointBookList().ShowDialog();
+            btnRefresh_Click(null, null);
         }
 
         private void btnWebsite_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -602,8 +613,16 @@ namespace ClassSRM
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
-                cmbClass.ItemIndex = 0;
+                cmbClass.ItemIndex = Convert.ToInt32(Config.ReadSetting("Default School"));
             }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
+            cmbClass.ItemIndex = Convert.ToInt32(Config.ReadSetting("Default School"));
+            LoadStudent();
+            gridView1_FocusedRowChanged(null, null);
         }
 
 

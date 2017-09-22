@@ -65,7 +65,7 @@ namespace ClassSRM.Forms
                 {
                     var dc = new ClassSRMDataContext();
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
-                    var result = XtraMessageBox.Show("آیا از حذف این امتیاز اطمینان دارید؟", "توجه", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    var result = XtraMessageBox.Show("آیا از حذف این امتیاز اطمینان دارید؟", "توجه", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)
                     {
                         dc.DeleteEvaBook(id);
