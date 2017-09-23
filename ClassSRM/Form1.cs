@@ -118,190 +118,191 @@ namespace ClassSRM
                     var stream = new MemoryStream(data);
                     imgStudent.Image = Image.FromStream(stream);
 
-                    SplashScreenManager.ShowForm(typeof(WaitForm1));
-                    id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
-                    var qActivity = (from v in dc.tbl_ActPoints where v.StudentId == id select v.Score).Sum().GetValueOrDefault(0); //دریافت مجموع امتیاز فعالیت ها
-                    var qbitAct = (from v in dc.tbl_Checks where v.StudentId == id && v.Exist == true select v.Exist).Count();  //دریافت حضور فعال
-                    var qbitDeAct = (from v in dc.tbl_Checks where v.StudentId == id && v.Exist == false select v.Exist).Count();   //دریافت حضور غیرفعال
+                id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
+                var qActivity = (from v in dc.tbl_ActPoints where v.StudentId == id select v.Score).Sum().GetValueOrDefault(0); //دریافت مجموع امتیاز فعالیت ها
+                var qbitAct = (from v in dc.tbl_Checks where v.StudentId == id && v.Exist == true select v.Exist).Count();  //دریافت حضور فعال
+                var qbitDeAct = (from v in dc.tbl_Checks where v.StudentId == id && v.Exist == false select v.Exist).Count();   //دریافت حضور غیرفعال
 
-                    var qEvaPoint = (from v in dc.tbl_EvaPoints where v.StudentId == id select v.Score).Sum(); //دریافت مجموع امتیاز درس ها
+                var qEvaPoint = (from v in dc.tbl_EvaPoints where v.StudentId == id select v.Score).Sum(); //دریافت مجموع امتیاز درس ها
 
-                    var queryWin = (from T in ((from tbl_ActPoints in dc.tbl_ActPoints
-                                                select new
-                                                {
-                                                    tbl_ActPoints.StudentId,
-                                                    tbl_ActPoints.Score
-                                                }))
-                                    group T by new
-                                    {
-                                        T.StudentId
-                                    } into g
-                                    orderby
-                                      ((System.Int32?)g.Sum(p => p.Score).GetValueOrDefault(0) ?? (System.Int32?)0) descending
-                                    select new
-                                    {
-                                        g.Key.StudentId,
-                                        HighScore = ((System.Int32?)g.Sum(p => p.Score).GetValueOrDefault(0) ?? (System.Int32?)0)
-                                    }).Take(1);
+                var queryWin = (from T in ((from tbl_ActPoints in dc.tbl_ActPoints
+                                            select new
+                                            {
+                                                tbl_ActPoints.StudentId,
+                                                tbl_ActPoints.Score
+                                            }))
+                                group T by new
+                                {
+                                    T.StudentId
+                                } into g
+                                orderby
+                                  ((System.Int32?)g.Sum(p => p.Score).GetValueOrDefault(0) ?? (System.Int32?)0) descending
+                                select new
+                                {
+                                    g.Key.StudentId,
+                                    HighScore = ((System.Int32?)g.Sum(p => p.Score).GetValueOrDefault(0) ?? (System.Int32?)0)
+                                }).Take(1);
 
-                    var qFarsi = from v in dc.SumEvas where v.Book == "بخوانیم و بنویسیم" && v.StudentId == id select v;
-                    if (qFarsi.Any() == false)
-                    {
-                        prgFarsi.Value = 0;
-                        lblFarsi.Text = "0";
-                    }
-                    else
-                    {
-                        prgFarsi.Value = qFarsi.FirstOrDefault().HighScoreUser;
-                        lblFarsi.Text = qFarsi.FirstOrDefault().HighScoreUser.ToString();
-                    }
-                    var qWork = from v in dc.SumEvas where v.Book == "کار و فناوری" && v.StudentId == id select v;
-                    if (qWork.Any() == false)
-                    {
-                        prgWorkLife.Value = 0;
-                        lblWorkLife.Text = "0";
-                    }
-                    else
-                    {
-                        prgWorkLife.Value = qWork.FirstOrDefault().HighScoreUser;
-                        lblWorkLife.Text = qWork.FirstOrDefault().HighScoreUser.ToString();
-                    }
-                    var qQuran = from v in dc.SumEvas where v.Book == "قرآن" && v.StudentId == id select v;
-                    if (qQuran.Any() == false)
-                    {
-                        prgQuran.Value = 0;
-                        lblQuran.Text = "0";
-                    }
-                    else
-                    {
-                        prgQuran.Value = qQuran.FirstOrDefault().HighScoreUser;
-                        lblQuran.Text = qQuran.FirstOrDefault().HighScoreUser.ToString();
-                    }
+                var qFarsi = from v in dc.SumEvas where v.Book == "بخوانیم و بنویسیم" && v.StudentId == id select v;
+                if (qFarsi.Any() == false)
+                {
+                    prgFarsi.Value = 0;
+                    lblFarsi.Text = "0";
+                }
+                else
+                {
+                    prgFarsi.Value = qFarsi.FirstOrDefault().HighScoreUser;
+                    lblFarsi.Text = qFarsi.FirstOrDefault().HighScoreUser.ToString();
+                }
+                var qWork = from v in dc.SumEvas where v.Book == "کار و فناوری" && v.StudentId == id select v;
+                if (qWork.Any() == false)
+                {
+                    prgWorkLife.Value = 0;
+                    lblWorkLife.Text = "0";
+                }
+                else
+                {
+                    prgWorkLife.Value = qWork.FirstOrDefault().HighScoreUser;
+                    lblWorkLife.Text = qWork.FirstOrDefault().HighScoreUser.ToString();
+                }
+                var qQuran = from v in dc.SumEvas where v.Book == "قرآن" && v.StudentId == id select v;
+                if (qQuran.Any() == false)
+                {
+                    prgQuran.Value = 0;
+                    lblQuran.Text = "0";
+                }
+                else
+                {
+                    prgQuran.Value = qQuran.FirstOrDefault().HighScoreUser;
+                    lblQuran.Text = qQuran.FirstOrDefault().HighScoreUser.ToString();
+                }
 
-                    var qLife = from v in dc.SumEvas where v.Book == "مهارت های زندگی و تربیتی" && v.StudentId == id select v;
-                    if (qLife.Any() == false)
-                    {
-                        prgLife.Value = 0;
-                        lblLife.Text = "0";
-                    }
-                    else
-                    {
-                        prgLife.Value = qLife.FirstOrDefault().HighScoreUser;
-                        lblLife.Text = qLife.FirstOrDefault().HighScoreUser.ToString();
-                    }
-                    var qTafakor = from v in dc.SumEvas where v.Book == "تفکر" && v.StudentId == id select v;
-                    if (qTafakor.Any() == false)
-                    {
-                        prgTafakor.Value = 0;
-                        lblTafakor.Text = "0";
-                    }
-                    else
-                    {
-                        prgTafakor.Value = qTafakor.FirstOrDefault().HighScoreUser;
-                        lblTafakor.Text = qTafakor.FirstOrDefault().HighScoreUser.ToString();
-                    }
+                var qLife = from v in dc.SumEvas where v.Book == "مهارت های زندگی و تربیتی" && v.StudentId == id select v;
+                if (qLife.Any() == false)
+                {
+                    prgLife.Value = 0;
+                    lblLife.Text = "0";
+                }
+                else
+                {
+                    prgLife.Value = qLife.FirstOrDefault().HighScoreUser;
+                    lblLife.Text = qLife.FirstOrDefault().HighScoreUser.ToString();
+                }
+                var qTafakor = from v in dc.SumEvas where v.Book == "تفکر" && v.StudentId == id select v;
+                if (qTafakor.Any() == false)
+                {
+                    prgTafakor.Value = 0;
+                    lblTafakor.Text = "0";
+                }
+                else
+                {
+                    prgTafakor.Value = qTafakor.FirstOrDefault().HighScoreUser;
+                    lblTafakor.Text = qTafakor.FirstOrDefault().HighScoreUser.ToString();
+                }
 
-                    var qHedye = from v in dc.SumEvas where v.Book == "هدیه های آسمانی" && v.StudentId == id select v;
-                    if (qHedye.Any() == false)
-                    {
-                        prgHedye.Value = 0;
-                        lblHedye.Text = "0";
-                    }
-                    else
-                    {
-                        prgHedye.Value = qHedye.FirstOrDefault().HighScoreUser;
-                        lblHedye.Text = qHedye.FirstOrDefault().HighScoreUser.ToString();
-                    }
+                var qHedye = from v in dc.SumEvas where v.Book == "هدیه های آسمانی" && v.StudentId == id select v;
+                if (qHedye.Any() == false)
+                {
+                    prgHedye.Value = 0;
+                    lblHedye.Text = "0";
+                }
+                else
+                {
+                    prgHedye.Value = qHedye.FirstOrDefault().HighScoreUser;
+                    lblHedye.Text = qHedye.FirstOrDefault().HighScoreUser.ToString();
+                }
 
-                    var qEmla = from v in dc.SumEvas where v.Book == "املا/انشا" && v.StudentId == id select v;
-                    if (qEmla.Any() == false)
-                    {
-                        prgEmla.Value = 0;
-                        lblEmla.Text = "0";
-                    }
-                    else
-                    {
-                        prgEmla.Value = qEmla.FirstOrDefault().HighScoreUser;
-                        lblEmla.Text = qEmla.FirstOrDefault().HighScoreUser.ToString();
-                    }
+                var qEmla = from v in dc.SumEvas where v.Book == "املا/انشا" && v.StudentId == id select v;
+                if (qEmla.Any() == false)
+                {
+                    prgEmla.Value = 0;
+                    lblEmla.Text = "0";
+                }
+                else
+                {
+                    prgEmla.Value = qEmla.FirstOrDefault().HighScoreUser;
+                    lblEmla.Text = qEmla.FirstOrDefault().HighScoreUser.ToString();
+                }
 
-                    var qEjtemayi = from v in dc.SumEvas where v.Book == "اجتماعی" && v.StudentId == id select v;
-                    if (qEjtemayi.Any() == false)
-                    {
-                        prgEjtemayi.Value = 0;
-                        lblEjtemayi.Text = "0";
-                    }
-                    else
-                    {
-                        prgEjtemayi.Value = qEjtemayi.FirstOrDefault().HighScoreUser;
-                        lblEjtemayi.Text = qEjtemayi.FirstOrDefault().HighScoreUser.ToString();
-                    }
+                var qEjtemayi = from v in dc.SumEvas where v.Book == "اجتماعی" && v.StudentId == id select v;
+                if (qEjtemayi.Any() == false)
+                {
+                    prgEjtemayi.Value = 0;
+                    lblEjtemayi.Text = "0";
+                }
+                else
+                {
+                    prgEjtemayi.Value = qEjtemayi.FirstOrDefault().HighScoreUser;
+                    lblEjtemayi.Text = qEjtemayi.FirstOrDefault().HighScoreUser.ToString();
+                }
 
-                    var qOlom = from v in dc.SumEvas where v.Book == "علوم" && v.StudentId == id select v;
-                    if (qOlom.Any() == false)
-                    {
-                        prgOlom.Value = 0;
-                        lblOlom.Text = "0";
-                    }
-                    else
-                    {
-                        prgOlom.Value = qOlom.FirstOrDefault().HighScoreUser;
-                        lblOlom.Text = qOlom.FirstOrDefault().HighScoreUser.ToString();
-                    }
+                var qOlom = from v in dc.SumEvas where v.Book == "علوم" && v.StudentId == id select v;
+                if (qOlom.Any() == false)
+                {
+                    prgOlom.Value = 0;
+                    lblOlom.Text = "0";
+                }
+                else
+                {
+                    prgOlom.Value = qOlom.FirstOrDefault().HighScoreUser;
+                    lblOlom.Text = qOlom.FirstOrDefault().HighScoreUser.ToString();
+                }
 
-                    var qRiazi = from v in dc.SumEvas where v.Book == "ریاضی" && v.StudentId == id select v;
-                    if (qRiazi.Any() == false)
-                    {
-                        prgRiazi.Value = 0;
-                        lblRiazi.Text = "0";
-                    }
-                    else
-                    {
-                        prgRiazi.Value = qRiazi.FirstOrDefault().HighScoreUser;
-                        lblRiazi.Text = qRiazi.FirstOrDefault().HighScoreUser.ToString();
-                    }
-                    SplashScreenManager.CloseDefaultWaitForm();
+                var qRiazi = from v in dc.SumEvas where v.Book == "ریاضی" && v.StudentId == id select v;
+                if (qRiazi.Any() == false)
+                {
+                    prgRiazi.Value = 0;
+                    lblRiazi.Text = "0";
+                }
+                else
+                {
+                    prgRiazi.Value = qRiazi.FirstOrDefault().HighScoreUser;
+                    lblRiazi.Text = qRiazi.FirstOrDefault().HighScoreUser.ToString();
+                }
 
+                if (queryWin.Any())
+                {
                     var diffrence = (100 - (qActivity * 100) / (queryWin.FirstOrDefault().HighScore)).ToString();
-
                     lblDifference.Text = diffrence;
                     if (lblDifference.Text == "0")
                         lblDifference.Text = "برتر";
                     prgDifference.Value = Convert.ToInt32(diffrence);
-                    lblActive.Text = qbitAct.ToString();
-                    prgActive.Value = qbitAct;
-                    lblDeAct.Text = qbitDeAct.ToString();
-                    prgDeActive.Value = qbitDeAct;
+                }
+               
+                lblActive.Text = qbitAct.ToString();
+                prgActive.Value = qbitAct;
+                lblDeAct.Text = qbitDeAct.ToString();
+                prgDeActive.Value = qbitDeAct;
 
-                    if (qEvaPoint == null)
-                    {
-                        lblEvaPoint.Text = "0";
-                        prgTotalScore.Value = 0;
-                    }
-                    else
-                    {
-                        lblEvaPoint.Text = qEvaPoint.ToString();
-                        prgTotalScore.Value = qEvaPoint.Value;
-                    }
-                    //رفع خطای خالی بودن امتیاز ها
-                    if (qActivity.ToString() == null)
-                    {
-                        prgActiveClass.Value = 0;
-                        lblActivity.Text = "0";
-                    }
-                    else
-                    {
-                        lblActivity.Text = qActivity.ToString();
-                        prgActiveClass.Value = (float)qEvaPoint.Value;
-                    }
+                if (qEvaPoint == null)
+                {
+                    lblEvaPoint.Text = "0";
+                    prgTotalScore.Value = 0;
+                }
+                else
+                {
+                    lblEvaPoint.Text = qEvaPoint.ToString();
+                    prgTotalScore.Value = qEvaPoint.Value;
+                }
+                //رفع خطای خالی بودن امتیاز ها
 
-                    drawChart(id);
+                if (qActivity == 0)
+                {
+                    prgActiveClass.Value = 0;
+                    lblActivity.Text = "0";
+                }
+                else
+                {
+                    lblActivity.Text = qActivity.ToString();
+                    prgActiveClass.Value = (float)qEvaPoint.Value;
+                }
+
+                drawChart(id);
                 }
             }
-            catch (Exception)
-            {
-            }
-        }
+            catch (InvalidOperationException ex) { MessageBox.Show(ex.Message); }
+            catch (Exception ex) { MessageBox.Show(ex.Message);}
+}
 
         private void drawChart(int id)
         {
@@ -362,9 +363,9 @@ namespace ClassSRM
             if (count > 0)
             {
                 int id = (int)cmbClass.EditValue;
-                SplashScreenManager.ShowForm(typeof(WaitForm1));
+                splashScreenManager2.ShowWaitForm();
                 tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == id select v;
-                SplashScreenManager.CloseDefaultWaitForm();
+                splashScreenManager2.CloseWaitForm();
             }
         }
 
