@@ -352,4 +352,40 @@
     <Parameter Name="Label" Parameter="label" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
+  <Function Name="dbo.SelectSumEvaPoint" Method="SelectSumEvaPoint">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectSumEvaPointResult">
+      <Column Name="SUMEVA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectSumBook" Method="SelectSumBook">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Book" Parameter="book" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="SelectSumBookResult">
+      <Column Name="HighScoreUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectQActivity" Method="SelectQActivity">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectQActivityResult">
+      <Column Name="Score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectNOTExistCheck" Method="SelectNOTExistCheck">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectNOTExistCheckResult">
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectExistCheck" Method="SelectExistCheck">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectExistCheckResult">
+      <Column Name="Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectQueryWin" Method="SelectQueryWin">
+    <ElementType Name="SelectQueryWinResult">
+      <Column Name="HighScore" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>

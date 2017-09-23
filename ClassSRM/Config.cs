@@ -15,6 +15,7 @@ using System.Configuration;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -120,6 +121,12 @@ namespace ClassSRM
                     View.ExportToPdf(saveFileDialog1.FileName);
                 }
             }
+        }
+
+        public static void LINQTOSQL(ClassSRMDataContext dc,IQueryable Query)
+        {
+            string generatedSql = dc.GetCommand(Query).CommandText;
+            Console.WriteLine(generatedSql);
         }
 
         #region "Sql Script Execute"

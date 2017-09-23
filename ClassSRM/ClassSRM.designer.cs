@@ -402,6 +402,48 @@ namespace ClassSRM
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, caption, desc, status, label);
 			return ((int)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectSumEvaPoint")]
+		public ISingleResult<SelectSumEvaPointResult> SelectSumEvaPoint([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<SelectSumEvaPointResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectSumBook")]
+		public ISingleResult<SelectSumBookResult> SelectSumBook([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Book", DbType="NVarChar(50)")] string book)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, book);
+			return ((ISingleResult<SelectSumBookResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectQActivity")]
+		public ISingleResult<SelectQActivityResult> SelectQActivity([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<SelectQActivityResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectNOTExistCheck")]
+		public ISingleResult<SelectNOTExistCheckResult> SelectNOTExistCheck([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<SelectNOTExistCheckResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectExistCheck")]
+		public ISingleResult<SelectExistCheckResult> SelectExistCheck([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<SelectExistCheckResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectQueryWin")]
+		public ISingleResult<SelectQueryWinResult> SelectQueryWin()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<SelectQueryWinResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_User")]
@@ -3181,6 +3223,162 @@ namespace ClassSRM
 				if ((this._StuImage != value))
 				{
 					this._StuImage = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectSumEvaPointResult
+	{
+		
+		private int _SUMEVA;
+		
+		public SelectSumEvaPointResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SUMEVA", DbType="Int NOT NULL")]
+		public int SUMEVA
+		{
+			get
+			{
+				return this._SUMEVA;
+			}
+			set
+			{
+				if ((this._SUMEVA != value))
+				{
+					this._SUMEVA = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectSumBookResult
+	{
+		
+		private int _HighScoreUser;
+		
+		public SelectSumBookResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HighScoreUser", DbType="Int NOT NULL")]
+		public int HighScoreUser
+		{
+			get
+			{
+				return this._HighScoreUser;
+			}
+			set
+			{
+				if ((this._HighScoreUser != value))
+				{
+					this._HighScoreUser = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectQActivityResult
+	{
+		
+		private int _Score;
+		
+		public SelectQActivityResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Score", DbType="Int NOT NULL")]
+		public int Score
+		{
+			get
+			{
+				return this._Score;
+			}
+			set
+			{
+				if ((this._Score != value))
+				{
+					this._Score = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectNOTExistCheckResult
+	{
+		
+		private int _Count;
+		
+		public SelectNOTExistCheckResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Count", DbType="Int NOT NULL")]
+		public int Count
+		{
+			get
+			{
+				return this._Count;
+			}
+			set
+			{
+				if ((this._Count != value))
+				{
+					this._Count = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectExistCheckResult
+	{
+		
+		private int _Count;
+		
+		public SelectExistCheckResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Count", DbType="Int NOT NULL")]
+		public int Count
+		{
+			get
+			{
+				return this._Count;
+			}
+			set
+			{
+				if ((this._Count != value))
+				{
+					this._Count = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectQueryWinResult
+	{
+		
+		private int _HighScore;
+		
+		public SelectQueryWinResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HighScore", DbType="Int NOT NULL")]
+		public int HighScore
+		{
+			get
+			{
+				return this._HighScore;
+			}
+			set
+			{
+				if ((this._HighScore != value))
+				{
+					this._HighScore = value;
 				}
 			}
 		}
