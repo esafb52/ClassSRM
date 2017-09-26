@@ -1,12 +1,11 @@
-﻿
-/****************************** ghost1372.github.io ******************************\
+﻿/****************************** ghost1372.github.io ******************************\
 *	Module Name:	Form1.cs
 *	Project:		ClassSRM
 *	Copyright (C) 2017 Mahdi Hosseini, All rights reserved.
 *	This software may be modified and distributed under the terms of the MIT license.  See LICENSE file for details.
 *
 *	Written by Mahdi Hosseini <Mahdidvb72@gmail.com>,  2017, 7, 26, 01:29 ب.ظ
-*	
+*
 ***********************************************************************************/
 
 using ArazUpdater;
@@ -153,7 +152,6 @@ namespace ClassSRM
                             lblDifference.Text = "برتر";
                         prgDifference.Value = 0;
                     }
-                    
 
                     var qFarsi = dc.SelectSumBook(id, "بخوانیم و بنویسیم").First();
                     prgFarsi.Value = qFarsi.HighScoreUser;
@@ -198,9 +196,10 @@ namespace ClassSRM
                     drawChart(id);
                 }
             }
-            catch (InvalidOperationException ex) { MessageBox.Show(ex.Message); }
-            catch (Exception ex) { MessageBox.Show(ex.Message);}
-}
+            catch (InvalidOperationException ex) { XtraMessageBox.Show(ex.Message); }
+            //catch (TaskCanceledException ex) { XtraMessageBox.Show(ex.Message); }
+            catch (Exception ex) { XtraMessageBox.Show(ex.Message); }
+        }
 
         private void drawChart(int id)
         {

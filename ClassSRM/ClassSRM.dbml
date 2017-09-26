@@ -388,4 +388,22 @@
       <Column Name="HighScore" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.SelectStudentByClassId" Method="SelectStudentByClassId">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectStudentByClassIdResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StuClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuGender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StuImage" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SelectCurScore" Method="SelectCurScore">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SelectCurScoreResult">
+      <Column Name="ScoreSum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
 </Database>

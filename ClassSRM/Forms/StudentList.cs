@@ -30,7 +30,7 @@ namespace ClassSRM.Forms
 
         private void StudentList_Load(object sender, EventArgs e)
         {
-            tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
         }
 
@@ -41,33 +41,14 @@ namespace ClassSRM.Forms
 
         private void loadStudent()
         {
-            switch (rd.Properties.Items[rd.SelectedIndex].ToString())
+            try
             {
-                case "همه":
-                    tblStudentBindingSource.DataSource = from v in dc.tbl_Students
-                                                         where v.StuClassId == (int)cmbClass.EditValue
-                                                         select v;
-                    break;
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
+            }
+            catch (InvalidOperationException ex)
+            {
 
-                case "پسر":
-                    tblStudentBindingSource.DataSource = from v in dc.tbl_Students
-                                                         where v.StuClassId == (int)cmbClass.EditValue &&
-                                                         v.StuGender == "پسر"
-                                                         select v;
-                    break;
-
-                case "دختر":
-                    tblStudentBindingSource.DataSource = from v in dc.tbl_Students
-                                                         where v.StuClassId == (int)cmbClass.EditValue &&
-                                                         v.StuGender == "دختر"
-                                                         select v;
-                    break;
-
-                default:
-                    tblStudentBindingSource.DataSource = from v in dc.tbl_Students
-                                                         where v.StuClassId == (int)cmbClass.EditValue
-                                                         select v;
-                    break;
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -158,7 +139,6 @@ namespace ClassSRM.Forms
 
         private void rd_SelectedIndexChanged(object sender, EventArgs e)
         {
-            loadStudent();
         }
 
         private void StudentList_KeyDown(object sender, KeyEventArgs e)

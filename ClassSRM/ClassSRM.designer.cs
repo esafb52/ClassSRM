@@ -444,6 +444,20 @@ namespace ClassSRM
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<SelectQueryWinResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectStudentByClassId")]
+		public ISingleResult<SelectStudentByClassIdResult> SelectStudentByClassId([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<SelectStudentByClassIdResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectCurScore")]
+		public ISingleResult<SelectCurScoreResult> SelectCurScore([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<SelectCurScoreResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_User")]
@@ -3379,6 +3393,166 @@ namespace ClassSRM
 				if ((this._HighScore != value))
 				{
 					this._HighScore = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectStudentByClassIdResult
+	{
+		
+		private int _Id;
+		
+		private System.Nullable<int> _StuClassId;
+		
+		private string _StuName;
+		
+		private string _StuLName;
+		
+		private string _StuFName;
+		
+		private string _StuGender;
+		
+		private System.Data.Linq.Binary _StuImage;
+		
+		public SelectStudentByClassIdResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL")]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this._Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuClassId", DbType="Int")]
+		public System.Nullable<int> StuClassId
+		{
+			get
+			{
+				return this._StuClassId;
+			}
+			set
+			{
+				if ((this._StuClassId != value))
+				{
+					this._StuClassId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
+		public string StuName
+		{
+			get
+			{
+				return this._StuName;
+			}
+			set
+			{
+				if ((this._StuName != value))
+				{
+					this._StuName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
+		public string StuLName
+		{
+			get
+			{
+				return this._StuLName;
+			}
+			set
+			{
+				if ((this._StuLName != value))
+				{
+					this._StuLName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuFName", DbType="NVarChar(100)")]
+		public string StuFName
+		{
+			get
+			{
+				return this._StuFName;
+			}
+			set
+			{
+				if ((this._StuFName != value))
+				{
+					this._StuFName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuGender", DbType="NVarChar(50)")]
+		public string StuGender
+		{
+			get
+			{
+				return this._StuGender;
+			}
+			set
+			{
+				if ((this._StuGender != value))
+				{
+					this._StuGender = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuImage", DbType="Image")]
+		public System.Data.Linq.Binary StuImage
+		{
+			get
+			{
+				return this._StuImage;
+			}
+			set
+			{
+				if ((this._StuImage != value))
+				{
+					this._StuImage = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectCurScoreResult
+	{
+		
+		private int _ScoreSum;
+		
+		public SelectCurScoreResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ScoreSum", DbType="Int NOT NULL")]
+		public int ScoreSum
+		{
+			get
+			{
+				return this._ScoreSum;
+			}
+			set
+			{
+				if ((this._ScoreSum != value))
+				{
+					this._ScoreSum = value;
 				}
 			}
 		}

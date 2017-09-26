@@ -39,34 +39,9 @@ namespace ClassSRM.Forms
 
             rd_SelectedIndexChanged(null, null);
 
-            tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
-            int count = (cmbClass.Properties.DataSource as IList).Count;
-            if (count > 0)
-            {
-                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
-                cmbStudent.ItemIndex = 0;
-                var query = from tbl_ActPoints in (from tbl_ActPoints in dc.tbl_ActPoints
-                                                   where tbl_ActPoints.StudentId == (int)cmbStudent.EditValue
-                                                   select new
-                                                   {
-                                                       tbl_ActPoints.Score,
-                                                       Dummy = "x"
-                                                   })
-                            group tbl_ActPoints by new { tbl_ActPoints.Dummy } into g
-                            select new
-                            {
-                                ScoreSum = (int?)g.Sum(p => p.Score)
-                            };
-                if (query.FirstOrDefault() == null)
-                {
-                    lblCurScore.Text = "0";
-                }
-                else
-                {
-                    lblCurScore.Text = query.FirstOrDefault().ScoreSum.ToString();
-                }
-            }
+           
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -97,53 +72,18 @@ namespace ClassSRM.Forms
 
         private void cmbStudent_EditValueChanged(object sender, EventArgs e)
         {
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
-            var query = from tbl_ActPoints in (from tbl_ActPoints in dc.tbl_ActPoints
-                                               where tbl_ActPoints.StudentId == (int)cmbStudent.EditValue
-                                               select new
-                                               {
-                                                   tbl_ActPoints.Score,
-                                                   Dummy = "x"
-                                               })
-                        group tbl_ActPoints by new { tbl_ActPoints.Dummy } into g
-                        select new
-                        {
-                            ScoreSum = (int?)g.Sum(p => p.Score)
-                        };
-            if (query.FirstOrDefault() == null)
-            {
-                lblCurScore.Text = "0";
-            }
-            else
-            {
-                lblCurScore.Text = query.FirstOrDefault().ScoreSum.ToString();
-            }
+            var query = dc.SelectCurScore((int)cmbStudent.EditValue).First();
+            lblCurScore.Text = query.ScoreSum.ToString();
         }
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
-            cmbStudent.ItemIndex = 0;
-            var query = from tbl_ActPoints in (from tbl_ActPoints in dc.tbl_ActPoints
-                                               where tbl_ActPoints.StudentId == (int)cmbStudent.EditValue
-                                               select new
-                                               {
-                                                   tbl_ActPoints.Score,
-                                                   Dummy = "x"
-                                               })
-                        group tbl_ActPoints by new { tbl_ActPoints.Dummy } into g
-                        select new
-                        {
-                            ScoreSum = (int?)g.Sum(p => p.Score)
-                        };
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if (count > 0)
+            {
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
+                cmbStudent.ItemIndex = 0;
 
-            if (query.FirstOrDefault() == null)
-            {
-                lblCurScore.Text = "0";
-            }
-            else
-            {
-                lblCurScore.Text = query.FirstOrDefault().ScoreSum.ToString();
             }
         }
 
