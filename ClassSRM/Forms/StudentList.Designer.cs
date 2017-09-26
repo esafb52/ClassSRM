@@ -40,7 +40,6 @@
             this.colStuLName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStuFName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStuGender = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colStuImage = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.btnDel = new DevExpress.XtraEditors.SimpleButton();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
@@ -158,8 +157,7 @@
             this.colStuName,
             this.colStuLName,
             this.colStuFName,
-            this.colStuGender,
-            this.colStuImage});
+            this.colStuGender});
             this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -211,15 +209,6 @@
             this.colStuGender.Name = "colStuGender";
             this.colStuGender.Visible = true;
             this.colStuGender.VisibleIndex = 3;
-            // 
-            // colStuImage
-            // 
-            this.colStuImage.Caption = "عکس";
-            this.colStuImage.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.colStuImage.FieldName = "StuImage";
-            this.colStuImage.Name = "colStuImage";
-            this.colStuImage.Visible = true;
-            this.colStuImage.VisibleIndex = 4;
             // 
             // repositoryItemPictureEdit1
             // 
@@ -644,7 +633,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colStuLName;
         private DevExpress.XtraGrid.Columns.GridColumn colStuFName;
         private DevExpress.XtraGrid.Columns.GridColumn colStuGender;
-        private DevExpress.XtraGrid.Columns.GridColumn colStuImage;
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;

@@ -21,8 +21,6 @@ namespace ClassSRM.Forms
 {
     public partial class StudentList : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         public StudentList()
         {
             InitializeComponent();
@@ -30,6 +28,8 @@ namespace ClassSRM.Forms
 
         private void StudentList_Load(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
         }
@@ -43,7 +43,9 @@ namespace ClassSRM.Forms
         {
             try
             {
-                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
+                var dc = new ClassSRMDataContext(Config.connection);
+
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
             }
             catch (InvalidOperationException ex)
             {
@@ -58,7 +60,10 @@ namespace ClassSRM.Forms
             {
                 try
                 {
-                    byte[] imageData = imageToByteArray(img.Image);
+                    var dc = new ClassSRMDataContext(Config.connection);
+
+                    byte[] imageData = null;
+                    imageData = imageToByteArray(img.Image);
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     dc.UpdateStudent(id, (int)cmbClass.EditValue, txtName.Text, txtLName.Text, txtFName.Text, cmbGender.Text, imageData);
                     tblStudentBindingSource.EndEdit();
@@ -86,11 +91,14 @@ namespace ClassSRM.Forms
                     txtName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuName").ToString();
                     txtFName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuFName").ToString();
                     txtLName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuLName").ToString();
-                    cmbClass.EditValue = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuClassId");
                     cmbGender.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuGender").ToString();
-                    byte[] data = ((System.Data.Linq.Binary)(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuImage"))).ToArray();
-                    var stream = new MemoryStream(data);
-                    img.Image = Image.FromStream(stream);
+                    byte[] data = null;
+                    data = ((System.Data.Linq.Binary)(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuImage"))).ToArray();
+
+                    using (MemoryStream stream = new MemoryStream(data))
+                    {
+                        img.Image = Image.FromStream(stream);
+                    }
                 }
                 catch (Exception)
                 {
@@ -104,6 +112,7 @@ namespace ClassSRM.Forms
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     var result = XtraMessageBox.Show("با حذف دانش آموز، تمامی امتیازات آن حذف خواهند شد.آیا ادامه می دهید؟", "توجه", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)
@@ -135,10 +144,6 @@ namespace ClassSRM.Forms
         private void btnLoad_Click(object sender, EventArgs e)
         {
             img.LoadImage();
-        }
-
-        private void rd_SelectedIndexChanged(object sender, EventArgs e)
-        {
         }
 
         private void StudentList_KeyDown(object sender, KeyEventArgs e)

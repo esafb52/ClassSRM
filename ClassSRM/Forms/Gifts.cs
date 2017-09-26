@@ -51,7 +51,7 @@ namespace ClassSRM.Forms
             {
                 var dc = new ClassSRMDataContext(Config.connection);
 
-                gridControl1.DataSource = dc.SelectGifts((int)cmbClass.EditValue, strYear + "/" + strCurMonth + "/" + "01", strYear + "/" + strCurMonth + "/" + "31", strYear + "/" + PrevMonth.ToString("00") + "/" + "01", strYear + "/" + PrevMonth.ToString("00") + "/" + "31");
+                bsStudent.DataSource = dc.SelectGifts((int)cmbClass.EditValue, strYear + "/" + strCurMonth + "/" + "01", strYear + "/" + strCurMonth + "/" + "31", strYear + "/" + PrevMonth.ToString("00") + "/" + "01", strYear + "/" + PrevMonth.ToString("00") + "/" + "31");
             }
             catch (Exception ex)
             {

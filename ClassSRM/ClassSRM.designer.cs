@@ -284,25 +284,11 @@ namespace ClassSRM
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectTopYear")]
-		public ISingleResult<SelectTopYearResult> SelectTopYear([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId);
-			return ((ISingleResult<SelectTopYearResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectTopMonth")]
 		public ISingleResult<SelectTopMonthResult> SelectTopMonth([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date1", DbType="NVarChar(12)")] string date1, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Date2", DbType="NVarChar(12)")] string date2)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId, date1, date2);
 			return ((ISingleResult<SelectTopMonthResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectGifts")]
-		public ISingleResult<SelectGiftsResult> SelectGifts([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMinCur", DbType="NVarChar(12)")] string dateMinCur, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMaxCur", DbType="NVarChar(12)")] string dateMaxCur, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMinPrev", DbType="NVarChar(12)")] string dateMinPrev, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMaxPrev", DbType="NVarChar(12)")] string dateMaxPrev)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId, dateMinCur, dateMaxCur, dateMinPrev, dateMaxPrev);
-			return ((ISingleResult<SelectGiftsResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.UpdateUser")]
@@ -471,6 +457,20 @@ namespace ClassSRM
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, date1, date2);
 			return ((ISingleResult<Select2DatesResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectTopYear")]
+		public ISingleResult<SelectTopYearResult> SelectTopYear([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId);
+			return ((ISingleResult<SelectTopYearResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectGifts")]
+		public ISingleResult<SelectGiftsResult> SelectGifts([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchoolId", DbType="Int")] System.Nullable<int> schoolId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMinCur", DbType="NVarChar(12)")] string dateMinCur, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMaxCur", DbType="NVarChar(12)")] string dateMaxCur, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMinPrev", DbType="NVarChar(12)")] string dateMinPrev, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DateMaxPrev", DbType="NVarChar(12)")] string dateMaxPrev)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId, dateMinCur, dateMaxCur, dateMinPrev, dateMaxPrev);
+			return ((ISingleResult<SelectGiftsResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -2944,104 +2944,6 @@ namespace ClassSRM
 		}
 	}
 	
-	public partial class SelectTopYearResult
-	{
-		
-		private System.Nullable<int> _StudentId;
-		
-		private int _HighScoreUser;
-		
-		private string _StuName;
-		
-		private string _StuLName;
-		
-		private System.Data.Linq.Binary _StuImage;
-		
-		public SelectTopYearResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
-		public System.Nullable<int> StudentId
-		{
-			get
-			{
-				return this._StudentId;
-			}
-			set
-			{
-				if ((this._StudentId != value))
-				{
-					this._StudentId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HighScoreUser", DbType="Int NOT NULL")]
-		public int HighScoreUser
-		{
-			get
-			{
-				return this._HighScoreUser;
-			}
-			set
-			{
-				if ((this._HighScoreUser != value))
-				{
-					this._HighScoreUser = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
-		public string StuName
-		{
-			get
-			{
-				return this._StuName;
-			}
-			set
-			{
-				if ((this._StuName != value))
-				{
-					this._StuName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
-		public string StuLName
-		{
-			get
-			{
-				return this._StuLName;
-			}
-			set
-			{
-				if ((this._StuLName != value))
-				{
-					this._StuLName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuImage", DbType="Image")]
-		public System.Data.Linq.Binary StuImage
-		{
-			get
-			{
-				return this._StuImage;
-			}
-			set
-			{
-				if ((this._StuImage != value))
-				{
-					this._StuImage = value;
-				}
-			}
-		}
-	}
-	
 	public partial class SelectTopMonthResult
 	{
 		
@@ -3135,122 +3037,6 @@ namespace ClassSRM
 				if ((this._HighScoreUser != value))
 				{
 					this._HighScoreUser = value;
-				}
-			}
-		}
-	}
-	
-	public partial class SelectGiftsResult
-	{
-		
-		private string _HaveGift;
-		
-		private System.Nullable<int> _StudentId;
-		
-		private string _StuName;
-		
-		private string _StuLName;
-		
-		private string _StuFName;
-		
-		private System.Data.Linq.Binary _StuImage;
-		
-		public SelectGiftsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HaveGift", DbType="NVarChar(22) NOT NULL", CanBeNull=false)]
-		public string HaveGift
-		{
-			get
-			{
-				return this._HaveGift;
-			}
-			set
-			{
-				if ((this._HaveGift != value))
-				{
-					this._HaveGift = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
-		public System.Nullable<int> StudentId
-		{
-			get
-			{
-				return this._StudentId;
-			}
-			set
-			{
-				if ((this._StudentId != value))
-				{
-					this._StudentId = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
-		public string StuName
-		{
-			get
-			{
-				return this._StuName;
-			}
-			set
-			{
-				if ((this._StuName != value))
-				{
-					this._StuName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
-		public string StuLName
-		{
-			get
-			{
-				return this._StuLName;
-			}
-			set
-			{
-				if ((this._StuLName != value))
-				{
-					this._StuLName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuFName", DbType="NVarChar(100)")]
-		public string StuFName
-		{
-			get
-			{
-				return this._StuFName;
-			}
-			set
-			{
-				if ((this._StuFName != value))
-				{
-					this._StuFName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuImage", DbType="Image")]
-		public System.Data.Linq.Binary StuImage
-		{
-			get
-			{
-				return this._StuImage;
-			}
-			set
-			{
-				if ((this._StuImage != value))
-				{
-					this._StuImage = value;
 				}
 			}
 		}
@@ -3861,6 +3647,202 @@ namespace ClassSRM
 				if ((this._Date != value))
 				{
 					this._Date = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectTopYearResult
+	{
+		
+		private System.Nullable<int> _StudentId;
+		
+		private int _HighScoreUser;
+		
+		private string _StuName;
+		
+		private string _StuLName;
+		
+		private string _StuFName;
+		
+		public SelectTopYearResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
+		public System.Nullable<int> StudentId
+		{
+			get
+			{
+				return this._StudentId;
+			}
+			set
+			{
+				if ((this._StudentId != value))
+				{
+					this._StudentId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HighScoreUser", DbType="Int NOT NULL")]
+		public int HighScoreUser
+		{
+			get
+			{
+				return this._HighScoreUser;
+			}
+			set
+			{
+				if ((this._HighScoreUser != value))
+				{
+					this._HighScoreUser = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
+		public string StuName
+		{
+			get
+			{
+				return this._StuName;
+			}
+			set
+			{
+				if ((this._StuName != value))
+				{
+					this._StuName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
+		public string StuLName
+		{
+			get
+			{
+				return this._StuLName;
+			}
+			set
+			{
+				if ((this._StuLName != value))
+				{
+					this._StuLName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuFName", DbType="NVarChar(100)")]
+		public string StuFName
+		{
+			get
+			{
+				return this._StuFName;
+			}
+			set
+			{
+				if ((this._StuFName != value))
+				{
+					this._StuFName = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectGiftsResult
+	{
+		
+		private string _HaveGift;
+		
+		private System.Nullable<int> _StudentId;
+		
+		private string _StuName;
+		
+		private string _StuLName;
+		
+		private string _StuFName;
+		
+		public SelectGiftsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HaveGift", DbType="NVarChar(22) NOT NULL", CanBeNull=false)]
+		public string HaveGift
+		{
+			get
+			{
+				return this._HaveGift;
+			}
+			set
+			{
+				if ((this._HaveGift != value))
+				{
+					this._HaveGift = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StudentId", DbType="Int")]
+		public System.Nullable<int> StudentId
+		{
+			get
+			{
+				return this._StudentId;
+			}
+			set
+			{
+				if ((this._StudentId != value))
+				{
+					this._StudentId = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
+		public string StuName
+		{
+			get
+			{
+				return this._StuName;
+			}
+			set
+			{
+				if ((this._StuName != value))
+				{
+					this._StuName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
+		public string StuLName
+		{
+			get
+			{
+				return this._StuLName;
+			}
+			set
+			{
+				if ((this._StuLName != value))
+				{
+					this._StuLName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuFName", DbType="NVarChar(100)")]
+		public string StuFName
+		{
+			get
+			{
+				return this._StuFName;
+			}
+			set
+			{
+				if ((this._StuFName != value))
+				{
+					this._StuFName = value;
 				}
 			}
 		}

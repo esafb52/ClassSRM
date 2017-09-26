@@ -17,8 +17,6 @@ namespace ClassSRM.Forms
 {
     public partial class TopStudent : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         public TopStudent()
         {
             InitializeComponent();
@@ -26,10 +24,13 @@ namespace ClassSRM.Forms
 
         private void TopStudent_Load(object sender, EventArgs e)
         {
+
             if (tabPane1.SelectedPage == tbMonth)
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
+
                     tblSchoolBindingSource.DataSource = dc.SelectSchool();
                     cmbClass.ItemIndex = 0;
                 }
@@ -47,6 +48,8 @@ namespace ClassSRM.Forms
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             string date = txtDate.Text.Substring(0, 7);
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
@@ -60,9 +63,11 @@ namespace ClassSRM.Forms
 
         private void cmbClass2_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             int count = (cmbClass2.Properties.DataSource as IList).Count;
             if (count > 0)
-                gridControl2.DataSource = dc.SelectTopYear((int)cmbClass2.EditValue);
+                bsStudent.DataSource = dc.SelectTopYear((int)cmbClass2.EditValue);
         }
 
         private void btnExport2_Click(object sender, EventArgs e)

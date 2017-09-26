@@ -41,7 +41,7 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemProgressBar1 = new DevExpress.XtraEditors.Repository.RepositoryItemProgressBar();
-            this.colStuImage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colStuFName2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemPictureEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit();
             this.cmbClass2 = new DevExpress.XtraEditors.LookUpEdit();
             this.tblSchoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -72,6 +72,7 @@
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem8 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.bsStudent = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemProgressBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
@@ -106,6 +107,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStudent)).BeginInit();
             this.SuspendLayout();
             // 
             // repositoryItemProgressBar2
@@ -169,6 +171,7 @@
             // 
             // gridControl2
             // 
+            this.gridControl2.DataSource = this.bsStudent;
             this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.gridControl2.Location = new System.Drawing.Point(16, 121);
             this.gridControl2.MainView = this.gridView2;
@@ -188,7 +191,7 @@
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn4,
-            this.colStuImage});
+            this.colStuFName2});
             this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
@@ -223,7 +226,7 @@
             this.gridColumn4.FieldName = "HighScoreUser";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 2;
+            this.gridColumn4.VisibleIndex = 3;
             this.gridColumn4.Width = 161;
             // 
             // repositoryItemProgressBar1
@@ -232,15 +235,14 @@
             this.repositoryItemProgressBar1.Name = "repositoryItemProgressBar1";
             this.repositoryItemProgressBar1.ShowTitle = true;
             // 
-            // colStuImage
+            // colStuFName2
             // 
-            this.colStuImage.Caption = "عکس";
-            this.colStuImage.ColumnEdit = this.repositoryItemPictureEdit1;
-            this.colStuImage.FieldName = "StuImage";
-            this.colStuImage.Name = "colStuImage";
-            this.colStuImage.Visible = true;
-            this.colStuImage.VisibleIndex = 3;
-            this.colStuImage.Width = 177;
+            this.colStuFName2.Caption = "نام پدر";
+            this.colStuFName2.FieldName = "StuFName";
+            this.colStuFName2.Name = "colStuFName2";
+            this.colStuFName2.Visible = true;
+            this.colStuFName2.VisibleIndex = 2;
+            this.colStuFName2.Width = 177;
             // 
             // repositoryItemPictureEdit1
             // 
@@ -610,6 +612,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bsStudent)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -644,7 +647,7 @@
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn colStuImage;
+        private DevExpress.XtraGrid.Columns.GridColumn colStuFName2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraEditors.Repository.RepositoryItemProgressBar repositoryItemProgressBar1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
@@ -658,5 +661,6 @@
         private DevExpress.XtraEditors.SimpleButton btnExport2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.BindingSource bsStudent;
     }
 }

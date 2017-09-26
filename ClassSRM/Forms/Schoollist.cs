@@ -18,8 +18,6 @@ namespace ClassSRM.Forms
 {
     public partial class Schoollist : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         private PersianCalendar pc = new PersianCalendar();
         private string strDate;
 
@@ -33,6 +31,8 @@ namespace ClassSRM.Forms
 
         private void Schoollist_Load(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
         }
 
@@ -42,6 +42,8 @@ namespace ClassSRM.Forms
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
+
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     dc.UpdateSchool(id, txtSName.Text, txtAName.Text, cmbClass.Text, txtDate.Text);
                     tblSchoolBindingSource.EndEdit();
@@ -86,6 +88,8 @@ namespace ClassSRM.Forms
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
+
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     var result = XtraMessageBox.Show("با حذف مدرسه، تمامی دانش آموزان آن حذف خواهند شد.آیا ادامه می دهید؟", "خطا", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)
