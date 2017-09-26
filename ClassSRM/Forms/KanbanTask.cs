@@ -20,7 +20,6 @@ namespace ClassSRM
 {
     public partial class KanBanTask : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public KanBanTask()
         {
@@ -29,7 +28,8 @@ namespace ClassSRM
 
         private void InitData()
         {
-            splashScreenManager1.ShowWaitForm();
+            var dc = new ClassSRMDataContext(Config.connection);
+
             var res = from v in dc.tbl_Tasks
                       select new
                       {
@@ -41,7 +41,6 @@ namespace ClassSRM
                       };
 
             gridControl.DataSource = res;
-            splashScreenManager1.CloseWaitForm();
         }
 
         private void tileView_BeforeItemDrag(object sender, DevExpress.XtraGrid.Views.Tile.BeforeItemDragEventArgs e)
@@ -51,6 +50,8 @@ namespace ClassSRM
 
         private void tileView_ItemDrop(object sender, DevExpress.XtraGrid.Views.Tile.ItemDropEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             var newStatus = e.GroupColumnValue;
             var prevStatus = e.PrevGroupColumnValue;
 
@@ -131,6 +132,8 @@ namespace ClassSRM
 
         private void btnRemove_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (tileView.RowCount == 0)
             {
                 XtraMessageBox.Show("اطلاعاتی برای حذف وجود ندارد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -149,6 +152,8 @@ namespace ClassSRM
 
         private void btnUpdate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (tileView.RowCount == 0)
             {
                 XtraMessageBox.Show("اطلاعاتی برای ویرایش وجود ندارد", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);

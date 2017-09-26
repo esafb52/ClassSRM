@@ -19,7 +19,6 @@ namespace ClassSRM.Forms
 {
     public partial class Process : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         private int userId1;
         private int userId2;
@@ -32,7 +31,8 @@ namespace ClassSRM.Forms
 
         private void Process_Load(object sender, EventArgs e)
         {
-            //Todo: Fix
+            var dc = new ClassSRMDataContext(Config.connection);
+
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
         }
@@ -41,7 +41,7 @@ namespace ClassSRM.Forms
         {
             try
             {
-                splashScreenManager1.ShowWaitForm();
+                var dc = new ClassSRMDataContext(Config.connection);
                 var queryWin1 = (from tbl_ActPoints in dc.tbl_ActPoints //دریافت دانش آموز برتر
                                  group tbl_ActPoints by new
                                  {
@@ -92,7 +92,6 @@ namespace ClassSRM.Forms
                 userId1 = queryWin1.StudentId.Value;
                 userId2 = queryWin2.StudentId.Value;
                 userId3 = queryWin3.StudentId.Value;
-                splashScreenManager1.CloseWaitForm();
             }
             catch (Exception)
             {
@@ -103,6 +102,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                 var bookName = cmbBook.Text;
                 tblEvaPointBindingSource.DataSource = from tbl_EvaPoints in dc.tbl_EvaPoints
@@ -130,6 +131,8 @@ namespace ClassSRM.Forms
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
+
                     tblEvaPointBindingSource1.DataSource = from v in dc.tbl_EvaPoints where v.StudentId == userId1 select v; //نمایش پیشرفت نفر برتر
                     chartControl1.Series["Series 2"].LegendText = "نفر برتر فعالیت ها " + (from v in dc.tbl_Students where v.Id == userId1 && v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
                 }
@@ -149,6 +152,8 @@ namespace ClassSRM.Forms
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
+
                     tblEvaPointBindingSource2.DataSource = from v in dc.tbl_EvaPoints where v.StudentId == userId2 select v; //نمایش پیشرفت نفر برتر
                     chartControl1.Series["Series 3"].LegendText = "نفر برتر دروس " + (from v in dc.tbl_Students where v.Id == userId2 && v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
                 }
@@ -169,6 +174,8 @@ namespace ClassSRM.Forms
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
+
                     tblEvaPointBindingSource3.DataSource = from v in dc.tbl_EvaPoints where v.StudentId == userId3 select v; //نمایش پیشرفت نفر برتر
                     chartControl1.Series["Series 4"].LegendText = "نفر برتر کل " + (from v in dc.tbl_Students where v.Id == userId3 && v.StuClassId == (int)cmbClass.EditValue select v.StuName + " " + v.StuLName).FirstOrDefault().ToString();
                 }
@@ -185,7 +192,9 @@ namespace ClassSRM.Forms
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
+            var dc = new ClassSRMDataContext(Config.connection);
+
+            tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
             ChartQuery();
         }
 

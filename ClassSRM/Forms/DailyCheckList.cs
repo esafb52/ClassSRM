@@ -20,7 +20,6 @@ namespace ClassSRM.Forms
 {
     public partial class DailyCheckList : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public DailyCheckList()
         {
@@ -44,7 +43,9 @@ namespace ClassSRM.Forms
 
         private void DailyCheckList_Load(object sender, EventArgs e)
         {
-            tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+            var dc = new ClassSRMDataContext(Config.connection);
+
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
             txtDate1.EditValue = DateTime.Now;
             txtDate2.EditValue = DateTime.Now;
@@ -52,16 +53,28 @@ namespace ClassSRM.Forms
 
         private void cmbStudent_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
                 int id = (int)cmbStudent.EditValue;
-                checkVBindingSource.DataSource = from v in dc.CheckVs where v.StudentId == id orderby v.Date descending select v;
+                checkVBindingSource.DataSource = from v in dc.CheckVs where v.StudentId == id orderby v.Date descending select new {
+                    v.Id,
+                    v.StuName,
+                    v.StuLName,
+                    v.StuFName,
+                    v.StudentId,
+                    v.Exist,
+                    v.Date
+                };
             }
         }
 
         private void txtDate1_DateTimeChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (chkFilter.Checked)
             {
                 int count = (cmbClass.Properties.DataSource as IList).Count;
@@ -75,6 +88,8 @@ namespace ClassSRM.Forms
 
         private void txtDate2_DateTimeChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (chkFilter.Checked)
             {
                 int count = (cmbClass.Properties.DataSource as IList).Count;
@@ -88,10 +103,12 @@ namespace ClassSRM.Forms
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
-                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
+                tblStudentBindingSource.DataSource =dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
                 cmbStudent.ItemIndex = 0;
             }
         }
@@ -100,6 +117,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                 int idStu = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StudentId");
                 bool exist = (bool)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Exist");
@@ -124,6 +143,8 @@ namespace ClassSRM.Forms
 
         private void btnDel_Click(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (gridView1.RowCount != 0)
             {
                 try

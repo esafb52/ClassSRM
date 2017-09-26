@@ -20,8 +20,6 @@ namespace ClassSRM.Forms
 {
     public partial class Gifts : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         private PersianCalendar pc = new PersianCalendar();
         private string strCurMonth, strYear;
         private int PrevMonth;
@@ -33,10 +31,12 @@ namespace ClassSRM.Forms
 
         private void Gifts_Load(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             CreateCustomDate();
             try
             {
-                tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+                tblSchoolBindingSource.DataSource = dc.SelectSchool();
                 cmbClass.ItemIndex = 0;
             }
             catch (Exception ex)
@@ -49,6 +49,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 gridControl1.DataSource = dc.SelectGifts((int)cmbClass.EditValue, strYear + "/" + strCurMonth + "/" + "01", strYear + "/" + strCurMonth + "/" + "31", strYear + "/" + PrevMonth.ToString("00") + "/" + "01", strYear + "/" + PrevMonth.ToString("00") + "/" + "31");
             }
             catch (Exception ex)

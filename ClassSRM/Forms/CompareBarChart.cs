@@ -19,7 +19,6 @@ namespace ClassSRM.Forms
 {
     public partial class CompareBarChart : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public CompareBarChart()
         {
@@ -30,7 +29,9 @@ namespace ClassSRM.Forms
         {
             try
             {
-                tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+                var dc = new ClassSRMDataContext(Config.connection);
+
+                tblSchoolBindingSource.DataSource = dc.SelectSchool();
             }
             catch (Exception)
             {
@@ -41,6 +42,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 sumAEBindingSource.DataSource = from v in dc.SumAEs where v.StuClassId == (int)cmbClass.EditValue select v;
                 chartControl1.Series["Series 1"].LegendText = cmbClass.Text;
             }

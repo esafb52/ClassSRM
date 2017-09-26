@@ -20,8 +20,6 @@ namespace ClassSRM.Forms
 {
     public partial class PointActivityList : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         public PointActivityList()
         {
             InitializeComponent();
@@ -29,19 +27,25 @@ namespace ClassSRM.Forms
 
         private void PointActivityList_Load(object sender, EventArgs e)
         {
-            tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+            var dc = new ClassSRMDataContext(Config.connection);
+
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
             EditableProgressBar();
         }
 
         private void cmbStudent_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             tblActPointBindingSource.DataSource = from v in dc.tbl_ActPoints where v.StudentId == (int)cmbStudent.EditValue select v;
         }
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
+            var dc = new ClassSRMDataContext(Config.connection);
+
+            tblStudentBindingSource.DataSource =dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
             cmbStudent.ItemIndex = 0;
         }
 
@@ -49,6 +53,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                 int idStu = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StudentId");
                 int score = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Score");
@@ -94,6 +100,8 @@ namespace ClassSRM.Forms
             {
                 try
                 {
+                    var dc = new ClassSRMDataContext(Config.connection);
+
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
                     var result = XtraMessageBox.Show("آیا از حذف این امتیاز اطمینان دارید؟", "توجه", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)

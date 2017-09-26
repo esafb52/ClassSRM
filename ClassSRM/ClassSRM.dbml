@@ -54,7 +54,7 @@
     </Type>
   </Table>
   <Table Name="dbo.CheckV" Member="CheckVs">
-    <Type Name="CheckV" Id="ID1" Modifier="Sealed">
+    <Type Name="CheckV" Modifier="Sealed">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
@@ -159,12 +159,6 @@
       <Column Name="SchClass" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="SchDate" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
     </ElementType>
-  </Function>
-  <Function Name="dbo.Select2Dates" Method="Select2Dates">
-    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
-    <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
-    <Parameter Name="Date2" Parameter="date2" Type="System.String" DbType="NVarChar(12)" />
-    <ElementType IdRef="ID1" />
   </Function>
   <Function Name="dbo.UpdateTaskLabel" Method="UpdateTaskLabel">
     <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
@@ -423,6 +417,20 @@
       <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Select2Dates" Method="Select2Dates">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Date1" Parameter="date1" Type="System.String" DbType="NVarChar(12)" />
+    <Parameter Name="Date2" Parameter="date2" Type="System.String" DbType="NVarChar(12)" />
+    <ElementType Name="Select2DatesResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Exist" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

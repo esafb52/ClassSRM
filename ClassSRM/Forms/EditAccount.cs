@@ -21,7 +21,6 @@ namespace ClassSRM.Forms
 {
     public partial class EditAccount : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         private SHA256CryptoServiceProvider sha = new SHA256CryptoServiceProvider();
         private string Hash = string.Empty;
@@ -35,6 +34,8 @@ namespace ClassSRM.Forms
 
         private void EditAccount_Load(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             tblUserBindingSource.DataSource = from v in dc.tbl_Users select v;
         }
 
@@ -49,6 +50,8 @@ namespace ClassSRM.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (gridView1.RowCount != 0)
             {
                 int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
@@ -69,6 +72,8 @@ namespace ClassSRM.Forms
 
         private void btnDel_Click(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (gridView1.RowCount != 0)
             {
                 int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");

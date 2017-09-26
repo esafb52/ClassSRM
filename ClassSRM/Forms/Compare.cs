@@ -19,7 +19,6 @@ namespace ClassSRM.Forms
 {
     public partial class Compare : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public Compare()
         {
@@ -30,6 +29,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 tblSchoolBindingSource.DataSource = dc.SelectSchool();
             }
             catch (Exception)
@@ -41,7 +42,9 @@ namespace ClassSRM.Forms
         {
             try
             {
-                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
+                var dc = new ClassSRMDataContext(Config.connection);
+
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
             }
             catch (Exception)
             {
@@ -53,6 +56,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 var bookName = cmbBook.EditValue.ToString();
                 var q1 = from tbl_EvaPoints in dc.tbl_EvaPoints
                          orderby tbl_EvaPoints.Date
@@ -73,6 +78,8 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 var bookName = cmbBook.EditValue.ToString();
                 var q2 = from tbl_EvaPoints in dc.tbl_EvaPoints
                          orderby tbl_EvaPoints.Date
