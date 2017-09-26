@@ -105,29 +105,27 @@ namespace ClassSRM.Forms
                 cmbScoreVisibility.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Always;
             }
 
-            tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+            tblSchoolBindingSource.DataSource =dc.SelectSchool();
             cmbClass.ItemIndex = 0;
-            int count = (cmbClass.Properties.DataSource as IList).Count;
-            if (count > 0)
-            {
-                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
-                cmbStudent.ItemIndex = 0;
-            }
+           
 
-            cmbBook.SelectedIndex = 0;
             if (isQuastion)
             {
                 cmbBook.SelectedIndex = bookIndex;
                 cmbClass.EditValue = SchoolId;
-                cmbClass_EditValueChanged(null, null);
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
                 cmbStudent.EditValue = StudentId;
             }
         }
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
-            tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == (int)cmbClass.EditValue select v;
-            cmbStudent.ItemIndex = 0;
+            int count = (cmbClass.Properties.DataSource as IList).Count;
+            if (count > 0)
+            {
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
+                cmbStudent.ItemIndex = 0;
+            }
         }
 
         private void PointBook_KeyDown(object sender, KeyEventArgs e)

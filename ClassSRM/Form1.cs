@@ -376,6 +376,7 @@ namespace ClassSRM
 
         private void btnBookEva_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            PointBook.isQuastion = false;
             new PointBook().ShowDialog();
         }
 
