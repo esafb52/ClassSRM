@@ -406,4 +406,13 @@
       <Column Name="ScoreSum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
+  <Function Name="dbo.SelectAskStatus" Method="SelectAskStatus">
+    <Parameter Name="ClassId" Parameter="classId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Book" Parameter="book" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="SelectAskStatusResult">
+      <Column Name="StuName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

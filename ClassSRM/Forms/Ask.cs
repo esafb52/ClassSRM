@@ -35,24 +35,26 @@ namespace ClassSRM.Forms
 
         private void cmbBook_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Todo: Fix
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
-                var list = (from tbl_Student in dc.tbl_Students
-                            where !dc.tbl_Quastions.Any(f => f.StudentId == tbl_Student.Id && f.Book == cmbBook.Text) && tbl_Student.StuClassId == (int)cmbClass.EditValue
-                            select tbl_Student).ToList();
-                if (list.Count() == 0)
+                var list = dc.SelectAskStatus((int)cmbClass.EditValue, cmbBook.Text);
+                //(from tbl_Student in dc.tbl_Students
+                // where !dc.tbl_Quastions.Any(f => f.StudentId == tbl_Student.Id && f.Book == cmbBook.Text) && tbl_Student.StuClassId == (int)cmbClass.EditValue
+                // select tbl_Student);
+                gridControl1.DataSource = list;
+
+                if (list.Any())
                 {
-                    dc.DeleteAllQuastion((int)cmbClass.EditValue);
-                    var list2 = (from tbl_Student in dc.tbl_Students
-                                 where !dc.tbl_Quastions.Any(f => f.StudentId == tbl_Student.Id && f.Book == cmbBook.Text) && tbl_Student.StuClassId == (int)cmbClass.EditValue
-                                 select tbl_Student).ToList();
-                    gridControl1.DataSource = list2;
+                    //dc.DeleteAllQuastion((int)cmbClass.EditValue);
+
+                    //gridControl1.DataSource = list;
                     btnSave.Enabled = false;
                 }
                 else
                 {
-                    gridControl1.DataSource = list;
+
                     btnSave.Enabled = true;
                 }
             }

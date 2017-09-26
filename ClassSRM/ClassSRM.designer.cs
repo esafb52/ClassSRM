@@ -458,6 +458,13 @@ namespace ClassSRM
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
 			return ((ISingleResult<SelectCurScoreResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectAskStatus")]
+		public ISingleResult<SelectAskStatusResult> SelectAskStatus([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ClassId", DbType="Int")] System.Nullable<int> classId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Book", DbType="NVarChar(50)")] string book)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), classId, book);
+			return ((ISingleResult<SelectAskStatusResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tbl_User")]
@@ -3553,6 +3560,68 @@ namespace ClassSRM
 				if ((this._ScoreSum != value))
 				{
 					this._ScoreSum = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SelectAskStatusResult
+	{
+		
+		private string _StuName;
+		
+		private string _StuLName;
+		
+		private string _StuFName;
+		
+		public SelectAskStatusResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
+		public string StuName
+		{
+			get
+			{
+				return this._StuName;
+			}
+			set
+			{
+				if ((this._StuName != value))
+				{
+					this._StuName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
+		public string StuLName
+		{
+			get
+			{
+				return this._StuLName;
+			}
+			set
+			{
+				if ((this._StuLName != value))
+				{
+					this._StuLName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuFName", DbType="NVarChar(100)")]
+		public string StuFName
+		{
+			get
+			{
+				return this._StuFName;
+			}
+			set
+			{
+				if ((this._StuFName != value))
+				{
+					this._StuFName = value;
 				}
 			}
 		}

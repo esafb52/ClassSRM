@@ -260,9 +260,7 @@ namespace ClassSRM
             if (count > 0)
             {
                 int id = (int)cmbClass.EditValue;
-                splashScreenManager2.ShowWaitForm();
                 tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == id select v;
-                splashScreenManager2.CloseWaitForm();
             }
         }
 
