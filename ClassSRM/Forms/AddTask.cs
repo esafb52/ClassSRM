@@ -24,7 +24,6 @@ namespace ClassSRM.Forms
         public static string caption;
         public static string desc;
 
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public AddTask()
         {
@@ -38,6 +37,8 @@ namespace ClassSRM.Forms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (isEdit)
             {
                 dc.UpdateTask(id, txtCaption.Text, txtDesc.Text, cmbCat.Text, cmbColor.SelectedIndex);

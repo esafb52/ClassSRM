@@ -459,6 +459,13 @@ namespace ClassSRM
 			return ((ISingleResult<SelectCurScoreResult>)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectStudentByClassIdNoIMG")]
+		public ISingleResult<SelectStudentByClassIdNoIMGResult> SelectStudentByClassIdNoIMG([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Id", DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<SelectStudentByClassIdNoIMGResult>)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SelectAskStatus")]
 		public ISingleResult<SelectAskStatusResult> SelectAskStatus([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ClassId", DbType="Int")] System.Nullable<int> classId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Book", DbType="NVarChar(50)")] string book)
 		{
@@ -3565,8 +3572,90 @@ namespace ClassSRM
 		}
 	}
 	
+	public partial class SelectStudentByClassIdNoIMGResult
+	{
+		
+		private int _Id;
+		
+		private string _StuName;
+		
+		private string _StuLName;
+		
+		private string _StuFName;
+		
+		public SelectStudentByClassIdNoIMGResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL")]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this._Id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]
+		public string StuName
+		{
+			get
+			{
+				return this._StuName;
+			}
+			set
+			{
+				if ((this._StuName != value))
+				{
+					this._StuName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuLName", DbType="NVarChar(100)")]
+		public string StuLName
+		{
+			get
+			{
+				return this._StuLName;
+			}
+			set
+			{
+				if ((this._StuLName != value))
+				{
+					this._StuLName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuFName", DbType="NVarChar(100)")]
+		public string StuFName
+		{
+			get
+			{
+				return this._StuFName;
+			}
+			set
+			{
+				if ((this._StuFName != value))
+				{
+					this._StuFName = value;
+				}
+			}
+		}
+	}
+	
 	public partial class SelectAskStatusResult
 	{
+		
+		private int _Id;
 		
 		private string _StuName;
 		
@@ -3576,6 +3665,22 @@ namespace ClassSRM
 		
 		public SelectAskStatusResult()
 		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", DbType="Int NOT NULL")]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this._Id = value;
+				}
+			}
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_StuName", DbType="NVarChar(100)")]

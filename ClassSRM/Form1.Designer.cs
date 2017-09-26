@@ -245,7 +245,6 @@
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
-            this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.tblStudentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -1467,7 +1466,6 @@
             "DevExpress.XtraBars.Navigation.OfficeNavigationBar",
             "DevExpress.XtraBars.Navigation.TileNavPane",
             "DevExpress.XtraBars.TabFormControl"});
-            this.dockManager1.Expanded += new DevExpress.XtraBars.Docking.DockPanelEventHandler(this.dockManager1_Expanded);
             // 
             // dockPanel1
             // 
@@ -1483,7 +1481,6 @@
             // 
             // dockPanel1_Container
             // 
-            this.dockPanel1_Container.Controls.Add(this.btnRefresh);
             this.dockPanel1_Container.Controls.Add(this.gridControl1);
             this.dockPanel1_Container.Controls.Add(this.panelControl5);
             this.dockPanel1_Container.Location = new System.Drawing.Point(5, 27);
@@ -1491,16 +1488,6 @@
             this.dockPanel1_Container.Name = "dockPanel1_Container";
             this.dockPanel1_Container.Size = new System.Drawing.Size(314, 836);
             this.dockPanel1_Container.TabIndex = 0;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRefresh.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnRefresh.ImageOptions.SvgImage")));
-            this.btnRefresh.Location = new System.Drawing.Point(264, 799);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(47, 36);
-            this.btnRefresh.TabIndex = 2;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // gridControl1
             // 
@@ -3411,7 +3398,6 @@
         private DevExpress.XtraEditors.CheckEdit chkMFilter;
         private FarsiLibrary.Win.DevExpress.XtraFADateEdit txtDate1;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.SimpleButton btnRefresh;
         private DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager2;
     }
 }

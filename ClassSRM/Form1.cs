@@ -35,9 +35,6 @@ namespace ClassSRM
         private int PrevMonth;
         private int id;
 
-        //Data Context
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         public Form1()
         {
             InitializeComponent();
@@ -62,7 +59,6 @@ namespace ClassSRM
         {
             Config.AddUpdateAppSettings("Default School", cmbClass.ItemIndex.ToString());
             LoadStudent();
-            gridView1_FocusedRowChanged(null, null);
         }
 
         //Custome Persian Date
@@ -75,6 +71,8 @@ namespace ClassSRM
 
         private void initScheduler()
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             DBAppointmentList apts = new DBAppointmentList();
             apts.AddRange(dc.DBAppointments.ToArray());
 
@@ -109,13 +107,18 @@ namespace ClassSRM
         //Get Student Statictic Scores and Data
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            try
-            {
+            //try
+            //{
+                var dc = new ClassSRMDataContext(Config.connection);
+
                 if (gridView1.RowCount > 0)
                 {
-                    byte[] data = ((System.Data.Linq.Binary)(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuImage"))).ToArray();
-                    var stream = new MemoryStream(data);
-                    imgStudent.Image = Image.FromStream(stream);
+                    byte[] data = null;
+                    data = ((System.Data.Linq.Binary)(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuImage"))).ToArray();
+                    using (MemoryStream memory = new MemoryStream(data))
+                    {
+                        imgStudent.Image = Image.FromStream(memory);
+                    }
 
                     id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
 
@@ -194,15 +197,19 @@ namespace ClassSRM
                     lblRiazi.Text = qRiazi.HighScoreUser.ToString();
 
                     drawChart(id);
+                    GC.Collect();
+                    GC.WaitForPendingFinalizers();
                 }
-            }
-            catch (InvalidOperationException ex) { XtraMessageBox.Show(ex.Message); }
-            //catch (TaskCanceledException ex) { XtraMessageBox.Show(ex.Message); }
-            catch (Exception ex) { XtraMessageBox.Show(ex.Message); }
+            //}
+            //catch (InvalidOperationException ex) { XtraMessageBox.Show(ex.Message); }
+            ////catch (TaskCanceledException ex) { XtraMessageBox.Show(ex.Message); }
+            //catch (Exception ex) { XtraMessageBox.Show(ex.Message); }
         }
 
         private void drawChart(int id)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             CreateCustomDate();
             if (strCurMonth.Equals("01"))
             {
@@ -220,6 +227,8 @@ namespace ClassSRM
         // isOne => if month is 01 we must set prevMonth 12 and prevYear - 1
         private void drawChart(int id, string Date1, string Date2, bool isOne)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             if (isOne)
             {
                 int nyear = Convert.ToInt32(strYear) - 1;
@@ -256,19 +265,22 @@ namespace ClassSRM
         //Load Student
         private void LoadStudent()
         {
+            var dc = new ClassSRMDataContext(Config.connection);
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
                 int id = (int)cmbClass.EditValue;
-                tblStudentBindingSource.DataSource = from v in dc.tbl_Students where v.StuClassId == id select v;
+                tblStudentBindingSource.DataSource =dc.SelectStudentByClassId(id);
             }
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = Convert.ToInt32(Config.ReadSetting("Default School"));
-            LoadStudent();
             EnableAnim();
             pCalendar.DateTime = DateTime.Now;
             initScheduler();
@@ -463,6 +475,8 @@ namespace ClassSRM
 
         private void schedulerStorage1_AppointmentsInserted(object sender, PersistentObjectsEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             foreach (Appointment apt in e.Objects)
             {
                 DBAppointment dbApt = (DBAppointment)apt.GetSourceObject(schedulerStorage1);
@@ -473,11 +487,15 @@ namespace ClassSRM
 
         private void schedulerStorage1_AppointmentsChanged(object sender, PersistentObjectsEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             dc.SubmitChanges();
         }
 
         private void schedulerStorage1_AppointmentDeleting(object sender, PersistentObjectCancelEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             Appointment apt = (Appointment)e.Object;
             DBAppointment dbApt = (DBAppointment)apt.GetSourceObject(schedulerStorage1);
             dc.DBAppointments.DeleteOnSubmit(dbApt);
@@ -516,21 +534,8 @@ namespace ClassSRM
             }
         }
 
-        private void dockManager1_Expanded(object sender, DevExpress.XtraBars.Docking.DockPanelEventArgs e)
-        {
-            int count = (cmbClass.Properties.DataSource as IList).Count;
-            if (count > 0)
-            {
-                cmbClass.ItemIndex = Convert.ToInt32(Config.ReadSetting("Default School"));
-            }
-        }
-
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            tblSchoolBindingSource.DataSource = dc.SelectSchool();
-            cmbClass.ItemIndex = Convert.ToInt32(Config.ReadSetting("Default School"));
-            LoadStudent();
-            gridView1_FocusedRowChanged(null, null);
         }
 
         //Draw Persian Holiday to Calendar

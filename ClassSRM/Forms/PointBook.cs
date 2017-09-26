@@ -20,8 +20,6 @@ namespace ClassSRM.Forms
 {
     public partial class PointBook : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         public static bool isQuastion = false;
         public static int bookIndex = 0;
         public static int StudentId = 0;
@@ -37,6 +35,7 @@ namespace ClassSRM.Forms
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
                 var val = 0;
                 var tosifi = Config.ReadSetting("Tosifi System");
                 if (tosifi == "true")
@@ -93,6 +92,9 @@ namespace ClassSRM.Forms
 
         private void PointBook_Load(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
             var tosifi = Config.ReadSetting("Tosifi System");
             if (tosifi == "true")
             {
@@ -107,23 +109,24 @@ namespace ClassSRM.Forms
 
             tblSchoolBindingSource.DataSource =dc.SelectSchool();
             cmbClass.ItemIndex = 0;
-           
+
 
             if (isQuastion)
             {
                 cmbBook.SelectedIndex = bookIndex;
                 cmbClass.EditValue = SchoolId;
-                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
                 cmbStudent.EditValue = StudentId;
             }
         }
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
-                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
                 cmbStudent.ItemIndex = 0;
             }
         }

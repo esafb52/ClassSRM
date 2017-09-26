@@ -21,8 +21,6 @@ namespace ClassSRM.Forms
 {
     public partial class PointActivity : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         public PointActivity()
         {
             InitializeComponent();
@@ -31,6 +29,9 @@ namespace ClassSRM.Forms
 
         private void PointActivity_Load(object sender, EventArgs e)
         {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            var dc = new ClassSRMDataContext(Config.connection);
             getAllItemsName();
             if (Config.ReadSetting("ActivityPoint").Equals("Free"))
                 rd.SelectedIndex = 0;
@@ -41,13 +42,13 @@ namespace ClassSRM.Forms
 
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
-           
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
+                var dc = new ClassSRMDataContext(Config.connection);
                 if (rd.SelectedIndex == 0)
                 {
                     dc.InsertActPoint((int)cmbStudent.EditValue, (int)txtScore.Value, txtDate.Text, txtDesc.Text);
@@ -72,16 +73,18 @@ namespace ClassSRM.Forms
 
         private void cmbStudent_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
             var query = dc.SelectCurScore((int)cmbStudent.EditValue).First();
             lblCurScore.Text = query.ScoreSum.ToString();
         }
 
         private void cmbClass_EditValueChanged(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
-                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
                 cmbStudent.ItemIndex = 0;
 
             }

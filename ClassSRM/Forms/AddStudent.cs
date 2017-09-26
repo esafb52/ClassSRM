@@ -20,7 +20,6 @@ namespace ClassSRM.Forms
 {
     public partial class AddStudent : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
 
         public AddStudent()
         {
@@ -31,7 +30,9 @@ namespace ClassSRM.Forms
         {
             try
             {
-                byte[] imageData = ReadImageFile(img.GetLoadedImageLocation());
+                var dc = new ClassSRMDataContext(Config.connection);
+                byte[] imageData = null;
+                imageData = ReadImageFile(img.GetLoadedImageLocation());
                 dc.InsertStudent((int)cmbClass.EditValue, txtName.Text, txtLName.Text, txtFName.Text, cmbGender.Text, imageData);
                 XtraMessageBox.Show("دانش آموز موردنظر با موفقیت ثبت شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtName.Text = string.Empty;
@@ -65,7 +66,8 @@ namespace ClassSRM.Forms
 
         private void AddStudent_Load(object sender, EventArgs e)
         {
-            tblSchoolBindingSource.DataSource = from v in dc.tbl_Schools select v;
+            var dc = new ClassSRMDataContext(Config.connection);
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
         }
 
         private void AddStudent_KeyDown(object sender, KeyEventArgs e)

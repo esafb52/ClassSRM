@@ -19,8 +19,6 @@ namespace ClassSRM.Forms
 {
     public partial class Ask : DevExpress.XtraEditors.XtraForm
     {
-        private ClassSRMDataContext dc = new ClassSRMDataContext(Config.connection);
-
         public Ask()
         {
             InitializeComponent();
@@ -28,40 +26,44 @@ namespace ClassSRM.Forms
 
         private void Ask_Load(object sender, EventArgs e)
         {
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            var dc = new ClassSRMDataContext(Config.connection);
+
             tblSchoolBindingSource.DataSource = dc.SelectSchool();
             cmbClass.ItemIndex = 0;
-            cmbBook_SelectedIndexChanged(null, null);
         }
 
         private void cmbBook_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Todo: Fix
+            var dc = new ClassSRMDataContext(Config.connection);
+
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
-                var list = dc.SelectAskStatus((int)cmbClass.EditValue, cmbBook.Text);
-                //(from tbl_Student in dc.tbl_Students
-                // where !dc.tbl_Quastions.Any(f => f.StudentId == tbl_Student.Id && f.Book == cmbBook.Text) && tbl_Student.StuClassId == (int)cmbClass.EditValue
-                // select tbl_Student);
-                gridControl1.DataSource = list;
-
-                if (list.Any())
+                bsStudent.DataSource = (from tbl_Student in dc.tbl_Students
+ where !dc.tbl_Quastions.Any(f => f.StudentId == tbl_Student.Id && f.Book == cmbBook.Text) && tbl_Student.StuClassId == (int)cmbClass.EditValue
+ select new {
+     tbl_Student.Id,
+     tbl_Student.StuName,
+     tbl_Student.StuLName,
+     tbl_Student.StuFName
+ });
+                if (gridView1.RowCount == 0)
                 {
-                    //dc.DeleteAllQuastion((int)cmbClass.EditValue);
-
-                    //gridControl1.DataSource = list;
+                    dc.DeleteAllQuastion((int)cmbClass.EditValue);
                     btnSave.Enabled = false;
                 }
                 else
-                {
-
                     btnSave.Enabled = true;
-                }
+                
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
+
             int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
             dc.AddQuastion((int)cmbClass.EditValue, id, cmbBook.Text);
             gridView1.DeleteSelectedRows();
@@ -81,3 +83,4 @@ namespace ClassSRM.Forms
         }
     }
 }
+
