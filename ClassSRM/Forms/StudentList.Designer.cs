@@ -71,6 +71,7 @@
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem6 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.StuImage = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -157,7 +158,8 @@
             this.colStuName,
             this.colStuLName,
             this.colStuFName,
-            this.colStuGender});
+            this.colStuGender,
+            this.StuImage});
             this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -537,6 +539,12 @@
             this.emptySpaceItem6.Size = new System.Drawing.Size(337, 28);
             this.emptySpaceItem6.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // StuImage
+            // 
+            this.StuImage.Caption = "عکس";
+            this.StuImage.FieldName = "StuImage";
+            this.StuImage.Name = "StuImage";
+            // 
             // StudentList
             // 
             this.AcceptButton = this.btnEdit;
@@ -636,5 +644,6 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit repositoryItemPictureEdit1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem6;
+        private DevExpress.XtraGrid.Columns.GridColumn StuImage;
     }
 }

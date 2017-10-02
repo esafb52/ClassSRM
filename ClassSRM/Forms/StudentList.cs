@@ -62,10 +62,9 @@ namespace ClassSRM.Forms
                 {
                     var dc = new ClassSRMDataContext(Config.connection);
 
-                    byte[] imageData = null;
-                    imageData = imageToByteArray(img.Image);
+                    byte[] imageData = imageToByteArray(img.Image);
                     int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
-                    dc.UpdateStudent(id, (int)cmbClass.EditValue, txtName.Text, txtLName.Text, txtFName.Text, cmbGender.Text, imageData);
+                    dc.UpdateStudent(id, (int)lookUpEdit2.EditValue, txtName.Text, txtLName.Text, txtFName.Text, cmbGender.Text, imageData);
                     tblStudentBindingSource.EndEdit();
                     dc = new ClassSRMDataContext(Config.connection);
                     XtraMessageBox.Show("دانش آموز موردنظر با موفقیت ویرایش شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -93,13 +92,10 @@ namespace ClassSRM.Forms
                     txtLName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuLName").ToString();
                     cmbGender.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuGender").ToString();
                     lookUpEdit2.EditValue = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuClassId");
-                    byte[] data = null;
-                    data = ((System.Data.Linq.Binary)(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuImage"))).ToArray();
-
-                    using (MemoryStream stream = new MemoryStream(data))
-                    {
-                        img.Image = Image.FromStream(stream);
-                    }
+                   
+                    byte[] data = ((System.Data.Linq.Binary)(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuImage"))).ToArray();
+                    var stream = new MemoryStream(data);
+                    img.Image = Image.FromStream(stream);
                 }
                 catch (Exception)
                 {

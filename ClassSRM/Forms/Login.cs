@@ -30,6 +30,14 @@ namespace ClassSRM.Forms
         {
             InitializeComponent();
 
+            //**********    Update Database if Script Exist    *********\\
+
+            Config.ExecuteScript();
+            Config.DelScript();
+
+            //          *******************************************      \\
+
+
             //**********    Check if Server Config Exist    *********\\
 
             var conServer = Config.ReadSetting("IsConServer");

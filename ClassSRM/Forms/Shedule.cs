@@ -27,7 +27,7 @@ namespace ClassSRM.Forms
 
         private void Shedule_Load(object sender, EventArgs e)
         {
-            context = new ClassSRMDataContext();
+            context = new ClassSRMDataContext(Config.connection);
             DBAppointmentList apts = new DBAppointmentList();
             apts.AddRange(context.DBAppointments.ToArray());
 

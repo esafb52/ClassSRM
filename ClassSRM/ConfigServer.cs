@@ -38,6 +38,7 @@ namespace ClassSRM
                     Config.AddUpdateAppSettings("ConServer", @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\ClassSRM.mdf;Integrated Security=True");
                     break;
             }
+            btnCreate.Enabled = true;
             Config.AddUpdateAppSettings("IsConServer", "true");
         }
 
@@ -46,6 +47,19 @@ namespace ClassSRM
             var isConServer = Config.ReadSetting("IsConServer");
             if (isConServer == "false")
                 Environment.Exit(0);
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Config.ExecuteScript();
+            }
+            catch (Exception) { }
+            finally
+            {
+                Config.DelScript();
+            }
         }
     }
 }

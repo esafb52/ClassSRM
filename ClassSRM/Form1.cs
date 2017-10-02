@@ -374,14 +374,15 @@ namespace ClassSRM
 
         private void btnAddSchool_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
             new AddSchool().ShowDialog();
-            btnRefresh_Click(null, null);
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
         }
 
         private void btnAddStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new AddStudent().ShowDialog();
-            btnRefresh_Click(null, null);
+            LoadStudent();
         }
 
         private void btnAddUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -392,17 +393,22 @@ namespace ClassSRM
         private void btnDailyCheck_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new DailyCheck().ShowDialog();
+            LoadStudent();
         }
 
         private void btnBookEva_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             PointBook.isQuastion = false;
             new PointBook().ShowDialog();
+            LoadStudent();
+
         }
 
         private void btnActPoint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointActivity().ShowDialog();
+            LoadStudent();
+
         }
 
         private void btnQuastion_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -442,32 +448,37 @@ namespace ClassSRM
 
         private void btnSchoolList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            var dc = new ClassSRMDataContext(Config.connection);
             new Schoollist().ShowDialog();
-            btnRefresh_Click(null, null);
+            tblSchoolBindingSource.DataSource = dc.SelectSchool();
+
         }
 
         private void btnStudentList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new StudentList().ShowDialog();
-            btnRefresh_Click(null, null);
+            LoadStudent();
         }
 
         private void btnLstCheck_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new DailyCheckList().ShowDialog();
-            btnRefresh_Click(null, null);
+            LoadStudent();
+
         }
 
         private void btnActPointList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointActivityList().ShowDialog();
-            btnRefresh_Click(null, null);
+            LoadStudent();
+
         }
 
         private void btnEvaPointList_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new PointBookList().ShowDialog();
-            btnRefresh_Click(null, null);
+            LoadStudent();
+
         }
 
         private void btnWebsite_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -542,10 +553,6 @@ namespace ClassSRM
                 prev = Convert.ToInt32(month) - 1;
                 drawChart(id, month, prev.ToString("00"), false);
             }
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
         }
 
         //Draw Persian Holiday to Calendar

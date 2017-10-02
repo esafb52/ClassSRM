@@ -129,52 +129,52 @@ namespace ClassSRM
             Console.WriteLine(generatedSql);
         }
 
-        //#region "Sql Script Execute"
+        #region "Sql Script Execute"
 
-        ////Script Path
-        //public static string path = "script.sql";
+        //Script Path
+        public static string path = "script.sql";
 
-        ////Read Script
-        //private static string GetScript()
-        //{
-        //    var file = new FileInfo(path);
+        //Read Script
+        private static string GetScript()
+        {
+            var file = new FileInfo(path);
 
-        //    string script = file.OpenText().ReadToEnd();
-        //    return script;
-        //}
+            string script = file.OpenText().ReadToEnd();
+            return script;
+        }
 
-        ////Delete Script
-        //public static void DelScript()
-        //{
-        //    var file = new FileInfo(path);
-        //    if (File.Exists(path))
-        //        file.Delete();
-        //}
+        //Delete Script
+        public static void DelScript()
+        {
+            var file = new FileInfo(path);
+            if (File.Exists(path))
+                file.Delete();
+        }
 
-        ////Execute Script to Sql Server
-        //public static void ExecuteScript()
-        //{
-        //    if (File.Exists(path))
-        //    {
-        //        string script = GetScript();
+        //Execute Script to Sql Server
+        public static void ExecuteScript()
+        {
+            if (File.Exists(path))
+            {
+                string script = GetScript();
 
-        //        var splitter = new[] { "\r\nGO\r\n" };
-        //        string[] commandTexts = script.Split(splitter,
-        //                                             StringSplitOptions.RemoveEmptyEntries);
-        //        foreach (string commandText in commandTexts)
-        //        {
-        //            using (var ctx = new ClassSRMDataContext())
-        //            {
-        //                if (!string.IsNullOrEmpty(commandText))
-        //                {
-        //                    ctx.ExecuteCommand(commandText);
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
+                var splitter = new[] { "\r\nGO\r\n" };
+                string[] commandTexts = script.Split(splitter,
+                                                     StringSplitOptions.RemoveEmptyEntries);
+                foreach (string commandText in commandTexts)
+                {
+                    using (var ctx = new ClassSRMDataContext(Config.connection))
+                    {
+                        if (!string.IsNullOrEmpty(commandText))
+                        {
+                            ctx.ExecuteCommand(commandText);
+                        }
+                    }
+                }
+            }
+        }
 
-        //#endregion "Sql Script Execute"
+        #endregion "Sql Script Execute"
 
         #region "Persian Calendar Holiday"
 
