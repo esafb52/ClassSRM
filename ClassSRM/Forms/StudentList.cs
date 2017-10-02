@@ -45,7 +45,7 @@ namespace ClassSRM.Forms
             {
                 var dc = new ClassSRMDataContext(Config.connection);
 
-                tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassId((int)cmbClass.EditValue);
             }
             catch (InvalidOperationException ex)
             {
@@ -92,6 +92,7 @@ namespace ClassSRM.Forms
                     txtFName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuFName").ToString();
                     txtLName.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuLName").ToString();
                     cmbGender.Text = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuGender").ToString();
+                    lookUpEdit2.EditValue = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuClassId");
                     byte[] data = null;
                     data = ((System.Data.Linq.Binary)(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "StuImage"))).ToArray();
 
