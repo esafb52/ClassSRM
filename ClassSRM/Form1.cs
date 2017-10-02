@@ -23,9 +23,14 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.Logify.Win;
 
 namespace ClassSRM
 {
+    //Todo: USING
+    //Todo: MessageBox Fix
+    //Todo: LINQ2SQL
+    //Todo: CLEAN CODES
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
         //Get Persian Date
@@ -46,6 +51,11 @@ namespace ClassSRM
                 DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(Config.ReadSetting("Skin"));
 
             this.Text += ProductVersion;
+
+
+            LogifyAlert client = LogifyAlert.Instance;
+            client.ApiKey = "14BE896FCC8C447492CF910AF3192EAD";
+            client.StartExceptionsHandling();
         }
 
         //Set Skin Name to Config

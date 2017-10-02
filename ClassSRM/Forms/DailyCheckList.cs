@@ -10,6 +10,7 @@
 ***********************************************************************************/
 
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using System;
 using System.Collections;
 using System.Data;
@@ -59,15 +60,19 @@ namespace ClassSRM.Forms
             if (count > 0)
             {
                 int id = (int)cmbStudent.EditValue;
-                checkVBindingSource.DataSource = from v in dc.CheckVs where v.StudentId == id orderby v.Date descending select new {
-                    v.Id,
-                    v.StuName,
-                    v.StuLName,
-                    v.StuFName,
-                    v.StudentId,
-                    v.Exist,
-                    v.Date
-                };
+                checkVBindingSource.DataSource = from v in dc.CheckVs
+                                                 where v.StudentId == id
+                                                 orderby v.Date descending
+                                                 select new
+                                                 {
+                                                     v.Id,
+                                                     v.StuName,
+                                                     v.StuLName,
+                                                     v.StuFName,
+                                                     v.StudentId,
+                                                     v.Exist,
+                                                     v.Date
+                                                 };
             }
         }
 
@@ -108,8 +113,9 @@ namespace ClassSRM.Forms
             int count = (cmbClass.Properties.DataSource as IList).Count;
             if (count > 0)
             {
-                tblStudentBindingSource.DataSource =dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
+                tblStudentBindingSource.DataSource = dc.SelectStudentByClassIdNoIMG((int)cmbClass.EditValue);
                 cmbStudent.ItemIndex = 0;
+
             }
         }
 
@@ -139,6 +145,8 @@ namespace ClassSRM.Forms
             catch (Exception)
             {
             }
+
+
         }
 
         private void btnDel_Click(object sender, EventArgs e)
