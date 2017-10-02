@@ -79,15 +79,17 @@ namespace ClassSRM
             PrevMonth = Convert.ToInt32(strCurMonth) - 1;
         }
 
+        private ClassSRMDataContext context;
         private void initScheduler()
         {
-            var dc = new ClassSRMDataContext(Config.connection);
-
+            context = new ClassSRMDataContext(Config.connection);
             DBAppointmentList apts = new DBAppointmentList();
-            apts.AddRange(dc.DBAppointments.ToArray());
+            apts.AddRange(context.DBAppointments.ToArray());
+
+
 
             List<DBResource> resources = new List<DBResource>();
-            resources.AddRange(dc.DBResources.ToArray());
+            resources.AddRange(context.DBResources.ToArray());
 
             AppointmentStorage aptStorage = schedulerStorage1.Appointments;
             ResourceStorage resStorage = schedulerStorage1.Resources;
@@ -496,31 +498,25 @@ namespace ClassSRM
 
         private void schedulerStorage1_AppointmentsInserted(object sender, PersistentObjectsEventArgs e)
         {
-            var dc = new ClassSRMDataContext(Config.connection);
-
             foreach (Appointment apt in e.Objects)
             {
                 DBAppointment dbApt = (DBAppointment)apt.GetSourceObject(schedulerStorage1);
-                dc.DBAppointments.InsertOnSubmit(dbApt);
-                dc.SubmitChanges();
+                context.DBAppointments.InsertOnSubmit(dbApt);
+                context.SubmitChanges();
             }
         }
 
         private void schedulerStorage1_AppointmentsChanged(object sender, PersistentObjectsEventArgs e)
         {
-            var dc = new ClassSRMDataContext(Config.connection);
-
-            dc.SubmitChanges();
+            context.SubmitChanges();
         }
 
         private void schedulerStorage1_AppointmentDeleting(object sender, PersistentObjectCancelEventArgs e)
         {
-            var dc = new ClassSRMDataContext(Config.connection);
-
             Appointment apt = (Appointment)e.Object;
             DBAppointment dbApt = (DBAppointment)apt.GetSourceObject(schedulerStorage1);
-            dc.DBAppointments.DeleteOnSubmit(dbApt);
-            dc.SubmitChanges();
+            context.DBAppointments.DeleteOnSubmit(dbApt);
+            context.SubmitChanges();
         }
 
         #endregion "Scheduler Handler"
