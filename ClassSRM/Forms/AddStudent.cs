@@ -12,6 +12,7 @@
 using DevExpress.XtraEditors;
 using System;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
@@ -30,6 +31,7 @@ namespace ClassSRM.Forms
         {
             try
             {
+
                 var dc = new ClassSRMDataContext(Config.connection);
                 byte[] imageData = null;
                 imageData = ReadImageFile(img.GetLoadedImageLocation());
@@ -74,6 +76,20 @@ namespace ClassSRM.Forms
         {
             if (e.KeyCode == Keys.Escape)
                 Close();
+        }
+
+        private void img_Properties_ImageChanged(object sender, EventArgs e)
+        {
+            if (img.Image != null)
+            {
+                var data = Image.FromFile(img.GetLoadedImageLocation());
+                if (data.Width > 500 && data.Height > 500)
+                {
+                    XtraMessageBox.Show("اندازه تصویر بزرگ است لطفا طول و عرض تصویر را حداکثر 400 پیکسل قرار دهید", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    img.Image = null;
+                }
+            }
+            
         }
     }
 }
