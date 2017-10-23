@@ -270,13 +270,6 @@ namespace ClassSRM
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteAllQuastion")]
-		public int DeleteAllQuastion([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchId", DbType="Int")] System.Nullable<int> schId)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schId);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.AddQuastion")]
 		public int AddQuastion([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchId", DbType="Int")] System.Nullable<int> schId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="StuId", DbType="Int")] System.Nullable<int> stuId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Book", DbType="NVarChar(50)")] string book)
 		{
@@ -471,6 +464,13 @@ namespace ClassSRM
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schoolId, dateMinCur, dateMaxCur, dateMinPrev, dateMaxPrev);
 			return ((ISingleResult<SelectGiftsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteAllQuastion")]
+		public int DeleteAllQuastion([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchId", DbType="Int")] System.Nullable<int> schId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="BookId", DbType="NVarChar(50)")] string bookId)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schId, bookId);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	

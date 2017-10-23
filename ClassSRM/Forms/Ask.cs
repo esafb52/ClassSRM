@@ -42,38 +42,39 @@ namespace ClassSRM.Forms
             if (count > 0)
             {
                 bsStudent.DataSource = (from tbl_Student in dc.tbl_Students
- where !dc.tbl_Quastions.Any(f => f.StudentId == tbl_Student.Id && f.Book == cmbBook.Text) && tbl_Student.StuClassId == (int)cmbClass.EditValue
- select new {
-     tbl_Student.Id,
-     tbl_Student.StuName,
-     tbl_Student.StuLName,
-     tbl_Student.StuFName
- });
+                 where !dc.tbl_Quastions.Any(f => f.StudentId == tbl_Student.Id && f.Book == cmbBook.Text) && tbl_Student.StuClassId == (int)cmbClass.EditValue
+                 select new {
+                     tbl_Student.Id,
+                     tbl_Student.StuName,
+                     tbl_Student.StuLName,
+                     tbl_Student.StuFName
+                 });
                 if (gridView1.RowCount == 0)
                 {
-                    dc.DeleteAllQuastion((int)cmbClass.EditValue);
-                    btnSave.Enabled = false;
+                    dc.DeleteAllQuastion((int)cmbClass.EditValue,cmbBook.Text);
+                    cmbBook_SelectedIndexChanged(null, null);
                 }
-                else
-                    btnSave.Enabled = true;
-                
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var dc = new ClassSRMDataContext(Config.connection);
+            if (gridView1.RowCount != 0)
+            {
+                var dc = new ClassSRMDataContext(Config.connection);
 
-            int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
-            dc.AddQuastion((int)cmbClass.EditValue, id, cmbBook.Text);
-            gridView1.DeleteSelectedRows();
-            Hide();
-            Close();
-            PointBook.isQuastion = true;
-            PointBook.bookIndex = cmbBook.SelectedIndex;
-            PointBook.StudentId = id;
-            PointBook.SchoolId = (int)cmbClass.EditValue;
-            new PointBook().ShowDialog();
+                int id = (int)gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "Id");
+                dc.AddQuastion((int)cmbClass.EditValue, id, cmbBook.Text);
+                gridView1.DeleteSelectedRows();
+                Hide();
+                Close();
+                PointBook.isQuastion = true;
+                PointBook.bookIndex = cmbBook.SelectedIndex;
+                PointBook.StudentId = id;
+                PointBook.SchoolId = (int)cmbClass.EditValue;
+                new PointBook().ShowDialog();
+            }
+            
         }
 
         private void Ask_KeyDown(object sender, System.Windows.Forms.KeyEventArgs e)

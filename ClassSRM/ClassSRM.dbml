@@ -219,10 +219,6 @@
     <Parameter Name="Desc" Parameter="desc" Type="System.String" DbType="NVarChar(MAX)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.DeleteAllQuastion" Method="DeleteAllQuastion">
-    <Parameter Name="SchId" Parameter="schId" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.AddQuastion" Method="AddQuastion">
     <Parameter Name="SchId" Parameter="schId" Type="System.Int32" DbType="Int" />
     <Parameter Name="StuId" Parameter="stuId" Type="System.Int32" DbType="Int" />
@@ -431,5 +427,10 @@
       <Column Name="StuLName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="StuFName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.DeleteAllQuastion" Method="DeleteAllQuastion">
+    <Parameter Name="SchId" Parameter="schId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="BookId" Parameter="bookId" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

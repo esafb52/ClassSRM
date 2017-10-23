@@ -58,6 +58,7 @@ namespace ClassSRM
             client.OfflineReportsCount = 20;
             client.OfflineReportsDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             client.SendOfflineReports();
+            client.StartExceptionsHandling();
         }
 
         //Set Skin Name to Config

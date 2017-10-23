@@ -83,6 +83,9 @@ namespace ClassSRM.Forms
                 }
 
                 XtraMessageBox.Show("امتیاز موردنظر با موفقیت ثبت شد", "توجه", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (isQuastion)
+                    this.Close();
+
             }
             catch (Exception ex)
             {
