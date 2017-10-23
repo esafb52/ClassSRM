@@ -19,7 +19,7 @@ namespace ClassSRM.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,29 +61,25 @@ namespace ClassSRM.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ● بهبود پشتیبان گیری	(2017/07/20)
-        ///• نسخه بتا 6	0.7.1001.17201
+        ///   Looks up a localized string similar to ● افزوده شدن ویژگی خطایاب خودکار    (2017/10/02)
+        ///• حل مشکل ساخت خودکار پایگاه داده
+        ///• حل مشکل عدم حذف شدن زمانبندی ها
+        ///• حل بسیاری از مشکلات
+        ///• بهبود جزئی برنامه
         ///
-        ///● افزودن تقویم شمسی	(2017/07/19)
-        ///• افزوده شدن تعطیلات رسمی به تقویم
+        ///● حل مشکل پر شدن حافظه و خطای OUTOFMEMORY	(2017/09/26)
+        ///• افزایش سرعت برنامه
+        ///• بهبود مدیریت حافظه
+        ///• رفع بسیاری از باگ ها
         ///
-        ///● حل مشکل فریز شدن ریستور بکاپ	(2017/07/18)
-        ///• بهبود کدها
-        ///• حل برخی مشکلات
+        ///● افزودن دابل بافر به برخی فرم ها	(2017/09/23)
+        ///• انتقال برخی کوئری ها به سمت سرور
+        ///• جلوگیری از بروز خطاهای مهم
+        ///• رفع برخی باگ های مهم
         ///
-        ///● افزودن بخش نامه	(2017/07/15)
-        ///• بهبود کدها
-        ///• حل برخی مشکلات
-        ///
-        ///● بهبود بازیابی اطلاعات	(2017/07/15)
-        ///• بهبود سیستم بروزرسانی
-        ///
-        ///● اجبار به پشتیبان گیری هنگام بروزرسانی	(2017/07/14)
-        ///• بهبود سیستم بکاپ گیری
-        ///• حل برخی مشکلات
-        ///• نسخه بتا 5	0.7.829.17195
-        ///
-        ///● تغییر دیتابیس از لوکال به اکسپرس	(2 [rest of string was truncated]&quot;;.
+        ///● افزودن دابل بافر به برخی فرم ها	(2017/09/22)
+        ///• تغییر آیکون
+        ///• بهبود برنامه و  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string History {
             get {

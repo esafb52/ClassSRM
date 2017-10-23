@@ -52,10 +52,12 @@ namespace ClassSRM
 
             this.Text += ProductVersion;
 
-
             LogifyAlert client = LogifyAlert.Instance;
             client.ApiKey = "14BE896FCC8C447492CF910AF3192EAD";
-            client.StartExceptionsHandling();
+            client.OfflineReportsEnabled = true;
+            client.OfflineReportsCount = 20;
+            client.OfflineReportsDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            client.SendOfflineReports();
         }
 
         //Set Skin Name to Config
