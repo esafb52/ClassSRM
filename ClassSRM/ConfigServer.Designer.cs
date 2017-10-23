@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.btnCreate = new DevExpress.XtraEditors.SimpleButton();
             this.cmbServer = new DevExpress.XtraEditors.ComboBoxEdit();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnCreate = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbServer.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +59,17 @@
             this.layoutControl1.Size = new System.Drawing.Size(404, 124);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Enabled = false;
+            this.btnCreate.Location = new System.Drawing.Point(16, 77);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(372, 27);
+            this.btnCreate.StyleController = this.layoutControl1;
+            this.btnCreate.TabIndex = 5;
+            this.btnCreate.Text = "ساخت دیتابیس";
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // cmbServer
             // 
@@ -101,15 +112,6 @@
             this.layoutControlGroup1.Size = new System.Drawing.Size(404, 124);
             this.layoutControlGroup1.TextVisible = false;
             // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.btnSave;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 28);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(378, 33);
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.cmbServer;
@@ -119,16 +121,14 @@
             this.layoutControlItem4.Text = "انتخاب سرور";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(72, 17);
             // 
-            // btnCreate
+            // layoutControlItem2
             // 
-            this.btnCreate.Enabled = false;
-            this.btnCreate.Location = new System.Drawing.Point(16, 77);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(372, 27);
-            this.btnCreate.StyleController = this.layoutControl1;
-            this.btnCreate.TabIndex = 5;
-            this.btnCreate.Text = "ساخت دیتابیس";
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            this.layoutControlItem2.Control = this.btnSave;
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(378, 33);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem1
             // 
@@ -159,8 +159,8 @@
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cmbServer.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 

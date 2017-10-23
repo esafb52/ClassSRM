@@ -430,7 +430,7 @@
   </Function>
   <Function Name="dbo.DeleteAllQuastion" Method="DeleteAllQuastion">
     <Parameter Name="SchId" Parameter="schId" Type="System.Int32" DbType="Int" />
-    <Parameter Name="BookId" Parameter="bookId" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Book" Parameter="book" Type="System.String" DbType="NVarChar(50)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

@@ -467,9 +467,9 @@ namespace ClassSRM
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.DeleteAllQuastion")]
-		public int DeleteAllQuastion([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchId", DbType="Int")] System.Nullable<int> schId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="BookId", DbType="NVarChar(50)")] string bookId)
+		public int DeleteAllQuastion([global::System.Data.Linq.Mapping.ParameterAttribute(Name="SchId", DbType="Int")] System.Nullable<int> schId, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Book", DbType="NVarChar(50)")] string book)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schId, bookId);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), schId, book);
 			return ((int)(result.ReturnValue));
 		}
 	}
