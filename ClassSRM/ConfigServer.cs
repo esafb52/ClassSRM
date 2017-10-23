@@ -59,6 +59,7 @@ namespace ClassSRM
             finally
             {
                 Config.DelScript();
+                Close();
             }
         }
     }
