@@ -7,7 +7,7 @@
 
 # <div dir="rtl"> تصاویر</div>
 
-![Optional Text](Screen.png)
+![Optional Text](Scren.png)
 ![Optional Text](Screen1.png)
 ![Optional Text](Screen2.png)
 ![Optional Text](Screen3.png)
