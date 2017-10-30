@@ -12,7 +12,8 @@
 ![Optional Text](Screen2.png)
 ![Optional Text](Screen3.png)
 ![Optional Text](Screen4.png)
-
+![Optional Text](Screen5.png)
+![Optional Text](Screen6.png)
 ## <div dir="rtl">ویژگی ها</div>
 <div dir="rtl">
 <br>قابلیت ایجاد سال تحصیلی و مدرسه های متعدد
